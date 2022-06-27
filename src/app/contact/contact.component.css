@@ -66,13 +66,13 @@ color: white;
 border: 2.61169px solid #A2C2DB;
 box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
 }
-.about{
+.contact{
     background-image: url("/assets/images/abt.png");
     padding: 90px;
     margin: -28px 0 0 0;
     
 }
-.abtcont{
+.contactcont{
     border: 1px solid white;
     padding: 50px;
     
@@ -83,6 +83,49 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
 .hrtcls1{
     margin-left: 27%;
     width: 38px;
+}
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+    /* max-width: 69px; */
+    /* border-right: 1px solid; */
+}
+.borderless{
+    border-right: 1px solid;
+}
+.brdr{
+    border-right: none;
+}
+.frm{
+    width: 300px;
+}
+.inp{
+    background: #FFFFFF;
+border: 0.793268px solid #276678;
+border-radius: 17.5728px;
+border-color: #276678;
+}
+.btsend{
+    background: #276678;
+box-shadow: 0px 3.83533px 3.83533px rgba(0, 0, 0, 0.25);
+border-radius: 21.2404px;
+width: 100%;
+}
+.fttop{
+    display: none;
+}
+.ftt{
+    display: block;
+}
+.hrtcls{
+    margin: -81px 0 0 23%;
+    display: none;
+}
+.hrtcls1{
+    margin-left: 27%;
+    width: 38px;
+    display: none;
 }
 /* media queris */
 @media (max-width: 600px) {
@@ -102,10 +145,34 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
     label{
         font-size: 10px;
     }
-    .about {
+    .contact {
         background-image: url(/assets/images/abt.png);
-        padding: 40px;
-        margin: 0px 0 0 0;
+        /* padding: 40px; */
+        padding: 40px 0px;
+        margin: -30px 0 0 0;
+        /* margin: 0px 0 0 0; */
+    }
+    .fttop{
+        display: block;
+    }
+    .ftt{
+        display: none;
+    }
+    .frm{
+        width: 100%;
+    }
+    .borderless {
+        border-right: none;
+    }
+    .hrtcls{
+        margin: -59px 0 0 -18%;
+    display: block;
+
+    }
+    .hrtcls1{
+        margin-left: 9%;
+        width: 38px;
+        display: block;
     }
 }
 @media (min-width: 576px)
@@ -113,11 +180,10 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
 .container {
     max-width: 540px;
 }
-.about {
+.contact {
     background-image: url(/assets/images/abt.png);
     padding: 90px;
     margin: -30px 0 0 0;
-    /* margin: 0px 0 0 0; */
 }
 }
 @media (min-width: 768px)
@@ -224,7 +290,7 @@ header .menu-row .menu-content .menu-wrap .main-navigation .nav .main-menu-list 
 header .menu-row .button-wrap span {
     font-size: 0;
 }
-.about{
+.contact{
     background-image: url(/assets/images/abt.png);
     padding: 40px;
     margin: 0px 0 0 0; 
@@ -235,7 +301,7 @@ header.stick .menu-row .button-wrap .button {
     background: #fff!important;
     color: #2d3e50!important;
 }
-.about {
+.contact {
     background-image: url(/assets/images/abt.png);
     padding: 40px;
     margin: 0px 0 0 0; 
@@ -248,14 +314,16 @@ header .menu-row .button-wrap .button {
     padding: 7px 20px;
     margin-left: 0;
 }
-.about {
+.contact {
     background-image: url(/assets/images/abt.png);
-    padding: 97px 40px;
-    margin: -33px 0 0 0;
+    padding: 74px 40px;
+    margin: -31px 0 0 0;
     /* padding: 40px;
     margin: 0px 0 0 0;  */
 }
-.hrtcls{
-    margin: -282px 0 0 -12%;
+.contactcont {
+    border: 1px solid white;
+    /* padding: 50px 0px; */
+    padding: 50px 0 50px 30px;
 }
 }

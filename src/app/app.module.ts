@@ -8,6 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ModalComponent } from './modal/modal.component';
+import { TestComponent } from './test/test.component';
+// import { ModalModule } from './modal/modal.component';
+
+
 // import { MatButtonModule } from '@angular/material';
 
 @NgModule({
@@ -16,15 +22,24 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent,
+    ModalComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+
+    
   
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  
+  providers: [
+   
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [ ModalComponent ]
 })
 export class AppModule { }
