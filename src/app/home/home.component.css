@@ -6,23 +6,19 @@
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-<<<<<<< HEAD
-=======
-  
->>>>>>> 5268e2046fee3647b2205fd89ec29334e47a6161
-    /* background: #def4e9; */
+
+
+   
 }
 .banner-section {
     padding: 30px 0 0;
 }
 .banner-section h1 {
     font-size: 32px;
-<<<<<<< HEAD
+
     line-height: 38px;
-=======
-    line-height: 38px;    
->>>>>>> 5268e2046fee3647b2205fd89ec29334e47a6161
-    margin: 0 0 30px;
+
+
     color: white;
 }
 .banner-section .form-wrap {
