@@ -17,6 +17,21 @@ import { LeftsidenavComponent } from './leftsidenav/leftsidenav.component';
 import { SearchProfileComponent } from './search-profile/search-profile.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
 // import { ModalModule } from './modal/modal.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
+// import { Footer2Component } from './footer2/footer2.component';
+// import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.component';
+// import { VerifyComponent } from './verify/verify.component';
+// import { SuccessComponent } from './success/success.component';
+// import { ProfilesComponent } from './profiles/profiles.component';
+
+
+
+
+
+
+
+
 
 
 // import { MatButtonModule } from '@angular/material';
@@ -29,6 +44,7 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
+<<<<<<< HEAD
     ModalComponent,
     TestComponent,
     DeleteprofileComponent,
@@ -36,11 +52,33 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
     LeftsidenavComponent,
     SearchProfileComponent,
     EditprofileComponent
+=======
+    
+    TestComponent,
+    SubmitnsaveComponent,
+    Footer2Component,
+  
+    OpenwithmobileComponent,
+    VerifyComponent,
+    SuccessComponent,
+    ProfilesComponent,
+    
+  
+    
+    
+   
+    
+>>>>>>> 5268e2046fee3647b2205fd89ec29334e47a6161
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+<<<<<<< HEAD
+=======
+    BrowserAnimationsModule,
+    
+>>>>>>> 5268e2046fee3647b2205fd89ec29334e47a6161
 
     
   
@@ -50,6 +88,10 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
    
   ],
   bootstrap: [AppComponent],
+<<<<<<< HEAD
   entryComponents: [ ModalComponent ]
+=======
+  entryComponents: [ ]
+>>>>>>> 5268e2046fee3647b2205fd89ec29334e47a6161
 })
 export class AppModule { }

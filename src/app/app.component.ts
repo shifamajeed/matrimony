@@ -2,6 +2,7 @@ import { Component,ViewChild } from '@angular/core';
 import { ModalComponent } from './modal/modal.component';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +11,7 @@ import { ModalComponent } from './modal/modal.component';
 export class AppComponent {
   title = 'matrimoni-site';
   @ViewChild('modal', {static: false}) modal: ModalComponent
+ 
   openModal() {
     // this.modal.open();
   }
