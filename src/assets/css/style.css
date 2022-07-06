@@ -1,0 +1,7 @@
+.banner-section {
+    background-image: url("../assets/images/bnr2.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    /* background: #def4e9; */
+}

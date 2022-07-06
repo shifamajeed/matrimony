@@ -1,0 +1,80 @@
+.back{
+background-image: url(../../assets/images/abt.png);
+width: 1349px;
+height: 1028px;
+background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.rtngl1{
+   
+    
+    box-sizing: border-box;
+    position: absolute;
+    width: 1241px;
+    height: 100%;
+    left: 47px;
+    top: 48px;
+    background: #305862;
+    border: 0.742029px solid #FFFFFF;
+    }
+
+    .in-rtgl{
+        position: relative;
+        width: 1147px;
+        height: 247px;
+        left: 40px;
+        top: 32px;
+        background: rgba(194, 206, 215, 0.089);
+        box-shadow: inset 5.59274px -5.59274px 5.59274px rgba(163, 173, 180, 0.378), inset -5.59274px 5.59274px 5.59274px rgba(255, 255, 255, 0.378);
+        backdrop-filter: blur(4.47419px);
+        /* Note: backdrop-filter has minimal browser support */
+        
+        border-radius: 18.348px;
+    }
+
+    .pic{
+        position: relative;
+        background-image: url(../../assets/images/pic.png);
+        width: 185px;
+        height: 223px;
+        background-repeat: no-repeat;
+        left: 22px;
+    top: -30px;
+    }
+    .pg{
+        position: relative;
+        background-image: url(../../assets/images/close.png);
+        left: 1085px;
+         width: 48px;
+          height: 44px;
+          top: 15px;
+         background-repeat: no-repeat;
+         border-radius: 20px;
+    }
+
+    .green {
+        background-color: white;
+    }
+    
+    .red {
+        background-color: red;
+    }
+
+   .des{
+    position: relative;
+    background-color: #FFFFFF;
+    width: 42px;
+    height: 40px;
+    left: 1084px;
+    top: -80px;
+}
+/* .heart{
+    background-image: url(../../assets/images/ht.png);
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 35px;
+    border-radius: 22px;
+} */
+
