@@ -6,16 +6,19 @@
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
-    /* background: #def4e9; */
+
+
+   
 }
 .banner-section {
     padding: 30px 0 0;
 }
 .banner-section h1 {
     font-size: 32px;
-    line-height: 38px;    
-    margin: 0 0 30px;
+
+    line-height: 38px;
+
+
     color: white;
 }
 .banner-section .form-wrap {

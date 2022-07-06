@@ -1,0 +1,162 @@
+body > div  {
+  text-decoration: none;
+}
+/* .part1{
+    background-color: red;
+}
+.part2{
+    background-color: gray;
+}
+.rw{   background-image: url("/assets/images/abt.jpg");
+} */
+/* body {
+    background:url("/assets/images/abt.png");
+} */
+.imgback {
+    /* position:fixed; */
+    width: 327px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(33.3227px);
+    opacity: 0.2;
+    /* z-index: 1; */
+    background-image: url("/assets/images/abt.jpg");
+    /* display: inline-block; */
+}
+
+.imgfront {
+    /* width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    background-size: cover;
+    z-index: 3;
+    background-position: center center; */
+    width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  position: absolute;
+  top: 55px;
+      left: 70px;
+      background-size: cover;
+}
+
+.bgimg {
+    /* position: fixed; */
+    /* margin: -3px 0 0 0;  */
+    position: relative;
+    background-size: 100% 100%;
+    height: 200px;
+    /* margin: -1px; */
+}
+
+.boxtrns1 {
+    /* box-shadow:
+             inset 0 -3em 3em rgba(0,0,0,0.1),
+                   0 0  0 2px rgb(255,255,255),
+                   0.3em 0.3em 1em rgba(0,0,0,0.3);
+        box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset; 
+        width: 250px;
+    border: 3px;
+    padding: 30px;
+
+
+    margin-top: 60px;
+margin-left: 88px;
+height: 30px;
+width: 85px;
+position: absolute; */
+
+
+
+
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset;
+    border-radius: 12px;
+    opacity: 6;
+
+    /* align-self: center; */
+
+    /* border-radius: 12px;
+        opacity: 0.8;
+        background-color: transparent;
+        width: 250px;
+    border: 3px; 
+    padding: 50px;
+    border-color: blue; */
+
+}
+.sidebtns{
+    border-radius: 12px;
+    position: absolute;
+    width: 220px;
+height: 75px;
+left: 50px;
+background-color: #D3E0EA;}
+.sidebtn1{top: 375px;}
+.sidebtn2{top: 475px;}
+.sidebtn3{top: 575px;}
+.sidebtn4{top: 675px;}
+.sidebtn5{top: 775px;}
+.sidebtn6{top: 875px;}
+
+.div1{
+    background-color: #D3E0EA;
+}
+.blurleft{
+    background-image:url("/assets/images/abt.jpg") ;
+    width: 100%;
+    height: 1165px;}
+
+  /* button{
+    background-color:transparent;
+    color:white;
+    margin-left: 244px;
+    
+    ;
+    
+  } */
+
+/* ---------------------------------------------------- */
+.form-control-primary {
+    margin: 10px;
+    opacity: 0.2;
+    border-radius: 2px;
+  }
+
+  .sidebar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0px 0 0 10px;
+    border-right: 1px solid #d3d3d3;
+  }
+  
+  .left-sidebar {
+    position:sticky;
+    top:0;
+    /* height: calc(100vh - 70px) */
+  }
+  
+  .sidebar-nav li .nav-link {
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* main {
+    padding-top: 90px;
+  } */
+  main .card {
+    margin-bottom: 20px;
+  }
+.navbar-brand{
+  margin:10px;
+}

@@ -1,4 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -9,6 +10,7 @@ import { Component,ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'matrimoni-site';
+  @ViewChild('modal', {static: false}) modal: ModalComponent
  
   openModal() {
     // this.modal.open();
