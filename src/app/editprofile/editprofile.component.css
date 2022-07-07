@@ -59,13 +59,15 @@ hr{height:2px;border-width:0;color:white;background-color:white}
 .formtypes{
     
     background-color:transparent;
-    border-color: none;
+    border: 0px;
+    margin-left:2px;
+    
 }
-.type1{margin-left: 109px;}.lb1{margin-left: 108px;}
-.type2{margin-left: 138px;}.lb2{margin-left: 137px;}
-.type3{margin-left: 132px;}.lb3{margin-left: 131px;}
-.type4{margin-left: 101px;}.lb4{margin-left: 100px;}
-    .innerbox{
+.lb1{margin-left: 108px;}
+.lb2{margin-left: 140px;}
+.lb3{margin-left: 131px;}
+.lb4{margin-left: 100px;}
+.innerbox{
         box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
              
               opacity: 6; 
@@ -82,3 +84,63 @@ hr{height:2px;border-width:0;color:white;background-color:white}
   Offset: 117.83px, -117.83px;
   background:rgba(160, 170, 178, 0.1);
     }
+#personaldiv{
+    padding: 20px;
+        box-shadow:
+             inset 0 -3em 3em rgba(0,0,0,0.1),
+                   0 0  0 2px rgb(255,255,255),
+                   0.3em 0.3em 1em rgba(0,0,0,0.3);
+        box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset;
+        border: 1px solid whitesmoke;
+        border-radius: 18px;
+        width:809px;
+        height: fit-content;
+        margin-left: 35px;
+    
+}
+.innerdiv{
+    width: 500px;
+    height: fit-content;
+    margin-left: 105px;
+    
+}
+.heading{
+    margin-left: 262px;
+    font-size: 26px;
+    
+}
+.personaldivinputtypes{
+    color:aliceblue;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid white;
+    background:transparent;
+}
+.div1lb1{margin-left: 156px;}
+.div1lb2{margin-left: 171px;}
+.div1lb3{margin-left: 108px;}
+.div1lb4{margin-left: 141px;}
+.div1lb5{margin-left: 127px;}
+.div1lb6{margin-left: 83px;}
+.div1lb7{margin-left: 133px;}
+.textarea{
+    line-height: 20px;
+    top: -12px;
+    border: none;
+    resize: none;
+    margin-left: 2px;
+    position: relative;
+    padding: 0 2px;
+    border-bottom: 2px solid red;
+    height: 10px;
+    width: 204px;
+    margin-top: 20px;
+}
+.submitbtn{
+    margin-left: 145px;
+    margin-top: 19px;
+    background-color: green;
+
+    width:192px;
+}
+
