@@ -33,7 +33,7 @@ h1{
     color: #276678;
 
 }
-.ic1{
+.ic2{
     background-image: url(../../assets/images/tick.png);
        position: absolute;
     left: 44.74%;
@@ -72,6 +72,10 @@ button{
     border-radius: 22.1524px;
 }
 
+
+
+
+
 .hert1{
  background-image: url(../../assets/images/HERT1.png);
  height: 43px;
@@ -106,6 +110,8 @@ button{
     background-repeat: no-repeat;
       
    }
+
+
 
 .otp1{
     box-sizing: border-box;
