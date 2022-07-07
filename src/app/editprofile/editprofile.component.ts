@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class EditprofileComponent implements OnInit {
 
   constructor() { }
-
+  personal:boolean=true
+  visible:boolean=false
   ngOnInit(): void {
   }
 
+  
+
+  personalinfo()
+  {
+    this.personal=!this.personal
+    this.visible=!this.visible
+  }
+  
 }
