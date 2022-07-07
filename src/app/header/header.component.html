@@ -34,8 +34,11 @@
       </form>
     </div>
   </nav> -->
+<<<<<<< HEAD
 
   <!--     header by femina     -->
+=======
+>>>>>>> dc301e04423e43e5c4889a5346e2b5c733f44561
   <!-- <div class="wrapper">
   <div class="container-fluid">
     <div class="row" style="flex-wrap: nowrap;">
@@ -81,13 +84,21 @@
               <!-- <button class="button white-button" data-toggle="modal" data-target="#login" type="submit">Login</button>
             </form> -->
             <!-- modal -->
+<<<<<<< HEAD
 <!--        
         </div>
+=======
+       
+        <!-- </div>
+>>>>>>> dc301e04423e43e5c4889a5346e2b5c733f44561
     </div>
 </div>
 </div> -->
 
+<<<<<<< HEAD
 <!-- new header -->
+=======
+>>>>>>> dc301e04423e43e5c4889a5346e2b5c733f44561
 <nav class="navbar navbar-expand-lg   nav1">
   <a class="navbar-brand" style="color: white" href="#">LOGO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,44 +133,125 @@
 aria-hidden="true">
 <div class="modal-dialog" role="document">
   <div class="modal-content modal1" >
-    <div class="modal-header text-center " style="border-bottom: 0px solid #e9ecef;">
-      <h6 class="modal-title w-100 font-weight-bold log">Login</h6>
-      <h5>welcome back! Please Login</h5>
-      <button type="button" class="close" data-dismiss="modal" style="color: white;" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <!-- here -->
+    <div *ngIf="hello">
+
+      <div class="modal-header text-center " style="border-bottom: 0px solid #e9ecef;">
+        <h6 class="modal-title w-100 font-weight-bold log">Login</h6>
+        <h5>welcome back! Please Login</h5>
+        <button type="button" class="close" data-dismiss="modal" style="color: white;" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+  
+      <div class="modal-body mx-3">
+  
+        <div class="modal-footer d-flex justify-content-center" style="border-top: 0px solid #e9ecef;">
+          <button class=" btn2"  (click)="fnpage()">Login with mobile</button>
+          <h2>OR</h2>
+        </div>
+      
+        <br>
+        <div class="md-form mb-5">
+          <label  class="label1">User Name</label>
+          <input type="email" id="defaultForm-email" style="width: 206px;">
+          
+        </div>
+         
+        <div class="md-form mb-4">
+          <label class="label1"> Password</label>
+           <input type="password" id="defaultForm-pass"  style="width: 206px;">
+        <h3>Forget Password</h3>
+        </div>
+  
+      </div>
+      <div  class="modal-footer d-flex justify-content-center" style="border-top: 0px solid #e9ecef;" >
+        <button class=" btn3"(click)="fnlogin()">Login</button>
+        <h1>Don't have an account?</h1> 
+        <h4>Register Free</h4>
+      </div>
     </div>
 
-    <div class="modal-body mx-3">
-
-      <div class="modal-footer d-flex justify-content-center" style="border-top: 0px solid #e9ecef;">
-        <button class=" btn2"  (click)="fnpage()">Login with mobile</button>
-        <h2>OR</h2>
-      </div>
-    
-      <br>
-      <div class="md-form mb-5">
-        <label  class="label1">User Name</label>
-        <input type="email" id="defaultForm-email" style="width: 206px;">
-        
-      </div>
-       
-      <div class="md-form mb-4">
-        <label class="label1"> Password</label>
-         <input type="password" id="defaultForm-pass"  style="width: 206px;">
-      <h3>Forget Password</h3>
-      </div>
-
-    </div>
-    <div  class="modal-footer d-flex justify-content-center" style="border-top: 0px solid #e9ecef;" >
-      <button class=" btn3">Login</button>
-      <h1>Don't have an account?</h1> 
-      <h4>Register Free</h4>
-    </div>
+<!-- new add mobile number -->
+<div *ngIf="visible">
+  <div class="modal-content ">
+    <div class="hert1"></div>
+   <h1 class="h1">verification</h1>
+   <div class="ic1"></div>
+   <div class="hert2"></div>
+   <h2 class="h2">We will send you a One Time Password on your phone number</h2>
+   <input class="input1" placeholder="enter mobile number" type="number">
+   <button class="btnm" (click)="fnotp()">Get Otp</button>
+   <div class="hert3"></div>
+</div>
   </div>
-</div>
+
+<!-- enter otp -->
+
+<div *ngIf="visible2" >
+
+  <!-- <div class="modal-content "> -->
+    <div class="hert1"></div>
+   <h1 class="h1">verification</h1>
+   <div class="ic2"></div>
+   <div class="hert2"></div>
+   <h2 class="h2">You Will get OTP via SMS</h2>
+
+   <div id="otp" class="inputs border-radiusborder-radius justify-content-center mt-2"> 
+       <input class="m-2 text-center form-control rounded otp1" type="number" id="first" onkeypress="if(this.value.length==1) return false;" />
+        <input class="m-2 text-center form-control rounded otp2" type="number" id="second"onkeypress="if(this.value.length==1) return false;" /> 
+        <input class="m-2 text-center form-control rounded otp3" type="number" id="third" onkeypress="if(this.value.length==1) return false;" />
+         <input class="m-2 text-center form-control rounded otp4" type="number" id="fourth" onkeypress="if(this.value.length==1) return false;" />
+        
+         
+       </div>
+
+
+
+  
+   <button class="btnm"   (click)="fnveri()">Verify</button>
+   <h6>Don't have an account?</h6> 
+      <h3 class="h31">Resend again</h3>
+   
+   <div class="hert3"></div>
+<!-- </div> -->
+
 </div>
 
-<!-- new -->
+<div  *ngIf="visible3">
+  <h2 class="h21">successfully Verified</h2>
+  <div class="green"></div>
+</div>
+
+
+<div  *ngIf="visible4">
+  <div class="modal-header text-center " style="border-bottom: 0px solid #e9ecef;">
+    <h6 class="modal-title w-100 font-weight-bold log1">Login with Mobile OTP</h6>
+    <h5 style="left: 10px;">welcome back! Please Login</h5>
+    <button type="button" class="close" data-dismiss="modal" style="color: white;" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-footer d-flex justify-content-center" style="border-top: 0px solid #e9ecef;">
+    <button class=" log2" (click)="fnmob()">Login with mobile</button>
+  
+  </div>
+
+
+
+
+
+
+
+
+  
+  </div>
+
+ </div>
+  </div>
+    </div>
+   
+
 
 
