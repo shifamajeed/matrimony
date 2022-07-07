@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ComponentFixture } from '@angular/core/testing';
 import { DataService }  from '../data.service';
+import { ComponentFixture } from '@angular/core/testing';
  
-
-
-
 
 @Component({
   selector: 'app-home',
@@ -17,8 +14,12 @@ export class HomeComponent implements OnInit {
   constructor(public dataService : DataService) { }
 
   ngOnInit(): void {
-  
+   
   }
 
 }
+  
+  
+
+
 

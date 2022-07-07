@@ -1,0 +1,31 @@
+/* body{width:1476px;} */
+.btns{height: 53px;
+    width: 214px;
+    margin-left: 49px;
+    margin-top: 25px;
+    border-radius: 16px;
+    color:rgba(3, 80, 102, 1);
+    background-color:white ;
+    border-color: white;
+    float: left;
+}
+.btnclas{
+    width:220px;
+    height:300px;
+}
+    .linebox{
+        height: 350px;
+        width: 809px;
+        left: 496px;
+        margin-top: 145px;
+        margin-left:35px;
+        border-radius: 18px;
+        border: 1px solid white;
+}
+.boximg{height: 349px;
+    width: 290px;
+    left: 529px;
+    top: 299px;
+    border-radius: 15.497406px;
+    /* background-size:cover; */
+    }

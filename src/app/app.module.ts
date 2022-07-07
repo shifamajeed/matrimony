@@ -9,14 +9,22 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ModalComponent } from './modal/modal.component';
 import { TestComponent } from './test/test.component';
+import { DeleteprofileComponent } from './deleteprofile/deleteprofile.component';
+import { HideprofileComponent } from './hideprofile/hideprofile.component';
+import { LeftsidenavComponent } from './leftsidenav/leftsidenav.component';
+import { SearchProfileComponent } from './search-profile/search-profile.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
-import { Footer2Component } from './footer2/footer2.component';
-import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.component';
-import { VerifyComponent } from './verify/verify.component';
-import { SuccessComponent } from './success/success.component';
-import { ProfilesComponent } from './profiles/profiles.component';
+// import { ModalModule } from './modal/modal.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
+// import { Footer2Component } from './footer2/footer2.component';
+// import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.component';
+// import { VerifyComponent } from './verify/verify.component';
+// import { SuccessComponent } from './success/success.component';
+// import { ProfilesComponent } from './profiles/profiles.component';
 
 
 
@@ -37,28 +45,24 @@ import { ProfilesComponent } from './profiles/profiles.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    
+    ModalComponent,
     TestComponent,
-    SubmitnsaveComponent,
-    Footer2Component,
-  
-    OpenwithmobileComponent,
-    VerifyComponent,
-    SuccessComponent,
-    ProfilesComponent,
-    
-  
-    
-    
-   
-    
+    DeleteprofileComponent,
+    HideprofileComponent,
+    LeftsidenavComponent,
+    SearchProfileComponent,
+    EditprofileComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
+
+    BrowserAnimationsModule,
     
+
 
     
   
@@ -68,6 +72,8 @@ import { ProfilesComponent } from './profiles/profiles.component';
    
   ],
   bootstrap: [AppComponent],
-  entryComponents: [ ]
+
+  entryComponents: [ ModalComponent ]
+
 })
 export class AppModule { }
