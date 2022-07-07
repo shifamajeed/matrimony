@@ -39,6 +39,8 @@ border-radius: 35.7674px;
 box-shadow: inset 8.66875px -8.66875px 8.66875px rgba(17, 103, 127, 0.1), inset -8.66875px 8.66875px 8.66875px rgba(255, 255, 255, 0.1);
 backdrop-filter: blur(17.3375px);
 border-radius: 20px;
+
+
 color: white;
 }
 .icon {
@@ -69,6 +71,7 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
 .contact{
     background-image: url("/assets/images/abt.png");
     padding: 90px;
+    background-size: 100%;
     margin: -28px 0 0 0;
     
 }

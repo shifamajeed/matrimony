@@ -11,10 +11,17 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ModalComponent } from './modal/modal.component';
 import { TestComponent } from './test/test.component';
-// import { ModalModule } from './modal/modal.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { PersonalComponent } from './personal/personal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PhysicalComponent } from './physical/physical.component';
+import { EducationComponent } from './education/education.component';
+import { ReligionComponent } from './religion/religion.component';
+import { FamilyComponent } from './family/family.component';
+import { ContactinfoComponent } from './contactinfo/contactinfo.component';
+import { LocationComponent } from './location/location.component'
 
 
-// import { MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -25,12 +32,22 @@ import { TestComponent } from './test/test.component';
     AboutComponent,
     ContactComponent,
     ModalComponent,
-    TestComponent
+    TestComponent,
+    WelcomeComponent,
+    PersonalComponent,
+    PhysicalComponent,
+    EducationComponent,
+    ReligionComponent,
+    FamilyComponent,
+    ContactinfoComponent,
+    LocationComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
 
     
   
