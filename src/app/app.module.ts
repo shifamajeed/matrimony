@@ -17,6 +17,8 @@ import { LeftsidenavComponent } from './leftsidenav/leftsidenav.component';
 import { SearchProfileComponent } from './search-profile/search-profile.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
 // import { ModalModule } from './modal/modal.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
@@ -58,6 +60,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatSliderModule,
+    MatFormFieldModule,
 
 
     BrowserAnimationsModule,
@@ -77,3 +81,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 })
 export class AppModule { }
+

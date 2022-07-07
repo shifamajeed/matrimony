@@ -306,6 +306,270 @@ label{
 /* banner section ends */
 
 /* media queris */
+
+/* open with mobile */
+.h1{
+    position: absolute;
+    width: 166.63px;
+    height: 41.93px;
+    left: 164.5px;
+    top: 71px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25.9555px;
+    line-height: 42px;
+    text-align: center;
+    color: #276678;
+
+}
+.ic1{
+    background-image: url(../../assets/images/ic.png);
+       position: absolute;
+    left: 44.74%;
+    right: 49.36%;
+    top: 131px;
+    bottom: 46.54%;
+    width: 50px;
+    height: 70px;
+    background-repeat: no-repeat;
+
+}
+.h2{
+    position: absolute;
+    width: 369.63px;
+    height: 62.9px;
+    left: 60px;
+    top: 220.99px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.637px;
+    line-height: 28px;
+    text-align: center;
+    color: #1687A7;
+}
+
+.input1{
+    position: absolute;
+    width: 215.63px;
+    height: 31.93px;
+    left: 145.5px;
+    top: 319px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12.9555px;
+    line-height: 42px;
+    text-align: center;
+    color: #276678;
+    background: #FFFFFF;
+    border: 1px solid #276678;
+    border-radius: 30.1524px;
+}
+.btnm{
+    position: absolute;
+    width: 324px;
+    height: 40px;
+    left: 92px;
+    top: 389px;
+    background: #276678;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 22.1524px;
+}
+
+.hert1{
+ background-image: url(../../assets/images/HERT1.png);
+ height: 43px;
+    position: absolute;
+    left: 17.11%;
+    right: 65.77%;
+    top: 46.25px;
+    bottom: 57.81%;
+    width: 56px;
+    background-repeat: no-repeat;
+}
+.hert2{
+    background-image: url(../../assets/images/hert2.png);
+    height: 43px;
+    position: absolute;
+    left: 18.11%;
+    right: 65.77%;
+    top: 279px;
+    bottom: 57.81%;
+    width: 56px;
+       background-repeat: no-repeat;
+   }
+   .hert3{
+    background-image: url(../../assets/images/hert3.png);
+    height: 43px;
+    position: absolute;
+    left: 10.11%;
+    right: 65.77%;
+    top: 430.25px;
+    bottom: 57.81%;
+    width: 56px;
+    background-repeat: no-repeat;
+      
+   }
+
+   /* otp page of mobile */
+   .otp1{
+    box-sizing: border-box;
+
+position: absolute;
+width: 51px;
+height: 48px;
+left: 143px;
+top: 273px;
+
+background: #FFFFFF;
+border: 1px solid #276678;
+border-radius: 79% !important;
+}
+.otp2{
+    box-sizing: border-box;
+
+position: absolute;
+width: 51px;
+height: 48px;
+left: 197px;
+top: 273px;
+
+background: #FFFFFF;
+border-radius: 79% !important;
+border: 1px solid #276678;
+}
+.otp3{
+    box-sizing: border-box;
+
+position: absolute;
+width: 51px;
+height: 48px;
+left: 251px;
+top: 273px;
+
+background: #FFFFFF;
+border-radius: 79% !important;
+border: 1px solid #276678;
+}
+.otp4{
+    box-sizing: border-box;
+
+position: absolute;
+width: 51px;
+height: 48px;
+left: 305px;
+top: 273px;
+
+background: #FFFFFF;
+border-radius: 79% !important;
+border: 1px solid #276678;
+}
+.ic2{
+    background-image: url(../../assets/images/tick.png);
+       position: absolute;
+       left: 44.74%;
+       right: 49.36%;
+       top: 131px;
+       bottom: 46.54%;
+       width: 50px;
+       height: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+
+}
+h6{
+    
+    position: absolute;
+    width: 361px;
+    height: 17px;
+    left: 126px;
+    top: 442px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #D3E0EA;
+}
+
+.h31{
+    position: absolute;
+    width: 361px;
+    height: 23px;
+    left: 271px;
+    top: 442px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 1200;
+    font-size: 15px;
+    line-height: 22px;
+    color: #276678;
+    text-decoration: underline;
+}
+
+/* successs */
+
+.green{
+    background-image: url(../../assets/images/green.png);
+  
+    position: absolute;
+    left: 38.96%;
+    right: 44.07%;
+    top: 52.82%;
+    bottom: 29.79%;
+    background-repeat: no-repeat;
+
+}
+
+.h21{
+    position: absolute;
+    width: 369.63px;
+    height: 62.9px;
+    left: 60px;
+    top: 227.99px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 22.637px;
+    line-height: 28px;
+    text-align: center;
+    color: #1687A7;;
+}
+      /* login with pc */
+
+      .log1{
+        position: absolute;
+        width: 395px;
+        height: 33px;;
+        left: -6px;
+        top: 54.25px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 28px;
+        line-height: 54px;
+        color: #276678;
+      }
+
+      .log2{
+        position: absolute;
+        width: 321px;
+        font-family: 'Poppins';
+        height: 35px;
+        left: 91px;
+        top: 148.25px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 22.1524px;
+        border: none;
+        color:#276678; ;
+        font-weight: bolder;
+      }
+    
+
+
 @media screen and (max-width: 600px) {
     .button {
         font-weight: 500;
@@ -489,6 +753,8 @@ border-radius:15px;
     width: 350px;
     height: 37px;
     border: none;
+    color:#276678; ;
+    font-weight: bolder;
     }
 
 .log{
@@ -503,7 +769,7 @@ border-radius:15px;
     font-size: 34px;
     line-height: 54px;
     color: #276678;
-    color: #256476;
+   
 }
 
 input{
