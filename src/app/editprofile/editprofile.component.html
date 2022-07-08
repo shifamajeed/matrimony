@@ -4,13 +4,12 @@
   <app-leftsidenav></app-leftsidenav>
       </div>
   
-    <div class=col-lg-9 style="padding-right:0px">
+  <div class=col-lg-9 style="padding-right:0px">
   <div style="background-size:cover;">
       <main role="main" >
           <div><app-header></app-header></div>
           <div style=" height:1359px; width:997px;background-image:url(assets/images/abt.png);float:left;">
               <div  class="innerbox">
-  
   
   <!--  body  -->
           <div class="btncls">
@@ -54,98 +53,336 @@
                   </form>
               </div>
           </div>
+
 <!-- edit profile personal information -->
 
 <div>
-  <button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">Personal Informations
+  <button type="button" (click)=personalinfo() class="btn btn-block personaldiv">
      <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-     {{visible?"hi":"helloo"}}
+     {{visiblepersonal?"Personal Informations":"Personal Informations"}}
   </button>
 
-  <button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-    {{personal?"Physical Informations":"hi"}} 
+<!--   -->
+<div *ngIf="visiblepersonal"> 
+
+  <div id="personaldiv"><br>
+    
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Name</label><label class="div1lb1">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">age</label><label class="div1lb2">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Marital status</label><label class="div1lb3">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">reliogion</label><label class="div1lb4">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Nationality</label><label class="div1lb5">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Language Spoken</label><label class="div1lb6">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">About me</label><label class="div1lb7">:</label><br>
+          <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+        </div>
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- edit profile physical information   -->
+
+  <button type="button" (click)=physicalinfo() class="btn btn-block personaldiv">
+    {{physical?"Physical Informations":"Physical Informations"}} 
  </button>
 
- <button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
+<div *ngIf="visiblephysical"> 
 
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<div *ngIf="visible"> 
-
-<div id="personaldiv">
-  
-  <h4 class="heading">Personal Informations</h4>
-    <div class="innerdiv">
-    <form class="form-inline" action="/action_page.php">
-      <div class="form-group" style="color:white;">
-        <label for="name">Name</label><label class="div1lb1">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-      </div><br>
-      <div class="form-group" style="color:white;">
-        <label for="age">age</label><label class="div1lb2">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
-      </div>
-      <div class="form-group" style="color:white;">
-        <label for="maritalstatus">Marital status</label><label class="div1lb3">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-      </div>
-      <div class="form-group" style="color:white;">
-        <label for="relegion">reliogion</label><label class="div1lb4">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-      </div>
-      
-      <div class="form-group" style="color:white;">
-          <label for="nationality">Nationality</label><label class="div1lb5">:</label>
+  <div id="personaldiv"><br>
+    
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">height</label><label class="div2lb1">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">weight</label><label class="div2lb2">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Physical status</label><label class="div2lb3">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Body type</label><label class="div2lb4">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Appearence</label><label class="div2lb5">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Complexion</label><label class="div2lb6">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">Blood group</label><label class="div2lb7">:</label>
           <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
       </div>
       <div class="form-group" style="color:white;">
-        <label for="relegion">Language Spoken</label><label class="div1lb6">:</label>
-          <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
-          <!-- <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Action</button>
-              <button class="dropdown-item" type="button">Another action</button>
-              <button class="dropdown-item" type="button">Something else here</button>
-            </div>
-          </div> -->
-      </div>
-      <div class="form-group" style="color:white;">
-        <label for="nationality">About me</label><label class="div1lb7">:</label><br>
-        <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
-      </div>
-      
-        <button type="submit" class="btn btn-default submitbtn">Submit</button>
-      
-      
-    </form>
+        <label for="nationality">Eye colour</label><label class="div2lb8">:</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+    </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">Hair colour</label><label class="div2lb9">:</label><br>
+          <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+        </div>
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
   </div>
-  
 </div>
 
+<!-- Education & Profession -->
+
+ <button type="button"  (click)=educationinfo() class="btn btn-block personaldiv">Education & Profession
+  <!-- {{education?"Education & Profession":"Education & Profession"}}  -->
+  {{education?"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<"}}
+</button>
+
+<div *ngIf="visibleeducation"> 
+
+  <div id="personaldiv"><br>
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Heighest Education</label><label class="div3lb1">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">Education Detail</label><label class="div3lb2">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Marital status</label><label class="div3lb3">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Education description</label><label class="div3lb4">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Institution</label><label class="div3lb5">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Profession</label><label class="div3lb6">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">Profession Type</label><label class="div3lb7">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Profession Detail</label><label class="div3lb8">:</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Annual Income</label><label class="div3lb9">:</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+        
+      
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+  </div>
 </div>
+
+
+<!-- Family Details -->
+<button type="button"  (click)=familyinfo() class="btn btn-block personaldiv">
+  {{family?"Family Details":"Family Details"}} 
+</button>
+<div *ngIf="visiblefamily"> 
+
+  <div id="personaldiv"><br>
+    
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Name</label><label class="div1lb1">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">age</label><label class="div1lb2">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Marital status</label><label class="div1lb3">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">reliogion</label><label class="div1lb4">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Nationality</label><label class="div1lb5">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Language Spoken</label><label class="div1lb6">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">About me</label><label class="div1lb7">:</label><br>
+          <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+        </div>
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Religious Information -->
+
+<button type="button"  (click)=relegiousinfo() class="btn btn-block personaldiv">
+  {{relegious?"Religious Information":"Religious Information"}} 
+</button>
+
+<div *ngIf="visiblerelegious"> 
+
+  <div id="personaldiv"><br>
+    
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Name</label><label class="div1lb1">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">age</label><label class="div1lb2">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Marital status</label><label class="div1lb3">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">reliogion</label><label class="div1lb4">:</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Nationality</label><label class="div1lb5">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Language Spoken</label><label class="div1lb6">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">About me</label><label class="div1lb7">:</label><br>
+          <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+        </div>
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- contact details -->
+<!-- <button type="button" class="personaldiv" (click)=contactinfo() class="btn btn-block">
+  {{contact?"contact details":"contact details"}} 
+</button> -->
+
+<button type="button"  (click)=personalinfo() class="btn btn-block personaldiv">
+  {{personal?"Physical Informations":"hi"}} 
+</button>
+
+<button type="button"  (click)=personalinfo() class="btn btn-block personaldiv">
+  {{personal?"Physical Informations":"hi"}} 
+</button>
+
+
 </div>
          
 <!-- </div> -->
