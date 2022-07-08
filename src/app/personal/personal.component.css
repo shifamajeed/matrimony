@@ -366,6 +366,7 @@ header .menu-row .button-wrap .button {
     justify-content:center;
     align-items:center;
     border-radius:50px;
+    z-index: 9999;
 }
 .bt:hover{
     background:#088cb1 ;
@@ -397,4 +398,11 @@ background: rgb(33, 204, 33);
 .progress{
     width: 763px;
     margin-left: 368px;
+}
+.rd{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    align-content: center;
+
 }
