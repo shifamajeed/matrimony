@@ -610,7 +610,7 @@
 <div class="banner-section desktop" >
   <div class="container">
   <div class="row ">
-      <div class="col-xl-7 col-lg-7">
+      <div class="col-xl-7  col-lg-7">
           <h1 class="text-center">Find your perfect mate <br>
               <small> engaged with World’s No 1 Muslim matrimony</small></h1>
           <div class="form-wrap position-relative">
@@ -692,6 +692,7 @@
           </div>
           </div>
 
+          
           <div class="col-md-12">
           <div class="form-group bottom-row">
           <div class="custom-control custom-checkbox">
@@ -707,12 +708,41 @@
           <div class="col-md-4    "></div>
           <div class="col-md-4  ">
           <div class="form-group bottom-row">
-          <button type="submit" class="button regbtn w-100" (click)="fnotp()">Register Free</button>
+          <button type="button" class="button regbtn w-100"  data-toggle="modal" data-target="#exampleModal">Register Free</button>
           </div>
+
+          <!-- modal -->
+        <div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
           </div>
           <div class="col-md-4 "> </div>
           <div class="col-md-4 "> </div>
-          <div class="col-md-4 d-flex"> <p class="membr">Already a member ?</p><a href="" style="color:#276678 ;">Login</a> </div>
+          <div class="col-md-4 d-flex"> <p class="membr">Already a member ?</p> <a style="color:#276678 ;">Login</a> </div>
           <div class="col-md-4 "> </div>
           
           </div>
@@ -1073,7 +1103,7 @@
          in this Muslim matrimonial. The user can search profiles by setting their preferences and
          requirements. We strive for your happy marriage and happy family life.
         </p>
-        <button class="btn regbtn1">Register Now</button>
+        <button class="btn regbtn1" >Register Now</button>
       </div>
     </div>
     </div>

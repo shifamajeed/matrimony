@@ -15,6 +15,7 @@ visible:Boolean=false
 visible2:Boolean=false
 visible3:Boolean=false
 
+
 visible4:Boolean=false
 
 
@@ -61,5 +62,17 @@ visible4:Boolean=false
     this.hello=true
     this.visible2=false
     this.visible3=false
+  }
+  fnop(){
+    this.visible2=true
+    this.visible4=false
+    this.visible=false
+    this.hello=false
+    this.visible3=false
+  }
+
+  frreg(){
+    
+  location.href=""
   }
 }
