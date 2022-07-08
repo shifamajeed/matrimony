@@ -1,11 +1,12 @@
-/* body{width:1490px;} */
+body{width:1485px;overflow-x:hidden;}
+.firstcoldiv{float:left;padding-right:0px; }
 .imgdiv{width: 300px;
   height: 250px;
   margin-left: 0px;
   top: 0px;}
 .imgback {
     /* position:fixed; */
-    width: 302px;
+    width: 323px;
     height: 250px;
     margin-left: 0px;
     top: 0px;
@@ -123,9 +124,11 @@ background:white;}
 }
 .blurleft{
     background-image:url("/assets/images/Rectangle 60.png") ;
-    width: 100%;
-    height: 1417px;
-    margin-left: -14px;}
+    width:fit-content;
+    height: 1432px;
+     margin-left: -14px; 
+  /* background-size: cover; */
+}
 
     /* .imgapp{image-rendering: auto;
       image-rendering: crisp-edges;
