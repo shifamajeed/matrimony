@@ -1,5 +1,5 @@
 
-.container {
+/* .container { */
     /* box-sizing: border-box; */
     /* width: 100%; */
     /* padding-right: 15px;
@@ -8,7 +8,7 @@
     margin-left: auto; */
     /* margin: left 0; */
     /* padding: 100px; */
-}
+/* } */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -372,10 +372,13 @@ label{
     width: 324px;
     height: 40px;
     left: 92px;
-    top: 389px;
+    top: 391.6px;
     background: #276678;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 22.1524px;
+    COLOR: white;
+    font-weight: bold;
+    border: none;
 }
 
 .hert1{
@@ -809,6 +812,8 @@ top: 338px;
     font-size: 21px;
     color: #19424e;
     left: 32px;
+    
+
 
 }
 
@@ -867,10 +872,10 @@ h1{
     line-height: 20px;
     color: #D3E0EA;
 }
-h4{
+.h4{
     position: absolute;
     width: 115px;
-    height: 19px;
+    height: 21px;
     left: 259px;
     top: 388.6px;
     font-family: 'Poppins';
@@ -880,6 +885,44 @@ h4{
     line-height: 23px;
     color: #0f2d36;
     text-decoration: underline;
+    background: transparent;
+    border: none;
 }
 
+.label2{
+    position: absolute;
+    width: 33.55px;
+    height: 28.48px;
+    left: 236px;
+    top: 197.25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 22.7853px;
+    line-height: 34px;
+    color: #1687A7;
+}
 
+.mobi{
+    box-sizing: border-box;
+    position: absolute;
+    width: 349px;
+    top: 278px;
+    height: 39px;
+    width: 230px;
+    left: 168px;
+    background: #FFFFFF;
+    border: 1px solid #276678;
+    border-radius: 30.1524px;
+}
+
+.code{
+    
+    position: relative;
+    left: -119px;
+    width: 69px;
+    top: 191px;
+    width: 69px;
+    border-radius: 44px;
+    height: 31px;
+}
