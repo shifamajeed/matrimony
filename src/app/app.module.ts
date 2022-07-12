@@ -18,11 +18,25 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
+<<<<<<< HEAD
 import { NotificationComponent } from './notification/notification.component';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon'
 
+=======
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
+// import { ModalModule } from './modal/modal.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
+// import { Footer2Component } from './footer2/footer2.component';
+// import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.component';
+// import { VerifyComponent } from './verify/verify.component';
+// import { SuccessComponent } from './success/success.component';
+// import { ProfilesComponent } from './profiles/profiles.component';
+>>>>>>> 9bbe436c6073c9dcf3f65ea12293f35723bff186
 
 
 
@@ -61,11 +75,18 @@ import {MatIconModule} from '@angular/material/icon'
     BrowserAnimationsModule,
     MatSliderModule,
     MatFormFieldModule,
+<<<<<<< HEAD
     CommonModule,
     MatButtonModule,
     MatIconModule,
    
    
+=======
+    MatButtonModule,
+
+    MatIconModule,
+    BrowserAnimationsModule,
+>>>>>>> 9bbe436c6073c9dcf3f65ea12293f35723bff186
     
     
   ],
