@@ -354,7 +354,7 @@ header .menu-row .button-wrap .button {
     border:solid black 1px;
 }
 .bt p{
-    margin:0;
+    /* margin:0; */
     padding:0;
 }
 .bt{
