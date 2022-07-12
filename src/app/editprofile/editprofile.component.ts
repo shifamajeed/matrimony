@@ -20,6 +20,8 @@ export class EditprofileComponent implements OnInit {
   visiblerelegious:boolean=false
   contact:boolean=true
   visiblecontact:boolean=false
+  location:boolean=true
+  visiblelocation:boolean=false
   ngOnInit(): void {
   }
 
@@ -53,6 +55,11 @@ contactinfo()
 {
   this.contact=!this.contact
   this.visiblecontact=!this.visiblecontact
+}
+locationinfo()
+{
+  this.location=!this.location
+  this.visiblelocation=!this.visiblelocation
 }
 
 // $(window).scroll(function() {

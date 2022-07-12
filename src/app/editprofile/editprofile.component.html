@@ -519,9 +519,38 @@
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="name">height</label><label class="div2lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="name">Primary Mobile Number</label><label class="div6lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
       </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Secondary Mobile Number</label><label class="div6lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Preferred Mobile Number</label><label class="div6lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Contact person & Relationship</label><label class="div6lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Email Id</label><label class="div6lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Contact Time</label><label class="div6lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Post Office</label><label class="div6lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Pin Code</label><label class="div6lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
   
     </form>
   </div>
@@ -530,17 +559,39 @@
 
 <!-- edit profile-location -->
   
-<button type="button"  (click)=contactinfo() class="btn btn-block personaldiv">
-  {{contact?"contact details":"contact details"}} 
+<button type="button"  (click)=locationinfo() class="btn btn-block personaldiv">
+  {{location?"Location":"Location"}} 
 </button> 
-<div *ngIf="visiblecontact">
+<div *ngIf="visiblelocation">
   <div id="personaldiv">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="name">height</label><label class="div2lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="name">Country</label><label class="div7lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
       </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">State</label><label class="div7lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">District</label><label class="div7lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">City</label><label class="div7lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Place</label><label class="div7lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Address</label><label class="div7lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+        <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
+
   
     </form>
   </div>
