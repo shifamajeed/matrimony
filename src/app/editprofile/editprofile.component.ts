@@ -18,6 +18,8 @@ export class EditprofileComponent implements OnInit {
   visiblefamily:boolean=false
   relegious:boolean=true
   visiblerelegious:boolean=false
+  contact:boolean=true
+  visiblecontact:boolean=false
   ngOnInit(): void {
   }
 
@@ -47,6 +49,17 @@ relegiousinfo()
   this.relegious=!this.relegious
   this.visiblerelegious=!this.visiblerelegious
 }
+contactinfo()
+{
+  this.contact=!this.contact
+  this.visiblecontact=!this.visiblecontact
+}
 
-  
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() > 0) {
+//     $('.a').fadeOut();
+//   } else {
+//     $('.a').fadeIn();
+//   }
+// });
 }
