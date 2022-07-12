@@ -12,4 +12,5 @@ export class PhysicalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

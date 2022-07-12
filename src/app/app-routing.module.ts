@@ -14,6 +14,9 @@ import { ReligionComponent } from './religion/religion.component';
 import { FamilyComponent } from './family/family.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 import { LocationComponent } from './location/location.component';
+import { ModalComponent } from './modal/modal.component';
+
+
 const routes: Routes = [
   {
     path:"",component: HomeComponent 
@@ -28,7 +31,8 @@ const routes: Routes = [
   { path:  'religion',component:ReligionComponent},
   { path:   'family',component:FamilyComponent},
   { path:  'contactinfo',component:ContactinfoComponent},
-  { path:  'location',component:LocationComponent} 
+  { path:  'location',component:LocationComponent},
+  { path:  'Modal',component:ModalComponent}
 ];
 
 @NgModule({

@@ -20,6 +20,8 @@ import { ReligionComponent } from './religion/religion.component';
 import { FamilyComponent } from './family/family.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 import { LocationComponent } from './location/location.component'
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -48,6 +50,8 @@ import { LocationComponent } from './location/location.component'
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
 
     
   
