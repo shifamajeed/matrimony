@@ -1,4 +1,14 @@
-/* body{width:1476px;} */
+/* body{width:fit-content;}  */
+.rightbg{
+    height:fit-content; 
+    width:1015px;
+    /* background-image:url("assets/images/abt.png"); */
+    float:left;
+    background-repeat: no-repeat; 
+    height:fit-content; 
+    /* background-size: auto; */
+    background-size: cover;
+}
 .btns{height: 53px;
     width: 214px;
     margin-left: 49px;
@@ -164,5 +174,57 @@ hr{height:2px;border-width:0;color:white;background-color:white}
 .div3lb7{margin-left: 123px;}
 .div3lb8{margin-left: 118px;}
 .div3lb9{margin-left: 133px;}
+
+.div4lb1{margin-left: 174px;}
+.div4lb2{margin-left: 147px;}
+.div4lb3{margin-left: 207px;}
+.div4lb4{margin-left: 167px;}
+.div4lb5{margin-left: 135px;}
+.div4lb6{margin-left: 205px;}
+.div4lb7{margin-left: 164px;}
+.div4lb8{margin-left: 129px;}
+.div4lb9{margin-left: 168px;}
+.div4lb10{margin-left: 169px;}
+.div4lb11{margin-left: 126px;}
+.div4lb12{margin-left: 135px;}
+.div4lb13{margin-left: 75px;}
+.div4lb14{margin-left: 85px;}
+.div4lb15{margin-left: 124px;}
+.div4lb16{margin-left: 118px;}
+.div4lb17{margin-left: 177px;}
+.div4lb18{margin-left: 106px;}
+.div4lb19{margin-left: 161px;}
+.div4lb20{margin-left: 152px;}
+.div4lb21{margin-left: 133px;}
+
+.div5lb1{margin-left: 198px;}
+.div5lb2{margin-left: 217px;}
+.div5lb3{margin-left: 161px;}
+.div5lb4{margin-left: 160px;}
+.div5lb5{margin-left: 153px;}
+.div5lb6{margin-left: 178px;}
+.div5lb7{margin-left: 131px;}
+.div5lb8{margin-left: 156px;}
+.div5lb9{margin-left: 184px;}
+.div5lb10{margin-left: 87px;}
+.div5lb11{margin-left: 88px;}
+
+.div6lb1{margin-left: 105px;}
+.div6lb2{margin-left: 89px;}
+.div6lb3{margin-left: 98px;}
+.div6lb4{margin-left: 68px;}
+.div6lb5{margin-left: 207px;}
+.div6lb6{margin-left: 174px;}
+.div6lb7{margin-left: 189px;}
+.div6lb8{margin-left: 201px;}
+
+.div7lb1{margin-left: 207px;}
+.div7lb2{margin-left: 224px;}
+.div7lb3{margin-left: 213px;}
+.div7lb4{margin-left: 235px;}
+.div7lb5{margin-left: 223px;}
+.div7lb6{margin-left: 206px;}
+
+
 
 
