@@ -17,6 +17,7 @@ import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.compone
 import { VerifyComponent } from './verify/verify.component';
 import { SuccessComponent } from './success/success.component';
 import { ProfilesComponent } from './profiles/profiles.component';
+import { NotificationComponent } from './notification/notification.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'verify', component: VerifyComponent},
   { path: 'success', component: SuccessComponent},
   { path: 'profile', component: ProfilesComponent},
+  { path: 'noti', component: NotificationComponent},
 ];
 
   

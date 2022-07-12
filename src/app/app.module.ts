@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -19,14 +18,10 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
-// import { ModalModule } from './modal/modal.component';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
-// import { Footer2Component } from './footer2/footer2.component';
-// import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.component';
-// import { VerifyComponent } from './verify/verify.component';
-// import { SuccessComponent } from './success/success.component';
-// import { ProfilesComponent } from './profiles/profiles.component';
+import { NotificationComponent } from './notification/notification.component';
+import { CommonModule } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon'
 
 
 
@@ -37,7 +32,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
-// import { MatButtonModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -53,7 +48,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     HideprofileComponent,
     LeftsidenavComponent,
     SearchProfileComponent,
-    EditprofileComponent
+    EditprofileComponent,
+    NotificationComponent,
+    
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -62,22 +61,22 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatSliderModule,
     MatFormFieldModule,
-
-
-    BrowserAnimationsModule,
-    
-
-
-    
-  
-  ],
-  
-  providers: [
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
    
+   
+    
+    
   ],
+  
+  providers: [ ],
   bootstrap: [AppComponent],
+  entryComponents:[ModalComponent]
 
-  entryComponents: [ ModalComponent ]
+
+  
+ 
 
 })
 export class AppModule { }
