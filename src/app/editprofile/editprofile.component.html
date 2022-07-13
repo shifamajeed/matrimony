@@ -1,14 +1,111 @@
 <div class="container-fluid" >
     <div class="row">
+      <!-- <app-leftsidenav></app-leftsidenav> -->
+      <!-- left side navbar -->
       <div class="col-lg-3" style="padding-right:0px;padding-left:0px;">
-  <app-leftsidenav></app-leftsidenav>
-      </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <img src="assets/images/Group 638.png" class="imgback" style="float:left"/>
+      <img src="assets/images/Group 268.png" class="imgfront"/>
+   <div class="blurleft" >
+    
+      <!-- <div class="whiteshadow"> --> 
+      <div >
+<button class="sidebtns sidebtn1" (click)="editprofilebtn()"><img src="assets/images/Group 598.png"></button>
+<button class="sidebtns sidebtn2" ><img src="assets/images/Group 765.png" ></button>
+<button class="sidebtns sidebtn3"><img src="assets/images/Group 596.png" ></button>
+<button class="sidebtns sidebtn4" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
+<button class="sidebtns sidebtn5" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
+<button class="sidebtns sidebtn6"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button> 
+
+<!-- <button type="button" id="control-play" title="Play">aa<span></span></button> -->
+       
+       <div>
+          <div class="pstyle">Download  App For Android and IOS</div>
+          <img src="assets/images/Mask Group.png" id="imgapp">
+          <img src="assets/images/Mask Group (1).png" id="imgapp"><br><br>
+          <p style="color:rgba(3, 80, 102, 1); margin-left:90px">&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
+         <span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="assets/images/Group (1).png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="assets/images/Group (2).png" style="background-color:rgba(3, 80, 102, 1)">
+         </span>          
+       </div>
+       </div>
+      
   
+  </div>
+</div> 
+</div>
+</div>
+<!-- end leftsidenav -->
+<!-- right side -->
   <div class=col-lg-9 style="padding-right:0px;padding-left:0px;">
+    <!-- header-->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light headercss">
+          <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link navbar-brand" href="#">
+                  <img src="assets/images/home.png" class="homeicon">
+                  <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" class="homeicon">home</mat-icon> -->
+                  <label class=navlabel>Home </label>
+                 <span class="sr-only">(current)</span> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" href="#">
+                  <img src="assets/images/explore.png" class="homeicon">
+                  <label class="navlabel">Explore</label>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand navlabel" href="#">
+                  <img src="assets/images/chat.png" class="homeicon">
+                  <label class="navlabel">Chat </label>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand navlabel" href="#">
+                  <img src="assets/images/help.png" class="homeicon">
+                  <label class="navlabel">Help </label>
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
+        </nav>
+      </div>
+    <!-- end header -->
+    <!-- part below header -->
   <div style="background-size:cover;">
       <main role="main" >
           <div><app-header></app-header></div>
           <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+            <div *ngIf="visibleeditprofilediv">
               <div  class="innerbox">
   
   <!--  body  -->
@@ -54,9 +151,9 @@
               </div>
           </div>
 
-<!-- edit profile personal information -->
+<!-- edit profile personal information buttons -->
 
-<div>
+
   <button type="button" (click)=personalinfo() class="btn btn-block personaldiv">
      <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
      {{visiblepersonal?"Personal Informations":"Personal Informations"}}
@@ -559,7 +656,7 @@
 
 <!-- edit profile-location -->
   
-<button type="button"  (click)=locationinfo() class="btn btn-block personaldiv">
+<button type="button"  (click)="locationinfo()" class="btn btn-block personaldiv">
   {{location?"Location":"Location"}} 
 </button> 
 <div *ngIf="visiblelocation">
@@ -600,18 +697,30 @@
 
 <!-- edit profile-marriage plan -->
 
-<button type="button"  (click)=contactinfo() class="btn btn-block personaldiv">
-  {{contact?"contact details":"contact details"}} 
+<button type="button"  (click)=mrgplaninfo() class="btn btn-block personaldiv">
+  {{mrgplan?"Marriage Plan":"Marriage Plan"}} 
 </button> 
-<div *ngIf="visiblecontact">
+<div *ngIf="visiblemrgplan">
   <div id="personaldiv">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="name">height</label><label class="div2lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="name">Ready For Relocate</label><label class="div8lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
       </div>
-  
+      <div class="form-group" style="color:white;">
+        <label for="name">Marriage Plan</label><label class="div8lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Willing to do Job</label><label class="div8lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Prefer to Stay</label><label class="div8lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
     </form>
   </div>
   </div>
@@ -619,18 +728,26 @@
 
 <!-- edit profile-habits -->
 
-<button type="button"  (click)=contactinfo() class="btn btn-block personaldiv">
-  {{contact?"contact details":"contact details"}} 
+<button type="button"  (click)=habitsinfo() class="btn btn-block personaldiv">
+  {{habits?"Habits":"Habits"}} 
 </button> 
-<div *ngIf="visiblecontact">
+<div *ngIf="visiblehabits">
   <div id="personaldiv">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="name">height</label><label class="div2lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="name">Eating</label><label class="div9lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
       </div>
-  
+      <div class="form-group" style="color:white;">
+        <label for="name">Drinking</label><label class="div9lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Smoking</label><label class="div9lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
     </form>
   </div>
   </div>
@@ -638,25 +755,227 @@
 
 <!-- edit profile-hobbies and interest -->
 
-<button type="button"  (click)=contactinfo() class="btn btn-block personaldiv">
-  {{contact?"contact details":"contact details"}} 
+<button type="button"  (click)=hobbiesinfo() class="btn btn-block personaldiv">
+  {{hobby?"Hobbies and Interest":"Hobbies and Interest"}} 
 </button> 
-<div *ngIf="visiblecontact">
+<div *ngIf="visiblehobbies">
   <div id="personaldiv">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="name">height</label><label class="div2lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="name">Place visited</label><label class="div10lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
       </div>
-  
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Book</label><label class="div10lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Place</label><label class="div10lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite sport</label><label class="div10lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Movie</label><label class="div10lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Music</label><label class="div10lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Dress sence</label><label class="div10lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Personality</label><label class="div10lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
     </form>
   </div>
   </div>
 </div>
 
-<!-- </main>
-</div></div></div></div> -->
+</div>
+<!-- innerdiv -->
+</div>
+<!-- end edit profile div -->
+<!-- hide profile div -->
+<div *ngIf="hideprofilepart">
+  <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+  <!-- <div style="box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
+  border-radius: 12px;
+  opacity: 6; 
+  height: 98%;
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  
+  width:90%;
+margin-left: 115px;
+margin-top: 30px;
+
+border-radius: 18px;
+
+/* box-shadow: -117.83333587646484px 117.83333587646484px 117.83333587646484px 0px rgba(255, 255, 255, 0.1) inset;
+
+box-shadow: 117.83333587646484px -117.83333587646484px 117.83333587646484px 0px rgba(160, 170, 178, 0.1) inset; */
+
+
+
+
+box-shadow: white 0px 30px 40px -2em inset;
+
+
+
+box-shadow: whitesmoke 0px 30px 40px -2em inset;
+
+
+
+
+Offset: -117.83px, 117.83px;
+background:rgba(255, 255, 255, 0.1);
+
+Offset: 117.83px, -117.83px;
+background:rgba(160, 170, 178, 0.1);"> -->
+<!-- <div style="height:653px;
+width:90%;
+margin-left: 115px;
+margin-top: 30px;
+
+border-radius: 18px;
+background-color: #E5E5E5; 
+backdrop-filter: blur(33.3227px);opacity: 0.2;"> -->
+<div><button  style="height: 53px;
+  width: 359px;
+  
+  border-radius: 16px;
+  color: white;
+background: transparent;
+border-color: white;
+
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+
+
+margin-left: 295px;
+    margin-top: 59px;
+  ">Temporarily Hide</button></div>
+  <div><p style="height: 164px;
+      border-radius: nullpx;
+      color:white;                   
+      width: 744px;
+      margin-left: 136px;
+      border-radius: nullpx;
+      color: white;
+      margin-top: 82px;
+      font-family: 'Poppins'; 
+      
+      
+      font-family: 'Poppins';
+font-size: 15px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of<br> type and scrambled
+  </p>
+  </div>
+  <div>
+      <button type="button" class="btn btn-secondary btn-lg" style="width: 185px;
+      margin-left: 376px;
+      Fill: Solid#276678;
+      Offset: 0px, 0.5px;
+      background:rgba(0, 0, 0, 0.25);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      background-color:#276678;
+;"
+      data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
+
+      <!-- <button style="Radius: 4px;
+      Offset: 0px, 0.5px;
+      background:rgba(0, 0, 0, 0.25);
+      Width: 243px;
+      Height: 53px;
+      Corner-radius: 16px;"></button> -->
+      
+      </div>
+      <div>
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Launch demo modal
+            </button> -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Are You Sure  you  Want  to Hide Your Profie </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- <div class="modal-body">
+                    ...
+                  </div> -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:green; margin-right: 6.2rem; padding: 0.375rem 4.75rem;">Yes</button>
+                    <button type="button" class="btn btn-primary" style="background-color:red;padding: 0.375rem 4.75rem;margin-right:10px">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+</div> 
+</div>
+<!-- end hide profile div -->
+<!-- delete profile part -->
+<div *ngIf="deleteprofilepart">
+  <div style=" height:1359px; width:1012px;background-image:url(assets/images/abt.png);float:left;">
+    <button class="deletebtn">Delete profile</button>
+    <blockquote class="cntnt1 blockquote text-white ">
+      <p class="mb-0 lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </blockquote>
+    <!-- <div class="textbelowbtn text-white"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h5></div> -->
+      <button class="mrdbtn"><span class="lab">Already Married</span></button><button class="fixedbtn"><span class="lab">Marriage Fixed</span></button>
+      <div class="contn">
+        <h3 class="text-white">CONGRATULATIONS!</h3>
+        <h4 class="text-white">We are happy that you are find your life partner.</h4>
+      </div>
+
+        <div class="inner_shadow w3-opacity-max">
+          <div class="inner_shadow2">
+          <div class="inner_shadow3">
+            <form><h6 class="text-white">Select the source:</h6>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Through our matrimony &nbsp;&nbsp;</label>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Other Matrimonial site &nbsp;&nbsp;</label>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Through Other site</label>
+            </form>
+          </div>
+        </div>
+        </div>
+<button class="lastbtn">Delete My Profile</button>
+</div>
+</div>
+<!-- end delete profile part  -->
+</div>
+</main>
+</div>
+<!-- end entire part below header -->
+</div>
+</div>
+</div>
               
   
 
