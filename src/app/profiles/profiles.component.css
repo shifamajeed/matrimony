@@ -84,8 +84,22 @@ background-repeat: no-repeat;
 
 
 
-/* ghj */
+/* form*/
 
+.linebox{
+    height: 350px;
+    width: 809px;
+    left: 496px;
+    margin-top: 145px;
+    margin-left:35px;
+    border-radius: 18px;
+    border: 1px solid white;
+}
 
-
- 
+.formtypes{
+    
+    background-color:transparent;
+    border: 0px;
+    margin-left:2px;
+    
+}
