@@ -17,7 +17,7 @@ import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.compone
 import { VerifyComponent } from './verify/verify.component';
 import { SuccessComponent } from './success/success.component';
 import { ProfilesComponent } from './profiles/profiles.component';
-
+// import {RegistrationdetailsComponent} from './registrationdetails/registrationdetails.component';
 const routes: Routes = [
   {
     path:"",component: HomeComponent 
@@ -32,10 +32,12 @@ const routes: Routes = [
   {path:'search',component:SearchProfileComponent},
   {path:'edit',component:EditprofileComponent},
   { path: 'save', component: SubmitnsaveComponent },
-   { path: 'open', component: OpenwithmobileComponent},
+  { path: 'open', component: OpenwithmobileComponent},
   { path: 'verify', component: VerifyComponent},
   { path: 'success', component: SuccessComponent},
   { path: 'profile', component: ProfilesComponent},
+  // {path:'register',component:RegistrationdetailsComponent},
+ 
 ];
 
   
