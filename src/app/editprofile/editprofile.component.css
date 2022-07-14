@@ -13,7 +13,7 @@ width:30; height:30;
 }
 .navlabel{
     color:#D3E0EA;
-    font-family: 'Poppins'; 
+    font-family:'Poppins'; 
 }
 .rightbg{
     height:fit-content; 
@@ -47,6 +47,8 @@ width:30; height:30;
         margin-left:35px;
         border-radius: 18px;
         border: 1px solid white;
+        border-style: solid;
+  border-width: thin;
 }
 .imgdiv{
     height: 348px;
@@ -88,6 +90,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
     background-color:transparent;
     border: 0px;
     margin-left:2px;
+    border-bottom-color: coral;
     
 }
 .lb1{margin-left: 108px;}
@@ -286,15 +289,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
 }
 
 .imgfront {
-    /* width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    top: 60px;
-    left: 80px;
-    background-size: cover;
-    z-index: 3;
-    background-position: center center; */
+    
     width: 150px;
   height: 150px;
   border-radius: 50%; 
@@ -305,75 +300,39 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
 }
 
 .bgimg {
-    /* position: fixed; */
-    /* margin: -3px 0 0 0;  */
+    
     position: relative;
     background-size: 100% 100%;
     height: 200px;
-    /* margin: -1px; */
+   
 }
 .pstyle{
-  
   Font-size: 14px;
   float: Left;
   margin-left: 47px;
     margin-top: 814px;
     color:rgba(3, 80, 102, 1);
     font-family: 'Poppins'; 
-
-/* margin-left:
-   Y: 1096px
-  W: 251px
-  H: 21px */
 }
-
 .boxtrns1 {
-    /* box-shadow:
-             inset 0 -3em 3em rgba(0,0,0,0.1),
-                   0 0  0 2px rgb(255,255,255),
-                   0.3em 0.3em 1em rgba(0,0,0,0.3);
-        box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset; 
-        width: 250px;
-    border: 3px;
-    padding: 30px;
-
-
-    margin-top: 60px;
-margin-left: 88px;
-height: 30px;
-width: 85px;
-position: absolute; */
-
-
-
-
-    box-shadow:
+ box-shadow:
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset;
     border-radius: 12px;
     opacity: 6;
-
-    /* align-self: center; */
-
-    /* border-radius: 12px;
-        opacity: 0.8;
-        background-color: transparent;
-        width: 250px;
-    border: 3px; 
-    padding: 50px;
-    border-color: blue; */
-
 }
-.sidebtns{
+.sidebtns
+{
     border-radius: 12px;
     position: absolute;
     width: 258px;
 height: 75px;
 left: 40px;
 border:none;
-background:white;}
+background:white;
+}
 
 .sidebtn1{top: 375px;}
 .sidebtn2{top: 475px;}
@@ -585,3 +544,190 @@ background:white;}
   }
 } */
 /* end left sidenav */
+/* delete section */
+.deletebtn{
+  cursor: pointer;
+      color :white;
+      border: 1px solid white;
+      background-color: transparent;
+      font-size: 1.5em;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+      
+      border-radius: 12px;
+      width: 359px;
+height: 53px;
+margin-left: 273px;
+    margin-top: 140px;
+    
+}
+.cntnt1{
+width: 950px;
+border: 0;
+padding: 50px;
+margin: 20px;
+font-family: 'Poppins'; 
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+margin-left: 40px;
+
+}
+.mrdbtn{
+  width: 50px;
+  cursor: pointer;
+  color :white;
+  border: 1px solid white;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  margin: 175px 10px;
+  margin-left: 250px;
+  border-radius: 12px; 
+}
+.lab{
+width: 470px;
+height: 65px;
+left: 661px;
+top: 765px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+color: #FFFFFF;
+}
+.fixedbtn{
+  width: 50px;
+      cursor: pointer;
+      color :white;
+      border: 1px solid white;
+      background-color: transparent;
+      height: 50px;
+      width: 200px;
+      font-size: 1.5em;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+      border-radius: 12px; 
+      margin: 10px 10x;    
+}
+.contn {
+  text-align: center;
+  margin-bottom: 10%;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+}
+.inner_shadow{
+      box-shadow:
+           inset 0 -3em 3em rgba(0,0,0,0.1),
+                 0 0  0 2px rgb(255,255,255),
+                 0.3em 0.3em 1em rgba(0,0,0,0.3);
+      box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset;
+      border-radius: 12px;
+      opacity: 6;  
+      margin-left: 28px;
+  width: 942px;    
+}
+.inner_shadow2{
+  width: 250px;
+  border: 3px;
+  padding: 50px;
+  margin: 20px;
+}
+.inner_shadow3{   
+  padding: 20px;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset;
+  border: 1px solid whitesmoke;
+  border-radius: 12px;
+  width: 700px;
+  height: 100px;
+  margin-left: 40px;
+}
+.lastbtn{
+    
+  cursor: pointer;
+      color :white;
+      border: 1px solid white;
+      background-color: red;
+      height: 50px;
+      width: 200px;
+      font-size: 1.5em;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+      margin: 55px 400px;
+      border-radius: 12px;
+}
+/* end delete section */
+/*  reset password*/
+.btnn{
+  margin-bottom: inherit;
+}
+
+.resetdiv{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.pswlbl{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.pswtype{
+width: 351px;
+height: 53px;
+left: 597px;
+top: 353px;
+margin-bottom: 30px;
+background: #FFFFFF;
+box-shadow: inset 0px 0.5px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+.svbtn{
+  width: 359px;
+height: 53px;
+margin-left: 233px;
+margin-top: 150px;
+}
+.login-left{width:44%; margin: 0 0 0 5%; display:inline-block; float:left;}
+.p-viewer, .p-viewer2{
+  float: right;
+  margin-top: -55px;
+  position: relative;
+   z-index: 1; 
+  cursor:pointer;
+  /* margin-top: 80px; */
+}
+.eyestyle{
+  margin-left: -30px; 
+cursor: pointer;
+}
+/*  end reset password */
+/* partner preference */
+.partnrhr{
+  border:  white;
+    width: 210px;
+    height:0px;
+    float: left;
+    margin-left: 30px;
+    border-style: solid;
+  border-width: thin;
+}
+.innerdivpartner{
+  width: 500px;
+    height: fit-content;
+    margin-left: 105px;
+    margin-top:50px;
+}
+.partnerh2{
+  margin-left: 30px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+}

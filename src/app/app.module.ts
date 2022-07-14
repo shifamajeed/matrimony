@@ -22,6 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
+
 // import { ModalModule } from './modal/modal.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { SubmitnsaveComponent } from './submitnsave/submitnsave.component';
@@ -56,7 +57,8 @@ import {MatIconModule} from '@angular/material/icon';
     HideprofileComponent,
     LeftsidenavComponent,
     SearchProfileComponent,
-    EditprofileComponent
+    EditprofileComponent,
+   
   ],
   imports: [
     BrowserModule,

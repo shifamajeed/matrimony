@@ -13,7 +13,7 @@
       <div >
 <button class="sidebtns sidebtn1" (click)="editprofilebtn()"><img src="assets/images/Group 598.png"></button>
 <button class="sidebtns sidebtn2" ><img src="assets/images/Group 765.png" ></button>
-<button class="sidebtns sidebtn3"><img src="assets/images/Group 596.png" ></button>
+<button class="sidebtns sidebtn3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
 <button class="sidebtns sidebtn4" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
 <button class="sidebtns sidebtn5" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
 <button class="sidebtns sidebtn6"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button> 
@@ -54,7 +54,7 @@
               <li class="nav-item active">
                 <a class="nav-link navbar-brand" href="#">
                   <img src="assets/images/home.png" class="homeicon">
-                  <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" class="homeicon">home</mat-icon> -->
+                
                   <label class=navlabel>Home </label>
                  <span class="sr-only">(current)</span> 
                 </a>
@@ -103,18 +103,18 @@
     <!-- part below header -->
   <div style="background-size:cover;">
       <main role="main" >
-          <div><app-header></app-header></div>
+          <!-- <div><app-header></app-header></div> -->
           <div class="rightbg" style="background-image:url(assets/images/abt.png);">
-            <div *ngIf="visibleeditprofilediv">
-              <div  class="innerbox">
-  
-  <!--  body  -->
+              <div  class="innerbox" style="margin-bottom: 279px">
           <div class="btncls">
               <button  class="btns" >Edit profile</button>
-              <button  class="btns">Partner Preference</button>
+              <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
               <button  class="btns">Manage photos</button>
           </div>
 
+          <!-- entire edit profile part-->
+
+          <div *ngIf="visibleeditprofilediv">
           <div class="linebox">
               <div class="imgdiv">
                   <img class="boximg"src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
@@ -163,7 +163,7 @@
 <div *ngIf="visiblepersonal"> 
 
   <div id="personaldiv"><br>
-    
+    <div class="innerbox">
     
       <div class="innerdiv">
       <form class="form-inline" action="/action_page.php">
@@ -210,6 +210,7 @@
           <button type="submit" class="btn btn-default submitbtn">Save</button>
       </form>
     </div>
+    </div>
   </div>
 </div>
 
@@ -220,10 +221,8 @@
  </button>
 
 <div *ngIf="visiblephysical"> 
-
   <div id="personaldiv"><br>
-    
-    
+    <div class="innerbox">
       <div class="innerdiv">
       <form class="form-inline" action="/action_page.php">
         <div class="form-group" style="color:white;">
@@ -242,7 +241,6 @@
           <label for="relegion">Body type</label><label class="div2lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
         </div>
-        
         <div class="form-group" style="color:white;">
             <label for="nationality">Appearence</label><label class="div2lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
             <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
@@ -277,6 +275,7 @@
           <button type="submit" class="btn btn-default submitbtn">Save</button>
       </form>
     </div>
+    </div>
   </div>
 </div>
 
@@ -290,7 +289,7 @@
 <div *ngIf="visibleeducation"> 
 
   <div id="personaldiv"><br>
-    
+    <div class="innerbox">
       <div class="innerdiv">
       <form class="form-inline" action="/action_page.php">
         <div class="form-group" style="color:white;">
@@ -346,6 +345,7 @@
           <button type="submit" class="btn btn-default submitbtn">Save</button>
       </form>
     </div>
+    </div>
   </div>
 </div>
 
@@ -357,7 +357,7 @@
 <div *ngIf="visiblefamily"> 
 
   <div id="personaldiv"><br>
-    
+    <div class="innerbox">
     
       <div class="innerdiv">
       <form class="form-inline" action="/action_page.php">
@@ -493,6 +493,7 @@
           <button type="submit" class="btn btn-default submitbtn">Save</button>
       </form>
     </div>
+    </div>
   </div>
 </div>
 
@@ -505,7 +506,7 @@
 <div *ngIf="visiblerelegious"> 
 
   <div id="personaldiv"><br>
-    
+    <div class="innerbox">
     
       <div class="innerdiv">
       <form class="form-inline" action="/action_page.php">
@@ -603,6 +604,7 @@
           <button type="submit" class="btn btn-default submitbtn">Save</button>
       </form>
     </div>
+    </div>
   </div>
 </div>
 
@@ -613,6 +615,7 @@
 </button> 
 <div *ngIf="visiblecontact">
   <div id="personaldiv">
+    <div class="innerbox">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
@@ -652,6 +655,7 @@
     </form>
   </div>
   </div>
+  </div>
 </div>
 
 <!-- edit profile-location -->
@@ -661,6 +665,7 @@
 </button> 
 <div *ngIf="visiblelocation">
   <div id="personaldiv">
+    <div class="innerbox">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
@@ -693,6 +698,7 @@
     </form>
   </div>
   </div>
+  </div>
 </div>
 
 <!-- edit profile-marriage plan -->
@@ -702,6 +708,7 @@
 </button> 
 <div *ngIf="visiblemrgplan">
   <div id="personaldiv">
+    <div class="innerbox">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
@@ -724,6 +731,7 @@
     </form>
   </div>
   </div>
+  </div>
 </div>
 
 <!-- edit profile-habits -->
@@ -733,6 +741,7 @@
 </button> 
 <div *ngIf="visiblehabits">
   <div id="personaldiv">
+    <div class="innerbox">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
@@ -751,15 +760,17 @@
     </form>
   </div>
   </div>
+  </div>
 </div>
 
 <!-- edit profile-hobbies and interest -->
 
-<button type="button"  (click)=hobbiesinfo() class="btn btn-block personaldiv">
+<button type="button"  (click)=hobbiesinfo() class="btn btn-block personaldiv" style="margin-bottom: 40px;">
   {{hobby?"Hobbies and Interest":"Hobbies and Interest"}} 
 </button> 
 <div *ngIf="visiblehobbies">
   <div id="personaldiv">
+    <div class="innerbox">
   <div class="innerdiv">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
@@ -798,15 +809,17 @@
     </form>
   </div>
   </div>
+  </div>
 </div>
 
-</div>
-<!-- innerdiv -->
-</div>
+
+
 <!-- end edit profile div -->
 <!-- hide profile div -->
 <div *ngIf="hideprofilepart">
-  <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+  <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+    <div  class="innerbox" style="height:94%"> -->
+
   <!-- <div style="box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
   border-radius: 12px;
   opacity: 6; 
@@ -850,7 +863,8 @@ margin-top: 30px;
 border-radius: 18px;
 background-color: #E5E5E5; 
 backdrop-filter: blur(33.3227px);opacity: 0.2;"> -->
-<div><button  style="height: 53px;
+<div>
+  <button  style="height: 53px;
   width: 359px;
   
   border-radius: 16px;
@@ -936,16 +950,18 @@ text-align: left;
               </div>
             </div>
       </div>
-
-</div> 
+<!-- </div>
+</div>  -->
 </div>
 <!-- end hide profile div -->
 <!-- delete profile part -->
 <div *ngIf="deleteprofilepart">
-  <div style=" height:1359px; width:1012px;background-image:url(assets/images/abt.png);float:left;">
+  <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+    <div  class="innerbox" style="height:94%"> -->
+  <!-- <div style=" height:1359px; width:1012px;background-image:url(assets/images/abt.png);float:left;"> -->
     <button class="deletebtn">Delete profile</button>
     <blockquote class="cntnt1 blockquote text-white ">
-      <p class="mb-0 lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p class="mb-0 lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of<br> type and scrambled</p>
     </blockquote>
     <!-- <div class="textbelowbtn text-white"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h5></div> -->
       <button class="mrdbtn"><span class="lab">Already Married</span></button><button class="fixedbtn"><span class="lab">Marriage Fixed</span></button>
@@ -966,9 +982,124 @@ text-align: left;
         </div>
         </div>
 <button class="lastbtn">Delete My Profile</button>
-</div>
+<!-- </div>
+</div> -->
 </div>
 <!-- end delete profile part  -->
+<!-- edit password -->
+<div *ngIf="editpwdpart"> 
+  <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+    <div  class="innerbox" style="height:94%"> -->
+    <button class="deletebtn btnn">Change Password</button>
+    <div class="resetdiv ">
+      <label class="pswlbl text-white">Current Password&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" class="pswtype">
+      <i class="far fa-eye eyestyle" id="togglePassword"></i><br>
+      <label class="pswlbl text-white">New Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" class="pswtype"><br>
+      <label class="pswlbl text-white">Confirm Password&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" autocomplete="current-password" class="pswtype">
+      <i class="far fa-eye eyestyle" id="togglePassword"></i>
+  </div>
+    <button type="submit" class=" text-white btn btn-default submitbtn svbtn">Submit & Save</button>
+<!-- </div>
+</div> -->
+</div> 
+</div>
+<!-- end edit password -->
+<!-- entire editprofile completed  -->
+<!-- partner preference -->
+<div ngIf="partner">
+  <!-- basic preference -->
+  <div class="linebox">
+    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+      
+      <div class="form-group" style="color:white;">
+          <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+      </div>
+      <div class="form-group" style="color:white;">
+          <label for="relegion">Job Profession</label><label class="lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control formtypes personaldivinputtypes" id="job" placeholder="" name="job">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+    </div>
+    <div class="form-group" style="color:white;">
+      <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+  </div>
+    </form>
+    </div>
+  </div>
+  <!-- Education & Professional Preferences -->
+  <div class="linebox">
+    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+    </form>
+    </div>
+  </div>
+  <!-- Religious Preferences -->
+  <div class="linebox">
+    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+    </form>
+    </div>
+  </div>
+  <!-- Location Preferences -->
+  <div class="linebox">
+    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+    </form>
+    </div>
+  </div>
+  <button type="submit" class=" text-white btn btn-default submitbtn svbtn">Submit & Save</button>
+</div>
+<!-- end partner preference -->
+
+</div>
 </div>
 </main>
 </div>

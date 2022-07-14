@@ -12,8 +12,9 @@ export class EditprofileComponent implements OnInit {
   visibleeditprofilediv:boolean=false
   hideprofilepart:boolean=false
   deleteprofilepart:boolean=false
-
+  editpwdpart:boolean=false
   // end sidebar
+  partner:boolean=false
   // edit profile
   personal:boolean=true
   visiblepersonal:boolean=false
@@ -36,21 +37,39 @@ export class EditprofileComponent implements OnInit {
   hobby:boolean=true
   visiblehobbies:boolean=false
   // end edit profile
+  
+  
   ngOnInit(): void {
   }
   // sidebar
   editprofilebtn()
   {
+    this.deleteprofilepart=false
+    this.hideprofilepart=false
+    this.editpwdpart=false
     this.visibleeditprofilediv=true
   }
   hideprofilebtn()
   {
+    this.deleteprofilepart=false
     this.visibleeditprofilediv=false
+    this.editpwdpart=false
     this.hideprofilepart=true
   }
   deleteprofilebtn()
   {
+    this.hideprofilepart=false
+    this.visibleeditprofilediv=false
     this.deleteprofilepart=true
+    this.editpwdpart=false
+  }
+  editpwd()
+  {
+    this.hideprofilepart=false
+    this.visibleeditprofilediv=false
+    this.deleteprofilepart=false
+    this.editpwdpart=true
+
   }
   // end side bar
   // edit profile
@@ -104,5 +123,23 @@ hobbiesinfo()
   this.visiblehobbies=!this.visiblehobbies
 }
 // end edit profile
+// reset password
 
+// function myFunction() {
+//   var x = document.getElementById("*passwordbox-id*");
+//   if (x.type === "password") {
+//     x.type = "text";
+//   } else {
+//     x.type = "password";
+//   }
+// }
+
+// end reset password
+// partnerpreference
+partnerpreference()
+{
+this.partner=true
 }
+}
+
+
