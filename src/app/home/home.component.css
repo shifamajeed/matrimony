@@ -2,14 +2,69 @@
 /* banner section */
 .banner-section {
     /* background-image: url("../assets/images/bnr2.jpg"); */
-    background-image: url("/assets/images/bnr2.jpg");
+    background-image: url("../../assets/images/bnr3.png");
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 673px;
 
 
    
 }
+.geo{
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+left: 82px;
+}
+.geo1{
+    position: relative;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    left: 243px; 
+    color: white;
+}
+
+.icoon{
+    box-sizing: border-box;
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 139px;
+    top: 27px;
+    background: #1687A7;
+    border-radius: 36px;
+    box-shadow: 1px 1px 2px rgb(35 216 255 / 30%), -1px -1px 2px rgb(9 54 67 / 50%), inset -5px 5px 10px rgb(9 54 67 / 20%), inset 5px -5px 10px rgb(9 54 67 / 20%), inset -5px -5px 10px rgb(35 216 255 / 90%), inset 5px 5px 13px rgb(9 54 67 / 90%);
+}
+.icoc1{
+    position: relative;
+    top: 27px;
+    left: -6px;
+    width: 35px;
+}
+.ic3{
+    width: 68px;
+    top: 8px;
+    position: relative;
+}
+
+.card1{
+   
+    width: 540.48px;
+    height: 140.37px;
+    font-family: 'Poppins';
+font-style: normal;
+    background: #D3E0EA;
+    border-radius: 35.7674px;
+    border-style:none ;
+}
+
+
 .banner-section {
     padding: 30px 0 0;
 }
@@ -18,7 +73,7 @@
     line-height: 38px;
     color: white;
     position: relative;
-    left: 208px;
+    
 }
 .banner-section .form-wrap {
     font-size: 14px;
@@ -28,7 +83,8 @@
     box-shadow: inset 7.66417px -7.66417px 7.66417px rgb(137 145 147 / 22%), inset 15.3283px -15.3283px 15.3283px rgb(255 255 255 / 22%), inset -7.66417px 7.66417px 7.66417px rgb(255 255 255 / 22%), inset -15.3283px 15.3283px 15.3283px rgb(137 145 147 / 22%);
     backdrop-filter: blur(51.3499px);
     border-radius: 27.5033px;
-    left: 214px
+    left: 238px;
+    top: 74px
 }
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -133,6 +189,7 @@ label{
     background: linear-gradient(135deg, #E8E8E8 0%, #FFFFFF 100%);
 border: 0.833433px solid #276678;
 border-radius: 18.4625px;
+
 }
 .regbtn{
     
@@ -161,6 +218,7 @@ border: #276678;
 }
 a{
     color: white;
+    text-decoration: none;
 }
 /* feature section */
 .spcl{
@@ -207,6 +265,9 @@ a{
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
+    margin-top: 60px;
+    margin-left: 66px;
+    
 }
 .featured-services .title a {
     color: #276678;;
@@ -215,6 +276,8 @@ a{
 .featured-services .description {
     line-height: 24px;
     font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: bolder;
 }
 .icon-box {
     padding: 30px;
@@ -250,6 +313,7 @@ a{
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
+    margin-top: 100px;
 }
  .description {
     font-size: 15px;
@@ -312,6 +376,12 @@ a{
 }
 .text-blue{
     color: #276678;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 55px;
+    margin-left: -14px;
 }
 .card{
     background: #D3E0EA;
