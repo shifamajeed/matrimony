@@ -5,7 +5,7 @@
 <section class="about">
 
   <!-- here -->
-  <div>    
+  <div  *ngIf="hello">    
   
   <!-- <div class="col lg-12 col-md-12"> -->
   <div class="progress">
@@ -16,9 +16,10 @@
   <br>
   <br>
   <!-- shadow box -->
+  
   <div class="container-fluid abtcont">
 <!-- inner hidden box  -->
-    <div class="box" *ngIf="hello">
+    <div  class="box">
 
 
 
@@ -26,18 +27,18 @@
 
       <!-- <div  class="box"> -->
         <img class="img-fluid hrtcls1" src="../../assets/images/hrt6.png " style="
-  margin-top: 265px;
+  margin-top: 295px;
   margin-left: -746px;
 ">
         <img class="img-fluid hrtcls" src="../../assets/images/Vector.png" style="
-  margin-top: 258px;
+  margin-top: 284px;
   margin-left: -866px;
 ">
         <img class="img-fluid vector" src="../../assets/images/hrt5.png" style="
   position: absolute;
   left: 8.50%;
   right: 75.96%;
-  top: 67.50%;
+  top: 59.5%;
   bottom: 49.58%;
 ">
 
@@ -105,11 +106,26 @@
         <button class="bt" (click)="fnnext()" style="margin-bottom: -45px;"> Next </button>
                    </div>
          </div>
+         </div> 
+         </div>
+
         <!-- </div> -->
         <!-- 1st  -->
         
 
-      <div *ngIf="hello2" class="box"> 
+      <div *ngIf="hello2"> 
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100%">40%</div>
+        </div>
+       
+        <br>
+        <br>
+        <!-- shadow box -->
+        
+        <div class="container-fluid abtcont">
+          <div class="box">
+        
         
         <p> Physical Information</p>
         <div class="col">
@@ -197,13 +213,24 @@
                 margin-top: 150px;
             "> Next </button>
             </div>
-            </div>
+            </div> </div> </div>
             
           <!--        here -->
             
      
       
-      <div *ngIf="hello3" class="box">
+      <div *ngIf="hello3">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100%">50%</div>
+        </div>
+       
+        <br>
+        <br>
+        <!-- shadow box -->
+        
+        <div class="container-fluid abtcont">
+          <div class="box">
         <p>Education & Profession</p>
         <div class="col">
           <div class="inp">
@@ -241,7 +268,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="inp">
+          <div class="inp" style="
+          margin-top: -25px;
+      ">
             <p> Job Proffession</p>
 
             <div class="dropdown in">
@@ -258,13 +287,25 @@
           </div>
 
         </div>
-        <button class="bt" (click)="fnnext2()" style="margin-top: 100px;"> Next </button>
-
+        <button class="bt" (click)="fnnext2()" style="margin-bottom: 66px;"> Next </button>
+        </div>
+        </div>
 
 
 
       </div>
-      <div *ngIf="hello4" class="box">
+      <div *ngIf="hello4">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+            aria-valuemax="100%">60%</div>
+        </div>
+       
+        <br>
+        <br>
+        <!-- shadow box -->
+        
+        <div class="container-fluid abtcont">
+          <div class="box">
         <p>Family Details</p>
         <div class="col">
           <div class="inp">
@@ -352,6 +393,8 @@
               </div>
             </div>
           </div>
+          
+          
 
 
 
@@ -359,10 +402,25 @@
 
         </div>
 
-        <button class="bt" (click)="fnnext3()"> Next </button>
+        <button class="bt" (click)="fnnext3()" style="
+        margin-bottom: 66px;
+    "> Next </button>
+        </div>
+        </div>
 
       </div>
-      <div *ngIf="hello5" class="box">
+      <div *ngIf="hello5">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+            aria-valuemax="100%">70%</div>
+        </div>
+       
+        <br>
+        <br>
+        <!-- shadow box -->
+        
+        <div class="container-fluid abtcont">
+          <div class="box">
         <p>Religious Informations</p>
         <div class="col">
           <div class="inp">
@@ -410,7 +468,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="inp">
+          <div class="inp" style="
+          margin-top: -50px;
+      ">
             <p>Madrassa Education</p>
 
             <div class="dropdown in">
@@ -430,10 +490,26 @@
 
           </div>
         </div>
+        
 
-        <button class="bt" (click)="fnnext4()"> Next </button>
+        <button class="bt" (click)="fnnext4()" style="
+        margin-bottom: 66px;
+    "> Next </button>
+        </div>
+        </div>
       </div>
-      <div *ngIf="hello6" class="box">
+      <div *ngIf="hello6">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+            aria-valuemax="100%">80%</div>
+        </div>
+       
+        <br>
+        <br>
+        <!-- shadow box -->
+        
+        <div class="container-fluid abtcont">
+          <div class="box">
         <p>Contact Details</p>
         <div class="col">
           <div class="inp">
@@ -467,34 +543,49 @@
           <div class="inp">
 
 
-            <div class="inp">
+            <div class="inp" style="margin-top: -65px;">
               <p>Contact person & Relationship</p>
               <input type=text>
             </div>
           </div>
           <div class="inp">
 
-            <div class="inp">
+            <div class="inp"style="margin-top: -65px;">
               <p>Email ID</p>
               <input type=text>
             </div>
           </div>
         </div>
 
-        <button class="bt" style="margin-bottom: -26px;" (click)="fnnext5()"> Next</button>
-
+        <button class="bt" style="margin-bottom: 66px;" (click)="fnnext5()" style="margin-bottom: 54px;"> Next</button>   
+        <!-- <a  routerLink="/location" style="color:white ;"> <button class="">Next</button>>  </a>  -->
+        </div>
+        </div>
+        
+                    
       </div>
-      </div>
+    
 <!--abt container closed -->
-<div class="container-fluid abtcont1">
+<!-- <div class="container-fluid abtcont1"> -->
   <div class="box">
-      <div *ngIf="hello7" class="box">
+      <div *ngIf="hello7">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+            aria-valuemax="100%">90%</div>
+        </div>
+       
+        <br>
+        <br>
+        <!-- shadow box -->
+        
+        <div class="container-fluid abtcont1">
+          <div class="box">
         <p>Location Details</p>
 
         <div class="col">
           <div class="inp">
             <div style="
-                  margin-right: -683px;
+                  margin-right: -500px;
                   margin-top: -31px;
               ">Home Address</div>
 
@@ -621,11 +712,14 @@
 
 
         <button class="bt"> Next </button>
+        </div>
+        </div>
 
       </div>
 </div>
+
 <!-- </div> -->
-<!-- </div> -->
+
 
 
     
