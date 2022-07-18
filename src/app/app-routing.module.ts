@@ -17,7 +17,10 @@ import { OpenwithmobileComponent } from './openwithmobile/openwithmobile.compone
 import { VerifyComponent } from './verify/verify.component';
 import { SuccessComponent } from './success/success.component';
 import { ProfilesComponent } from './profiles/profiles.component';
+import {EntrydetailsComponent} from './entrydetails/entrydetails.component';
+
 import { NotificationComponent } from './notification/notification.component';
+
 
 const routes: Routes = [
   {
@@ -31,13 +34,18 @@ const routes: Routes = [
   {path:'head',component:HeaderComponent},
   {path:'left',component:LeftsidenavComponent},
   {path:'search',component:SearchProfileComponent},
-  {path:'edit',component:EditprofileComponent},
+  { path:'edit',component:EditprofileComponent},
   { path: 'save', component: SubmitnsaveComponent },
-   { path: 'open', component: OpenwithmobileComponent},
+  { path: 'open', component: OpenwithmobileComponent},
   { path: 'verify', component: VerifyComponent},
   { path: 'success', component: SuccessComponent},
   { path: 'profile', component: ProfilesComponent},
+
+  { path:'entry',component:EntrydetailsComponent},
+ 
+
   { path: 'noti', component: NotificationComponent},
+
 ];
 
   
