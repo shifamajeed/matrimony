@@ -731,3 +731,187 @@ cursor: pointer;
     margin-top: 13px;
     margin-bottom: 0px;
 }
+
+.partnerdiv1{margin-left: 195px;}
+.partnerdiv2{margin-left: 135px;}
+.partnerdiv3{margin-left: 180px;}
+.partnerdiv4{margin-left: 178px;}
+.partnerdiv5{margin-left: 148px;}
+.partnerdiv6{margin-left: 127px;}
+.partnerdiv7{margin-left: 108px;}
+.partnerdiv8{margin-left: 128px;}
+.partnerdiv9{margin-left: 123px;}
+.partnerdiv10{margin-left: 71px;}
+.partnerdiv11{margin-left: 108px;}
+.partnerdiv12{margin-left: 93px;}
+.partnerdiv13{margin-left: 110px;}
+.partnerdiv14{margin-left: 101px;}
+/* search btn section*/
+.sbtn{
+  margin-top: 105px;
+}
+.searchbtn{border-radius: 16px;
+
+
+  box-sizing: border-box;
+
+  position: absolute;
+  
+  margin-left:265px;
+  margin-top: 72px;
+  width: 362px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: inset 0px 0.5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;}
+.searchlb{
+  font-size: 22px;
+  font-family:'Poppins';
+  
+  
+margin-left: 110px;
+margin-top: 72px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;;
+}
+.h2partner
+{
+  margin-left: 299px;
+  margin-top: 26px;
+
+font-family: 'Poppins';
+font-style: normal;
+}
+.lineboxsearch{
+  height: 936px;
+  width: 809px;
+  left: 496px;
+  margin-top: 145px;
+  margin-left:35px;
+  border-radius: 18px;
+  border: 1px solid white;
+  border-style: solid;
+border-width: thin;
+}
+.searchpartnerdiv1{margin-left: 195px;}
+.searchpartnerdiv2{margin-left: 135px;}
+.searchpartnerdiv3{margin-left: 180px;}
+.searchpartnerdiv4{margin-left: 178px;}
+.searchpartnerdiv5{margin-left: 148px;}
+.searchpartnerdiv6{margin-left: 127px;}
+.searchpartnerdiv7{margin-left: 164px;}
+.searchpartnerdiv8{margin-left: 111px;}
+.searchpartnerdiv9{margin-left: 121px;}
+.searchpartnerdiv10{margin-left: 128px;}
+.searchpartnerdiv11{margin-left: 141px;}
+.searchpartnerdiv12{margin-left: 156px;}
+.personaldivinputtypes2{
+  color:aliceblue;
+  border: 0px;
+  outline: none;
+  border-bottom: 1px solid white;
+  background:transparent;
+  width: 298px;
+}
+.submitbtn2{
+  margin-left: 196px;
+  margin-top: 100px;
+  background-color: green;
+  width:192px;
+  border-radius: 21.24px;
+}
+/* home2 */
+.back{
+  background-image: url(../../assets/images/abt.png);
+  width: 1349px;
+  height: 1028px;
+  background-repeat: no-repeat;
+   background-size: cover;
+  
+  }
+  
+  .rtngl1{
+      /* box-sizing: border-box; */
+      position: absolute;
+      width: 937px;
+      height: 1407px;
+      margin-top: 35px;
+    margin-left: 31px;
+      background: #305862;
+      border: 0.742029px solid #FFFFFF;
+      }
+  
+      .in-rtgl{
+          position: relative;
+          width: 866px;
+          height: 247px;
+          left: 40px;
+          top: 32px;
+          background: rgba(194, 206, 215, 0.089);
+          box-shadow: inset 5.59274px -5.59274px 5.59274px rgba(163, 173, 180, 0.378), inset -5.59274px 5.59274px 5.59274px rgba(255, 255, 255, 0.378);
+          backdrop-filter: blur(4.47419px);
+          /* Note: backdrop-filter has minimal browser support */
+          
+          border-radius: 18.348px;
+      }
+  
+      .pic{
+          position: relative;
+          background-image: url(../../assets/images/pic.png);
+          width: 185px;
+          height: 223px;
+          background-repeat: no-repeat;
+          left: 22px;
+      top: -30px;
+      }
+      .pg{
+          position: relative;
+          background-image: url(../../assets/images/close.png);
+          left: 1085px;
+           width: 48px;
+            height: 44px;
+            top: 15px;
+           background-repeat: no-repeat;
+           border-radius: 20px;
+      }
+  
+      .green {
+          background-color: white;
+      }
+      
+      .red {
+          background-color: red;
+      }
+  
+     .des{
+      position: relative;
+      background-color: #FFFFFF;
+      width: 42px;
+      height: 40px;
+      left: 1084px;
+      top: -80px;
+  }
+  .rightbghome2{
+      height:1439px; 
+      width:1015px;
+      /* background-image:url("assets/images/abt.png"); */
+      float:left;
+      background-repeat: no-repeat; 
+      height:fit-content; 
+      /* background-size: auto; */
+      background-size: cover;
+  
+  }
+   /* .heart{
+      background-image: url(../../assets/images/ht.png);
+      background-repeat: no-repeat;
+      height: 29px;
+      width: 35px;
+      border-radius: 22px;
+  }  
+   */
+  

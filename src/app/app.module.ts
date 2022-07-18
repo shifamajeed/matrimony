@@ -21,6 +21,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
 
 
 // import { ModalModule } from './modal/modal.component';
@@ -58,6 +59,7 @@ import {MatIconModule} from '@angular/material/icon';
     LeftsidenavComponent,
     SearchProfileComponent,
     EditprofileComponent,
+    EntrydetailsComponent,
    
   ],
   imports: [
