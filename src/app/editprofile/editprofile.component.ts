@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class EditprofileComponent implements OnInit {
 
   constructor() { }
+  // editinner:boolean=true
+  
   // sidebar
+  editinner:boolean=false
   visibleeditprofilediv:boolean=false
   hideprofilepart:boolean=false
   deleteprofilepart:boolean=false
@@ -37,13 +40,25 @@ export class EditprofileComponent implements OnInit {
   hobby:boolean=true
   visiblehobbies:boolean=false
   // end edit profile
-  
-  
+  //search button section
+  visisblesearch:boolean=false
+  //home2
+  visiblehome2:boolean=true
   ngOnInit(): void {
   }
   // sidebar
+  lefteditprofilebtn()
+  { 
+    this.partner=false
+    this.deleteprofilepart=false
+    this.hideprofilepart=false
+    this.editpwdpart=false
+    this.editinner=true
+    this.visibleeditprofilediv=true
+  }
   editprofilebtn()
   {
+    this.partner=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
@@ -51,6 +66,7 @@ export class EditprofileComponent implements OnInit {
   }
   hideprofilebtn()
   {
+    this.partner=false
     this.deleteprofilepart=false
     this.visibleeditprofilediv=false
     this.editpwdpart=false
@@ -58,6 +74,7 @@ export class EditprofileComponent implements OnInit {
   }
   deleteprofilebtn()
   {
+    this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
     this.deleteprofilepart=true
@@ -65,61 +82,158 @@ export class EditprofileComponent implements OnInit {
   }
   editpwd()
   {
+    this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
     this.deleteprofilepart=false
     this.editpwdpart=true
 
   }
+
   // end side bar
+  // home2
+  home2()
+  {
+    this.visiblehome2=true
+  }
   // edit profile
   personalinfo()
   {
     this.personal=!this.personal
+    this.visiblephysical=false
+    this.visibleeducation=false
+    this.visiblefamily=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
     this.visiblepersonal=!this.visiblepersonal
   }
   physicalinfo()
   {
     this.physical=!this.physical
+    this.visibleeducation=false
+    this.visiblefamily=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
     this.visiblephysical=!this.visiblephysical
   }
   educationinfo()
   {
     this.education=!this.education
+    this.visiblephysical=false
+    this.visiblefamily=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visibleeducation=!this.visibleeducation
-}
+  }
 familyinfo(){
   this.family=!this.family
+  this.visiblephysical=false
+    this.visibleeducation=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visiblefamily=!this.visiblefamily
 }
 relegiousinfo()
 {
   this.relegious=!this.relegious
+  this.visiblephysical=false
+    this.visiblefamily=false
+    this.visiblefamily=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visiblerelegious=!this.visiblerelegious
 }
 contactinfo()
 {
   this.contact=!this.contact
+    this.visiblephysical=false
+    this.visiblefamily=false
+    this.visiblerelegious=false
+    this.visiblerelegious=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visiblecontact=!this.visiblecontact
 }
 locationinfo()
 {
   this.location=!this.location
+    this.visiblephysical=false
+    this.visiblefamily=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblecontact=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visiblelocation=!this.visiblelocation
 }
 mrgplaninfo()
 {
   this.mrgplan=!this.mrgplan
+    this.visiblephysical=false
+    this.visiblefamily=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblelocation=false
+    this.visiblehabits=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visiblemrgplan=!this.visiblemrgplan
 }
 habitsinfo()
 {
   this.habits=!this.habits
+    this.visiblefamily=false
+    this.visiblephysical=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblemrgplan=false
+    this.visiblehobbies=false
+    this.visiblepersonal=false
   this.visiblehabits=!this.visiblehabits
 }
 hobbiesinfo()
 {
   this.hobby=!this.hobby
+    this.visiblefamily=false
+    this.visiblephysical=false
+    this.visiblerelegious=false
+    this.visiblecontact=false
+    this.visiblelocation=false
+    this.visiblemrgplan=false
+    this.visiblehabits=false
+    this.visiblehabits=false
+    this.visiblepersonal=false
   this.visiblehobbies=!this.visiblehobbies
 }
 // end edit profile
@@ -135,10 +249,21 @@ hobbiesinfo()
 // }
 
 // end reset password
-// partnerpreference
+//partnerpreference
 partnerpreference()
 {
-this.partner=true
+this.deleteprofilepart=false
+    this.hideprofilepart=false
+    this.editpwdpart=false
+    this.visibleeditprofilediv=false
+    this.partner=true
+}
+// search button action 
+searchact()
+{
+  this.editinner=false
+  this.visiblehome2=false
+  this.visisblesearch=true
 }
 }
 

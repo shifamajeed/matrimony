@@ -8,10 +8,9 @@
       <img src="assets/images/Group 638.png" class="imgback" style="float:left"/>
       <img src="assets/images/Group 268.png" class="imgfront"/>
    <div class="blurleft" >
-    
       <!-- <div class="whiteshadow"> --> 
       <div >
-<button class="sidebtns sidebtn1" (click)="editprofilebtn()"><img src="assets/images/Group 598.png"></button>
+<button class="sidebtns sidebtn1" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
 <button class="sidebtns sidebtn2" ><img src="assets/images/Group 765.png" ></button>
 <button class="sidebtns sidebtn3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
 <button class="sidebtns sidebtn4" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
@@ -52,13 +51,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link navbar-brand" href="#">
+                <a class="nav-link navbar-brand" >
                   <img src="assets/images/home.png" class="homeicon">
                 
-                  <label class=navlabel>Home </label>
+                  <label class=navlabel (click)="home2()">Home </label>
                  <span class="sr-only">(current)</span> 
                 </a>
               </li>
+              <li class="nav-item active">
+                <a class="nav-link navbar-brand">
+                  <label (click)="searchact()" class="navlabel">Search</label> 
+                </a>
+              </li>
+
+
+              
               <li class="nav-item">
                 <a class="nav-link navbar-brand" href="#">
                   <img src="assets/images/explore.png" class="homeicon">
@@ -94,8 +101,9 @@
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+              <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchact()">Search</button>
+            </form>  -->
+            
           </div>
         </nav>
       </div>
@@ -104,14 +112,15 @@
   <div style="background-size:cover;">
       <main role="main" >
           <!-- <div><app-header></app-header></div> -->
-          <div class="rightbg" style="background-image:url(assets/images/abt.png);">
-              <div  class="innerbox" style="margin-bottom: 279px">
+          <div *ngIf="editinner" class="rightbg" style="background-image:url(assets/images/abt.png);">
+              <div  class="innerbox" style="margin-bottom: 45px;">
           <div class="btncls">
-              <button  class="btns" >Edit profile</button>
+              <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
               <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+              <!-- <button  class="btns">Partner Preference</button> -->
               <button  class="btns">Manage photos</button>
           </div>
-
+          
           <!-- entire edit profile part-->
 
           <div *ngIf="visibleeditprofilediv">
@@ -811,8 +820,8 @@
   </div>
   </div>
 </div>
-
-
+</div>
+<!--     here          -->
 
 <!-- end edit profile div -->
 <!-- hide profile div -->
@@ -1005,11 +1014,10 @@ text-align: left;
 <!-- </div>
 </div> -->
 </div> 
-</div>
 <!-- end edit password -->
 <!-- entire editprofile completed  -->
 <!-- partner preference -->
-<div ngIf="partner">
+<div *ngIf="partner">
   <!-- basic preference -->
   <div class="linebox">
     <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
@@ -1017,45 +1025,44 @@ text-align: left;
     <div class="innerdivpartner">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="relegion">Age</label><label class="partnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Marital status</label><label class="partnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
       </div>
       <div class="form-group" style="color:white;">
-        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-      </div>
-      
-      <div class="form-group" style="color:white;">
-          <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+          <label for="education">Height</label><label class="partnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
       </div>
       <div class="form-group" style="color:white;">
-          <label for="relegion">Job Profession</label><label class="lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type="text" class="form-control formtypes personaldivinputtypes" id="job" placeholder="" name="job">
+          <label for="relegion">Weight</label><label class="partnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
       </div>
       <div class="form-group" style="color:white;">
-        <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="education">Complexion</label><label class="partnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
     </div>
     <div class="form-group" style="color:white;">
-      <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <label for="education">Physical Status</label><label class="partnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
       <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
   </div>
     </form>
     </div>
   </div>
   <!-- Education & Professional Preferences -->
-  <div class="linebox">
-    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+  <div class="linebox" style="margin-top: 36px;">
+    <h2 class="text-white partnerh2"><b>Education & Professional Preferences</b></h2>
     <hr class="partnrhr">
     <div class="innerdivpartner">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="maritalstatus">Highest Education</label><label class="partnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
       </div>
       <div class="form-group" style="color:white;">
-        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="relegion">Job profession</label><label class="partnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
       </div>
     </form>
@@ -1063,16 +1070,16 @@ text-align: left;
   </div>
   <!-- Religious Preferences -->
   <div class="linebox">
-    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
     <hr class="partnrhr">
     <div class="innerdivpartner">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="maritalstatus">Religiousness</label><label class="partnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
       </div>
       <div class="form-group" style="color:white;">
-        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="relegion">Attend Islamic Service</label><label class="partnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
       </div>
     </form>
@@ -1080,16 +1087,24 @@ text-align: left;
   </div>
   <!-- Location Preferences -->
   <div class="linebox">
-    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <h2 class="text-white partnerh2"><b>Location Preferences</b></h2>
     <hr class="partnrhr">
     <div class="innerdivpartner">
     <form class="form-inline" action="/action_page.php">
       <div class="form-group" style="color:white;">
-        <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="maritalstatus">Prefer to Stay</label><label class="partnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
       </div>
       <div class="form-group" style="color:white;">
-        <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="relegion">Present Country</label><label class="partnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">Present State</label><label class="partnerdiv13">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">City Preference</label><label class="partnerdiv14">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
       </div>
     </form>
@@ -1098,9 +1113,102 @@ text-align: left;
   <button type="submit" class=" text-white btn btn-default submitbtn svbtn">Submit & Save</button>
 </div>
 <!-- end partner preference -->
+</div>
+<!-- innerbox div closed -->
+</div>
+<!-- header search button action -->
+<div *ngIf="visisblesearch">
+  <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+      <button type="button" class="deletebtn sbtn">Search Profile</button>
+      <form class="form-inline my-2 my-lg-0">
+        <label><b  class="text-white searchlb">Search ID</b></label>
+        <input class="mr-sm-2 searchbtn" type="search" placeholder="Search id " aria-label="Search">
+      </form> 
+        <div class="lineboxsearch">
+          <h2 class="text-white h2partner"><b>Search Preferences</b></h2>
+          <div class="innerdivpartner">
+            <form class="form-inline" action="/action_page.php">
+              <div class="form-group" style="color:white;">
+                <label for="relegion">Age</label><label class="searchpartnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="maritalstatus">Marital status</label><label class="searchpartnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes2" id="maritalstatus" placeholder="" name="maritalstatus" >
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="education">Height</label><label class="searchpartnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="relegion">Weight</label><label class="searchpartnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="education">Complexion</label><label class="searchpartnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes2" id="education" placeholder="" name="education">
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="education">Physical Status</label><label class="searchpartnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes2" id="education" placeholder="" name="education">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="relegion">Body type</label><label class="searchpartnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes2" id="relegion" placeholder="" name="relegion">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Highest Education</label><label class="searchpartnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes2" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Current Location</label><label class="searchpartnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="age">Financial Status</label><label class="searchpartnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes2" id="age" placeholder="" name="age">
+          </div> 
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Religiousness</label><label class="searchpartnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="education">Community</label><label class="searchpartnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes2" id="education" placeholder="" name="education">
+        </div><button type="submit" class="btn btn-default submitbtn2">Search</button>
+         </form>
+         
+            </div>
+        </div>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      
+    </div>
+  </div>
+</div>
+<!-- end header search button action -->
+<!-- header home button action -->
+<div *ngIf="visiblehome2">
+  
+  <div class="rightbghome2" style="background-image:url(assets/images/abt.png);">
+      <div class="rtngl1" >
+      <div class="in-rtgl" >
+          <button class="pg"></button>
+      <div class="pic"></div>
+      <div class="des">
+          <!-- <button 
+          (click)="enableDisableRule()" 
+          [ngClass]="{'green' : toggle, 'red': !toggle}" class=" heart"  >
+          {{status}}
+      </button> -->
+      </div>
+    </div>
+      </div >
+    </div>
 
 </div>
-</div>
+<!-- end header home button action -->
+<!-- rightbg closed -->
 </main>
 </div>
 <!-- end entire part below header -->
