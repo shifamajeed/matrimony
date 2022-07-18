@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -19,9 +18,13 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { NotificationComponent } from './notification/notification.component';
+import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
+
+
 
 
 // import { ModalModule } from './modal/modal.component';
@@ -42,7 +45,7 @@ import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
 
 
 
-// import { MatButtonModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -59,8 +62,14 @@ import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
     LeftsidenavComponent,
     SearchProfileComponent,
     EditprofileComponent,
+
     EntrydetailsComponent,
    
+    NotificationComponent,
+    
+    
+    
+
   ],
   imports: [
     BrowserModule,
@@ -69,23 +78,22 @@ import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatFormFieldModule,
-    MatButtonModule,
-
+    CommonModule,
     MatIconModule,
-    BrowserAnimationsModule,
+    MatButtonModule,
     
 
-
     
-  
+    
   ],
   
-  providers: [
-   
-  ],
+  providers: [ ],
   bootstrap: [AppComponent],
 
-  entryComponents: [ ModalComponent ]
+
+
+  
+ 
 
 })
 export class AppModule { }
