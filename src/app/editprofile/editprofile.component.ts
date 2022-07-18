@@ -42,6 +42,7 @@ export class EditprofileComponent implements OnInit {
   // end edit profile
   //search button section
   visisblesearch:boolean=false
+  visibleexplore:boolean=false
   //home2
   visiblehome2:boolean=true
   ngOnInit(): void {
@@ -103,6 +104,8 @@ export class EditprofileComponent implements OnInit {
   // home2
   home2()
   {
+    
+    this.editinner=false
     this.visisblesearch=false
     this.visiblehome2=true
   }
@@ -278,6 +281,14 @@ searchact()
   this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=true
+}
+exploreact()
+{
+  this.visiblehome2=false
+  this.editinner=false
+  this.visiblehome2=false
+  this.visisblesearch=false
+  this.visibleexplore=true
 }
 }
 

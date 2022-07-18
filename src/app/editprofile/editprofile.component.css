@@ -353,6 +353,7 @@ background:white;
     background-image:url("/assets/images/Rectangle 60.png") ;
     width:fit-content;
     height: 1510px;
+    height: 1639px;
      margin-left: -14px; 
   /* background-size: cover; */
 }
@@ -370,7 +371,7 @@ background:white;
     margin-left: -14px;}
 
 #imgapp{
-  margin-left: 76px;
+  margin-left: 80px;
   margin-top:10px;
 }
 
@@ -695,7 +696,7 @@ border-radius: 16px;
   width: 359px;
 height: 53px;
 margin-left: 233px;
-margin-top: 150px;
+margin-top: 100px;
 }
 .login-left{width:44%; margin: 0 0 0 5%; display:inline-block; float:left;}
 .p-viewer, .p-viewer2{
@@ -837,11 +838,11 @@ border-width: thin;
   
   .rtngl1{
       /* box-sizing: border-box; */
-      position: absolute;
+     
       width: 937px;
-      height: 1407px;
+      height: 1500px;
       margin-top: 35px;
-    margin-left: 31px;
+    margin-left: 38px;
       background: #305862;
       border: 0.742029px solid #FFFFFF;
       }
@@ -902,7 +903,7 @@ border-width: thin;
       /* background-image:url("assets/images/abt.png"); */
       float:left;
       background-repeat: no-repeat; 
-      height:1441px; 
+      height:1570px; 
       /* background-size: auto; */
       background-size: cover;
   
