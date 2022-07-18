@@ -850,7 +850,7 @@ border-width: thin;
           width: 866px;
           height: 247px;
           left: 40px;
-          top: 32px;
+          margin-top: 32px;
           background: rgba(194, 206, 215, 0.089);
           box-shadow: inset 5.59274px -5.59274px 5.59274px rgba(163, 173, 180, 0.378), inset -5.59274px 5.59274px 5.59274px rgba(255, 255, 255, 0.378);
           backdrop-filter: blur(4.47419px);
@@ -871,7 +871,7 @@ border-width: thin;
       .pg{
           position: relative;
           background-image: url(../../assets/images/close.png);
-          left: 1085px;
+          margin-left: 800px;
            width: 48px;
             height: 44px;
             top: 15px;
@@ -896,12 +896,12 @@ border-width: thin;
       top: -80px;
   }
   .rightbghome2{
-      height:1439px; 
+      
       width:1015px;
       /* background-image:url("assets/images/abt.png"); */
       float:left;
       background-repeat: no-repeat; 
-      height:fit-content; 
+      height:1441px; 
       /* background-size: auto; */
       background-size: cover;
   
