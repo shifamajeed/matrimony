@@ -25,7 +25,7 @@
           <img src="assets/images/Mask Group (1).png" id="imgapp"><br><br>
           <p style="color:rgba(3, 80, 102, 1); margin-left:90px">&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
          <span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1); margin-left:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <img src="assets/images/Group (1).png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <img src="assets/images/Group (2).png" style="background-color:rgba(3, 80, 102, 1)">
          </span>          
@@ -63,13 +63,10 @@
                   <label (click)="searchact()" class="navlabel">Search</label> 
                 </a>
               </li>
-
-
-              
               <li class="nav-item">
-                <a class="nav-link navbar-brand" href="#">
+                <a class="nav-link navbar-brand" >
                   <img src="assets/images/explore.png" class="homeicon">
-                  <label class="navlabel">Explore</label>
+                  <label class="navlabel" (click)="exploreact()">Explore</label>
                 </a>
               </li>
               <li class="nav-item">
@@ -1052,7 +1049,7 @@ text-align: left;
     </div>
   </div>
   <!-- Education & Professional Preferences -->
-  <div class="linebox" style="margin-top: 36px;">
+  <div class="linebox" style="margin-top: 36px;height: 217px">
     <h2 class="text-white partnerh2"><b>Education & Professional Preferences</b></h2>
     <hr class="partnrhr">
     <div class="innerdivpartner">
@@ -1069,7 +1066,7 @@ text-align: left;
     </div>
   </div>
   <!-- Religious Preferences -->
-  <div class="linebox">
+  <div class="linebox" style=margin-top:36px;height:209px;>
     <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
     <hr class="partnrhr">
     <div class="innerdivpartner">
@@ -1086,7 +1083,7 @@ text-align: left;
     </div>
   </div>
   <!-- Location Preferences -->
-  <div class="linebox">
+  <div class="linebox"style=margin-top:36px;height:279px>
     <h2 class="text-white partnerh2"><b>Location Preferences</b></h2>
     <hr class="partnrhr">
     <div class="innerdivpartner">
@@ -1110,7 +1107,7 @@ text-align: left;
     </form>
     </div>
   </div>
-  <button type="submit" class=" text-white btn btn-default submitbtn svbtn">Submit & Save</button>
+  <button type="submit" class="text-white btn btn-default submitbtn svbtn">Submit & Save</button>
 </div>
 <!-- end partner preference -->
 </div>
@@ -1187,11 +1184,64 @@ text-align: left;
   </div>
 </div>
 <!-- end header search button action -->
+<!-- header explore button action -->
+<div *ngIf="visibleexplore">
+  <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+      <button type="button" class="deletebtn sbtn">Explore</button>
+        <div class="lineboxsearch">
+          
+          <!-- <div class="innerdivpartner"> -->
+            <div class="btncls">
+              <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+              <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+              <button  class="btns">Manage photos</button>
+              <div class="in-rtgl" >
+                <button class="pg"></button>
+                <div class="pic"></div>
+                <div class="des">
+              </div>
+              </div>
+          </div>
+          
+         
+            <!-- </div> -->
+        </div>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      
+    </div>
+  </div>
+</div>
+<!-- end header explore button action -->
 <!-- header home button action -->
-<div *ngIf="visiblehome2">
+<div *ngIf="visiblehome2" >
   
-  <div class="rightbghome2" style="background-image:url(assets/images/abt.png);">
+  <div class="rightbghome2" style="background-image:url(assets/images/abt.png);overflow: hidden;">
       <div class="rtngl1" >
+      <div class="in-rtgl" >
+          <button class="pg"></button>
+      <div class="pic"></div>
+      <div class="des">
+          <!-- <button 
+          (click)="enableDisableRule()" 
+          [ngClass]="{'green' : toggle, 'red': !toggle}" class=" heart"  >
+          {{status}}
+      </button> -->
+      </div>
+    </div>
+
+    <div class="in-rtgl" >
+      <button class="pg"></button>
+      <div class="pic"></div>
+      <div class="des">
+      <!-- <button 
+      (click)="enableDisableRule()" 
+      [ngClass]="{'green' : toggle, 'red': !toggle}" class=" heart"  >
+      {{status}}
+  </button> -->
+    </div>
+`   </div>
+
       <div class="in-rtgl" >
           <button class="pg"></button>
       <div class="pic"></div>

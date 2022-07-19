@@ -18,6 +18,10 @@ import { VerifyComponent } from './verify/verify.component';
 import { SuccessComponent } from './success/success.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import {EntrydetailsComponent} from './entrydetails/entrydetails.component';
+
+import { NotificationComponent } from './notification/notification.component';
+
+
 const routes: Routes = [
   {
     path:"",component: HomeComponent 
@@ -36,8 +40,12 @@ const routes: Routes = [
   { path: 'verify', component: VerifyComponent},
   { path: 'success', component: SuccessComponent},
   { path: 'profile', component: ProfilesComponent},
+
   { path:'entry',component:EntrydetailsComponent},
  
+
+  { path: 'noti', component: NotificationComponent},
+
 ];
 
   
