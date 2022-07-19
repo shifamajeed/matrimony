@@ -45,6 +45,14 @@ export class EditprofileComponent implements OnInit {
   visibleexplore:boolean=false
   //home2
   visiblehome2:boolean=true
+  // explore
+  visiblereceive:boolean=true
+  visiblesend:boolean=false
+  visibleboth:boolean=false
+  // help
+  visiblehelp:boolean=false
+  // notification
+  visiblenotification:boolean=false
   ngOnInit(): void {
   }
   // sidebar
@@ -104,7 +112,9 @@ export class EditprofileComponent implements OnInit {
   // home2
   home2()
   {
-    
+    this.editpwdpart=false
+    this.hideprofilepart=false
+    this.deleteprofilepart=false
     this.editinner=false
     this.visisblesearch=false
     this.visiblehome2=true
@@ -277,6 +287,9 @@ partnerpreference()
 // search button action 
 searchact()
 {
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
   this.visiblehome2=false
   this.editinner=false
   this.visiblehome2=false
@@ -284,11 +297,59 @@ searchact()
 }
 exploreact()
 {
+  this.visibleeditprofilediv=false
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
   this.visiblehome2=false
   this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=false
+  this.visiblereceive=false
+  this.visiblesend=false
+  this.visibleboth=false
   this.visibleexplore=true
+}
+// explore
+interestreceived()
+{
+  this.visibleboth=false
+  this.visiblesend=false
+this.visiblereceive=true
+}
+interestsend()
+{
+  this.visiblereceive=false
+  this.visibleboth=false
+this.visiblesend=true
+}
+bothinterest(){
+  this.visiblereceive=false
+  this.visiblesend=false
+this.visibleboth=true
+}
+// end explore
+// help
+helpact()
+{
+  this.visibleeditprofilediv=false
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
+  this.visiblehome2=false
+  this.editinner=false
+  this.visiblehome2=false
+  this.visisblesearch=false
+  this.visiblesend=false
+  this.visiblereceive=false
+  this.visibleboth=false
+  this.visiblehelp=true
+}
+// notification
+notification()
+{
+  this.visiblehome2=false
+  this.visiblenotification=true
 }
 }
 
