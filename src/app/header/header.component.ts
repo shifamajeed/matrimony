@@ -73,6 +73,6 @@ visible4:Boolean=false
 
   frreg(){
     
-  location.href=""
+  location.href="entry"
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-entrydetails',
@@ -17,6 +18,7 @@ export class EntrydetailsComponent implements OnInit {
   hello6:boolean=false
   hello7:boolean=false
   hello8:boolean=false
+  hello9:boolean=false
   ngOnInit(): void {
   }
 
@@ -60,7 +62,6 @@ export class EntrydetailsComponent implements OnInit {
     this.hello5=false
     this.hello6=false
     this.hello7=true
-
   }
   fnnext6(){
     this.hello=false
@@ -71,8 +72,19 @@ export class EntrydetailsComponent implements OnInit {
     this.hello6=false
     this.hello7=false
     this.hello8=true
-
-
   }
-
+  fnnext7(){
+    this.hello=false
+    this.hello2=false
+    this.hello3=false
+    this.hello4=false
+    this.hello5=false
+    this.hello6=false
+    this.hello7=false
+    this.hello8=false
+    this.hello9=true
+  }
+//   function () {
+//     this.router.navigateByUrl('/editprofile');
+// }
 }

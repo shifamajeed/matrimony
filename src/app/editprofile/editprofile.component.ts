@@ -42,6 +42,7 @@ export class EditprofileComponent implements OnInit {
   // end edit profile
   //search button section
   visisblesearch:boolean=false
+  visibleexplore:boolean=false
   //home2
   visiblehome2:boolean=true
   ngOnInit(): void {
@@ -49,15 +50,19 @@ export class EditprofileComponent implements OnInit {
   // sidebar
   lefteditprofilebtn()
   { 
+    this.visisblesearch=false
     this.partner=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
+    this.visiblehome2=false
     this.editinner=true
     this.visibleeditprofilediv=true
   }
   editprofilebtn()
   {
+    this.visisblesearch=false
+    this.visiblehome2=false
     this.partner=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
@@ -66,6 +71,7 @@ export class EditprofileComponent implements OnInit {
   }
   hideprofilebtn()
   {
+    this.visiblehome2=false
     this.partner=false
     this.deleteprofilepart=false
     this.visibleeditprofilediv=false
@@ -74,6 +80,8 @@ export class EditprofileComponent implements OnInit {
   }
   deleteprofilebtn()
   {
+    this.visisblesearch=false
+    this.visiblehome2=false
     this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
@@ -82,6 +90,8 @@ export class EditprofileComponent implements OnInit {
   }
   editpwd()
   {
+    this.visisblesearch=false
+    this.visiblehome2=false
     this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
@@ -94,11 +104,15 @@ export class EditprofileComponent implements OnInit {
   // home2
   home2()
   {
+    
+    this.editinner=false
+    this.visisblesearch=false
     this.visiblehome2=true
   }
   // edit profile
   personalinfo()
   {
+
     this.personal=!this.personal
     this.visiblephysical=false
     this.visibleeducation=false
@@ -252,18 +266,29 @@ hobbiesinfo()
 //partnerpreference
 partnerpreference()
 {
-this.deleteprofilepart=false
+    this.visiblehome2=false
+    this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visibleeditprofilediv=false
+    this.visisblesearch=false
     this.partner=true
 }
 // search button action 
 searchact()
 {
+  this.visiblehome2=false
   this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=true
+}
+exploreact()
+{
+  this.visiblehome2=false
+  this.editinner=false
+  this.visiblehome2=false
+  this.visisblesearch=false
+  this.visibleexplore=true
 }
 }
 
