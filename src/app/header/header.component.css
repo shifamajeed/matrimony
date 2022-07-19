@@ -711,13 +711,12 @@ header .menu-row .button-wrap .button {
 .nav1{
 
     
-      left: 0px;
-    top: 0px;
+   
     height: 70px;
     
     background-color: #1687A7;
     background-attachment: fixed;
-    width: 1368px;
+     /* width: 1368px;  */
     /* display: flex; */
     /* flex-wrap: wrap; */
     padding-left: 10px;
