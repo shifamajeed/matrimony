@@ -1,4 +1,8 @@
 /* profile photo */
+a:hover {
+    text-decoration: none;
+  }
+  
 .about{
     background-image: url("/assets/images/abt.png");
     padding: 350px;
