@@ -348,7 +348,18 @@ helpact()
 // notification
 notification()
 {
+  this.visibleexplore=false
+  this.visibleeditprofilediv=false
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
   this.visiblehome2=false
+  this.editinner=false
+  this.visiblesend=false
+  this.visiblereceive=false
+  this.visibleboth=false
+  this.visisblesearch=false
+  this.partner=false   
   this.visiblenotification=true
 }
 }

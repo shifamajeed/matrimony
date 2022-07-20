@@ -1,5 +1,13 @@
 /* .btns:hover {background-color: #276577;
 } */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
 
 .btns:focus {     
   color: #d3d3d3;
@@ -289,7 +297,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
     margin-left: 0px;
     top: 0px;
     backdrop-filter: blur(33.3227px);
-    opacity: 0.2;
+    
     /* z-index: 1; */
     background-image: url("/assets/images/abt.jpg");
     backdrop-filter: blur(33.3227px);
@@ -358,13 +366,18 @@ background:white;
     background-color: #D3E0EA;
 }
 .blurleft{
+  background-image:url("/assets/images/Rectangle 60.png") ;
+  height: 1500px;
+  float:left;
+}
+/* .blurleft{
     background-image:url("/assets/images/Rectangle 60.png") ;
     width:fit-content;
-    height: 1510px;
+  
     height: 1639px;
-     margin-left: -14px; 
-  /* background-size: cover; */
-}
+    float: left;
+     
+} */
 
     /* .imgapp{image-rendering: auto;
       image-rendering: crisp-edges;

@@ -1,0 +1,127 @@
+.sidebar{
+    /* padding-right:0px;padding-left:0px; */
+      margin: 0;
+      padding: 0;
+      /* width: 300px; */
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    /* .sidebar a {float: left;}
+    div.content {margin-left: 0;} */
+    div.content {padding-right:0px;padding-left:0px;}
+  }
+  
+   @media screen and (max-width: 400px) {
+    .sidebar{
+      text-align: center;
+      float: center;
+    } 
+  } 
+
+
+
+
+/*       here       */
+
+
+
+.blurleft{
+    background-image:url("/assets/images/Rectangle 60.png") ;
+    height: 1500px;
+    float:left;
+}
+.rightbg{
+    /* width:1015px; */
+    background-image:url("/assets/images/abt.png"); 
+    float:left;
+    background-repeat: no-repeat; 
+    height:fit-content; 
+    /* background-size: auto; */
+    background-size: cover;
+}
+@media screen and (max-width: 400px) {
+    .blurleft{
+      text-align: center;
+      float: center;
+    } 
+    .rightbg{
+        /* display: none; */
+    }
+} 
+.innerbox{
+    box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
+         
+          opacity: 6;  
+          height:fit-content; 
+      border-radius: 18px;
+box-shadow: whitesmoke 0px 30px 40px -2em inset;
+Offset: -117.83px, 117.83px;
+background:rgba(255, 255, 255, 0.1);
+Offset: 117.83px, -117.83px;
+background:rgba(160, 170, 178, 0.1);
+margin-bottom: 121px;
+margin-top: 45px;
+float: left;
+
+}
+.btns{
+    /* height: 53px;
+    width: 214px; */
+    /* margin-left: 49px;
+    margin-top: 25px; */
+    border-radius: 16px;
+    color:rgba(3, 80, 102, 1);
+    background-color:white ;
+    border-color: white;
+    float: left;
+}
+.a{
+    font-size:100px;
+}
+@media screen and (max-width: 400px) {
+    #btnid{
+
+    }
+    
+}
+.imgback {
+    /* position:fixed; */
+    /* width: 323px; */
+    height: 250px;
+    /* z-index: 1; */
+    background-image: url("/assets/images/abt.jpg");
+    backdrop-filter: blur(33.3227px);
+    opacity: 0.4;
+    /* float:left; */
+    background-size: cover;
+    display: inline-block;
+}
+
+.imgfront {
+    
+    /* width: 150px; */
+  height: 150px;
+  /* border-radius: 50%;  */
+  position: absolute;
+  /* top: 55px;  */
+      /* left: 70px; */
+      background-size: cover;
+}
+.imgfront {
+width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  position: absolute;
+  top: 55px;
+      left: 70px;
+      background-size: cover;
+}
