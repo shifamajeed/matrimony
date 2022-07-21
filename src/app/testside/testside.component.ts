@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TestsideComponent implements OnInit {
 
   constructor() { }
+  visibleeditprofilediv:boolean=false
+
 
   ngOnInit(): void {
+  }
+  lefteditprofilebtn()
+  { 
+    this.visibleeditprofilediv=true
   }
 
 }

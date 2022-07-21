@@ -9,7 +9,7 @@
 }
 
 
-.btns:focus {     
+.btns:hover {     
   color: #d3d3d3;
   background-color:#276577;
      
@@ -315,13 +315,10 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
       left: 70px;
       background-size: cover;
 }
-
 .bgimg {
-    
     position: relative;
     background-size: 100% 100%;
     height: 200px;
-   
 }
 .pstyle{
   Font-size: 14px;
@@ -342,15 +339,13 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
 }
 .sidebtns
 {
-    border-radius: 12px;
-    position: absolute;
-    width: 258px;
+border-radius: 12px;
+width: 258px;
 height: 75px;
 left: 40px;
 border:none;
 background:white;
 }
-
 .sidebtn1{top: 375px;}
 .sidebtn2{top: 475px;}
 .sidebtn3{top: 575px;}
@@ -365,10 +360,16 @@ background:white;
 .div1{
     background-color: #D3E0EA;
 }
-.blurleft{
-  background-image:url("/assets/images/Rectangle 60.png") ;
+.blurleft1{
+  background-image:url("/assets/images/abt.png") ;
   height: 1500px;
   float:left;
+}
+
+.blurleft2{
+    background-image:url("/assets/images/Rectangle 60.png") ;
+    height: 1500px;
+    float:left;
 }
 /* .blurleft{
     background-image:url("/assets/images/Rectangle 60.png") ;

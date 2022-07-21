@@ -308,6 +308,7 @@ exploreact()
   this.visiblereceive=false
   this.visiblesend=false
   this.visibleboth=false
+  this.visiblenotification=false
   this.visibleexplore=true
 }
 // explore
