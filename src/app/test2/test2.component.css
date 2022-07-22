@@ -1,0 +1,72 @@
+a:hover {
+    text-decoration: none;
+  }
+  
+.about{
+    background-image: url("/assets/images/abt.png");
+    padding: 350px;
+    margin: -28px 0 0 0; 
+}
+.icon {
+    margin: 0 auto 20px auto;
+    padding-top: 11px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+.icon-box{
+    padding: 20px;
+}
+.icn1{
+    color: #276678;
+    font-size: 21px;
+}
+.ic1{
+    padding-top: 7px;
+    height: 38px;
+    width: 38px;
+    /* font-size: 20px; */
+    background: #D3E0EA;
+border: 2.61169px solid #A2C2DB;
+box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
+}
+.abtcont{
+    
+    box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1), 
+                   0 0  0 2px rgb(255,255,255),
+                   0.3em 0.3em 1em rgba(0,0,0,0.3);
+        box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset; 
+        border-radius: 12px;
+        opacity: 6;
+    border: 0px solid white ;
+    /* padding: 100px; */
+    height:500px;
+    border-radius: 12px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    
+        
+}
+.abtcont1{
+    box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1), 
+                   0 0  0 2px rgb(255,255,255),
+                   0.3em 0.3em 1em rgba(0,0,0,0.3);
+        box-shadow: 20px 20px 50px 10px rgba(62, 163, 192, 0.3) inset; 
+        border-radius: 12px;
+        opacity: 6;
+    border: 0px solid white ;
+    /* padding: 100px; */
+    height:750px;
+    width: 950px;
+    border-radius: 12px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}

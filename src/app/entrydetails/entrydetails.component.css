@@ -683,7 +683,7 @@ background: rgb(33, 204, 33);
 {
     .progress {
         max-width: 960px;
-        margin-left: 115px;
+        margin-left: 217px;
     }
 }
 @media (max-width:850px)
@@ -693,6 +693,18 @@ background: rgb(33, 204, 33);
         margin-left: 75px;
     }
 }
+@media (min-width:300px) and (max-width:440px)
+{
+    .progress {
+        position: relative;
+        max-width: 225px;
+        margin-left: 28px;
+        height: 12px;
+        margin-bottom: 10px;
+        top: 38px;
+}
+    }
+
 /* @media (max-width:1000px) */
 /* { */
     /* .progress { */
@@ -733,3 +745,10 @@ background: rgb(33, 204, 33);
         margin-top: ;
     }
 } */
+@media (min-width:300px) and (max-width:440px)
+{
+    .img{
+        visibility: hidden;
+    }
+}
+   

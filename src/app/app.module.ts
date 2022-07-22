@@ -23,6 +23,7 @@ import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
+import { Test2Component } from './test2/test2.component';
 
 
 
@@ -66,6 +67,7 @@ import { EntrydetailsComponent } from './entrydetails/entrydetails.component';
     EntrydetailsComponent,
    
     NotificationComponent,
+        Test2Component,
     
     
     

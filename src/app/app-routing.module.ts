@@ -20,6 +20,7 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import {EntrydetailsComponent} from './entrydetails/entrydetails.component';
 
 import { NotificationComponent } from './notification/notification.component';
+import { Test2Component } from './test2/test2.component';
 
 
 const routes: Routes = [
@@ -45,6 +46,7 @@ const routes: Routes = [
  
 
   { path: 'noti', component: NotificationComponent},
+  { path:'test2', component: Test2Component},
 
 ];
 
