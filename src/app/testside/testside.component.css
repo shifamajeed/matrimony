@@ -50,7 +50,7 @@
     background-repeat: no-repeat; 
     height:fit-content; 
     /* background-size: auto; */
-    background-size: cover;
+    /* background-size: cover; */
 }
 @media screen and (max-width: 400px) {
     .blurleft{
@@ -89,15 +89,15 @@ float: left;
     color:rgba(3, 80, 102, 1);
     background-color:white ;
     border-color: white;
-    float: left;
+    /* float: left; */
 
 }
 .a{
     font-size:100px;
 }
-@media screen and (max-width: 400px) {
-    #btnid{
-
+@media screen and (min-width: 400px) {
+    .camera{
+      display: none;
     }
     
 }
@@ -192,32 +192,33 @@ margin-top: 45px; */
 border-width: thin;
 }
 .imgdiv{
-  height: 348px;
+  /* height: 348px; */
   /* width: 341px; */
-  border-radius: 15.497406px;
-  float: left;
+  /* border-radius: 15.497406px; */
+  /* float: left; */
 }
-
 .boximg{
-  height: 296px;
+  height: 290px;
   /* width: 290px; */
   /* left: 529px;
   top: 299px; */
   border-radius: 15.497406px;
   /* margin-left:27px;
   margin-top:27px; */
-  float: left;
+  /* float: left; */
   /* background-size:cover; */
 }
 @media  screen and (max-width:400px)  {
-  .linebox{
-    margin-top:0px;
-    margin-left: 0px;
+  .boximg{
+    height: 257px;
   }
 }
 .camera{
-  width:15px;
+  width:55px;
+  /* position: absolute; */
   /* margin-top: 5px;
-  margin-left: 5px;
-  border-color: red; */
+  margin-left: 5px; */
+  margin-left: 191px;
+    margin-top: -486px;
+  border-color: red;
 }
