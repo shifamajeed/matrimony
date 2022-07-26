@@ -1,11 +1,12 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-3 col-sm-12">
+        <div class="d-lg-flex d-sm-block">
+          
+        <div class="col-lg-3 col-sm-12 px-0"*ngIf="sidenav" >
             <div class="row">
                 <img src="assets/images/Group 638.png" class="imgback px-0"/>
                 <img src="assets/images/Group 268.png" class="imgfront p-2"/>
             
-
             <div class="blurleft1 px-0 py-0 col-lg-12 col-sm-12">
                 <div class="blurleft2">
                     <div class="px-4 py-0">
@@ -32,13 +33,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-9 col-sm-12 rightbg" style="background-image:url(assets/images/abt.png);">
+     
+
+        
+      <div *ngIf="visibleeditprofilediv" class="col-lg-9 col-sm-12">
+        <div  class="rightbg" style="background-image:url(assets/images/abt.png);margin-right: 0px;margin-left: 0px;">
             <div class="mx-lg-5 my-lg-5 my-3">
-                <button class="btns mx-lg-5 mx-1">Edit profile</button>
-                <button class="btns">Partner Preference</button>
-                <button class="btns mng mx-lg-5">Manage photos</button>
+                <button class="btns mx-lg-4 mx-1">Edit profile</button>
+                <button class="btns mx-lg-3">Partner Preference</button>
+                <button class="btns mng mx-lg-4">Manage photos</button>
             </div>
             <div class="mx-lg-5 my-lg-5 my-3 mx-2">
+                
                 <div class="linebox">
                     <!-- <div class="imgdiv"> -->
                     <!-- <div class="mx-lg-4 my-lg-3">
@@ -47,7 +53,7 @@
                     </div> -->
                     <div class="d-lg-flex">
                         <div class="col-lg-4 py-lg-4 py-2 px-0" style="background-color: red;">
-                            <img class="boximg mx-2 py-lg-2 mx-lg-4 mx-0" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
+                            <div><img class="boximg mx-2 py-lg-2 mx-lg-4 mx-0" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg"></div>
                             <img class="camera col-sm-2" src="assets/images/camera.png" alt="camera">
                         </div>
                         <div class="col-lg-8 py-lg-3 d-none d-lg-block" style="background-color: yellow;">
@@ -99,9 +105,32 @@
                                 
                             </div>
                         </div>
+                        <div class="innerbox col-md-10 my-0 d-md-block d-lg-none">
+                           <div class="col-md-12">Name</div>
+                           <div class="d-flex flex-row col-md-12">
+                            <div>21 yrs</div>
+                           <div  class="mx-2">Male</div>
+                           <div class="mx-2">Islam</div>
+                           </div>
+                           <div class="d-flex flex-row col-md-12">
+                            <div>calicut</div>
+                           <div class="mx-2">Kerala</div>
+                           <div class="mx-2">India</div>
+                           </div>
+                           <div class="d-flex flex-row col-md-12">
+                            <div>Married</div>
+                           <div class="mx-1">High/Secondary</div>
+                           <div>Not working</div>
+                           </div>
+                        </div>
                     </div>
                 </div>
-            </div>   
-        </div>
+            </div>  
+        </div>  
+
+  
+
+    </div>
+    </div>
     </div>
 </div>    
