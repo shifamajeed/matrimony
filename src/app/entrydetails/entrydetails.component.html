@@ -7,7 +7,7 @@
     <!-- here -->
     <div  *ngIf="hello">    
     
-    <!-- <div class="col lg-12 col-md-12"> -->
+   
       <div class="row">
       <div class=" col-lg-12 col-sm-4">
     <div class="progress">
@@ -28,39 +28,110 @@
         <!-- <div  class="box"> -->
           <div class="img">
           <img class="img-fluid hrtcls1" src="../../assets/images/hrt6.png " style="
-    margin-top: 288px;
-    margin-left: -489px;
+    margin-top: 371px;
+    margin-left: -491px;
   ">
           <img class="img-fluid hrtcls" src="../../assets/images/Vector.png" style="
    
-    margin-top: 275px;
-    margin-left: -545px;
+    margin-top: 360px;
+    margin-left: -552px;
 
   ">
           <img class="img-fluid vector" src="../../assets/images/hrt5.png" style="
     position: absolute;
-    left: 6.85%;
+    left: 6.5%;
     right: 75.96%;
-    top: 39.85%;
+    top: 43.51%;
     bottom: 49.58%;
 
   ">
   </div>
   <!-- new content --> 
-    <!-- <div class="row">
-    <div class="col-lg-4 col-sm-12 "> 
-
-    </div>
-    <div class="col-lg-4 col-sm-12">
-       </div>
-    <div class="col-lg-4 col-sm-12">
-
-    </div>
-     </div> -->
-  <!-- ends here  v -->
   <h1> Personal Informations</h1>
+  <div class="row">
+    
+  <div class="col-lg-4 col-sm-12 "> 
+    <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker inp" inline="true">
+      <p>Date of Birth</p>
+      <input placeholder="Select date" type="date" id="example" class="date">
+
+    
+    </div>
+  
+
+  </div>
+  <div class="col-lg-4 col-sm-12"> 
+    <div class="inp">
+      <p>Marital Status</p>
+      <div class="dropdown in">
+        <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b>Select</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="Select">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    
+
+     </div>
+  <div class="col-lg-4 col-sm-12">
+     <div class="inp">
+            <p>Profile ID</p>
+            <input type=text>
+          </div>
+
+  </div>
+  <div class="col-lg-4 col-sm-12 "> 
+    <div class="inp" style="
+    margin-top: 26px;
+">
+            <p>Religion</p>
+
+            <div class="dropdown in">
+              <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <b> Select</b>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="Se">
+                <a class="dropdown-item" href="#">Something3</a>
+                <a class="dropdown-item" href="#">something2</a>
+                <a class="dropdown-item" href="#">something</a>
+              </div>
+            </div>
+          </div>
+
+  </div>
+  <div class="col-lg-4 col-sm-12 "> 
+    <div class="inp" style="
+    margin-top: 26px;
+">
+      <p>Nationality</p>
+      <div class="dropdown in">
+        <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b> Select</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Indian</a>
+          <a class="dropdown-item" href="#">Other</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 col-sm-12">
+    <div class="box" style="margin-top: 150px;"> 
+      <button class="bt" (click)="fnnext()" style="margin-bottom: -45px;" style="margin-top: -115px;"> Next </button>
+                 </div>
+    </div>
+   </div>
+  <!-- ends here  v -->
+  <!-- <h1> Personal Informations</h1>
           <div class= " col row">
-            <!-- <div class="col-sm-12"> -->
+            
             <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker inp" inline="true">
               <p>Date of Birth</p>
               <input placeholder="Select date" type="date" id="example" class="date">
@@ -121,7 +192,7 @@
           </div>
                <div class="box" style="margin-top: 150px;"> 
           <button class="bt" (click)="fnnext()" style="margin-bottom: -45px;"> Next </button>
-                     </div>
+                     </div> -->
            </div>
            </div> 
            </div>
@@ -143,9 +214,10 @@
           <div class="container-fluid abtcont">
             <div class="box">
           
-          
+          <!-- physical information -->
           <h1> Physical Information</h1>
-          <div class="col">
+          <div class="row">
+          <div class="col-lg-4 col-sm-12">
             <div class="inp">
               <p>Height</p>
               <div class="dropdown in">
@@ -160,8 +232,101 @@
                 </div>
               </div>
             </div>
-  
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
             <div class="inp">
+              <p>Weight</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Select">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="inp">
+              <p>Physical Status</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Select">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div col-lg-4 col-sm-12>
+            <div class="inp" style="
+            margin-top: 26px;
+        ">
+              <p>Complexion</p>
+  
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <b> Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Se">
+                  <a class="dropdown-item" href="#">Something3</a>
+                  <a class="dropdown-item" href="#">something2</a>
+                  <a class="dropdown-item" href="#">something</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="inp" style="
+            margin-top: 26px;
+        ">
+              <p>Body type</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b> Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Indian</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          </div>
+          <button class="bt inp" (click)="fnnext1()" style="
+          margin-top: 150px;
+      "> Next </button>
+
+          <!-- <div class="col"> -->
+            <!-- <div class="inp">
+              <p>Height</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Select">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div> -->
+  
+            <!-- <div class="inp">
               <p>Weight</p>
               <div class="dropdown in">
                 <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -224,12 +389,10 @@
               </div>
             </div>
           </div>
-          <div class="box">
+          <div class="box"> -->
   
-          <button class="bt" (click)="fnnext1()" style="
-                  margin-top: 150px;
-              "> Next </button>
-              </div>
+         
+              <!-- </div> -->
               </div> </div> </div>
               
             <!--        here -->

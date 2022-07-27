@@ -313,7 +313,7 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
         opacity: 6;
     border: 0px solid white ;
     /* padding: 100px; */
-    height:500px;
+    height:100%;
     border-radius: 12px;
     display:flex;
     flex-direction:column;
@@ -398,7 +398,7 @@ left: 591px;
     }
     .about {
         background-image: url(/assets/images/abt.png);
-        background-size: 200%;
+        
         padding: 40px;
         margin: 0px 0 0 0;
     }
@@ -595,6 +595,25 @@ header .menu-row .button-wrap .button {
     
     
     
+    
+}
+@media (min-width:800px) and (max-width:1400px){
+    .inp{
+        display:flex;
+    width:350px;
+    height:100%;
+    flex-direction:column;
+    align-items:center;
+    }
+}
+@media (min-width:300px) and (max-width:500px){
+    .inp{
+        display:flex;
+    width:320px;
+    height:100%;
+    flex-direction:column;
+    align-items:center;
+    }
 }
 
 .inp input,.in{
