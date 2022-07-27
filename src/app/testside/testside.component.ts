@@ -1,16 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HostListener } from "@angular/core";
 @Component({
-  selector: 'app-editprofile',
-  templateUrl: './editprofile.component.html',
-  styleUrls: ['./editprofile.component.css']
+  selector: 'app-testside',
+  templateUrl: './testside.component.html',
+  styleUrls: ['./testside.component.css']
 })
-export class EditprofileComponent implements OnInit {
+export class TestsideComponent implements OnInit{
 
   constructor() { }
-  // editinner:boolean=true
+       public innerWidth: any;
+  // scrHeight:any;
+  //   scrWidth:any;
+  
+// isDisabled: boolean;
+   // editinner:boolean=true
   
   // sidebar
+  sidenav:boolean=true
   editinner:boolean=false
   visibleeditprofilediv:boolean=false
   hideprofilepart:boolean=false
@@ -53,11 +59,29 @@ export class EditprofileComponent implements OnInit {
   visiblehelp:boolean=false
   // notification
   visiblenotification:boolean=false
+
+
   ngOnInit(): void {
   }
+
+  // @HostListener('window:resize', ['$event'])
+  //   getScreenSize() {
+  //         this.scrHeight = window.innerHeight;
+  //         this.scrWidth = window.innerWidth;
+  //         console.log(this.scrHeight, this.scrWidth);
+  //   }
+  
+
+  
   // sidebar
   lefteditprofilebtn()
   { 
+    // this.innerWidth = this.getScreenSize();
+    // this.innerWidth = event.target.innerWidth;
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <600) {
+       this.sidenav = false;
+       // this.sidenav=false
     this.visisblesearch=false
     this.partner=false
     this.deleteprofilepart=false
@@ -66,7 +90,25 @@ export class EditprofileComponent implements OnInit {
     this.visiblehome2=false
     this.editinner=true
     this.visibleeditprofilediv=true
+       
+   } else {
+ this.sidenav = true;
+       // this.sidenav=false
+
+       
+    this.visisblesearch=false
+    this.partner=false
+    this.deleteprofilepart=false
+    this.hideprofilepart=false
+    this.editpwdpart=false
+    this.visiblehome2=false
+    this.editinner=true
+    this.visibleeditprofilediv=true
+    }
   }
+
+    
+  
   editprofilebtn()
   {
     this.visisblesearch=false
@@ -364,5 +406,3 @@ notification()
   this.visiblenotification=true
 }
 }
-
-

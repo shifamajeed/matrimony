@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -18,9 +18,13 @@ import { VerifyComponent } from './verify/verify.component';
 import { SuccessComponent } from './success/success.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import {EntrydetailsComponent} from './entrydetails/entrydetails.component';
-
 import { NotificationComponent } from './notification/notification.component';
+
+import {TestsideComponent} from './testside/testside.component';
+
+
 import { Home2Component } from './home2/home2.component';
+
 
 const routes: Routes = [
   {
@@ -40,12 +44,14 @@ const routes: Routes = [
   { path: 'verify', component: VerifyComponent},
   { path: 'success', component: SuccessComponent},
   { path: 'profile', component: ProfilesComponent},
-
   { path:'entry',component:EntrydetailsComponent},
- 
-
   { path: 'noti', component: NotificationComponent},
+
+  { path: 'testside',component: TestsideComponent},
+
+
   { path: 'hom', component: Home2Component},
+
 ];
 
   

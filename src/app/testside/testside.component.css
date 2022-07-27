@@ -1,0 +1,214 @@
+.sidebar{
+    /* padding-right:0px;padding-left:0px; */
+      margin: 0;
+      padding: 0;
+      /* width: 300px; */
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+  
+      height: auto;
+      position: relative;
+    }
+    /* .sidebar a {float: left;}
+    div.content {margin-left: 0;} */
+    div.content {padding-right:0px;padding-left:0px;}
+  }
+  
+   @media screen and (max-width: 600px) {
+    .sidebar{
+      text-align: center;
+      float: center;
+    } 
+  } 
+
+
+
+
+/*       here       */
+
+.blurleft1{
+  background-image:url("/assets/images/abt.png") ;
+  height: 1500px;
+  float:left;
+}
+
+.blurleft2{
+    background-image:url("/assets/images/Rectangle 60.png") ;
+    height: 1500px;
+    float:left;
+}
+.rightbg{
+    background-image:url("/assets/images/abt.png"); 
+    float:left;
+    background-repeat: no-repeat; 
+    height:fit-content; 
+}
+@media screen and (max-width: 1200px) {
+    .blurleft{
+      text-align: center;
+      float: center;
+    } 
+    .rightbg{
+        /* display: none;  */
+    }
+    .mng{
+      display: none;
+    }
+} 
+.innerbox{
+    box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
+          opacity: 6;  
+          height:fit-content; 
+      border-radius: 18px;
+box-shadow: whitesmoke 0px 30px 40px -2em inset;
+Offset: -117.83px, 117.83px;
+background:rgba(255, 255, 255, 0.1);
+Offset: 117.83px, -117.83px;
+background:rgba(160, 170, 178, 0.1);
+margin-bottom: 121px;
+margin-top: 45px;
+float: left;
+}
+.btns{
+    height: 53px;
+    width: 214px; 
+    border-radius: 16px;
+    color:rgba(3, 80, 102, 1);
+    background-color:white ;
+    border-color: white;
+}
+.a{
+    font-size:100px;
+}
+@media screen and (min-width: 600px) {
+    .camera{
+      display: none;
+    }
+}
+.imgback {
+   
+    height: 250px;
+    background-image: url("/assets/images/abt.jpg");
+    backdrop-filter: blur(33.3227px);
+    opacity: 0.4;
+    background-size: cover;
+    display: inline-block;
+}
+
+.imgfront {
+  height: 150px;
+  position: absolute;
+  background-size: cover;
+}
+.imgfront {
+width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  position: absolute;
+  top: 55px;
+  left: 70px;
+  background-size: cover;
+}
+.sidebtns
+{   
+border-radius: 12px;
+width: 258px;
+height: 75px;
+left: 40px;
+border:none;
+background:white;
+}
+@media screen and (max-width: 600px) {
+.btns{
+    width: 140px;
+}
+ }
+ .rightbg{
+  float:left;
+  background-repeat: no-repeat; 
+  /* background-size: cover; */
+}
+.innerbox{
+  box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
+       
+        opacity: 6; 
+        height: 98%;
+    border-radius: 18px;
+box-shadow: whitesmoke 0px 30px 40px -2em inset;
+Offset: -117.83px, 117.83px;
+background:rgba(255, 255, 255, 0.1);
+Offset: 117.83px, -117.83px;
+background:rgba(160, 170, 178, 0.1);
+}
+.linebox{
+  height: 350px;
+  border-radius: 18px;
+  border: 1px solid white;
+  border-style: solid;
+border-width: thin;
+}
+.imgdiv{
+  /* height: 348px; */
+  /* width: 341px; */
+  /* border-radius: 15.497406px; */
+  /* float: left; */
+}
+.boximg{
+  height: 290px;
+  border-radius: 15.497406px;
+}
+@media  screen and (max-width:600px)  {
+  .boximg{
+    height: 257px;
+    border-radius: 15.497406px;
+  }
+}
+
+.camera{
+  width:55px;
+  margin-left: 191px;
+    margin-top: -486px;
+  border-color: red;
+}
+.content{
+  border-radius: 15.497406px;
+  /* float: left; */
+  font-family: 'Poppins'; 
+}
+.verticalline{
+  border-left: 2px solid white;
+  height: 45px;
+  /* margin-left: 157px; */
+}
+.h4text{
+  text-align: center;
+  color: white;
+  font-family: 'Poppins'; 
+}
+hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Poppins';  }
+.formtypes{
+    
+  background-color:transparent;
+  border: 0px;
+  /* margin-left:2px; */
+  /* border-bottom-color: coral; */
+  
+}
+.lb{
+  font-family:'Poppins'; 
+}
+.btn{
+  /* margin-top: 80px;
+  margin-left: 66px; */
+/* width: 122px; */
+height: 37px;
+
+background: #276678;
+border-radius: 20px;
+}

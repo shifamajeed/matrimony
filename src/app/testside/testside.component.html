@@ -1,0 +1,272 @@
+<div class="container-fluid mx-0">
+    <div class="row">
+     
+        <div class="col-lg-3 col-sm-12" *ngIf="sidenav" >
+            <div class="row">
+                <img src="assets/images/Group 638.png" class="imgback px-0"/>
+                <img src="assets/images/Group 268.png" class="imgfront p-2"/>
+            
+            <div class="blurleft1 px-0 py-0 col-lg-12 col-sm-12">
+                <div class="blurleft2">
+                    <div class="px-4 py-0">
+                        <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
+                        <button class="sidebtns sidebtn2 my-3"><img src="assets/images/Group 765.png" ></button>
+                        
+                        <button class="sidebtns sidebtn3 my-3"><img src="assets/images/Group 596.png" ></button>
+                        <button class="sidebtns sidebtn4 my-3"><img src="assets/images/Group 595.png" ></button>
+                        <button class="sidebtns sidebtn5 my-3"><img src="assets/images/Group 594.png" ></button>
+                        <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button>
+                        <div>
+                            <div class="pstyle">Download  App For Android and IOS</div>
+                            <img src="assets/images/Mask Group.png" id="imgapp">
+                            <img src="assets/images/Mask Group (1).png" id="imgapp"><br><br>
+                            <p style="color:rgba(3, 80, 102, 1); margin-left:90px">&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
+                           <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1); margin-left:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="assets/images/Group (1).png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="assets/images/Group (2).png" style="background-color:rgba(3, 80, 102, 1)">
+                           </span>          
+                         </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+     
+
+        <!--  -->
+        
+      <div *ngIf="visibleeditprofilediv" class="col-lg-9 col-sm-12 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
+        
+        <div  class="rightbg col-lg-12" style="background-image:url(assets/images/abt.png);">
+         
+            
+                <div class="mx-lg-1 my-lg-5 my-3">
+                    <button class="btns mx-lg-4 mx-1">Edit profile</button>
+                    <button class="btns mx-lg-3">Partner Preference</button>
+                    <button class="btns mng mx-lg-4">Manage photos</button>
+                </div>
+            
+            
+            <div class="col-lg-12 col-sm-12 my-lg-5 my-1 mx-0 px-0">
+                
+                <div class="linebox col-lg-12 col-sm-10 mx-lg-0 px-lg-2 px-0 my-2 mx-0">
+                    <!-- <div class="imgdiv"> -->
+                    <!-- <div class="mx-lg-4 my-lg-3">
+                        <img class="boximg mx-2 my-2 px-0" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
+                        <img class="camera col-sm-2" src="assets/images/camera.png" alt="camera">
+                    </div> -->
+                    <div class="d-lg-flex">
+                        <div class="col-lg-4 col-sm-12 py-lg-2 py-2 my-lg-4 mx-lg-0 px-lg-0 px-0 mx-0 my-0" style="background-color: red;">
+                            <img class="boximg col-lg-12 mx-lg-0 mx-sm-1 px-2" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
+                            <img class="camera col-sm-2" src="assets/images/camera.png" alt="camera">
+                        </div>
+                        <div class="col-lg-6 py-lg-3 d-none d-lg-block  px-lg-1" style="background-color: yellow;">
+                            <div class="content col-lg-12" style="background-color: green;">
+                                <div class="col-lg-12 px-lg-5" style="background-color:blue;"><h4 class="mx-lg-5 px-lg-5 h4text">Name</h4></div>
+                                <hr>
+                                <div class="d-lg-flex">
+                                    <div class="col-lg-3 mx-lg-5 px-lg-5"><span class="verticalline mx-lg-5 px-lg-5"></span></div>
+                                    <div class="col-lg-3 mx-lg-5 px-lg-5"><span class="verticalline mx-lg-5 px-lg-5"></span></div>
+                                </div>
+                                <div style="text-align: center; color:white">
+                                    <span class="px-lg-5">calicut</span>,<span class="px-lg-5">kerala</span>,<span class="px-lg-5">India</span>
+                                </div>
+                                
+                                <!--    form   -->
+                                <div class="d-lg-flex ">
+                                    <div class="col-lg-6 my-lg-3 lb text-white"style="background-color:blue;">
+                                        <div class="py-lg-2">Marital Status</div>
+                                        <div class="py-lg-2">Religion</div>
+                                        <div class="py-lg-2">Education</div>
+                                        <div class="py-lg-2">Job Profession</div>
+                                    </div>
+                                    <div class="col-lg-6 my-lg-3 mx-lg-0 lb text-white">
+                                        <div class="d-lg-flex">:<input type="text" class="form-control formtypes" id="maritalstatus" placeholder="" name="maritalstatus"></div>
+                                        <div class="d-lg-flex">:<input type="text" class="form-control formtypes " id="relegion" placeholder="" name="relegion"></div>
+                                        <div class="d-lg-flex">:<input type="text" class="form-control formtypes" id="education" placeholder="" name="education"></div>
+                                        <div class="d-lg-flex">:<input type="text" class="form-control formtypes" id="job" placeholder="" name="job"></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- <form class="form-inline" action="/action_page.php">
+                                    <div class="form-group d-sm-flex" style="color:white;">
+                                      <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                      <input type="text" class="form-control formtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+                                    </div>
+                                    <div class="form-group" style="color:white;">
+                                      <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                      <input type="text" class="form-control formtypes" id="relegion" placeholder="" name="relegion">
+                                    </div>
+                                    <div class="form-group" style="color:white;">
+                                        <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" class="form-control formtypes" id="education" placeholder="" name="education">
+                                    </div>
+                                    <div class="form-group" style="color:white;">
+                                        <label for="relegion">Job Profession</label><label class="lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" class="form-control formtypes" id="job" placeholder="" name="job">
+                                    </div>
+                                </form> -->
+                                
+                            </div>
+                        </div>
+                        <div class="innerbox col-sm-12 my-0 d-md-block d-lg-none">
+                           <div class="col-md-12">Name</div>
+                           <div class="d-flex flex-row col-md-12">
+                            <div>21 yrs</div>
+                           <div  class="mx-2">Male</div>
+                           <div class="mx-2">Islam</div>
+                           </div>
+                           <div class="d-flex flex-row col-md-12">
+                            <div>calicut</div>
+                           <div class="mx-2">Kerala</div>
+                           <div class="mx-2">India</div>
+                           </div>
+                           <div class="d-flex flex-row col-md-12">
+                            <div>Married</div>
+                           <div class="mx-1">High/Secondary</div>
+                           <div>Not working</div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+<!-- edit profile  Personal Information-->
+                <div class="col-lg-12 col-sm-12">
+                    <button type="button" (click)=personalinfo() class="btn btn-block personaldiv">
+                    <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+                    {{visiblepersonal?"Personal Informations":"Personal Informations"}}
+                    </button>
+                </div>
+               <!--   -->
+               <div *ngIf="visiblepersonal"> 
+               
+                 <div id="personaldiv"><br>
+                   <div class="innerbox">
+                   
+                     <div class="innerdiv">
+                     <form class="form-inline" action="/action_page.php">
+                       <div class="form-group" style="color:white;">
+                         <label for="name">Name</label><label class="div1lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                         <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+                       </div><br>
+                       <div class="form-group" style="color:white;">
+                         <label for="age">age</label><label class="div1lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                         <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+                       </div>
+                       <div class="form-group" style="color:white;">
+                         <label for="maritalstatus">Marital status</label><label class="div1lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                         <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+                       </div>
+                       <div class="form-group" style="color:white;">
+                         <label for="relegion">reliogion</label><label class="div1lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                         <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+                       </div>
+                       
+                       <div class="form-group" style="color:white;">
+                           <label for="nationality">Nationality</label><label class="div1lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                           <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+                       </div>
+                       <div class="form-group" style="color:white;">
+                         <label for="relegion">Language Spoken</label><label class="div1lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                           <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+                           <!-- <div class="dropdown">
+                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Dropdown
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                               <button class="dropdown-item" type="button">Action</button>
+                               <button class="dropdown-item" type="button">Another action</button>
+                               <button class="dropdown-item" type="button">Something else here</button>
+                             </div>
+                           </div> -->
+                       </div>
+                       <div class="form-group" style="color:white;">
+                         <label for="nationality">About me</label><label class="div1lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                         <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+                       </div>
+                       
+                         <button type="submit" class="btn btn-default submitbtn">Save</button>
+                     </form>
+                   </div>
+                   </div>
+                 </div>
+               </div>
+
+
+
+<!-- end edit profile  Personal Information -->
+           
+        </div>  
+    </div>
+    <!--  -->
+    <!-- header home button action -->
+<div *ngIf="visiblehome2" class="col-lg-9 col-sm-12 rightbg" style="padding-right: 0px;padding-left: 0px;">
+
+    <div style="background-image:url(assets/images/abt.png);">
+        <div class="col-lg-9 col-sm-12 linebox mx-lg-4 my-2">
+          
+            <div class="d-lg-flex">
+                <div class="col-lg-3 py-lg-4 py-2 mx-lg-1" style="background-color: red;">
+                    <div><img class="boximg mx-2 py-lg-2 mx-lg-1 px-0" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg"></div>
+                    <img class="camera col-sm-2" src="assets/images/camera.png" alt="camera">
+                </div>
+                <div class="col-lg-5 py-lg-3 d-none d-lg-block px-lg-5"  style="background-color: yellow;">
+                    <div class="content" style="background-color: green;">
+                        <div class="col-lg-12 px-lg-5" style="background-color:blue;"><h4 class="mx-lg-5 px-lg-5 h4text">Name</h4></div>
+                        <hr>
+                        <div class="d-lg-flex">
+                            <div class="col-lg-3 mx-lg-5 px-lg-5"><span class="verticalline mx-lg-5 px-lg-5"></span></div>
+                            <div class="col-lg-3 mx-lg-5 px-lg-5"><span class="verticalline mx-lg-5 px-lg-5"></span></div>
+                        </div>
+                        <div style="text-align: center; color:white">
+                            <span class="px-lg-5">calicut</span>,<span class="px-lg-5">kerala</span>,<span class="px-lg-5">India</span>
+                        </div>
+                        
+                        <!--    form   -->
+                        <div class="d-lg-flex ">
+                            <div class="col-lg-6 my-lg-3 lb text-white"style="background-color:blue;">
+                                <div class="py-lg-2">Marital Status</div>
+                                <div class="py-lg-2">Religion</div>
+                                <div class="py-lg-2">Education</div>
+                                <div class="py-lg-2">Job Profession</div>
+                            </div>
+                            <div class="col-lg-6 my-lg-3 mx-lg-0 lb text-white">
+                                :<input type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
+                                :<input type="text" class="form-control formtypes" id="relegion" placeholder="" name="relegion">
+                                :<input type="text" class="form-control formtypes" id="education" placeholder="" name="education">
+                                :<input type="text" class="form-control formtypes" id="job" placeholder="" name="job">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+                <div class="innerbox col-md-10 my-0 d-md-block d-lg-none">
+                   <div class="col-md-12">Name</div>
+                   <div class="d-flex flex-row col-md-12">
+                    <div>21 yrs</div>
+                   <div  class="mx-2">Male</div>
+                   <div class="mx-2">Islam</div>
+                   </div>
+                   <div class="d-flex flex-row col-md-12">
+                    <div>calicut</div>
+                   <div class="mx-2">Kerala</div>
+                   <div class="mx-2">India</div>
+                   </div>
+                   <div class="d-flex flex-row col-md-12">
+                    <div>Married</div>
+                   <div class="mx-1">High/Secondary</div>
+                   <div>Not working</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+      </div>
+
+    
+  
+  <!-- end header home button action -->
+   
+    </div>
+</div>    
