@@ -13,22 +13,55 @@
 
    
 }
+ .mid{
+    margin-left: 269px;
+    margin-top: 41px;
+} 
+@media screen and (min-width:320px) and (max-width:576px) {
+    .mid{
+        margin-left: 0px;
+        margin-top: 0px;
+    } 
+    
+} 
+
+.section-bg.loc1{
+    background: #D3E0EA;
+    padding: 79px; 
+    margin-right: -15px
+}
+
+@media(max-width:720px){
+    .section-bg.loc1{
+        background: #D3E0EA;
+        padding: 20px;
+        height: 725px; 
+        margin-left: -15px
+    }
+}
+
 .geo{
     font-family: 'Georgia';
 font-style: normal;
 font-weight: 700;
-font-size: 36px;
 left: 82px;
+
 }
 .geo1{
-    position: relative;
+    
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
-    left: 243px; 
     color: white;
+    margin-left: 169px;
 }
+@media(max-width:720px){
+    .geo1{
+        margin-left: 0px;  
+    }
+}
+
 
 .icoon{
     box-sizing: border-box;
@@ -55,21 +88,29 @@ left: 82px;
 
 .card1{
    
-    width: 540.48px;
-    height: 140.37px;
+    /* width: 540.48px;
+    height: 140.37px; */
     font-family: 'Poppins';
 font-style: normal;
     background: #D3E0EA;
     border-radius: 35.7674px;
     border-style:none ;
 }
+
+@media(min-width:769px)and (max-width:2560px){
+    .card1{
+        width: 540.48px;
+        height: 140.37px;
+    }  
+}
+
 .div1{
 box-sizing: border-box;
-width: 283px;
+width: 251px;
 height: 152px;
-left: 119px;
-top: 2398px;
-
+left: 5px;
+top: -1px;
+position: relative;
 border: 1px solid #F6F5F5;
 border-radius: 13px;
 }
@@ -82,8 +123,21 @@ line-height: 22px;
 /* background-image: url(../../assets/images/location.png);
 background-repeat: no-repeat; */
 color: #1687A7;
-margin-left: 71px;
+margin-left: 55px;
     margin-top: 14px;
+}
+
+@media(max-width:720px){
+    .head1{
+       margin-left: 23px; 
+    }
+
+}
+
+@media(max-width:720px){
+    .formi{
+margin-left: 4px
+    }
 }
 .head2{
     font-family: 'Poppins';
@@ -96,7 +150,12 @@ margin-left: 23px;
 .pc1{
     position: relative;
     top: 55px;
-    left: 29px;
+    left: -1px;
+}
+.sign{
+    position: relative;
+    width: 73px;
+    top: 5px;
 }
 
 .image2{
@@ -106,15 +165,37 @@ margin-left: 23px;
     left: 114px;
 }
 
+.hit{height: 183px;
+    margin-left: -5px;
+    margin-right: -15px;
+}
+@media(max-width:720px){
+    .hit{
+        height: 455px;
+        margin-top: -674px;
+        margin-left: -15px;
+    }
+}
+
+.mainbox{
+ margin-left: 118px;
+}
+
+@media(max-width:991px){
+    .mainbox{
+        margin-left: -1px;
+        margin-top: 18px;
+       }   
+}
 
 .banner-section {
     padding: 30px 0 0;
 }
 .banner-section h1 {
-    font-size: 32px;
+    
     line-height: 38px;
     color: white;
-    position: relative;
+   
     
 }
 .banner-section .form-wrap {
@@ -125,8 +206,8 @@ margin-left: 23px;
     box-shadow: inset 7.66417px -7.66417px 7.66417px rgb(137 145 147 / 22%), inset 15.3283px -15.3283px 15.3283px rgb(255 255 255 / 22%), inset -7.66417px 7.66417px 7.66417px rgb(255 255 255 / 22%), inset -15.3283px 15.3283px 15.3283px rgb(137 145 147 / 22%);
     backdrop-filter: blur(51.3499px);
     border-radius: 27.5033px;
-    left: 238px;
-    top: 74px
+    /* left: 238px;
+    top: 74px */
 }
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -240,6 +321,7 @@ box-shadow: -1px 1px 2px rgba(16, 41, 48, 0.2), 1px -1px 2px rgba(16, 41, 48, 0.
 border-radius: 18.4625px;
 color: white;
 border: #276678;
+height: 28px
 }
 .membr{
     color: white;
@@ -267,7 +349,7 @@ a{
     background-color: #ccc;
 }
 .featured-services {
-    padding: 20px 0;
+    padding: 98px 0;
 }
 
 .section-bg {
@@ -320,6 +402,8 @@ a{
     font-size: 14px;
     font-family: 'Poppins';
     font-weight: bolder;
+    position: relative;
+    top: -32px;
     
 }
 .icon-box {
@@ -371,6 +455,55 @@ a{
 
 
 
+/* .formpad{
+
+}
+ */
+
+
+
+
+
+
+
+/* my media query */
+
+@media(min-width: 320px){
+    .formpad{
+        padding: 50px;
+        line-height: 12px;
+        margin-top: -27px;
+    }
+}
+
+ @media(min-width: 320px){
+    .geo{
+    font-size: 28px;
+    margin-top: 53px;
+    }
+} 
+
+@media(max-width: 558px){
+    .banner-section{
+        height: 839px;
+    }
+} 
+.conti{
+    margin-top: -58px;;  
+  }
+
+@media (max-width: 425px){
+    .conti{
+      margin-top: -469px;  
+    }
+} 
+
+@media(max-width: 425px){
+.icon-box{
+    margin-top: -26px;
+}
+}
+/* my media query */
 
 
 
@@ -423,9 +556,24 @@ a{
     font-style: normal;
     font-weight: bolder;
     font-size: 17px;
-    margin-top: 55px;
-    margin-left: -25px;
+       margin-top: 58px;
+    margin-left: 10px;
 }
+
+@media screen and (max-width: 600px){
+    .text-blue1{
+        color: #276678;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 17px;
+        margin-top: 242px;
+        margin-left: 0px;
+    }
+}
+
+
+
 .card{
     background: #D3E0EA;
 border-radius: 35.7674px;
@@ -465,6 +613,7 @@ box-shadow: inset 8.66875px -8.66875px 8.66875px rgba(17, 103, 127, 0.1), inset 
 backdrop-filter: blur(17.3375px);
 border-radius: 20px;
 color: white;
+
 }
 .icn1{
     color: #276678;
@@ -494,10 +643,12 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
         font-size: 10px;
     }
 }
-@media (min-width: 576px)
+@media (max-width: 320px)
 {
 .container {
     max-width: 540px;
+    height: 998px;
+    margin-top: 14px;
 }
 }
 @media (min-width: 768px)

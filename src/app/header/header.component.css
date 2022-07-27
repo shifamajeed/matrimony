@@ -241,7 +241,7 @@ label{
     padding: 5px 12px;
     border-radius: 6px;
     font-size: 14px;
-} */ */
+} */ 
 /* label {
     font-size: 14px;
     line-height: 22px;
@@ -323,6 +323,12 @@ label{
     color: #276678;
 
 }
+@media(max-width:600px){
+    .h1{
+          left: 76.5px;
+    }
+}
+
 .ic1{
     background-image: url(../../assets/images/ic.png);
        position: absolute;
@@ -348,6 +354,13 @@ label{
     line-height: 28px;
     text-align: center;
     color: #1687A7;
+}
+@media(max-width:600px){
+    .h2{
+          left: -35.5px;
+          font-size: 16px;
+
+    }
 }
 
 .input1{
@@ -380,6 +393,31 @@ label{
     font-weight: bold;
     border: none;
 }
+@media(max-width:600px){
+    .btnm{
+     width: 214px;
+    height: 35px;
+    left: 44px;
+    }
+}
+.btnm.btm{
+    top: 334px
+}
+
+.h1nm{
+    top: 382.6px;
+}
+.h4.hm{
+    left: 251px;
+    top: 375px
+}
+@media(max-width:600px){
+    .h4.hm{
+        left: 150px;
+        top: 375px
+    }
+}
+
 
 .hert1{
  background-image: url(../../assets/images/HERT1.png);
@@ -402,6 +440,12 @@ label{
     bottom: 57.81%;
     width: 56px;
        background-repeat: no-repeat;
+   }
+   @media(max-width:600px){
+    .hert2{
+        left: 3.11%
+    }
+
    }
    .hert3{
     background-image: url(../../assets/images/hert3.png);
@@ -430,6 +474,13 @@ background: #FFFFFF;
 border: 1px solid #276678;
 border-radius: 79% !important;
 }
+@media(max-width:600px){
+    .otp1{
+        left: 60px;
+        width: 43px;
+        height: 38px;
+    } 
+}
 .otp2{
     box-sizing: border-box;
 
@@ -442,6 +493,13 @@ top: 273px;
 background: #FFFFFF;
 border-radius: 79% !important;
 border: 1px solid #276678;
+}
+@media(max-width:600px){
+    .otp2{
+        left: 105px;
+        width: 43px;
+        height: 38px;
+    } 
 }
 .otp3{
     box-sizing: border-box;
@@ -456,6 +514,13 @@ background: #FFFFFF;
 border-radius: 79% !important;
 border: 1px solid #276678;
 }
+@media(max-width:600px){
+    .otp3{
+        left: 150px;
+        width: 43px;
+        height: 38px;
+    } 
+}
 .otp4{
     box-sizing: border-box;
 
@@ -468,6 +533,13 @@ top: 273px;
 background: #FFFFFF;
 border-radius: 79% !important;
 border: 1px solid #276678;
+}
+@media(max-width:600px){
+    .otp4{
+        left: 194px;
+        width: 43px;
+        height: 38px;
+    } 
 }
 .ic2{
     background-image: url(../../assets/images/tick.png);
@@ -488,7 +560,7 @@ h6{
     width: 361px;
     height: 17px;
     left: 126px;
-    top: 442px;
+    top: 405px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -496,13 +568,20 @@ h6{
     line-height: 22px;
     color: #D3E0EA;
 }
+@media(max-width:600px){
+    h6{
+        left: 45px;
+        top: 393px;
+    
+    }
+}
 
 .h31{
     position: absolute;
     width: 361px;
     height: 23px;
     left: 271px;
-    top: 442px;
+    top: 391px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 1200;
@@ -511,7 +590,13 @@ h6{
     color: #276678;
     text-decoration: underline;
 }
-
+@media(max-width:600px){
+    .h31{
+        left: 187px;
+        top: 392px;
+        font-size: 11px;
+    }
+}
 /* successs */
 
 .green{
@@ -524,6 +609,16 @@ h6{
     bottom: 29.79%;
     background-repeat: no-repeat;
 
+}
+@media(max-width:600px){
+    .green{
+        left: 102px;
+        width: 100px;
+    top: 217px;
+       
+        
+        
+    }
 }
 
 .h21{
@@ -540,6 +635,12 @@ h6{
     text-align: center;
     color: #1687A7;
 }
+@media(max-width:600px){
+    .h21{
+    left: -35px;
+    top: 181.99px;
+    }
+}
       /* login with pc */
 
       .log1{
@@ -554,6 +655,13 @@ h6{
         font-size: 28px;
         line-height: 54px;
         color: #276678;
+      }
+      @media(max-width:600px){
+        .log1{
+        left: -6px;
+    top: 56.25px;
+    font-size: 24px;
+        }
       }
 
       .log2{
@@ -571,7 +679,13 @@ h6{
         font-weight: bolder;
       }
     
-
+@media(max-width:600px){
+    .log2{
+        left: 58px;
+    top: 137.25px;
+    width: 176px;
+    }
+}
 
 /* @media screen and (max-width: 600px) {
     .button {
@@ -711,16 +825,46 @@ header .menu-row .button-wrap .button {
 .nav1{
 
     
-   
+      left: 0px;
+    top: 0px;
     height: 70px;
     
     background-color: #1687A7;
     background-attachment: fixed;
-     /* width: 1368px;  */
+   
     /* display: flex; */
     /* flex-wrap: wrap; */
     padding-left: 10px;
    
+}
+@media(max-width:720px){
+    .nav1{
+        
+        margin-right: 0px;
+    }
+
+}
+.tog{
+    width: 34px;
+    background-image: url(../../assets/images/tog1.png);
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 8px;
+    background-size: cover;
+    height: 28px;
+    
+}
+@media(max-width:982px){
+.aboutbg{
+     background-color:#0f2d36; 
+     border-radius: 15px;
+}
+} 
+
+@media(max-width:720px){
+    .ngb{
+        margin-top: -35px;
+    }
 }
 
 .btn1{
@@ -747,6 +891,29 @@ border-radius: 17px;
 
 
 }
+.navhead{
+    left: 1077px;
+          top: 23.6px; 
+          font-weight: bolder;
+          font-size: 14px;
+}
+@media(max-width:720px){
+    .navhead{
+    left: 121px;
+    top: 25.6px;
+    font-size: 10px;
+    }
+}
+
+@media(max-width:720px){
+    .btn1{
+        width: 61px;
+    height: 28px;
+    left: 254px;
+    top: 19px;
+    }
+}
+
 .bu1{
     background-color: transparent; 
     border: 0px;
@@ -759,9 +926,9 @@ border-radius: 17px;
 border-radius: 17px;
 }
 .modal1{
-width: 515px;
-height: 511px;
-left: -22px;
+    width: 515px;
+    height: 511px;
+    left: -22px;
 top: 50px;
     background: rgba(172, 181, 184, 0.01);
 box-shadow: inset 8.28667px -8.28667px 8.28667px rgba(137, 145, 147, 0.22), inset 16.5733px -16.5733px 16.5733px rgba(255, 255, 255, 0.22), inset -8.28667px 8.28667px 8.28667px rgba(255, 255, 255, 0.22), inset -16.5733px 16.5733px 16.5733px rgba(137, 145, 147, 0.22);
@@ -770,6 +937,13 @@ backdrop-filter: blur(24px);
 
 border-radius:15px;
 
+}
+@media(max-width:600px){
+    .modal1{
+        width: 309px;
+        height: 470px;
+        left: -17px;
+    }
 }
 
 .btn2{
@@ -796,6 +970,14 @@ border-radius:15px;
     line-height: 54px;
     color: #276678;
    
+}
+@media(max-width:600px){
+    .log{
+        height: 54px;
+    left: 95px;
+    top: 48.25px;
+    font-size: 28px;
+    }
 }
 
 input{
@@ -824,6 +1006,15 @@ border: none;
 top: 338px;
     left: 81px;
 }
+@media(max-width:600px){
+    .btn3{
+    width: 221px;
+    height: 34px;
+    border: none;
+    top: 309px;
+    left: 38px;
+    }
+}
 
 
 .label1{
@@ -839,6 +1030,46 @@ top: 338px;
 
 
 }
+@media(max-width:600px){
+    .label1{
+    font-size: 15px;
+    left: 4px;
+    }
+}
+
+.inpu1{
+    width: 206px;
+    top: 103px;  
+      border-radius: 26px;
+      height: 32px
+}
+@media(max-width:600px){
+    .inpu1{
+    width: 162px;
+    top: 112px;
+    border-radius: 26px;
+    height: 26px;
+    left: 94px;
+}
+    }
+
+
+.inpu2{
+    width: 206px;
+    top: 148px;  
+      border-radius: 26px;
+      height: 32px 
+}
+@media(max-width:600px){
+    .inpu2{
+    width: 162px;
+    top: 157px;
+    border-radius: 26px;
+    height: 26px;
+    left: 94px;
+}
+    }
+
 
 h2{
     
@@ -867,6 +1098,22 @@ h5{
     line-height: 27px;
     color: #020202;
 }
+@media(max-width:600px){
+    h5{
+        position: relative;
+    width: 634px;
+    /* height: 27px; */
+    left: -37px;
+    top: 91.25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    /* line-height: 27px; */
+    color: #020202;
+}
+    }
+
 
 h3{
     
@@ -895,6 +1142,14 @@ h1{
     line-height: 20px;
     color: #D3E0EA;
 }
+@media(max-width:600px){
+h1{
+    width: 159px;
+    left: 50px;
+    top: 351.6px;
+    font-size: 10px;
+}
+}
 .h4{
     position: absolute;
     width: 115px;
@@ -911,6 +1166,15 @@ h1{
     background: transparent;
     border: none;
 }
+@media(max-width:600px){
+.h4{
+    height: 21px;
+    left: 152px;
+    top: 343.6px;
+    font-size: 12px;
+
+}
+}
 
 .label2{
     position: absolute;
@@ -925,6 +1189,13 @@ h1{
     line-height: 34px;
     color: #1687A7;
 }
+@media(max-width:600px){
+    .label2{
+        left: 132px;
+    top: 176.25px;
+    font-size: 19.7853px;
+    }
+}
 
 .mobi{
     box-sizing: border-box;
@@ -938,14 +1209,32 @@ h1{
     border: 1px solid #276678;
     border-radius: 30.1524px;
 }
+@media(max-width:600px){
+    .mobi{
+        width: 366px;
+        top: 278px;
+        height: 29px;
+        width: 191px;
+        left: 67px;
+    }
+}
 
 .code{
     
     position: relative;
     left: -119px;
-    width: 69px;
-    top: 191px;
+    top: 193px;
     width: 69px;
     border-radius: 44px;
-    height: 31px;
+    height: 36px
+
+}
+
+@media(max-width:600px){
+    .code{
+        left: -109px;
+    top: 191px;
+    width: 50px;
+    height: 29px;
+    }
 }

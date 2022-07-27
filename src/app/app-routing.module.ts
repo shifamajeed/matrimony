@@ -20,7 +20,7 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import {EntrydetailsComponent} from './entrydetails/entrydetails.component';
 
 import { NotificationComponent } from './notification/notification.component';
-
+import { Home2Component } from './home2/home2.component';
 
 const routes: Routes = [
   {
@@ -45,7 +45,7 @@ const routes: Routes = [
  
 
   { path: 'noti', component: NotificationComponent},
-
+  { path: 'hom', component: Home2Component},
 ];
 
   
