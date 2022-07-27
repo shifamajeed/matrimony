@@ -296,7 +296,6 @@ box-shadow: 0px 3.48225px 3.48225px rgba(0, 0, 0, 0.25);
 }
 .about{
     background-image: url("/assets/images/abt.png");
-    background-size: 200% ;
     padding: 90px;
     /* margin: -28px 0 0 0; */
     
@@ -399,6 +398,7 @@ left: 591px;
     }
     .about {
         background-image: url(/assets/images/abt.png);
+        background-size: 200%;
         padding: 40px;
         margin: 0px 0 0 0;
     }
@@ -686,14 +686,14 @@ background: rgb(33, 204, 33);
         margin-left: 217px;
     }
 }
-@media (max-width:850px)
+@media (min-width:550px) and (max-width:850px)
 {
     .progress {
         max-width: 400px;
         margin-left: 75px;
     }
 }
-@media (min-width:300px) and (max-width:440px)
+@media (min-width:300px) and (max-width:550px)
 {
     .progress {
         position: relative;
@@ -751,4 +751,42 @@ background: rgb(33, 204, 33);
         visibility: hidden;
     }
 }
+@media (min-width:300px) and (max-width:440px)
+  {
+    h1{
+        font-size:16px;
+
+       }
+  }
    
+  /* @media (min-width:300px) and (max-width:440px)
+  {
+    p{
+        font-size:6px;
+
+       }
+  } */
+  @media (min-width:425px) and (max-width:549px)
+{
+    .progress {
+        position: relative;
+        max-width: 280px;
+        margin-left: 28px;
+        height: 12px;
+        margin-bottom: 10px;
+        top: 38px;
+}
+    }
+    @media (min-width:300px) and (max-width:440px)
+  {
+    h2{
+        font-size:12px;
+
+       }
+  }
+  @media (min-width:300px) and (max-width:440px)
+  {
+    .abtcont1{
+        width:300px;
+    }
+  }
