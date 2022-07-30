@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   constructor() { }
+  visibleeducation:boolean=false
 
   ngOnInit(): void {
+  }
+  educationinfo()
+  {
+   
+  this.visibleeducation=!this.visibleeducation
   }
 
 }

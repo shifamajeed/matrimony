@@ -26,6 +26,7 @@ import { EntrydetailsComponent } from './entrydetails/entrydetails.component'
 import { TestsideComponent } from './testside/testside.component';
 
 import { Home2Component } from './home2/home2.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -88,6 +89,7 @@ import { Home2Component } from './home2/home2.component';
     CommonModule,
     MatIconModule,
     MatButtonModule,
+    FormsModule
     
 
     
