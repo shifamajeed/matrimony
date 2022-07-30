@@ -8,26 +8,7 @@
       height: 100%;
       overflow: auto;
     }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-  
-      height: auto;
-      position: relative;
-    }
-    /* .sidebar a {float: left;}
-    div.content {margin-left: 0;} */
-    div.content {padding-right:0px;padding-left:0px;}
-  }
-  
-   @media screen and (max-width: 600px) {
-    .sidebar{
-      text-align: center;
-      float: center;
-    } 
-  } 
-
-
+ 
 
 
 /*       here       */
@@ -41,7 +22,7 @@
 .blurleft2{
     background-image:url("/assets/images/Rectangle 60.png") ;
     height: 1500px;
-    float:left;
+    /* float:left; */
 }
 .rightbg{
     background-image:url("/assets/images/abt.png"); 
@@ -49,6 +30,7 @@
     background-repeat: no-repeat; 
     height:fit-content; 
 }
+
 @media screen and (max-width: 600px) {
     .blurleft{
       text-align: center;
@@ -86,17 +68,7 @@ float: left;
 .a{
     font-size:100px;
 }
-@media screen and (min-width: 600px) {
-    .camera{
-      display: none;
-    }
-}
-@media screen and (max-width:600px){
-  .btns{
-    height:30px;
-    width: 140px;
-  }
-}
+
 .imgback {
    
     height: 250px;
@@ -124,8 +96,8 @@ width: 150px;
 .sidebtns
 {   
 border-radius: 12px;
-width: 258px;
-height: 75px;
+width: 250px;
+height: 70px;
 left: 40px;
 border:none;
 background:white;
@@ -134,13 +106,14 @@ background:white;
  .rightbg{
   float:left;
   background-repeat: no-repeat; 
+  height: 1500px;
   /* background-size: cover; */
 }
 .innerbox{
   box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
        
         opacity: 6; 
-        height: 98%;
+        height: 1400px;
     border-radius: 18px;
 box-shadow: whitesmoke 0px 30px 40px -2em inset;
 Offset: -117.83px, 117.83px;
@@ -165,12 +138,14 @@ border-width: thin;
   height: 290px;
   border-radius: 15.497406px;
 }
-@media  screen and (max-width:600px)  {
-  .boximg{
-    height: 257px;
-    border-radius: 15.497406px;
-  }
+.lineboxhide{
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  border-width: thin;
+  align-self: center;
 }
+
 
 .camera{
   width:55px;
@@ -209,10 +184,11 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
   /* margin-top: 80px;
   margin-left: 66px; */
 /* width: 122px; */
-height: 37px;
+height: 35px;
 
 background: #276678;
-border-radius: 20px;
+border-radius: 10px;
+
 }
 .personaldivinputtypes{
   color:aliceblue;
@@ -220,4 +196,74 @@ border-radius: 20px;
   outline: none;
   border-bottom: 1px solid white;
   background:transparent;
+}
+.h2hide{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 550;
+color:white;
+font-weight: 600;
+font-size: 22px;
+}
+.loremhide{
+  font-family: 'Poppins';
+font-style: normal;
+color: white;
+font-size: 16px;
+line-height: 25px;
+}
+.model-content{
+  width:fit-content;
+}
+.congrats{
+  font-size: 16px;
+    line-height: 20px;
+    color:white;
+    font-weight: bolder;
+}
+
+ @media screen and (max-width: 600px) {
+  .sidebar{
+    text-align: center;
+    float: center;
+  } 
+  .boximg{
+    height: 257px;
+    border-radius: 15.497406px;
+  }
+  .btns{
+    height:30px;
+    width: 140px;
+    
+  }
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
+  div.content {padding-right:0px;padding-left:0px;}
+  .loremhide{
+    font-family: 'Poppins';
+  font-style: normal;
+  
+  font-size: 10px;
+  line-height: 18px;
+    }
+  .h2hide{
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  }
+  .lineboxhide{
+    margin: left 50px;
+  }
+  .submit{
+    width:160px;
+  }
+} 
+@media screen and (min-width: 600px) {
+  .camera{
+    display: none;
+  }
 }

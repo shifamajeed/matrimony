@@ -1,20 +1,20 @@
 <div class="container-fluid mx-0">
     <div class="row">
-        
+        <div class="d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
         <div class="col-lg-3 col-sm-12" *ngIf="sidenav">
             <div class="row">
                 <img src="assets/images/Group 638.png" class="imgback px-0"/>
                 <img src="assets/images/Group 268.png" class="imgfront p-2"/>
             
-            <div class="blurleft1 px-0 py-0 col-lg-12 col-sm-12">
+            <div class="blurleft1 col-lg-12 col-sm-12 px-0 py-0">
                 <div class="blurleft2">
-                    <div class="px-4 py-0">
+                    <div class="col-lg-8 col-sm-12 px-lg-5 px-5">
                         <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
                         <button class="sidebtns sidebtn2 my-3"><img src="assets/images/Group 765.png" ></button>
                         
                         <button class="sidebtns sidebtn3 my-3"><img src="assets/images/Group 596.png" ></button>
-                        <button class="sidebtns sidebtn4 my-3"><img src="assets/images/Group 595.png" ></button>
-                        <button class="sidebtns sidebtn5 my-3"><img src="assets/images/Group 594.png" ></button>
+                        <button class="sidebtns sidebtn4 my-3" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
+                        <button class="sidebtns sidebtn5 my-3" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
                         <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button>
                         <div>
                             <div class="pstyle">Download  App For Android and IOS</div>
@@ -32,27 +32,18 @@
                 </div>
             </div>
         </div>
-     
-        <!-- editprofile -->
-      
+        <!-- entire edit profile -->
+        <!-- editprofile -->   
+        <div *ngIf="visibleeditprofilediv"> 
+        <div class="col-lg-12 col-sm-12 my-lg-0 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
             
-        
-<div class="col-lg-9 col-sm-12 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
-      <div *ngIf="visibleeditprofilediv">
-        
-           
-        
                 <div  class="rightbg col-lg-12" style="background-image:url(assets/images/abt.png);">
-                 
-                    
                         <div class="mx-lg-1 my-lg-5 my-2">
                             <button class="btns mx-lg-4 mx-1">Edit profile</button>
                             <button class="btns mx-lg-3">Partner Preference</button>
                             <button class="btns mng mx-lg-4">Manage photos</button>
-                        </div>
-                    
-                    
-                    <div class="col-lg-12 col-sm-12 my-lg-5 my-1 mx-0 px-0" style="background-color: brown;">
+                        </div>                   
+                    <div class="col-lg-12 col-sm-12 my-lg-5 my-1 mx-0 px-0">
                         
                         <div class="linebox col-lg-12 col-sm-10 mx-lg-0 px-lg-2 px-0 my-2 mx-0">
                           
@@ -131,10 +122,7 @@
                             </div>
                         </div>
                     </div>
-                        
-        
-        
-       <!-- entire edit profile -->
+       
        <!-- edit profile  Personal Information-->
        <div class="col-lg-12 col-sm-12 my-2">
         <div class="innerbox my-2 col-lg-12 col-sm-12 px-2">
@@ -147,7 +135,7 @@
                 
                  <form action="/action_page.php">
                  <div class="col-lg-12 col-sm-12 d-block my-2">
-                    <!-- <div *ngIf="visiblepersonal">  -->
+                    <div *ngIf="visiblepersonal"> 
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
                          <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
@@ -189,7 +177,7 @@
                      </div>
                      
                  </div> -->
-            <!-- </div> -->
+            </div>
         </div>
          </form>
             
@@ -438,9 +426,9 @@
             </div>
             </div>
         
-        <!-- Education & Profession -->
+        <!-- edit profile-Education & Profession -->
         <div class="col-lg-12 col-sm-12 my-2">
-        <button type="button"  (click)=educationinfo() class="btn btn-block personaldiv">Education & Profession
+        <button type="button"  (click)=educationinfo() class="btn btn-block personaldiv">
         {{education?"Education & Profession":"Education & Profession"}}  
         
         </button>
@@ -689,30 +677,97 @@
             </div>
             </div>
             </div>
-        <!--cut  -->
-        
-        
-            
-        
-        
-        
-        
-        <!--  cut-->
+      
           </div>
         
         
                    
-                </div>  
             </div>
-
-     
-     
+        </div>
     <!--end entire edit profile  -->
-    <!-- header home button action -->
+    <!-- hide profile div -->
+    <div *ngIf="hideprofilepart" class="col-lg-9 col-sm-10 px-0" >
+    <!-- <div class="col-lg-12 col-sm-12 my-lg-0 my-2" > -->
+        <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+            <div class="innerbox col-lg-11 col-sm-8 mx-lg-5 px-lg-5 py-lg-3 py-5">
+                <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
+                    <div class="lineboxhide col-lg-5 mx-lg-5 px-lg-5 col-sm-5">
+                        <h2 class="h2hide">Temporarily Hide</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-sm-8 py-lg-5 px-lg-4 py-5">
+                    <h4 class="loremhide px-lg-2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    </h4>
+                    <div class="col-lg-5 mx-lg-5 px-lg-5 py-lg-5 col-sm-4 px-5 mx-4 py-5">
+                        <button type="submit" class="submit col-lg-8 col-sm-2 btn text-white mx-lg-5"data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
+                    </div>
+                    <div>
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Launch demo modal
+                          </button> -->
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Are You Sure  you  Want  to Hide Your Profie</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:green; padding: 0.375rem 4.75rem;width:10px">Yes</button>
+                                  <button type="button" class="btn btn-primary" style="background-color:red;padding: 0.375rem 4.75rem;margin-right:10px;width:10px">No</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    </div>
+  <!-- end hide profile div -->
+  <div *ngIf="deleteprofilepart">
+    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox col-lg-11 col-sm-8 mx-lg-5 px-lg-5 py-lg-3 py-5">
 
+            <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
+                <div class="mx-lg-5 px-lg-5">
+                    <div class="lineboxhide col-lg-5 mx-lg-5 px-lg-4 col-sm-5">
+                        <h2 class="h2hide">Delete Profile</h2>
+                    </div>
+                </div>
+             </div>
+            <div class="col-lg-12 col-sm-8 py-lg-5 px-lg-4 py-5">
+                <h4 class="loremhide px-lg-2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                </h4>
+                <div class="col-lg-5 mx-lg-5 px-lg-5 py-lg-5 col-sm-4 px-2 mx-2 py-5 d-flex">
+                    <button type="submit" class="submit col-lg-10 col-sm-2 btn text-white mx-lg-5 mx-1"data-toggle="modal" data-target="#exampleModalCenter">Already Married</button>
+                    <button type="submit" class="submit col-lg-10 col-sm-2 btn text-white mx-lg-3"data-toggle="modal" data-target="#exampleModalCenter">Marriage Fixed</button>
+                </div>
+                <div class="mx-lg-5 px-lg-5">
+                    <div class="mx-lg-5 px-lg-5">
+                        <h2 class="congrats mx-lg-5 px-lg-5">Congratulations!</h2>
+                        <h2 class="congrats px-lg-2">We are happy that you found your life partner.</h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+  </div>
 
-  
-  <!-- end header home button action -->
-   
+<!-- header home button action -->
+<!-- end header home button action -->
+</div>
+    </div>
+    <div class="row">
+        <!-- <app-footer></app-footer> -->
+
     </div>
 </div>    

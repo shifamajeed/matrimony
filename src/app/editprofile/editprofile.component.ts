@@ -93,8 +93,8 @@ export class EditprofileComponent implements OnInit {
     this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
-    this.deleteprofilepart=true
     this.editpwdpart=false
+    this.deleteprofilepart=true
   }
   editpwd()
   {
