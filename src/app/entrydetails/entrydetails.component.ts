@@ -25,6 +25,7 @@ export class EntrydetailsComponent implements OnInit {
   fnnext(){
   this.hello=false
   this.hello2=true
+
   }
   fnnext1(){
     this.hello=false
