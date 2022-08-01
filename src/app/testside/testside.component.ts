@@ -80,8 +80,9 @@ export class TestsideComponent implements OnInit{
     // this.innerWidth = event.target.innerWidth;
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
-       this.sidenav = false;
-       // this.sidenav=false
+    this.sidenav = false;
+   
+   } 
     this.visisblesearch=false
     this.partner=false
     this.deleteprofilepart=false
@@ -90,21 +91,6 @@ export class TestsideComponent implements OnInit{
     this.visiblehome2=false
     this.editinner=true
     this.visibleeditprofilediv=true
-       
-   } else {
- this.sidenav = true;
-       // this.sidenav=false
-
-       
-    this.visisblesearch=false
-    this.partner=false
-    this.deleteprofilepart=false
-    this.hideprofilepart=false
-    this.editpwdpart=false
-    this.visiblehome2=false
-    this.editinner=true
-    this.visibleeditprofilediv=true
-    }
   }
 
     
@@ -121,6 +107,10 @@ export class TestsideComponent implements OnInit{
   }
   hideprofilebtn()
   {
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <600) {
+      this.sidenav=false
+    }
     this.visiblehome2=false
     this.partner=false
     this.deleteprofilepart=false
@@ -130,6 +120,10 @@ export class TestsideComponent implements OnInit{
   }
   deleteprofilebtn()
   {
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <600) {
+      this.sidenav=false
+    }
     this.visisblesearch=false
     this.visiblehome2=false
     this.partner=false

@@ -93,8 +93,8 @@ export class EditprofileComponent implements OnInit {
     this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
-    this.deleteprofilepart=true
     this.editpwdpart=false
+    this.deleteprofilepart=true
   }
   editpwd()
   {
@@ -104,6 +104,9 @@ export class EditprofileComponent implements OnInit {
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
     this.deleteprofilepart=false
+    this.visibleexplore=false
+    this.visiblehelp=false
+    this.visiblenotification=false
     this.editpwdpart=true
 
   }
@@ -309,6 +312,7 @@ exploreact()
   this.visiblesend=false
   this.visibleboth=false
   this.visiblenotification=false
+  this.visiblehelp=false
   this.visibleexplore=true
 }
 // explore
@@ -344,6 +348,7 @@ helpact()
   this.visiblesend=false
   this.visiblereceive=false
   this.visibleboth=false
+  this.visibleexplore=false
   this.visiblehelp=true
 }
 // notification
