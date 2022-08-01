@@ -730,7 +730,7 @@
           <div class="col-md-4  ">
             
           <div class="form-group bottom-row">
-            <a href="entry"><button type="button" class="button regbtn w-100">Register Free</button></a>
+            <a ><button type="button" class="button regbtn w-100" data-toggle="modal" data-target="#exampleModal">Register Free</button></a>
           </div>
 
        
@@ -759,6 +759,93 @@
   </div>
   </div>  
 
+  <!-- modal -->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content box1">
+         
+
+
+
+      
+          <div *ngIf="form1"  class="row  row1">
+          <div class="col-lg-3"> 
+            <div class="hert1"> </div>
+            <div class="hert2"></div>
+            <div class="hert3"></div>
+          </div>
+          <div class="col-lg-6">
+
+            
+         <h1 class="veri" >verification</h1>
+         
+         <div > <img   class="mx" src="../../assets/images/ic.png" alt=""></div>
+         <h2 class="font">We will send you a One Time Password on your phone number</h2>
+         <input class="inp1 inputtest form-control" placeholder="enter mobile number" type="number">
+         <button class="button1 button2" (click)="fnotp()">Get Otp</button>
+         
+          </div>
+          <div class="col-lg-3">
+
+          </div>
+        </div>
+      
+        <div *ngIf="form2" class="row row1">
+          <div class="col-lg-3"> 
+            <div class="hert1"> </div>
+            <div class="hert2"></div>
+            <div class="hert3"></div>
+          </div>
+          <div class="col-lg-6">
+
+            
+         <h1 class="veri" >verification</h1>
+         
+         <div > <img   class="mx" src="../../assets/images/tick.png" alt=""></div>
+         <h2 class="font">you will get OTP via sms.</h2>
+
+
+        <div id="otp" class="inputs border-radiusborder-radius justify-content-center mt-2 otp"> 
+           <input class="m-1 text-center  rounded otp1" type="number" id="first" onkeypress="if(this.value.length==1) return false;" />
+            <input class="m-1 text-center  rounded otp1" type="number" id="second"onkeypress="if(this.value.length==1) return false;" /> 
+            <input class="mb-1 text-center  rounded otp1" type="number" id="third" onkeypress="if(this.value.length==1) return false;" />
+             <input class="m-1 text-center  rounded otp1" type="number" id="fourth" onkeypress="if(this.value.length==1) return false;" />
+            
+             
+           </div>
+
+         <button class="button1" (click)="fnotps()">Get Otp</button>
+         
+          </div>
+          <div class="col-lg-3">
+
+          </div>
+        </div>
+
+      
+        <div *ngIf="form3" (click)="fninput()" class="row ">
+          <div class="col-lg-3"> 
+           
+            
+            
+          </div>
+          <div class="col-lg-6">
+            <div > <img   class="mx1" src="../../assets/images/green.png" alt=""></div>
+         <h2 class="font">verified successfully</h2>
+          
+         
+          </div>
+          <div class="col-lg-3">
+
+          </div>
+        </div>
+      
+
+
+    </div>
+  </div>
+</div>
 
 
 
@@ -1109,13 +1196,14 @@
 
   <section id="featured-services" class="featured-services section-bg " style="background: #f8f9fa;">
     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-      <h3 class="mb-3"style="color:#1687A7;font-weight: bolder;">Why US</h3>
+      <h3 class="mb-3"style="color:#1687A7;font-weight: bolder;position: relative;
+      top: 66px;">Why US</h3>
   </div>
 
   <div class="container" >
     <div class="row">
       <div class=" text-center">
-      <p class="text-blue" style="    margin-top: -39px;">
+      <p class="text-blue" >
         We value the prestige of wedding and we are bound to find the best mates for all. 
         We present a simple and easier process in searching for your dream partner. 
         The registration is completely free and a wide range of profile collections are available

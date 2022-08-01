@@ -13,13 +13,32 @@ export class HomeComponent implements OnInit {
 
   constructor(public dataService : DataService) { }
 
+  form1:Boolean=true
+  form2:Boolean=false
+  form3:Boolean=false
+
   ngOnInit(): void {
    
   }
   fnreg(){
     
   }
-    
+  fnotp(){
+    this.form1=false
+    this.form2=true
+    this.form3=false
+  }
+  fnotps(){
+    this.form1=false
+    this.form2=false
+    this.form3=true
+  }
+  fninput(){
+    this.form1=false
+    this.form2=false
+    this.form3=false
+    location.href="entry"
+  }
   }
 
   

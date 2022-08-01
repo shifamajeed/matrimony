@@ -932,7 +932,7 @@ border-radius: 17px;
 top: 50px;
     background: rgba(172, 181, 184, 0.01);
 box-shadow: inset 8.28667px -8.28667px 8.28667px rgba(137, 145, 147, 0.22), inset 16.5733px -16.5733px 16.5733px rgba(255, 255, 255, 0.22), inset -8.28667px 8.28667px 8.28667px rgba(255, 255, 255, 0.22), inset -16.5733px 16.5733px 16.5733px rgba(137, 145, 147, 0.22);
-backdrop-filter: blur(24px);
+backdrop-filter: blur(135px);
 /* Note: backdrop-filter has minimal browser support */
 
 border-radius:15px;
