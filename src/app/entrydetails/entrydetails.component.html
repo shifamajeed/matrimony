@@ -1,16 +1,20 @@
 <div class="container-fluid" style="padding-right:0px;padding-left:0px;overflow: hidden;">
     <div class="row">
-      <div class="col-lg-12 col-md-12"style="padding-right:0px;padding-left:0px;overflow: hidden;">
+      <div class="col-lg-12 col-sm -12"style="padding-right:0px;padding-left:0px;overflow: hidden;">
   <app-header></app-header>
   <section class="about">
   
     <!-- here -->
     <div  *ngIf="hello">    
     
-    <!-- <div class="col lg-12 col-md-12"> -->
+   
+      <div class="row">
+      <div class=" col-lg-12 col-sm-4">
     <div class="progress">
       <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0"
         aria-valuemax="100%">20%</div>
+    </div>
+    </div>
     </div>
     <br>
     <br>
@@ -22,26 +26,116 @@
         <!-- <!-personal-  -->
   
         <!-- <div  class="box"> -->
+          <div class="img">
           <img class="img-fluid hrtcls1" src="../../assets/images/hrt6.png " style="
-    margin-top: 288px;
-    margin-left: -923px;
+    margin-top: 371px;
+    margin-left: -491px;
   ">
           <img class="img-fluid hrtcls" src="../../assets/images/Vector.png" style="
    
-    margin-top: 275px;
-    margin-left: -1049px;
+    margin-top: 360px;
+    margin-left: -552px;
 
   ">
           <img class="img-fluid vector" src="../../assets/images/hrt5.png" style="
     position: absolute;
     left: 6.5%;
     right: 75.96%;
-    top: 39.5%;
+    top: 45.85%;
     bottom: 49.58%;
 
   ">
+
           <h1>Personal Informations</h1>
           <div class="col">
+
+  </div>
+  <!-- new content --> 
+  <h1> Personal Informations</h1>
+  <div class="row">
+    
+  <div class="col-lg-4 col-sm-12 "> 
+    <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker inp" inline="true">
+      <p>Date of Birth</p>
+      <input placeholder="Select date" type="date" id="example" class="date">
+
+    
+    </div>
+  
+
+  </div>
+  <div class="col-lg-4 col-sm-12"> 
+    <div class="inp">
+      <p>Marital Status</p>
+      <div class="dropdown in">
+        <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b>Select</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="Select">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    
+
+     </div>
+  <div class="col-lg-4 col-sm-12">
+     <div class="inp">
+            <p>Profile ID</p>
+            <input type=text>
+          </div>
+
+  </div>
+  <div class="col-lg-4 col-sm-12 "> 
+    <div class="inp" style="
+    margin-top: 26px;
+">
+            <p>Religion</p>
+
+            <div class="dropdown in">
+              <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <b> Select</b>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="Se">
+                <a class="dropdown-item" href="#">Something3</a>
+                <a class="dropdown-item" href="#">something2</a>
+                <a class="dropdown-item" href="#">something</a>
+              </div>
+            </div>
+          </div>
+
+  </div>
+  <div class="col-lg-4 col-sm-12 "> 
+    <div class="inp" style="
+    margin-top: 26px;
+">
+      <p>Nationality</p>
+      <div class="dropdown in">
+        <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b> Select</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Indian</a>
+          <a class="dropdown-item" href="#">Other</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 col-sm-12">
+    <div class="box" style="margin-top: 150px;"> 
+      <button class="bt" (click)="fnnext()" style="margin-bottom: -45px;" style="margin-top: -115px;"> Next </button>
+                 </div>
+    </div>
+   </div>
+  <!-- ends here  v -->
+  <!-- <h1> Personal Informations</h1>
+          <div class= " col row">
+
             <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker inp" inline="true">
               <p>Date of Birth</p>
               <input placeholder="Select date" type="date" id="example" class="date">
@@ -102,7 +196,7 @@
           </div>
                <div class="box" style="margin-top: 150px;"> 
           <button class="bt" (click)="fnnext()" style="margin-bottom: -45px;"> Next </button>
-                     </div>
+                     </div> -->
            </div>
            </div> 
            </div>
@@ -112,6 +206,7 @@
           
   
         <div *ngIf="hello2"> 
+          
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
               aria-valuemax="100%">40%</div>
@@ -124,9 +219,10 @@
           <div class="container-fluid abtcont">
             <div class="box">
           
-          
-          <p> Physical Information</p>
-          <div class="col">
+          <!-- physical information -->
+          <h1> Physical Information</h1>
+          <div class="row">
+          <div class="col-lg-4 col-sm-12">
             <div class="inp">
               <p>Height</p>
               <div class="dropdown in">
@@ -141,8 +237,98 @@
                 </div>
               </div>
             </div>
-  
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
             <div class="inp">
+              <p>Weight</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Select">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="inp">
+              <p>Physical Status</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Select">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div col-lg-4 col-sm-12>
+            <div class="inp" style="margin-top: -20px;margin-left: 15px;">
+              <p>Complexion</p>
+  
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <b> Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Se">
+                  <a class="dropdown-item" href="#">Something3</a>
+                  <a class="dropdown-item" href="#">something2</a>
+                  <a class="dropdown-item" href="#">something</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="inp" style="
+            margin-top: -20px;
+        ">
+              <p>Body type</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b> Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Indian</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          </div>
+          <button class="bt inp" (click)="fnnext1()" style=" margin-bottom: 66px; margin-top: 20px
+      "> Next </button>
+
+          <!-- <div class="col"> -->
+            <!-- <div class="inp">
+              <p>Height</p>
+              <div class="dropdown in">
+                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Select</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Select">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div> -->
+  
+            <!-- <div class="inp">
               <p>Weight</p>
               <div class="dropdown in">
                 <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -205,361 +391,651 @@
               </div>
             </div>
           </div>
-          <div class="box">
+          <div class="box"> -->
   
-          <button class="bt" (click)="fnnext1()" style="
-                  margin-top: 150px;
-              "> Next </button>
-              </div>
+         
+              <!-- </div> -->
               </div> </div> </div>
               
             <!--        here -->
               
        
         
-        <div *ngIf="hello3">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-              aria-valuemax="100%">50%</div>
-          </div>
-         
-          <br>
-          <br>
-          <!-- shadow box -->
-          
-          <div class="container-fluid abtcont">
-            <div class="box">
-          <p>Education & Profession</p>
-          <div class="col">
-            <div class="inp">
-              <p>Heighest Education</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+            <div *ngIf="hello3">
+             
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100%">50%</div>
+              </div>
+             
+              <br>
+              <br>
+              <!-- shadow box -->
+              
+              <div class="container-fluid abtcont">
+                <div class="box">
+                  <!-- education & profession 3rd part -->
+              <h1>Education & Profession</h1>
+              <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p>Heighest Education</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-  
-            <div class="inp">
-              <p>Education Details</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p>Education Details</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="inp">
-              <p>Education Description</p>
-              <input type=text>
-            </div>
-          </div>
-          <div class="col">
-            <div class="inp">
-              <p> Job Proffession</p>
-  
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  <b> Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Se">
-                  <a class="dropdown-item" href="#">Something3</a>
-                  <a class="dropdown-item" href="#">something2</a>
-                  <a class="dropdown-item" href="#">something</a>
+              <div class="col-lg-4 col-sm-12"> 
+                <div class="inp">
+                  <p>Education Description</p>
+                  <input type=text>
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-sm-12"> 
+                <div class="inp" style="
+                margin-top: -25px;
+            ">
+                  <p> Job Proffession</p>
+      
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      <b> Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Se">
+                      <a class="dropdown-item" href="#">Something3</a>
+                      <a class="dropdown-item" href="#">something2</a>
+                      <a class="dropdown-item" href="#">something</a>
+                    </div>
+                  </div>
                 </div>
               </div>
+              </div>
+              <button class="bt" (click)="fnnext2()" style="margin-bottom: 66px; margin-top:25px"> Next </button>
+              
+                <!-- <div class="inp">
+                  <p>Heighest Education</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+      
+                <!-- <div class="inp">
+                  <p>Education Details</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="inp">
+                  <p>Education Description</p>
+                  <input type=text>
+                </div> -->
+              
+              <!-- <div class="col">
+                <div class="inp" style="
+                margin-top: -25px;
+            ">
+                  <p> Job Proffession</p>
+      
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      <b> Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Se">
+                      <a class="dropdown-item" href="#">Something3</a>
+                      <a class="dropdown-item" href="#">something2</a>
+                      <a class="dropdown-item" href="#">something</a>
+                    </div>
+                  </div>
+                </div>
+      
+              </div> -->
+              
+              </div>
+              </div>
+      
+      
+      
             </div>
-  
-          </div>
-          <button class="bt" (click)="fnnext2()" style="margin-top: 100px;"> Next </button>
-          </div>
-          </div>
-  
-  
-  
-        </div>
-        <div *ngIf="hello4">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
-              aria-valuemax="100%">60%</div>
-          </div>
-         
-          <br>
-          <br>
-          <!-- shadow box -->
-          
-          <div class="container-fluid abtcont">
-            <div class="box">
-          <p>Family Details</p>
-          <div class="col">
-            <div class="inp">
-              <p>Family Type</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+            <div *ngIf="hello4">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100%">60%</div>
+              </div>
+             
+              <br>
+              <br>
+              <!-- shadow box -->
+              
+              <div class="container-fluid abtcont">
+                <div class="box">
+                  <!-- family details 4th -->
+              <h1>Family Details</h1>
+              <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p>Family Type</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-  
-            <div class="inp">
-              <p>Finance Status</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+              <div class="col-lg-4 col-sm-12"> 
+                <div class="inp">
+                  <p>Finance Status</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="inp">
-              <p> Father</p>
-              <div class="rd">
-                <div class="rd">
-  
-                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="
-                            width: 22px;
-                            margin-left: 5px;
-                            margin-right: 7px;
-                        ">
-  
-                  <p for="inlineRadio1" style="
-                          margin-top: -34px;
-                          margin-right: 17px;
-                      ">Alive</p>
-                </div>
-                <div class="rd">
-                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="
-                          width: 22px;
-                          margin-left: 17px;
-                      ">
-                  <p for="inlineRadio2" style="
-                             margin-left: 10px;
-                             margin-top: -33px;
-                         "> Late</p>
-                </div>
-              </div>
-            </div>
-            <div class="inp">
-              <p> Mother</p>
-              <div class="rd">
-                <div class="rd">
-  
-                  <input type="radio" name="inlineRadioOption" id="inlineRadio3" value="option1" style="
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p> Father</p>
+                  <div class="rd">
+                    <div class="rd">
+      
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="
+                                width: 22px;
+                                margin-left: 5px;
+                                margin-right: 7px;
+                            ">
+      
+                      <p for="inlineRadio1" style="
+                              margin-top: -34px;
+                              margin-right: 17px;
+                          ">Alive</p>
+                    </div>
+                    <div class="rd">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="
                               width: 22px;
-                              margin-left: 5px;
-                              margin-right: 7px;
+                              margin-left: 17px;
                           ">
-  
-                  <p for="inlineRadio3" style="
-                            margin-top: -34px;
-                            margin-right: 17px;
-                        ">Alive</p>
-                </div>
-                <div class="rd">
-                  <input type="radio" name="inlineRadioOption" id="inlineRadio4" value="option2" style="
-                            width: 22px;
-                            margin-left: 17px;
-                        ">
-                  <p for="inlineRadio4" style="
-                               margin-left: 10px;
-                               margin-top: -33px;
-                           "> Late</p>
+                      <p for="inlineRadio2" style="
+                                 margin-left: 10px;
+                                 margin-top: -33px;
+                             "> Late</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            
-  
-  
-  
-  
-  
-          </div>
-  
-          <button class="bt" (click)="fnnext3()"> Next </button>
-          </div>
-          </div>
-  
-        </div>
-        <div *ngIf="hello5">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
-              aria-valuemax="100%">70%</div>
-          </div>
-         
-          <br>
-          <br>
-          <!-- shadow box -->
-          
-          <div class="container-fluid abtcont">
-            <div class="box">
-          <p>Religious Informations</p>
-          <div class="col">
-            <div class="inp">
-              <p>Religion</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p> Mother</p>
+                  <div class="rd">
+                    <div class="rd">
+      
+                      <input type="radio" name="inlineRadioOption" id="inlineRadio3" value="option1" style="
+                                  width: 22px;
+                                  margin-left: 5px;
+                                  margin-right: 7px;
+                              ">
+      
+                      <p for="inlineRadio3" style="
+                                margin-top: -34px;
+                                margin-right: 17px;
+                            ">Alive</p>
+                    </div>
+                    <div class="rd">
+                      <input type="radio" name="inlineRadioOption" id="inlineRadio4" value="option2" style="
+                                width: 22px;
+                                margin-left: 17px;
+                            ">
+                      <p for="inlineRadio4" style="
+                                   margin-left: 10px;
+                                   margin-top: -33px;
+                               "> Late</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              </div>
+              
+              
+                <!-- <div class="inp">
+                  <p>Family Type</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+      
+                <!-- <div class="inp">
+                  <p>Finance Status</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="inp">
+                  <p> Father</p>
+                  <div class="rd">
+                    <div class="rd">
+      
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="
+                                width: 22px;
+                                margin-left: 5px;
+                                margin-right: 7px;
+                            ">
+      
+                      <p for="inlineRadio1" style="
+                              margin-top: -34px;
+                              margin-right: 17px;
+                          ">Alive</p>
+                    </div>
+                    <div class="rd">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="
+                              width: 22px;
+                              margin-left: 17px;
+                          ">
+                      <p for="inlineRadio2" style="
+                                 margin-left: 10px;
+                                 margin-top: -33px;
+                             "> Late</p>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="inp">
+                  <p> Mother</p>
+                  <div class="rd">
+                    <div class="rd">
+      
+                      <input type="radio" name="inlineRadioOption" id="inlineRadio3" value="option1" style="
+                                  width: 22px;
+                                  margin-left: 5px;
+                                  margin-right: 7px;
+                              ">
+      
+                      <p for="inlineRadio3" style="
+                                margin-top: -34px;
+                                margin-right: 17px;
+                            ">Alive</p>
+                    </div>
+                    <div class="rd">
+                      <input type="radio" name="inlineRadioOption" id="inlineRadio4" value="option2" style="
+                                width: 22px;
+                                margin-left: 17px;
+                            ">
+                      <p for="inlineRadio4" style="
+                                   margin-left: 10px;
+                                   margin-top: -33px;
+                               "> Late</p>
+                    </div>
+                  </div>
+                </div> -->
+                
+                
+      
+      
+      
+      
+      
+             
+      
+              <button class="bt" (click)="fnnext3()" style="
+              margin-bottom: 66px;
+          "> Next </button>
+              </div>
+              </div>
+      
             </div>
-  
-            <div class="inp">
-              <p>Class</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+            <div *ngIf="hello5">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100%">70%</div>
+              </div>
+             
+              <br>
+              <br>
+              <!-- shadow box -->
+              
+              <div class="container-fluid abtcont">
+                <div class="box">
+              <h1>Religious Informations</h1>
+              <!-- religious information page 5 -->
+                 <div class="row">
+                 <div class="col-lg-4 col-sm-12">
+                  <div class="inp">
+                    <p>Religion</p>
+                    <div class="dropdown in">
+                      <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <b>Select</b>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="Select">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-lg-4 col-sm-12">
+                  <div class="inp">
+                    <p>Class</p>
+                    <div class="dropdown in">
+                      <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <b>Select</b>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="Select">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 </div>
+                 <div class="col-lg-4 col-sm-12"> 
+                  <div class="inp">
+                  <p>Madrassa Education</p>
+      
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      <b> Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Se">
+                      <a class="dropdown-item" href="#">Something3</a>
+                      <a class="dropdown-item" href="#">something2</a>
+                      <a class="dropdown-item" href="#">something</a>
+                    </div>
+                  </div>
+                </div>
+                 </div>
+                 <div class="col-lg-4 col-sm-12"> 
+                  <div class="inp">
+                  <p>Religiousness</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                 </div>
+                 </div>
+              
+                <!-- <div class="inp">
+                  <p>Religion</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+      
+                <!-- <div class="inp">
+                  <p>Class</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="inp">
+                  <p>Religiousness</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+              
+              
+                <!-- <div class="inp" style="
+                margin-top: -50px;
+            ">
+                  <p>Madrassa Education</p>
+      
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      <b> Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Se">
+                      <a class="dropdown-item" href="#">Something3</a>
+                      <a class="dropdown-item" href="#">something2</a>
+                      <a class="dropdown-item" href="#">something</a>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="inp">
+      
+      
+                </div>
+              
+              
+      
+              <button class="bt" (click)="fnnext4()" style="
+              margin-bottom: 66px;
+          "> Next </button>
+              </div>
+              </div>
+            </div>
+            <div *ngIf="hello6">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100%">80%</div>
+              </div>
+             
+              <br>
+              <br>
+              <!-- shadow box -->
+              
+              <div class="container-fluid abtcont">
+                <div class="box">
+              <h1>Contact Details</h1>
+              <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <div class="inp">
+                    <p>Primary Number</p>
+                    <input type="number" pattern="[789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;">
+      
+      
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="inp">
-              <p>Religiousness</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p>Secondary Number</p>
+                  <input type="number" pattern="[789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="inp">
-              <p>Madrassa Education</p>
-  
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="Select" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  <b> Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Se">
-                  <a class="dropdown-item" href="#">Something3</a>
-                  <a class="dropdown-item" href="#">something2</a>
-                  <a class="dropdown-item" href="#">something</a>
+              <div class="col-lg-4 col-sm-12">
+                <div class="inp">
+                  <p>Preferred Mobile Number</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <div col-lg-4 col-sm-12>
+                <div class="inp">
+      
+      
+                  <div class="inp" style="
+                  margin-left: 25px;
+              ">
+                    <p>Contact person & Relationship</p>
+                    <input type=text>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="inp">
-  
-  
-            </div>
-          </div>
-  
-          <button class="bt" (click)="fnnext4()"> Next </button>
-          </div>
-          </div>
-        </div>
-        <div *ngIf="hello6">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-              aria-valuemax="100%">80%</div>
-          </div>
-         
-          <br>
-          <br>
-          <!-- shadow box -->
-          
-          <div class="container-fluid abtcont">
-            <div class="box">
-          <p>Contact Details</p>
-          <div class="col">
-            <div class="inp">
-              <div class="inp">
-                <p>Primary Number</p>
-                <input type="number" pattern="[789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;">
-  
-  
+              <div class="col-lg-4 col-sm-12">
+                  <div class="inp">
+      
+                  <div class="inp">
+                    <p>Email ID</p>
+                    <input type=text>
+                  </div>
+                </div> 
               </div>
-            </div>
-  
-            <div class="inp">
-              <p>Secondary Number</p>
-              <input type="number" pattern="[789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;">
-            </div>
-            <div class="inp">
-              <p>Preferred Mobile Number</p>
-              <div class="dropdown in">
-                <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <b>Select</b>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="Select">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="inp">
-  
-  
-              <div class="inp">
-                <p>Contact person & Relationship</p>
-                <input type=text>
+              
+              
+                <!-- <div class="inp">
+                  <div class="inp">
+                    <p>Primary Number</p>
+                    <input type="number" pattern="[789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;">
+      
+      
+                  </div>
+                </div> -->
+      
+                <!-- <div class="inp">
+                  <p>Secondary Number</p>
+                  <input type="number" pattern="[789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;">
+                </div> -->
+                <!-- <div class="inp">
+                  <p>Preferred Mobile Number</p>
+                  <div class="dropdown in">
+                    <button class=" dropdown-toggle sl" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <b>Select</b>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Select">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                  </div>
+                </div> -->
+              
+                <!-- <div class="inp">
+      
+      
+                  <div class="inp" style="margin-top: -65px;">
+                    <p>Contact person & Relationship</p>
+                    <input type=text>
+                  </div>
+                </div> -->
+                <!-- <div class="inp">
+      
+                  <div class="inp"style="margin-top: -65px;">
+                    <p>Email ID</p>
+                    <input type=text>
+                  </div>
+                </div> -->
+              
+      
+              <button class="bt" style="margin-bottom: 66px;" (click)="fnnext5()" style="margin-bottom: 54px;"> Next</button>   
+              <!-- <a  routerLink="/location" style="color:white ;"> <button class="">Next</button>>  </a>  -->
               </div>
-            </div>
-            <div class="inp">
-  
-              <div class="inp">
-                <p>Email ID</p>
-                <input type=text>
               </div>
+              
+                          
             </div>
-          </div>
-  
-          <button class="bt" style="margin-bottom: -26px;" (click)="fnnext5()"> Next</button>   
-          <!-- <a  routerLink="/location" style="color:white ;"> <button class="">Next</button>>  </a>  -->
-          </div>
-          </div>
-          
-                      
-        </div>
       
   <!--abt container closed -->
   <!-- <div class="container-fluid abtcont1"> -->
+    <div class="col-sm-12" *ngIf="hello7">
     <div class="box">
-        <div *ngIf="hello7">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+        <div >
+          <div class="progress" style="margin-left: 41px;">
+            <div class="progress-bar"  role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
               aria-valuemax="100%">90%</div>
           </div>
          
@@ -569,23 +1045,30 @@
           
           <div class="container-fluid abtcont1">
             <div class="box">
-          <p>Location Details</p>
-  
-          <div class="col">
+
+          <p style="
+          margin-bottom: 63px;
+          margin-left: -30px;">Location Details</p>
+          <h4 style="font-size: 17px;
+          font-weight: 400;">Home Address</h4>
+          <div class="row">  
+          <div class="col-lg-4 col-sm-12"> 
             <div class="inp">
-              <div style="
+              <!-- <div style="
                     margin-right: -500px;
                     margin-top: -31px;
-                ">Home Address</div>
+                ">Home Address</div> -->
+                
   
               <div class="text">
-                <input class="form-control" type="text" placeholder="Country">
+                <input class="form-control" type="text"  placeholder="Country">
   
   
   
               </div>
-            </div>
-  
+            </div> 
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
             <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="State">
@@ -594,6 +1077,8 @@
   
               </div>
             </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
             <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="District">
@@ -602,8 +1087,89 @@
   
               </div>
             </div>
+             </div>
+
+          <div class="col-lg-4 col-sm-12"> 
+            <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="City">
+  
+  
+  
+              </div>
+  
+            </div>               
+              
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-sm-12"> 
+            <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="Place">
+  
+  
+  
+              </div>
+            </div>    
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="form-group shadow-textarea ">
+  
+              <textarea class="form-control z-depth-1 text1" id="exampleFormControlTextarea6" rows="3"
+                placeholder="Write something here..."></textarea>
+            </div>
+          
+          </div>
+          <div class="col-lg-8 col-sm-12 px-lg-5 mx-lg-5 px-sm-2">
+           <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 d-lg-flex d-sm-flex">
+              <h3 class="col-lg-6 col-sm-5 px-lg-2 text-white mx-5">Current Address</h3> 
+              
+              <h4 class="col-lg-5 col-sm-5 text-white mx-lg-2 px-lg-2 mx-5"> Same as </h4>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-12"> 
+            <div class="form-check same1" style="
+            margin-right: -46px;
+            margin-top: -29px;
+        ">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+      <label class="form-check-label" for="flexCheckIndeterminate">
+       <h4 > Same as </h4>
+      </label>
+    </div>
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
+            <div class="inp">
+  
+              <div class="text">
+                <input class="form-control" type="text" placeholder="Country">
+  
+  
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
+            <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="State">
+  
+  
+  
+              </div>
+            </div> 
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
+            <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="District">
+  
+  
+  
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-sm-12">
             <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="City">
@@ -613,6 +1179,8 @@
               </div>
   
             </div>
+          </div>
+          <div class="col-lg-4 col-sm-12"> 
             <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="Place">
@@ -621,19 +1189,79 @@
   
               </div>
             </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">  
             <div class="form-group shadow-textarea ">
   
-              <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+              <textarea class="form-control z-depth-1 text1" id="exampleFormControlTextarea6" rows="3"
                 placeholder="Write something here..."></textarea>
             </div>
           </div>
+          </div>
+          
+            <!-- <div class="inp">
+              <div style="
+                    margin-right: -500px;
+                    margin-top: -31px;
+                ">Home Address</div>
+                
   
-          <div style="margin-left: -197px;">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="Country">
+  
+  
+  
+              </div>
+            </div> -->
+  
+            <!-- <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="State">
+  
+  
+  
+              </div>
+            </div> -->
+            <!-- <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="District">
+  
+  
+  
+              </div>
+            </div> -->
+          
+          
+            <!-- <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="City">
+  
+  
+  
+              </div>
+  
+            </div> -->
+            <!-- <div class="inp">
+              <div class="text">
+                <input class="form-control" type="text" placeholder="Place">
+  
+  
+  
+              </div>
+            </div> -->
+            <!-- <div class="form-group shadow-textarea ">
+  
+              <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+                placeholder="Write something here..."></textarea>
+            </div> -->
+          
+  
+          <!-- <div style="margin-left: -197px;">
             <h3 style="
                     margin-bottom: auto;
                 ">Current Address</h3>
-          </div>
-          <div class="form-check " style="
+          </div> -->
+          <!-- <div class="form-check " style="
                   margin-right: -46px;
                   margin-top: -29px;
               ">
@@ -641,11 +1269,11 @@
             <label class="form-check-label" for="flexCheckIndeterminate">
               Same as
             </label>
-          </div>
+          </div> -->
   
   
-          <div class="col">
-            <div class="inp">
+          
+            <!-- <div class="inp">
   
               <div class="text">
                 <input class="form-control" type="text" placeholder="Country">
@@ -653,27 +1281,27 @@
   
   
               </div>
-            </div>
+            </div> -->
   
-            <div class="inp">
+            <!-- <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="State">
   
   
   
               </div>
-            </div>
-            <div class="inp">
+            </div> -->
+            <!-- <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="District">
   
   
   
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="inp">
+            </div> -->
+          
+          
+            <!-- <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="City">
   
@@ -681,21 +1309,21 @@
   
               </div>
   
-            </div>
-            <div class="inp">
+            </div> -->
+            <!-- <div class="inp">
               <div class="text">
                 <input class="form-control" type="text" placeholder="Place">
   
   
   
               </div>
-            </div>
-            <div class="form-group shadow-textarea ">
+            </div> -->
+            <!-- <div class="form-group shadow-textarea ">
   
               <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
                 placeholder="Write something here..."></textarea>
-            </div>
-          </div>
+            </div> -->
+          
   
   
   
@@ -703,53 +1331,54 @@
           <button class="bt" (click)="fnnext6()"> Next </button>
           </div>
           </div>
-  
+  </div>
         </div>
   </div>
 
       
 
   <!-- profile photo -->
-  <div *ngIf="hello8" class="hello8div">
-    
+  
+
+
+<div class=" hello8div " *ngIf="hello8">
+  
+ <div class="col-lg-12 col-sm-12"> 
+
   <h1  class="head"> Add your best shots</h1>
   <h1  class="head1"> Upload your photos to complete the profile</h1>
-
-<div class="rtngl1" >
-
-  <div class="pic1 p"></div>
+</div> 
+<div class="row">
+<div class=" col-lg-12 d-lg-flex ">
+<div class="col-lg-3 col-sm-4 rtngl ">
+  <div class="pic1 "></div>
   <div class="bar1">
-    <button class="b1" >add file</button>
+    <button class="b1">add file</button>
   </div>
- 
-</div >
+</div>
 
-<div class="rtngl2" >
-
-  <div class="pic1"></div>
-  <div class="bar1">
-    <button class="b1" >add file</button>
-  </div>
-</div >
-
-<div class="rtngl3">
-
-
+<div class="col-lg-3 col-sm-4 clearfix rtngl mx-lg-2" >
   <div class="pic1"></div>
   <div class="bar1">
     <button class="b1" >add file</button>
   </div>
 </div>
 
-<div class="rtngl4">
-
+<div class="col-lg-3 col-sm-4 rtngl ">
   <div class="pic1"></div>
   <div class="bar1">
     <button class="b1" >add file</button>
   </div>
- 
+</div>
+<div class="col-lg-3 col-sm-4 clearfix rtngl mx-lg-2">
+  <div class="pic1"></div>
+  <div class="bar1">
+    <button class="b1" >add file</button>
+  </div>
 </div>
 
+</div>
+<div class="col-lg-12 col-sm-12">
 <button class="btn2">skip</button>
 
 <h1  class="head2">Photo privacy</h1>
@@ -766,16 +1395,71 @@
   </div>
   <button class="btn1" (click)="fnnext7()">Submit and save</button>
 <div class="label1">
-  <label  class="lbl" >Photo Privacy Settings Successfully Updated..</label>
+  <label  class="lbl" >Photo Privacy Settings Successfully Updated</label>
 </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div >
+  
+  <div class="row">
+<div class="rtngl1 col-lg-3 col-sm-6 ">
+
+  
+ 
+</div > -->
+<!-- 
+<div class=" col-lg-3 col-sm-6" >
+
+  
+</div >
+
+<div class=" col-lg-3 col-sm-6">
+
+
+ 
+</div> -->
+
+<!-- <div class="col-lg-3 col-sm-6">
+
+  
+ 
+</div> -->
+
+
 
      
      <!-- </div> -->
     <!-- </div> -->
     
   <!-- end profile photo -->
+<!-- </div>
+  </div> -->
 
-  </div>
+
+
+
+
+
+
+
   <!-- details and id  -->
 
   <div *ngIf="hello9">
@@ -790,11 +1474,11 @@
       
             <div class="box" >
           
-             <p class=" text-white center" style="
+             <h2 class=" text-white center" style="
              margin-top: 165px;">Welcome to NikahinKerala Check your login details. <br>
               Profile ID : 355444 <br>
               Password : 2121wqwq<br>
-              Helpline: 9947572960</p>
+              Helpline: 9947572960</h2>
              
             </div>
            <div class="box"> 
@@ -805,7 +1489,10 @@
               <label class="navlabel">Explore</label>
             </a> -->
 
-            <a href="edit"><button class="bt">got it </button></a>
+            <a href="edit" style="
+            margin-left: -150px;
+        ">
+              <button class=" button bt" style="width:400%">got it </button> </a>
            </div>
          
   
