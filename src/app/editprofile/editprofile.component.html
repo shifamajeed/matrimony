@@ -1,24 +1,20 @@
-<div class="container-fluid" >
+<div class="container-fluid">
     <div class="row">
-      <!-- <app-leftsidenav></app-leftsidenav> -->
-      <!-- left side navbar -->
-      <div class="col-lg-3" style="padding-right:0px;padding-left:0px;">
+      <div class="col-lg-3 col-md-12">
   <div class="row">
-    <div class="col-lg-12 col-md-12">
-      <img src="assets/images/Group 638.png" class="imgback" style="float:left"/>
-      <img src="assets/images/Group 268.png" class="imgfront"/>
-   <div class="blurleft" >
-      <!-- <div class="whiteshadow"> --> 
-      <div >
-<button class="sidebtns sidebtn1" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
-<button class="sidebtns sidebtn2" ><img src="assets/images/Group 765.png" ></button>
-<button class="sidebtns sidebtn3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
-<button class="sidebtns sidebtn4" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
-<button class="sidebtns sidebtn5" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
-<button class="sidebtns sidebtn6"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button> 
+   
+    <img src="assets/images/Group 638.png" class="imgback  px-0"/>
+    <img src="assets/images/Group 268.png" class="imgfront p-2"/>
 
-<!-- <button type="button" id="control-play" title="Play">aa<span></span></button> -->
-       
+    <div class="blurleft1 px-0 py-0">
+      <div class="blurleft2 px-0 py-0">
+      <div class="col-lg-10 col-md-10">
+<button class="sidebtns my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
+<button class="sidebtns my-3" (click)="notification()"><img src="assets/images/Group 765.png" ></button>
+<button class="sidebtns my-3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
+<button class="sidebtns my-3" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
+<button class="sidebtns my-3" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
+<button class="sidebtns my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button> 
        <div>
           <div class="pstyle">Download  App For Android and IOS</div>
           <img src="assets/images/Mask Group.png" id="imgapp">
@@ -31,15 +27,14 @@
          </span>          
        </div>
        </div>
-      
-  
-  </div>
-</div> 
+       </div>
+      </div>
+
 </div>
 </div>
 <!-- end leftsidenav -->
 <!-- right side -->
-  <div class=col-lg-9 style="padding-right:0px;padding-left:0px;">
+  <div class="col-lg-9 col-md-12 px-0">
     <!-- header-->
       <div>
         <nav class="navbar navbar-expand-lg navbar-light headercss">
@@ -47,26 +42,24 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link navbar-brand" >
+                <a class="nav-link navbar-brand" (click)="home2()">
                   <img src="assets/images/home.png" class="homeicon">
-                
-                  <label class=navlabel (click)="home2()">Home </label>
+                  <label class=navlabel >Home </label>
                  <span class="sr-only">(current)</span> 
                 </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link navbar-brand">
-                  <label (click)="searchact()" class="navlabel">Search</label> 
+                <a class="nav-link navbar-brand" (click)="searchact()" >
+                  <label class="navlabel">Search</label> 
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar-brand" >
+                <a class="nav-link navbar-brand" (click)="exploreact()">
                   <img src="assets/images/explore.png" class="homeicon">
-                  <label class="navlabel" (click)="exploreact()">Explore</label>
+                  <label class="navlabel" >Explore</label>
                 </a>
               </li>
               <li class="nav-item">
@@ -76,7 +69,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar-brand navlabel" href="#">
+                <a class="nav-link navbar-brand navlabel" (click)="helpact()">
                   <img src="assets/images/help.png" class="homeicon">
                   <label class="navlabel">Help </label>
                 </a>
@@ -108,19 +101,17 @@
     <!-- part below header -->
   <div style="background-size:cover;">
       <main role="main">
-          <!-- <div><app-header></app-header></div> -->
-          <div *ngIf="editinner" class="rightbg" style="background-image:url(assets/images/abt.png);">
-              <div  class="innerbox" style="margin-bottom: 45px;">
-          <div class="btncls">
-              <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
-              <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
-              <!-- <button  class="btns">Partner Preference</button> -->
-              <button  class="btns">Manage photos</button>
-          </div>
-          
+
           <!-- entire edit profile part-->
 
           <div *ngIf="visibleeditprofilediv">
+            <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+              <!-- <div  class="innerbox" style="margin-bottom: 45px;"> -->
+          <div class="btncls">
+              <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+              <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+              <button  class="btns">Manage photos</button>
+          </div>
           <div class="linebox">
               <div class="imgdiv">
                   <img class="boximg"src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
@@ -156,6 +147,7 @@
                   </form>
               </div>
           </div>
+          
 
 <!-- edit profile personal information buttons -->
 
@@ -817,58 +809,22 @@
   </div>
   </div>
 </div>
+<!-- </div> -->
+  </div>         
 </div>
-<!--     here          -->
+<!--here -->
 
 <!-- end edit profile div -->
 <!-- hide profile div -->
 <div *ngIf="hideprofilepart">
-  <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
-    <div  class="innerbox" style="height:94%"> -->
 
-  <!-- <div style="box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
-  border-radius: 12px;
-  opacity: 6; 
-  height: 98%;
-  width: 90%;
-  padding: 10px;
-  margin-top: 10px;
-  
-  width:90%;
-margin-left: 115px;
-margin-top: 30px;
 
-border-radius: 18px;
-
-/* box-shadow: -117.83333587646484px 117.83333587646484px 117.83333587646484px 0px rgba(255, 255, 255, 0.1) inset;
-
-box-shadow: 117.83333587646484px -117.83333587646484px 117.83333587646484px 0px rgba(160, 170, 178, 0.1) inset; */
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
 
 
 
-
-box-shadow: white 0px 30px 40px -2em inset;
-
-
-
-box-shadow: whitesmoke 0px 30px 40px -2em inset;
-
-
-
-
-Offset: -117.83px, 117.83px;
-background:rgba(255, 255, 255, 0.1);
-
-Offset: 117.83px, -117.83px;
-background:rgba(160, 170, 178, 0.1);"> -->
-<!-- <div style="height:653px;
-width:90%;
-margin-left: 115px;
-margin-top: 30px;
-
-border-radius: 18px;
-background-color: #E5E5E5; 
-backdrop-filter: blur(33.3227px);opacity: 0.2;"> -->
+ 
 <div>
   <button  style="height: 53px;
   width: 359px;
@@ -922,13 +878,6 @@ text-align: left;
 ;"
       data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
 
-      <!-- <button style="Radius: 4px;
-      Offset: 0px, 0.5px;
-      background:rgba(0, 0, 0, 0.25);
-      Width: 243px;
-      Height: 53px;
-      Corner-radius: 16px;"></button> -->
-      
       </div>
       <div>
           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -956,12 +905,23 @@ text-align: left;
               </div>
             </div>
       </div>
-<!-- </div>
-</div>  -->
 </div>
+</div>  
+</div>
+
 <!-- end hide profile div -->
 <!-- delete profile part -->
 <div *ngIf="deleteprofilepart">
+
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+  <div class="btncls">
+    <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+    <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+    <button  class="btns">Manage photos</button>
+  </div> 
+  
   <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
     <div  class="innerbox" style="height:94%"> -->
   <!-- <div style=" height:1359px; width:1012px;background-image:url(assets/images/abt.png);float:left;"> -->
@@ -988,12 +948,21 @@ text-align: left;
         </div>
         </div>
 <button class="lastbtn">Delete My Profile</button>
-<!-- </div>
-</div> -->
+</div>
+</div> 
 </div>
 <!-- end delete profile part  -->
 <!-- edit password -->
-<div *ngIf="editpwdpart"> 
+<div *ngIf="editpwdpart">
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+  <div class="btncls">
+    <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+    <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+    <button  class="btns">Manage photos</button>
+  </div> 
+  
   <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
     <div  class="innerbox" style="height:94%"> -->
       <div class="">
@@ -1010,14 +979,120 @@ text-align: left;
   </div>
     <button type="submit" class=" text-white btn btn-default submitbtn svbtn">Submit & Save</button>
   </div>
-<!-- </div>
-</div> -->
+</div>
+</div>
 </div> 
 <!-- end edit password -->
-<!-- entire editprofile completed  -->
+<!-- notification -->
+<div *ngIf="visiblenotification">
+  <div class="row">
+<div class="col-lg-12 col-sm-12">
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <!-- <div  class="innerbox" style="margin-bottom: 45px;"> -->
+      <div class="col-sm-8 p-5 mx-2 my-2">
+      
+
+
+      <div class="main">
+        <div class="hey">
+         <h1 style="border: 10px;
+         color: white; text-align: center;">notification</h1>
+           
+         <div class="noti">
+             
+                 <img src="../../assets/images/man.png" style="margin-top: 7px;
+                 margin-left: 104px;
+                 border-radius: 101px;">  
+                
+              <h1 class="lore">Lorem Ipsum</h1>
+              <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+               
+              <button class="btn" style="font-family: 'Poppins';
+              font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+ 
+               <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+               font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+             </div>
+ 
+ <div class="noti" style="margin-top: 186px;
+ height: 50px;">
+ 
+ <img src="../../assets/images/man.png" class="imgs">  
+ <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
+ 
+ <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+ </div>
+ 
+               
+ <div class="noti" style="margin-top: 249px;
+ height: 50px;">
+ 
+ <img src="../../assets/images/man.png" class="imgs">  
+ <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
+ 
+ <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+ 
+ </div>
+ 
+ 
+ 
+ <div class="noti" style="margin-top: 321px;">
+             
+     <img src="../../assets/images/man.png" style="    margin-top: 7px;
+     margin-left: 104px;
+     border-radius: 101px;">  
+    
+  <h1 class="lore">Lorem Ipsum</h1>
+  <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+   
+  <button class="btn" style="font-family: 'Poppins';
+  font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+ 
+   <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+   font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+ </div>
+ 
+ <div class="noti" style= "margin-top: 514px;">
+             
+     <img src="../../assets/images/man.png" style="    margin-top: 7px;
+     margin-left: 104px;
+     border-radius: 101px;">  
+    
+  <h1 class="lore">Lorem Ipsum</h1>
+  <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+   
+  <button class="btn" style="font-family: 'Poppins';
+  font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+ 
+   <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+   font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+   </div>
+ 
+        </div>
+        </div>
+         </div>
+<!-- </div> -->
+</div>
+</div>
+</div>
+</div> 
+<!-- end notification -->
+<!-- entire side button completed  -->
 <!-- partner preference -->
 <div *ngIf="partner">
   <!-- basic preference -->
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+  <div class="btncls">
+    <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+    <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+    <button  class="btns">Manage photos</button>
+  </div> 
+  
+
+
+
   <div class="linebox">
     <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
     <hr class="partnrhr">
@@ -1111,10 +1186,14 @@ text-align: left;
   </div>
   <button type="submit" class="text-white btn btn-default submitbtn svbtn">Submit & Save</button>
 </div>
+
+</div>
+</div>
+
 <!-- end partner preference -->
-</div>
+<!-- </div> -->
 <!-- innerbox div closed -->
-</div>
+<!-- </div> -->
 <!-- header search button action -->
 <div *ngIf="visisblesearch">
   <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
@@ -1124,7 +1203,7 @@ text-align: left;
         <label><b  class="text-white searchlb">Search ID</b></label>
         <input class="mr-sm-2 searchbtn" type="search" placeholder="Search id " aria-label="Search">
       </form> 
-        <div class="lineboxsearch">
+        <div class="lineboxsearch" style="margin-bottom: 22px;height: 1043px;">
           <h2 class="text-white h2partner"><b>Search Preferences</b></h2>
           <div class="innerdivpartner">
             <form class="form-inline" action="/action_page.php">
@@ -1189,32 +1268,167 @@ text-align: left;
 <!-- header explore button action -->
 <div *ngIf="visibleexplore">
   <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
-    <div  class="innerbox" style="margin-bottom: 45px;">
+    <div  class="innerboxexplore" style="margin-bottom: 45px;">
       <button type="button" class="deletebtn sbtn">Explore</button>
-        <div class="lineboxsearch">
+      
+        <div class="lineboxsearch" style="height:1150px; margin-top:93px;">
+              <button  class="btns"(click)="interestreceived()">Interest Received</button>
+              <button  class="btns"(click)="interestsend()">Interest Sent</button>
+              <button  class="btns" (click)="bothinterest()">Both Interested </button>
+        <div *ngIf="visiblereceive"> 
+           
+              
+              <div class="linebox2" >
+                <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+                <div><h1></h1></div>
+              </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+                </div>
+              <div class="linebox2" style="margin-top: 28px;"> 
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              </div>
+              
           
-          <!-- <div class="innerdivpartner"> -->
-            <div class="btncls">
-              <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
-              <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
-              <button  class="btns">Manage photos</button>
-              <div class="in-rtgl" >
-                <button class="pg"></button>
-                <div class="pic"></div>
-                <div class="des">
-              </div>
-              </div>
-          </div>
           
          
-            <!-- </div> -->
+           </div> <!-- end visiblesend -->
+           <!-- visiblereceive -->
+           <div *ngIf="visiblesend"> 
+           
+              
+            <div class="linebox2" >
+              <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              <div><h1></h1></div>
+
+              
+            
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+             
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+         
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+             
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              
+            
+            </div>
+            
+        
+        
+       
+         </div>
+         <!--end visiblereceive  -->
+         <!-- visibleboth -->
+         <div *ngIf="visibleboth"> 
+           
+              
+          <div class="linebox2" >
+            <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            <div><h1></h1></div>
+
+            
+          
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+           
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+       
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+           
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            
+          
+          </div>
+          
+      
+      
+     
+       </div>
+         <!-- end visibleboth -->
+
         </div>
+        
         <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
       
     </div>
   </div>
 </div>
 <!-- end header explore button action -->
+<!-- help  -->
+<div *ngIf="visiblehelp">
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+      <button class="deletebtn btnn" style="margin-top:93px;">Help</button>
+      <div class="linebox" style="margin-bottom: 34px;height: 1090px;"><p class="help">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambledLorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambledLorem Ipsum is simply dummy text of 
+        the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+         ever since the 1500s, when an unknown printer took a galley of type and scrambledLorem Ipsum 
+         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+         scrambled
+      </p>
+      <p class="help" style="margin-left:340px;">+91758903989</p>
+      <p class="help" style="margin-left:314px;">matrimony@gmail.com</p>
+    </div>
+ </div>
+ </div>
+</div>
+<!-- end help -->
 <!-- header home button action -->
 <div *ngIf="visiblehome2" >
   
@@ -1242,7 +1456,7 @@ text-align: left;
       {{status}}
   </button> -->
     </div>
-`   </div>
+   </div>
 
       <div class="in-rtgl" >
           <button class="pg"></button>

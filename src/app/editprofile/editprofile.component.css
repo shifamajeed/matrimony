@@ -1,3 +1,19 @@
+/* .btns:hover {background-color: #276577;
+} */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+
+.btns:hover {     
+  color: #d3d3d3;
+  background-color:#276577;
+     
+}
 /* edit profile css */
 .headercss{
     background-color: #1687A7;
@@ -102,7 +118,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
         box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
              
               opacity: 6; 
-              height: 98%;
+              height:1330px;
               padding: 10px;
               
               width:90%;
@@ -281,7 +297,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
     margin-left: 0px;
     top: 0px;
     backdrop-filter: blur(33.3227px);
-    opacity: 0.2;
+    
     /* z-index: 1; */
     background-image: url("/assets/images/abt.jpg");
     backdrop-filter: blur(33.3227px);
@@ -299,13 +315,10 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
       left: 70px;
       background-size: cover;
 }
-
 .bgimg {
-    
     position: relative;
     background-size: 100% 100%;
     height: 200px;
-   
 }
 .pstyle{
   Font-size: 14px;
@@ -326,15 +339,13 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
 }
 .sidebtns
 {
-    border-radius: 12px;
-    position: absolute;
-    width: 258px;
+border-radius: 12px;
+width: 258px;
 height: 75px;
 left: 40px;
 border:none;
 background:white;
 }
-
 .sidebtn1{top: 375px;}
 .sidebtn2{top: 475px;}
 .sidebtn3{top: 575px;}
@@ -349,14 +360,25 @@ background:white;
 .div1{
     background-color: #D3E0EA;
 }
-.blurleft{
+.blurleft1{
+  background-image:url("/assets/images/abt.png") ;
+  height: 1500px;
+  float:left;
+}
+
+.blurleft2{
+    background-image:url("/assets/images/Rectangle 60.png") ;
+    height: 1500px;
+    float:left;
+}
+/* .blurleft{
     background-image:url("/assets/images/Rectangle 60.png") ;
     width:fit-content;
-    height: 1510px;
+  
     height: 1639px;
-     margin-left: -14px; 
-  /* background-size: cover; */
-}
+    float: left;
+     
+} */
 
     /* .imgapp{image-rendering: auto;
       image-rendering: crisp-edges;
@@ -869,6 +891,7 @@ border-width: thin;
           background-repeat: no-repeat;
           left: 22px;
       top: -30px;
+      
       }
       .pg{
           position: relative;
@@ -916,4 +939,133 @@ border-width: thin;
       border-radius: 22px;
   }  
    */
-  
+
+   /* explore */
+   .roundpic{
+    position: relative;
+          /* background-image: url(../../assets/images/pinkshall_women.jpg); */
+          width: 118px;
+    height: 110px;
+          background-repeat: no-repeat;
+          left: 22px;
+      margin-top: 15px;
+      border-radius: 50%;
+   }
+   .linebox2{
+    height: 140px;
+    width: 722px;
+    /* left: 452px; */
+    margin-top: 134px;
+    margin-left: 45px;
+    border-radius: 18px;
+    border: 1px solid white;
+    border-style: solid;
+    border-width: thin;
+   }
+   .innerboxexplore{
+    opacity: 6;
+    height: 1489px;
+    width: 90%;
+    margin-left: 50px;
+    border-radius: 18px;
+    box-shadow: whitesmoke 0px 30px 40px -2em inset;
+    Offset: -117.83px, 117.83px;
+    background: rgba(255, 255, 255, 0.1);
+    Offset: 117.83px, -117.83px;
+    background: rgba(160, 170, 178, 0.1);
+    margin-bottom: 121px;
+    margin-top: 37px;
+   }
+  /* help */
+  .help{
+    margin-left: 69px;
+margin-top: 88px;
+margin-right:58px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+  }
+  /* notification */
+  .main{
+    
+    /* position: absolute; */
+    width: 770px;
+    height: 1137px;
+    left: 337px;
+    top: 50px;
+    background: rgba(211, 224, 234, 0.1);
+    box-shadow: inset 117.833px -117.833px 117.833px rgba(160, 170, 178, 0.1), inset -117.833px 117.833px 117.833px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(235.667px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 18px;
+
+
+}
+
+.hey{
+    position: absolute;
+    width: 208px;
+    height: 38px;
+    left: 263px;
+    top: 70px;
+    border: 1px solid #FFFFFF;
+    box-shadow: inset 0px 0.5px 4px rgb(0 0 0 / 25%);
+    border-radius: 16px;
+}
+
+.noti{
+    box-sizing: border-box;
+    position: absolute;
+    width: 714px;
+    height: 169px;
+    left: -236px;
+    top: 70px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21px;
+    margin-left: 1px;
+}
+
+.lore{
+
+    position: absolute;
+    width: 120px;
+    height: 45.65px;
+    left: 327px;
+    top: 19px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.btn{
+    margin-top: 80px;
+    margin-left: 66px;
+width: 122px;
+height: 37px;
+
+background: #276678;
+border-radius: 20px;
+}
+
+.imgs{
+    width: 48px;
+    border-radius: 35px;
+    margin-top: 0px;
+    margin-left: 49px;
+
+}
+.ha{
+    top: 12px;
+    width: 276px;
+    left: 287px;
+    font-size: small;
+}
