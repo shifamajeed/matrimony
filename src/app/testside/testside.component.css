@@ -236,6 +236,10 @@ line-height: 25px;
     width: 140px;
     
   }
+  .btn{
+    height:30px;
+
+  }
   .sidebar {
     height: auto;
     position: relative;
@@ -252,14 +256,15 @@ line-height: 25px;
     font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 36px;
+  align-content: center;
   }
-  .lineboxhide{
+  /* .lineboxhide{
     margin: left 50px;
-  }
+  } */
   .submit{
-    width:160px;
+    width:145px;
   }
 } 
 @media screen and (min-width: 600px) {
