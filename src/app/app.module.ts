@@ -99,7 +99,7 @@ import { Test2Component } from './test2/test2.component';
     CommonModule,
     MatIconModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
     MatDialogModule
     
 
