@@ -320,7 +320,7 @@ label{
     font-size: 25.9555px;
     line-height: 42px;
     text-align: center;
-    color: #276678;
+    color: #39b5d9;
 
 }
 @media(max-width:600px){
@@ -353,7 +353,7 @@ label{
     font-size: 18.637px;
     line-height: 28px;
     text-align: center;
-    color: #1687A7;
+    color:#39b5d9;
 }
 @media(max-width:600px){
     .h2{
@@ -581,7 +581,7 @@ h6{
     width: 361px;
     height: 23px;
     left: 271px;
-    top: 391px;
+    top: 405px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 1200;
@@ -592,7 +592,7 @@ h6{
 }
 @media(max-width:600px){
     .h31{
-        left: 187px;
+        left: 315px;
         top: 392px;
         font-size: 11px;
     }
@@ -654,7 +654,7 @@ h6{
         font-weight: bolder;
         font-size: 28px;
         line-height: 54px;
-        color: #276678;
+        color: #40aac9;
       }
       @media(max-width:600px){
         .log1{
@@ -892,7 +892,7 @@ border-radius: 17px;
 
 }
 .navhead{
-    left: 1077px;
+    left: 1071px;
           top: 23.6px; 
           font-weight: bolder;
           font-size: 14px;
@@ -968,7 +968,7 @@ border-radius:15px;
     font-weight: 600;
     font-size: 34px;
     line-height: 54px;
-    color: #276678;
+    color: #61a5b9;;
    
 }
 @media(max-width:600px){
@@ -1024,7 +1024,7 @@ top: 338px;
     font-family: 'Poppins';
     font-weight: bolder;
     font-size: 21px;
-    color: #19424e;
+    color: #61a5b9;;
     left: 32px;
     
 
@@ -1079,7 +1079,7 @@ h2{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 19.7853px;
+    font-size: 16.7853px;
     line-height: 34px;
     
 
@@ -1120,8 +1120,8 @@ h3{
     position: absolute;
     width: 128px;
     height: 17px;
-    left: 293px;
-    top: 176.6px;
+    left: 281px;
+    top: 189.6px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
@@ -1149,13 +1149,17 @@ h1{
     top: 351.6px;
     font-size: 10px;
 }
+
+h3{
+    margin-left: -126px;
+}
 }
 .h4{
     position: absolute;
     width: 115px;
     height: 21px;
-    left: 259px;
-    top: 388.6px;
+    left: 250px;
+    top: 382.6px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bolder;
@@ -1185,9 +1189,9 @@ h1{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bolder;
-    font-size: 22.7853px;
+    font-size: 17.7853px;
     line-height: 34px;
-    color: #1687A7;
+    color: #40aac9;
 }
 @media(max-width:600px){
     .label2{
@@ -1217,6 +1221,9 @@ h1{
         width: 191px;
         left: 67px;
     }
+
+    
+
 }
 
 .code{
