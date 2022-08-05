@@ -831,7 +831,9 @@ header .menu-row .button-wrap .button {
     
     background-color: #1687A7;
     background-attachment: fixed;
-   
+
+    width: 1351px;
+
     /* display: flex; */
     /* flex-wrap: wrap; */
     padding-left: 10px;

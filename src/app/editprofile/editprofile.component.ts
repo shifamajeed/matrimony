@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class EditprofileComponent implements OnInit {
 
   constructor() { }
-  // editinner:boolean=true
+  public innerWidth: any
   
+  // editinner:boolean=true
   // sidebar
-  editinner:boolean=false
+  sidenav:boolean=true
+  // editinner:boolean=false
   visibleeditprofilediv:boolean=false
   hideprofilepart:boolean=false
   deleteprofilepart:boolean=false
@@ -58,46 +60,96 @@ export class EditprofileComponent implements OnInit {
   // sidebar
   lefteditprofilebtn()
   { 
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
     this.visisblesearch=false
     this.partner=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visiblehome2=false
-    this.editinner=true
+    this.visiblehome2=false
+    // this.editinner=true
     this.visibleeditprofilediv=true
+   
+    
+    // this.visisblesearch=false
+    // this.partner=false
+    // this.deleteprofilepart=false
+    // this.hideprofilepart=false
+    // this.editpwdpart=false
+    // this.visiblehome2=false
+    // this.visiblehome2=false
+    // this.editinner=true
+    // this.visibleeditprofilediv=true
+
+   
+   
+    // this.visisblesearch=false
+    // this.partner=false
+    // this.deleteprofilepart=false
+    // this.hideprofilepart=false
+    // this.editpwdpart=false
+    // this.visiblehome2=false
+    // this.visiblehome2=false
+    // this.editinner=true
+    // this.visibleeditprofilediv=true
   }
   editprofilebtn()
   {
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
+    
     this.visisblesearch=false
     this.visiblehome2=false
     this.partner=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
+    this.visiblehelp=false
     this.visibleeditprofilediv=true
   }
   hideprofilebtn()
   {
+
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth <600) {
+    this.sidenav = false
+   
+   } 
     this.visiblehome2=false
     this.partner=false
     this.deleteprofilepart=false
     this.visibleeditprofilediv=false
     this.editpwdpart=false
+    this.visiblehelp=false
     this.hideprofilepart=true
   }
   deleteprofilebtn()
   {
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
     this.visisblesearch=false
     this.visiblehome2=false
     this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
     this.editpwdpart=false
+    this.visiblehelp=false
     this.deleteprofilepart=true
   }
   editpwd()
   {
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
     this.visisblesearch=false
     this.visiblehome2=false
     this.partner=false
@@ -115,11 +167,16 @@ export class EditprofileComponent implements OnInit {
   // home2
   home2()
   {
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
     this.editpwdpart=false
     this.hideprofilepart=false
     this.deleteprofilepart=false
-    this.editinner=false
+    // this.editinner=false
     this.visisblesearch=false
+    this.visiblehelp=false
     this.visiblehome2=true
   }
   // edit profile
@@ -279,33 +336,47 @@ hobbiesinfo()
 //partnerpreference
 partnerpreference()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
     this.visiblehome2=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visibleeditprofilediv=false
     this.visisblesearch=false
+    this.visiblehelp=false
     this.partner=true
 }
 // search button action 
 searchact()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
   this.hideprofilepart=false
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
-  this.editinner=false
+  // this.editinner=false
   this.visiblehome2=false
+  this.visiblehelp=false
   this.visisblesearch=true
 }
 exploreact()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
   this.visibleeditprofilediv=false
   this.hideprofilepart=false
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
-  this.editinner=false
+  // this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=false
   this.visiblereceive=false
@@ -337,12 +408,16 @@ this.visibleboth=true
 // help
 helpact()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
   this.visibleeditprofilediv=false
   this.hideprofilepart=false
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
-  this.editinner=false
+  // this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=false
   this.visiblesend=false
@@ -354,18 +429,23 @@ helpact()
 // notification
 notification()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
   this.visibleexplore=false
   this.visibleeditprofilediv=false
   this.hideprofilepart=false
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
-  this.editinner=false
+  // this.editinner=false
   this.visiblesend=false
   this.visiblereceive=false
   this.visibleboth=false
   this.visisblesearch=false
-  this.partner=false   
+  this.partner=false 
+  this.visiblehelp=false  
   this.visiblenotification=true
 }
 }
