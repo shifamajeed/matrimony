@@ -8,9 +8,6 @@
       height: 100%;
       overflow: auto;
     }
- 
-
-
 /*       here       */
 
 .blurleft1{
@@ -18,7 +15,6 @@
   height: 1500px;
   float:left;
 }
-
 .blurleft2{
     background-image:url("/assets/images/Rectangle 60.png") ;
     height: 1500px;
@@ -29,8 +25,8 @@
     float:left;
     background-repeat: no-repeat; 
     height:fit-content; 
+    width:fill-available;
 }
-
 @media screen and (max-width: 600px) {
     .blurleft{
       text-align: center;
@@ -315,4 +311,104 @@ width: 942px;     */
   .camera{
     display: none;
   }
+}
+.main{
+    
+  /* position: absolute; */
+  margin-left:120px ;
+  margin-top: 30px;
+  width: 770px;
+  height: 1137px;
+  left: 337px;
+  top: 50px;
+  background: rgba(211, 224, 234, 0.1);
+  box-shadow: inset 117.833px -117.833px 117.833px rgba(160, 170, 178, 0.1), inset -117.833px 117.833px 117.833px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(235.667px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 18px;
+
+
+}
+
+.hey{
+  position: absolute;
+  width: 208px;
+  height: 38px;
+  left: 263px;
+  top: 70px;
+  border: 1px solid #FFFFFF;
+  box-shadow: inset 0px 0.5px 4px rgb(0 0 0 / 25%);
+  border-radius: 16px;
+}
+
+.noti{
+  box-sizing: border-box;
+  position: absolute;
+  width: 714px;
+  height: 169px;
+  left: -236px;
+  top: 70px;
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 21px;
+  margin-left: 1px;
+}
+
+.lore{
+
+  position: absolute;
+  width: 120px;
+  height: 45.65px;
+  left: 327px;
+  top: 19px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.btn{
+  margin-top: 80px;
+  margin-left: 66px;
+width: 122px;
+height: 37px;
+
+background: #276678;
+border-radius: 20px;
+}
+
+.imgs{
+  width: 48px;
+  border-radius: 35px;
+  margin-top: 0px;
+  margin-left: 49px;
+
+}
+.ha{
+  top: 12px;
+  width: 276px;
+  left: 287px;
+  font-size: small;
+}
+.chat{
+  box-sizing: border-box;
+  position: absolute;
+  width: 714px;
+  height: 169px;
+  left: 0px;
+  top: 70px;
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 21px;
+
+}
+.ha1{
+  line-height: 15PX;
+    top: 24px;
+    width: 282px;
+    left: 125px;
+    font-size: 11px;
 }
