@@ -189,13 +189,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
     width: 204px;
     margin-top: 20px;
 }
-.submitbtn{
-    margin-left: 196px;
-    margin-top: 19px;
-    background-color: green;
-    width:192px;
-    border-radius: 21.24px
-}
+
 .div2lb1{margin-left: 186px;}
 .div2lb2{margin-left: 184px;}
 .div2lb3{margin-left: 131px;}
@@ -847,6 +841,7 @@ border-width: thin;
   background-color: green;
   width:192px;
   border-radius: 21.24px;
+  background-color: green;
 }
 /* home2 */
 .back{
