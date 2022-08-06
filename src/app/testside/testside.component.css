@@ -17,6 +17,7 @@
   background-image:url("/assets/images/abt.png") ;
   height: 1500px;
   float:left;
+  /* width: 914px; */
 }
 
 .blurleft2{
@@ -29,6 +30,7 @@
     float:left;
     background-repeat: no-repeat; 
     height:fit-content; 
+    width: fill-available;
 }
 
 @media screen and (max-width: 600px) {
@@ -36,26 +38,30 @@
       text-align: center;
       float: center;
     } 
-    .rightbg{
-        /* display: none;  */
-    }
+    
     .mng{
       display: none;
     }
 } 
 .innerbox{
     box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
-          opacity: 6;  
-          height:fit-content; 
-      border-radius: 18px;
+    opacity: 6;  
+    height:fit-content; 
+    border-radius: 18px;
 box-shadow: whitesmoke 0px 30px 40px -2em inset;
 Offset: -117.83px, 117.83px;
 background:rgba(255, 255, 255, 0.1);
-Offset: 117.83px, -117.83px;
-background:rgba(160, 170, 178, 0.1);
 margin-bottom: 121px;
 margin-top: 45px;
 float: left;
+}
+.innerbox1{
+  background:rgba(160, 170, 178, 0.1);
+margin-bottom: 121px;
+margin-top: 45px;
+height: fit-content;
+Offset: -117.83px, 117.83px;
+height: 91%;
 }
 .btns{
     height: 53px;
@@ -95,14 +101,17 @@ width: 150px;
 }
 .sidebtns
 {   
-border-radius: 12px;
-width: 250px;
-height: 70px;
+  border-radius: 12px;
+  width: 200px;
+  height: 44px;
 left: 40px;
 border:none;
 background:white;
 }
-
+.btnsize{
+  width: 156px;
+  
+}
  .rightbg{
   float:left;
   background-repeat: no-repeat; 
@@ -220,6 +229,30 @@ line-height: 25px;
     line-height: 20px;
     color:white;
     font-weight: bolder;
+}
+
+.nav1{
+background-color: #1687A7;
+height: 5%;
+}
+.div2{
+  margin-left: 11%;
+ 
+}
+.navlabel{
+  font-family: 'poppins';
+  color: aliceblue;
+  
+}
+
+.box3{
+  background: rgba(194, 206, 215, 0.089);
+box-shadow: inset 5.59274px -5.59274px 5.59274px rgba(163, 173, 180, 0.378), inset -5.59274px 5.59274px 5.59274px rgba(255, 255, 255, 0.378);
+backdrop-filter: blur(4.47419px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 18.348px;
+height: 15%;
 }
 
  @media screen and (max-width: 600px) {

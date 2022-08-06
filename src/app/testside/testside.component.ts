@@ -59,7 +59,7 @@ export class TestsideComponent implements OnInit{
   visiblehelp:boolean=false
   // notification
   visiblenotification:boolean=false
-
+  edithomepage:boolean=true
 
   ngOnInit(): void {
   }
@@ -91,6 +91,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehome2=false
     this.editinner=true
     this.visibleeditprofilediv=true
+    this.edithomepage=false
   }
 
     
@@ -104,6 +105,7 @@ export class TestsideComponent implements OnInit{
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visibleeditprofilediv=true
+    this.edithomepage=false
   }
   hideprofilebtn()
   {
@@ -117,6 +119,7 @@ export class TestsideComponent implements OnInit{
     this.visibleeditprofilediv=false
     this.editpwdpart=false
     this.hideprofilepart=true
+    this.edithomepage=false
   }
   deleteprofilebtn()
   {
@@ -131,6 +134,7 @@ export class TestsideComponent implements OnInit{
     this.visibleeditprofilediv=false
     this.deleteprofilepart=true
     this.editpwdpart=false
+    this.edithomepage=false
   }
   editpwd()
   {
@@ -141,6 +145,7 @@ export class TestsideComponent implements OnInit{
     this.visibleeditprofilediv=false
     this.deleteprofilepart=false
     this.editpwdpart=true
+    this.edithomepage=false
 
   }
 
@@ -153,7 +158,9 @@ export class TestsideComponent implements OnInit{
     this.deleteprofilepart=false
     this.editinner=false
     this.visisblesearch=false
-    this.visiblehome2=true
+    this.visiblehome2=false
+    this.edithomepage=true
+    this.visibleeditprofilediv=false
   }
   // edit profile
   personalinfo()
@@ -170,6 +177,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=!this.visiblepersonal
+    this.edithomepage=false
   }
   physicalinfo()
   {
@@ -184,6 +192,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehobbies=false
     this.visiblepersonal=false
     this.visiblephysical=!this.visiblephysical
+    this.edithomepage=false
   }
   educationinfo()
   {
@@ -198,6 +207,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visibleeducation=!this.visibleeducation
+  this.edithomepage=false
   }
 familyinfo(){
   this.family=!this.family
@@ -211,6 +221,7 @@ familyinfo(){
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visiblefamily=!this.visiblefamily
+  this.edithomepage=false
 }
 relegiousinfo()
 {
@@ -225,6 +236,7 @@ relegiousinfo()
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visiblerelegious=!this.visiblerelegious
+  this.edithomepage=false
 }
 contactinfo()
 {
@@ -239,6 +251,7 @@ contactinfo()
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visiblecontact=!this.visiblecontact
+  this.edithomepage=false
 }
 locationinfo()
 {
@@ -253,6 +266,7 @@ locationinfo()
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visiblelocation=!this.visiblelocation
+  this.edithomepage=false
 }
 mrgplaninfo()
 {
@@ -267,6 +281,7 @@ mrgplaninfo()
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visiblemrgplan=!this.visiblemrgplan
+  this.edithomepage=false
 }
 habitsinfo()
 {
@@ -281,6 +296,7 @@ habitsinfo()
     this.visiblehobbies=false
     this.visiblepersonal=false
   this.visiblehabits=!this.visiblehabits
+  this.edithomepage=false
 }
 hobbiesinfo()
 {
@@ -295,6 +311,7 @@ hobbiesinfo()
     this.visiblehabits=false
     this.visiblepersonal=false
   this.visiblehobbies=!this.visiblehobbies
+  this.edithomepage=false
 }
 // end edit profile
 // reset password
@@ -319,6 +336,7 @@ partnerpreference()
     this.visibleeditprofilediv=false
     this.visisblesearch=false
     this.partner=true
+    this.edithomepage=false
 }
 // search button action 
 searchact()
@@ -330,6 +348,7 @@ searchact()
   this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=true
+  this.edithomepage=false
 }
 exploreact()
 {
@@ -346,6 +365,7 @@ exploreact()
   this.visibleboth=false
   this.visiblenotification=false
   this.visibleexplore=true
+  this.edithomepage=false
 }
 // explore
 interestreceived()
@@ -381,6 +401,7 @@ helpact()
   this.visiblereceive=false
   this.visibleboth=false
   this.visiblehelp=true
+  this.edithomepage=false
 }
 // notification
 notification()
@@ -398,5 +419,6 @@ notification()
   this.visisblesearch=false
   this.partner=false   
   this.visiblenotification=true
+  this.edithomepage=false
 }
 }

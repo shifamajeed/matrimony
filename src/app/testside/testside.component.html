@@ -1,21 +1,30 @@
-<div class="container-fluid mx-0">
-    <div class="row">
-        <div class="d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
-        <div class="col-lg-3 col-sm-12" *ngIf="sidenav">
-            <div class="row">
-                <img src="assets/images/Group 638.png" class="imgback px-0"/>
-                <img src="assets/images/Group 268.png" class="imgfront p-2"/>
+
+
+
+
+
+
+
+
+<div class="container-fluid mx-0 px-0">
+    
+        <div class=" mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
+            <div class="row px-0 mx-0">
+        <div class="col-lg-3 col-sm-12 mx-0 px-0" *ngIf="sidenav">
+            <!-- <div class="row"> -->
+                <img src="assets/images/Group 638.png" class="imgback "/>
+                <img src="assets/images/Group 268.png" class="imgfront "/>
             
             <div class="blurleft1 col-lg-12 col-sm-12 px-0 py-0">
                 <div class="blurleft2">
                     <div class="col-lg-8 col-sm-12 px-lg-5 px-5">
-                        <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
-                        <button class="sidebtns sidebtn2 my-3"><img src="assets/images/Group 765.png" ></button>
+                        <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img class="btnsize" src="../../assets/images/com1.png"></button>
+                        <button class="sidebtns sidebtn2 my-3"><img class="btnsize" src="assets/images/Group 765.png" ></button>
                         
-                        <button class="sidebtns sidebtn3 my-3"><img src="assets/images/Group 596.png" ></button>
-                        <button class="sidebtns sidebtn4 my-3" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
-                        <button class="sidebtns sidebtn5 my-3" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
-                        <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button>
+                        <button class="sidebtns sidebtn3 my-3"><img class="btnsize" src="assets/images/Group 596.png" ></button>
+                        <button class="sidebtns sidebtn4 my-3" (click)="hideprofilebtn()"><img class="btnsize" src="assets/images/Group 595.png" ></button>
+                        <button class="sidebtns sidebtn5 my-3" (click)="deleteprofilebtn()"><img class="btnsize" src="assets/images/Group 594.png" ></button>
+                        <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img  src="assets/images/Log Out.png"></button>
                         <div>
                             <div class="pstyle">Download  App For Android and IOS</div>
                             <img src="assets/images/Mask Group.png" id="imgapp">
@@ -30,12 +39,82 @@
                     </div>
                 </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
+
+          
+        <div class="col-lg-9 mx-0 px-0">
+            <nav class="navbar navbar-expand-lg navbar-light headercss mx-0 px-0 nav1  ">
+              
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+              <div class="collapse navbar-collapse div2" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+
+                    <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
+                    <a class="nav-link navbar-brand" (click)="home2()">
+                      <img src="assets/images/home.png" class="homeicon">
+                      <label class=navlabel >Home </label>
+                     <span class="sr-only">(current)</span> 
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link navbar-brand" (click)="searchact()" >
+                      <label class="navlabel">Search</label> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar-brand" (click)="exploreact()">
+                      <img src="assets/images/explore.png" class="homeicon">
+                      <label class="navlabel" >Explore</label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar-brand navlabel" href="#">
+                      <img src="assets/images/chat.png" class="homeicon">
+                      <label class="navlabel">Chat </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar-brand navlabel" (click)="helpact()">
+                      <img src="assets/images/help.png" class="homeicon">
+                      <label class="navlabel">Help </label>
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li> -->
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchact()">Search</button>
+                </form>  -->
+                
+              </div>
+            </nav>
+            
+         
+         
+
         <!-- entire edit profile -->
         <!-- editprofile -->   
-        <div *ngIf="visibleeditprofilediv"> 
-        <div class="col-lg-12 col-sm-12 my-lg-0 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
+        
+        <div *ngIf="visibleeditprofilediv" > 
+            <!-- <div class="row px-0 mx-0"> -->
+        <div >
             
                 <div  class="rightbg col-lg-12" style="background-image:url(assets/images/abt.png);">
                         <div class="mx-lg-1 my-lg-5 my-2">
@@ -684,9 +763,12 @@
                    
             </div>
         </div>
+        <!-- </div> -->
+   
+
     <!--end entire edit profile  -->
     <!-- hide profile div -->
-    <div *ngIf="hideprofilepart" class="col-lg-9 col-sm-10 px-0" >
+    <div *ngIf="hideprofilepart" class="col-lg-12 col-sm-10 px-0" >
     <!-- <div class="col-lg-12 col-sm-12 my-lg-0 my-2" > -->
         <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
             <div class="innerbox col-lg-12 col-sm-12 mx-lg-2 px-lg-5 py-lg-3 py-5">
@@ -763,16 +845,30 @@
         </div>
     </div>    
   </div>
+
+
   <!-- edit password -->
 
 
   <!-- end edit password -->
 <!-- header home button action -->
+<div *ngIf="edithomepage" >
+    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox1 col-lg-11 col-sm-8 mx-lg-5 px-lg-5 py-lg-3 py-5">
+
+      <div class="col-lg-12 box3 my-4">
+
+      </div>
+
+
+   </div> 
+</div> 
+</div>
+
+</div>
+
+
 <!-- end header home button action -->
 </div>
     </div>
-    <div class="row">
-        <!-- <app-footer></app-footer> -->
-
-    </div>
-</div>    
+    
