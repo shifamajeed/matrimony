@@ -91,6 +91,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehome2=false
     this.editinner=true
     this.visibleeditprofilediv=true
+    this.visiblenotification=false
   }
 
     
@@ -104,6 +105,7 @@ export class TestsideComponent implements OnInit{
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visibleeditprofilediv=true
+    this.visiblenotification=false
   }
   hideprofilebtn()
   {
@@ -117,6 +119,7 @@ export class TestsideComponent implements OnInit{
     this.visibleeditprofilediv=false
     this.editpwdpart=false
     this.hideprofilepart=true
+    this.visiblenotification=false
   }
   deleteprofilebtn()
   {
@@ -131,6 +134,7 @@ export class TestsideComponent implements OnInit{
     this.visibleeditprofilediv=false
     this.deleteprofilepart=true
     this.editpwdpart=false
+    this.visiblenotification=false
   }
   editpwd()
   {
@@ -141,6 +145,7 @@ export class TestsideComponent implements OnInit{
     this.visibleeditprofilediv=false
     this.deleteprofilepart=false
     this.editpwdpart=true
+    this.visiblenotification=false
 
   }
 
@@ -154,6 +159,8 @@ export class TestsideComponent implements OnInit{
     this.editinner=false
     this.visisblesearch=false
     this.visiblehome2=true
+    this.visiblenotification=false
+    this.visibleeditprofilediv=false
   }
   // edit profile
   personalinfo()
@@ -330,6 +337,7 @@ searchact()
   this.editinner=false
   this.visiblehome2=false
   this.visisblesearch=true
+  this.visiblenotification=false
 }
 exploreact()
 {
@@ -381,6 +389,7 @@ helpact()
   this.visiblereceive=false
   this.visibleboth=false
   this.visiblehelp=true
+  this.visiblenotification=false
 }
 // notification
 notification()

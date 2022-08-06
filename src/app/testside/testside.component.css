@@ -51,6 +51,22 @@ margin-bottom: 121px;
 margin-top: 45px;
 float: left;
 }
+.innerbox1{
+  
+opacity: 6;  
+
+Offset: 117.83px, -117.83px;
+background:rgba(160, 170, 178, 0.1);
+margin-bottom: 121px;
+margin-top: 45px;
+height: 1000px;
+}
+.verticalline{
+  border-left: 2px solid white;
+  height: 45px;
+  margin-left: 157px;
+}
+
 .btns{
   height: 53px;
   width: 214px; 
@@ -242,6 +258,11 @@ cursor: pointer;
     border-radius: 12px;
 }
 
+.headercss{
+  background-color: #1687A7;
+  height: 70px;
+  font-family: 'Poppins'; 
+}
 @media screen and (max-width: 600px) {
 .sidebar{
   text-align: center;
