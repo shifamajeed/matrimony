@@ -1,5 +1,5 @@
-<div class="container-fluid mx-0">
-    <div class="row">
+<div class="container-fluid mx-0 px-0">
+    <div class="row mx-0 px-0">
         <div class="d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
         <div class="col-lg-3 col-sm-12" *ngIf="sidenav">
             <div class="row">
@@ -10,9 +10,9 @@
                 <div class="blurleft2">
                     <div class="col-lg-8 col-sm-12 px-lg-5 px-5">
                         <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
-                        <button class="sidebtns sidebtn2 my-3"><img src="assets/images/Group 765.png" ></button>
+                        <button class="sidebtns sidebtn2 my-3" (click)="notification()"><img src="assets/images/Group 765.png" ></button>
                         
-                        <button class="sidebtns sidebtn3 my-3"><img src="assets/images/Group 596.png" ></button>
+                        <button class="sidebtns sidebtn3 my-3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
                         <button class="sidebtns sidebtn4 my-3" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
                         <button class="sidebtns sidebtn5 my-3" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
                         <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button>
@@ -686,8 +686,8 @@
         </div>
     <!--end entire edit profile  -->
     <!-- hide profile div -->
-    <div *ngIf="hideprofilepart" class="col-lg-9 col-sm-10 px-0" >
-    <!-- <div class="col-lg-12 col-sm-12 my-lg-0 my-2" > -->
+<div *ngIf="hideprofilepart">
+    <div  class="col-lg-9 col-sm-10 px-0" >
         <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
             <div class="innerbox col-lg-12 col-sm-12 mx-lg-2 px-lg-5 py-lg-3 py-5">
                 <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
@@ -730,10 +730,10 @@
                 </div>
             </div>
         </div>
-    <!-- </div> -->
     </div>
+</div>
   <!-- end hide profile div -->
-  <div *ngIf="deleteprofilepart">
+<div *ngIf="deleteprofilepart">
     <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
         <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
 
@@ -786,11 +786,237 @@
 <!-- header home button action -->
 <!-- end header home button action -->
 </div>
+<!-- end delete profile -->
+<!-- edit password -->
+<div *ngIf="editpwdpart" class="editpwdpart col-lg-9 col-sm-12 px-0 mx-0">
+    <div class="col-lg-12 col-sm-12 px-0 mx-0">
+        <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox col-lg-10 col-sm-10">
+            <div class="">
+                <form action="" class="form-group">
+                    <div class="form-group" style="color:white;">
+                        <div class="col-lg-12 col-sm-12 d-block my-5">         
+                          <div class="d-lg-flex col-lg-12 col-sm-12 px-lg-5 my-1">
+                           <div class="col-lg-4 col-sm-6 px-lg-5 mx-lg-5 px-lg-0 py-lg-2 px-sm-5"><label for="name">Current Password</label></div>
+                                                       
+                                <div class="col-lg-7 col-sm-6 px-lg-0 mx-lg-0">
+                                    <input type="password" class="pswtype">
+                                    <i class="far fa-eye eyestyle" id="togglePassword"></i>
+                                </div>
+                         </div>
+                         <div class="d-lg-flex col-lg-12 col-sm-12 px-lg-5 my-1">
+                            <div class="col-lg-4 col-sm-6 px-lg-5 mx-lg-5 px-lg-0 py-lg-2"><label for="name">New Password</label></div>                         
+                                <div class="col-lg-7 col-sm-6 px-lg-0 mx-lg-0">
+                                    <input type="password" class="pswtype">
+                                    <i class="far fa-eye eyestyle" id="togglePassword"></i>
+                                </div>
+                          </div>
+                          <div class="d-lg-flex col-lg-12 col-sm-12 px-lg-5 my-1">
+                            <div class="col-lg-4 col-sm-6 px-lg-5 mx-lg-5 px-lg-0 py-lg-2"><label for="name">Confirm Password</label></div>                         
+                                <div class="col-lg-7 col-sm-6 px-lg-0 mx-lg-0">
+                                    <input type="password" class="pswtype">
+                                    <i class="far fa-eye eyestyle" id="togglePassword"></i>
+                                </div>
+                          </div>
+                          <div class="psw d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                              <button type="submit" class="btnpsw submitbtn col-lg-6 col-sm-5 px-lg-5 px-3 mx-lg-5 mx-sm-5">Save & save</button>
+                          </div>
+                           
+                      </div>
+                   </div>
+                  </form>
+            </div>
+        </div>
+        </div> 
+    </div>
+</div>
+<!-- end edit password -->
+<!-- notification -->
+<div *ngIf="visiblenotification" class="col-lg-9 col-sm-12 px-0 mx-0">
+    <div class="rightbg"style="background-image:url(assets/images/abt.png);">
+       
+        <div class="main">
+            <div class="hey">
+             <h1 style="border: 10px;
+             color: white; text-align: center;">notification</h1>
+               
+             <div class="noti">
+                 
+                     <img src="../../assets/images/man.png" style="margin-top: 7px;
+                     margin-left: 104px;
+                     border-radius: 101px;">  
+                    
+                  <h1 class="lore">Lorem Ipsum</h1>
+                  <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+                   
+                  <button class="btn" style="font-family: 'Poppins';
+                  font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+     
+                   <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+                   font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+                 </div>
+     
+     <div class="noti" style="margin-top: 186px;
+     height: 50px;">
+     
+     <img src="../../assets/images/man.png" class="imgs">  
+     <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
+     
+     <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+     </div>
+     
+                   
+     <div class="noti" style="margin-top: 249px;
+     height: 50px;">
+     
+     <img src="../../assets/images/man.png" class="imgs">  
+     <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
+     
+     <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+     
+     </div>
+     
+     
+     
+     <div class="noti" style="margin-top: 321px;">
+                 
+         <img src="../../assets/images/man.png" style="    margin-top: 7px;
+         margin-left: 104px;
+         border-radius: 101px;">  
+        
+      <h1 class="lore">Lorem Ipsum</h1>
+      <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+       
+      <button class="btn" style="font-family: 'Poppins';
+      font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+     
+       <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+       font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+     </div>
+     
+     <div class="noti" style= "margin-top: 514px;">
+                 
+         <img src="../../assets/images/man.png" style="    margin-top: 7px;
+         margin-left: 104px;
+         border-radius: 101px;">  
+        
+      <h1 class="lore">Lorem Ipsum</h1>
+      <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+       
+      <button class="btn" style="font-family: 'Poppins';
+      font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+     
+       <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+       font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+       </div>
+     
+            </div>
+            
+             </div>
+    </div>
+</div> 
+
+<!-- end notification -->
+<!-- chat no messages -->
+<div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
+    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
+
+            <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
+                <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5">
+                    <div class="col-lg-6 col-sm-4 mx-lg-5 px-lg-5 col-sm-5">
+                        <div class="lineboxhide">
+                        <h2 class="h2hide col-lg-12 col-sm-12 px-lg-5 mx-lg-5 px-5">chat</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-2 mx-lg-5 px-lg-5  my-4">
+                        <img class="col-lg-8 col-sm-2 mx-lg-5 px-lg-5 py-5 mx-4 my-5" src="assets/images/Frame.png">
+                    </div>
+                    <div class="col-lg-7 col-sm-6 px-lg-5 mx-lg-3">
+                        <h3 class="col-lg-12 mx-lg-5 col-sm-4 text-white">You Currently Have No Messages</h3>
+                    </div>
+                    <div class="col-lg-7 col-sm-5 px-lg-3 mx-lg-1 my-lg-5">
+                        <button type="submit" class="col-lg-12 mx-lg-5 col-sm-4 btn text-white submit mx-1">Find Your Partner</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+</div>
+<!-- end chat no messages -->
+<!-- chat -->
+<div class="col-lg-9 col-sm-12 px-0 mx-0">
+    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox col-lg-11 col-sm-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
+            <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5">
+
+                <div class="col-lg-12 col-sm-12 py-lg-5 mx-5">
+                    <div class="col-lg-6 col-sm-4 mx-lg-5 px-lg-5 col-sm-5">
+                        <div class="lineboxhide">
+                        <h2 class="h2hide col-lg-12 col-sm-12 px-lg-5 mx-lg-5 px-5">chat</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-12 col-sm-12 chat" style="margin-top: 45px;
+                height: 66px;" onclick="openChat()" data-toggle="modal" data-target="#chat">
+                <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+                <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+                </div> -->
+
+               <!-- <div class="col-lg-12 col-sm-12 chat" style="margin-top: 120px;
+                height: 66px;">
+                <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+                <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+                </div>
+
+                <div class="col-lg-12 col-sm-12 chat" style="margin-top: 195px;
+                height: 66px;">
+                <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+                <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+                </div>
+
+                <div class="col-lg-12 col-sm-12 chat" style="margin-top: 265px;
+                height: 66px;">
+                <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+                <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+                </div>
+
+                <div class="col-lg-12 col-sm-12 chat" style="margin-top: 335px;
+                height: 66px;">
+                <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+                <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+                </div> -->
+
+                <div class="chat-popup" id="chat" area-hidden="true">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Chat</h1>
+                  
+                      <label for="msg"><b>Message</b></label>
+                      <textarea placeholder="Type message.." name="msg" required></textarea>
+                  
+                      <button type="submit" class="btn">Send</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div> 
+</div>
+ 
+<!-- end chat -->
 <div>
     <!-- here home2 profile page -->
+    <!-- end home2 profile page -->
 </div>
+
     </div>
-    <div class="row">
+    <div>
         <!-- <app-footer></app-footer> -->
     </div>
 </div>    
