@@ -25,7 +25,6 @@ import {MatIconModule} from '@angular/material/icon';
 
 import { EntrydetailsComponent } from './entrydetails/entrydetails.component'
 import { TestsideComponent } from './testside/testside.component';
-
 import { Home2Component } from './home2/home2.component';
 import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';

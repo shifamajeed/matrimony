@@ -124,7 +124,7 @@
                     </div>
        
        <!-- edit profile  Personal Information-->
-       <div class="col-lg-12 col-sm-12 my-2">
+       <!-- <div class="col-lg-12 col-sm-12 my-2">
         <div class="innerbox my-2 col-lg-12 col-sm-12 px-2">
             <button type="button" (click)=personalinfo() class="btn btn-block personaldiv">
             {{visiblepersonal?"Personal Informations":"Personal Informations"}}
@@ -168,7 +168,7 @@
                          <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5">Save</button>
                      </div>
                     
-                         <!-- <label for="name"class="col-lg-6 col-sm-6 px-0">age</label>
+                         < <label for="name"class="col-lg-6 col-sm-6 px-0">age</label>
                          <label for="name"class="col-lg-6 col-sm-6 px-0">Marital status</label>
                          <label for="name"class="col-lg-6 col-sm-6 px-0">reliogion</label>
                          <label for="name"class="col-lg-6 col-sm-6 px-0">Nationality</label>
@@ -177,81 +177,86 @@
                      </div>
                      
                  </div> -->
-            </div>
+            <!-- </div>
         </div>
          </form>
             
           </div>
          
          </div>
-         </div>
+         </div> --> 
          <!-- end edit profile  Personal Information -->
          <!-- edit profile physical information   -->
         
         <!-- paste here  -->
         <!-- edit profile  Personal Information-->
         <div class="col-lg-12 col-sm-12 my-2">
-            <button type="button" (click)=personalinfo() class="btn btn-block personaldiv">
+            <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
             <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-            {{visiblepersonal?"Personal Informations":"Personal Informations"}}
-            </button>
+            <label for="">Personal Information</label>
+            <button style="background-color: transparent;border: none;" (click)=personalinfo()>  {{visiblepersonal?">":"v"}}   </button>
+           
+            <div *ngIf="visiblepersonal"> 
+        
+                <div class=" my-2 col-lg-12 col-sm-12 px-2">
+                
+                  <div class="innerdiv">
+                     <form action="/action_page.php">
+                     <div class="col-lg-12 col-sm-12 d-block my-2">
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                             <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
+                         </div>
+                         <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                             <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                         </div>
+                        
+                             <!-- <label for="name"class="col-lg-6 col-sm-6 px-0">age</label>
+                             <label for="name"class="col-lg-6 col-sm-6 px-0">Marital status</label>
+                             <label for="name"class="col-lg-6 col-sm-6 px-0">reliogion</label>
+                             <label for="name"class="col-lg-6 col-sm-6 px-0">Nationality</label>
+                             <label for="name"class="col-lg-6 col-sm-6 px-0">Language Spoken</label>
+                             <label for="name"class="col-lg-6 col-sm-6 px-0">About me</label>
+                         </div>
+                         
+                     </div> -->
+                </div>
+             </form>
+                </div>
+              </div>
+             
+             </div>
+
+
+            </div>
             </div>
         
         <!--   -->
-        <div *ngIf="visiblepersonal"> 
-        
-           <div class="innerbox my-2 col-lg-12 col-sm-12 px-2">
-           
-             <div class="innerdiv">
-                <form action="/action_page.php">
-                <div class="col-lg-12 col-sm-12 d-block my-2">
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                        <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                        <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5">Save</button>
-                    </div>
-                   
-                        <!-- <label for="name"class="col-lg-6 col-sm-6 px-0">age</label>
-                        <label for="name"class="col-lg-6 col-sm-6 px-0">Marital status</label>
-                        <label for="name"class="col-lg-6 col-sm-6 px-0">reliogion</label>
-                        <label for="name"class="col-lg-6 col-sm-6 px-0">Nationality</label>
-                        <label for="name"class="col-lg-6 col-sm-6 px-0">Language Spoken</label>
-                        <label for="name"class="col-lg-6 col-sm-6 px-0">About me</label>
-                    </div>
-                    
-                </div> -->
-           </div>
-        </form>
-           </div>
-         </div>
-        
-        </div>
+      
         <!-- end edit profile  Personal Information -->
         <!-- edit profile physical information   -->
         
