@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 col-md-12">
+      <div class="col-lg-3 col-md-12" *ngIf="sidenav">
   <div class="row">
    
     <img src="assets/images/Group 638.png" class="imgback  px-0"/>
@@ -818,14 +818,10 @@
 <!-- hide profile div -->
 <div *ngIf="hideprofilepart">
 
-
   <div class="rightbg" style="background-image:url(assets/images/abt.png);">
     <div  class="innerbox" style="margin-bottom: 45px;">
 
-
-
- 
-<div>
+      <div>
   <button  style="height: 53px;
   width: 359px;
   
@@ -916,11 +912,11 @@ text-align: left;
 
   <div class="rightbg" style="background-image:url(assets/images/abt.png);">
     <div  class="innerbox" style="margin-bottom: 45px;">
-  <div class="btncls">
+  <!-- <div class="btncls">
     <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
     <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
     <button  class="btns">Manage photos</button>
-  </div> 
+  </div>  -->
   
   <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
     <div  class="innerbox" style="height:94%"> -->
@@ -939,13 +935,15 @@ text-align: left;
         <div class="inner_shadow w3-opacity-max">
           <div class="inner_shadow2">
           <div class="inner_shadow3">
-            <form><h6 class="text-white">Select the source:</h6>
-              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Through our matrimony &nbsp;&nbsp;</label>
+            <form><h6 class="text-white"style="margin: 20px 20px 19px;
+              font-size: 16px;
+              font-weight: 600;">Select the source:</h6>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;margin:8px;"><label class="text-white">Through our matrimony &nbsp;&nbsp;</label>
               <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Other Matrimonial site &nbsp;&nbsp;</label>
               <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Through Other site</label>
             </form>
           </div>
-        </div>
+          </div>
         </div>
 <button class="lastbtn">Delete My Profile</button>
 </div>
@@ -957,11 +955,11 @@ text-align: left;
 
   <div class="rightbg" style="background-image:url(assets/images/abt.png);">
     <div  class="innerbox" style="margin-bottom: 45px;">
-  <div class="btncls">
+  <!-- <div class="btncls">
     <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
     <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
     <button  class="btns">Manage photos</button>
-  </div> 
+  </div>  -->
   
   <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
     <div  class="innerbox" style="height:94%"> -->
