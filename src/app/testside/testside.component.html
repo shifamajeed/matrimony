@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <!-- entire edit profile -->
+<!-- entire edit profile -->
         <!-- editprofile -->   
         <div *ngIf="visibleeditprofilediv"> 
         <div class="col-lg-12 col-sm-12 my-lg-0 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
@@ -683,14 +683,11 @@
             </div>
             </div>
       
-          </div>
-        
-        
-                   
+          </div>  
             </div>
         </div>
     <!--end entire edit profile  -->
-    <!-- hide profile div -->
+<!-- hide profile div -->
 <div *ngIf="hideprofilepart">
     <div  class="col-lg-9 col-sm-10 px-0" >
         <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
@@ -737,7 +734,8 @@
         </div>
     </div>
 </div>
-  <!-- end hide profile div -->
+<!-- end hide profile div -->
+<!-- delete profile -->
 <div *ngIf="deleteprofilepart">
     <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
         <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
@@ -785,13 +783,8 @@
             </div>
         </div>    
     </div>
-  <!-- edit password -->
-
-  <!-- end edit password -->
-<!-- header home button action -->
-<!-- end header home button action -->
 </div>
-<!-- end delete profile -->
+<!-- end delete profile --> 
 <!-- edit password -->
 <div *ngIf="editpwdpart" class="editpwdpart col-lg-9 col-sm-12 px-0 mx-0">
     <div class="col-lg-12 col-sm-12 px-0 mx-0">
@@ -873,54 +866,36 @@
                    
      <div class="noti" style="margin-top: 249px;
      height: 50px;">
-     
      <img src="../../assets/images/man.png" class="imgs">  
      <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
-     
      <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
-     
      </div>
-     
-     
-     
-     <div class="noti" style="margin-top: 321px;">
-                 
+     <div class="noti" style="margin-top: 321px;">       
          <img src="../../assets/images/man.png" style="    margin-top: 7px;
          margin-left: 104px;
          border-radius: 101px;">  
-        
       <h1 class="lore">Lorem Ipsum</h1>
       <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
-       
       <button class="btn" style="font-family: 'Poppins';
       font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
-     
        <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
        font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
      </div>
-     
-     <div class="noti" style= "margin-top: 514px;">
-                 
+     <div class="noti" style= "margin-top: 514px;">  
          <img src="../../assets/images/man.png" style="    margin-top: 7px;
          margin-left: 104px;
          border-radius: 101px;">  
-        
       <h1 class="lore">Lorem Ipsum</h1>
       <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
-       
       <button class="btn" style="font-family: 'Poppins';
       font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
-     
        <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
        font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
        </div>
-     
             </div>
-            
              </div>
     </div>
 </div> 
-
 <!-- end notification -->
 <!-- chat no messages -->
 <div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
@@ -950,7 +925,7 @@
 </div>
 <!-- end chat no messages -->
 <!-- chat -->
-<div class="col-lg-9 col-sm-12 px-0 mx-0">
+<div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
     <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
         <div class="innerbox col-lg-11 col-sm-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
             <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5">
@@ -962,63 +937,234 @@
                         </div>
                     </div>
                 </div>
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                ...
+              </div>
+            </div>
+          </div> -->
+
 
                 <div class="col-lg-12 col-sm-12 chat" style="margin-top: 45px;
-                height: 66px;" onclick="openChat()" data-toggle="modal" data-target="#chat">
+                height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
                 <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
                 <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
                 <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
                 </div>
+                <div class="modal fade bd-example-modal-sm " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="chatbox modal-content" style="background: #C3DDE4; border:none;">
+                            <div class="modal-header">
+                                <div class="btn-group">
+                                    <!-- <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Action
+                                    </button> -->
+                                    <div class="round" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mx-1 bi bi-three-dots" style="color:#276678"></i></div>
+                                    
+                                    <div class="chatmenu dropdown-menu">
+                                      <a class="dropdown-item py-3" href="">Clear Chat</a>
+                                      <a class="dropdown-item py-2" data-toggle="modal" data-target="#block">Block Profile</a>
+                                      <a class="dropdown-item py-3" data-toggle="modal" data-target="#report">Report Profile</a>
+                                    </div>
+                                </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <div aria-hidden="true">&times;</div>
+                                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="py-1" style="height: fitcontent !important;">rrr</div>
+                                <div class="py-1" >rrr</div>
+                                <div class="py-1" >rrr</div>
+                            </div>
+                            <div class="buttonin">
+                                <input type="text" class="chatmsg my-2 mx-4 px-1"placeholder="Type message...">
+                                <button type="submit" id="send">send</button>
+                            </div>
+                    </div> 
+                   
 
-               <!-- <div class="col-lg-12 col-sm-12 chat" style="margin-top: 120px;
-                height: 66px;">
+                  </div>
+<!-- Block main-->
+<div class="row mx-0 px-0">
+<div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+  <div class="modal fade" id="block" tabindex="10" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog btx" role="document">
+      <div class="modal-content">
+        <div class="col-lg-12 col-sm-12 col-12">
+        <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+          <img src="assets/images/block.png" style="height: 25px;" class="mx-1 "> 
+          <h3 class="block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Block NAME</h3>
+        </div>
+        </div>
+        <div>
+        <p class="mx-3"  style="color:rgba(107, 122, 126, 1);"> Please tell us why you are blocking 
+          Later.Dont worry we dont tell them</p>
+        <div class="butn col-lg-12 col-sm-12 my-2">
+          <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal"data-target="#blockdetails">Inappropriate Messages</button><br>
+          <button type="button" class=" primary btn btn-outline-primary col-12" data-toggle="modal" data-target="#blockdetails">Scam or Spam</button><br>
+          <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#blockdetails">Inappropriate Profile</button><br>
+          <button type="button" class=" primary btn btn-outline-primary col-12 my-1" data-toggle="modal" data-target="#blockdetails">I just dont want them to see me</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- block details -->
+<div class="row mx-0 px-0">
+    <div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+      <div class="modal fade" id="blockdetails" tabindex="10" role="dialog" aria-labelledby="blockdetailsTitle" aria-hidden="true">
+        <div class="modal-dialog btx" role="document">
+          <div class="modal-content">
+            <div class="col-lg-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+              <h3 class="col-15 mx-4 block modal-title" id="blockdetailsTitle" style="color:  #276678; align-content: center;" >Tell Us More</h3>
+            </div>
+            </div>
+            <div >
+            <p class="mx-3"  style="color:rgba(107, 122, 126, 1);"> Please give us more information. Dont worry we dont tell them.</p>
+            <div class="butn col-lg-12 col-sm-12 my-2">
+              <textarea cols="35" rows="4" style="border-radius: 13px" placeholder="Tell us what happened...."></textarea>
+              <button type="button" class="text-white btn-outline-primary mx-5 col-8 my-3"style="border-radius: 13px;background-color:#276678">Block Name</button> 
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>  
+<!--report main -->
+<div class="row mx-0 px-0">
+<div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+  <div class="modal fade" id="report" tabindex="10" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog btx" role="document">
+      <div class="modal-content">
+        <div class="col-lg-12 col-sm-12 col-12">
+        <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+          <img src="assets/images/report.png" style="height: 25px;" class="mx-1"> 
+          <h3 class="block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Report NAME</h3>
+        </div>
+        </div>
+        <div>
+        <p class="mx-3"  style="color:rgba(107, 122, 126, 1);">  Please tell us why you are blocking Later.Dont worry we dont tell them </p>
+        <div class="butn col-lg-12 col-sm-12 my-2">
+          <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#report2" >Inappropriate Profile</button><br>
+          <button type="button" class=" primary btn btn-outline-primary col-12" data-toggle="modal" data-target="#report2">Inappropriate Messages</button><br>
+          <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#report2">Already Married</button><br>
+          <button type="button" class=" primary btn btn-outline-primary col-12 my-1" data-toggle="modal" data-target="#report2">Misusing matrimony</button>
+          <button type="button" class=" primary btn btn-outline-primary col-12" data-toggle="modal" data-target="#report2">Wrong Contact Details</button><br>
+          <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#report2">Scam or Spam</button><br> 
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- report details -->
+<div class=" row mx-0 px-0">
+    <div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+  <div class="modal fade" id="report2" tabindex="10" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog btx" role="document">
+      <div class="modal-content">
+        <div class="col-lg-12 col-sm-12 col-12">
+        <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+          <!-- <img src="assets/images/block.png" style="height: 25px;" class="mx-1">  -->
+          <h3 class="col-15 mx-4 block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Tell Us Reason</h3>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        </div>
+        <div >
+  
+        <p class="mx-3"  style="color:rgba(107, 122, 126, 1);"> Please give us more information. Dont worry we dont tell them.</p> <br> 
+        <div class="butn col-lg-12 col-sm-12 my-2">
+          <textarea cols="35" rows="4" style="border-radius: 13px" placeholder="Tell us what happened...."></textarea> <br> <br>
+         <div class="mx-5 px-2 py-3 d-flex" style="color:#00556A ;"  >Also Block Name <label class="switch mx-2  d-flex"> <br> <br>
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+          <button type="button" class="text-white btn-outline-primary mx-5 col-8 my-1"style="border-radius: 13px;background-color:#276678">Report Name</button> 
+  
+        </div>
+          
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  </div>
+</div></div>
+                <div class="col-lg-12 col-sm-12 chat" style="margin-top: 120px;
+                height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
                 <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
                 <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
                 <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
                 </div>
 
                 <div class="col-lg-12 col-sm-12 chat" style="margin-top: 195px;
-                height: 66px;">
+                height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
                 <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
                 <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
                 <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
                 </div>
 
                 <div class="col-lg-12 col-sm-12 chat" style="margin-top: 265px;
-                height: 66px;">
+                height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
                 <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
                 <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
                 <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
                 </div>
 
                 <div class="col-lg-12 col-sm-12 chat" style="margin-top: 335px;
-                height: 66px;">
+                height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
                 <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
                 <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
-                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
-                </div> -->
-
-                <div class="chat-popup" id="chat" area-hidden="true">
-                    <form action="/action_page.php" class="form-container">
-                      <h1>Chat</h1>
-                  
-                      <label for="msg"><b>Message</b></label>
-                      <textarea placeholder="Type message.." name="msg" required></textarea>
-                  
-                      <button type="submit" class="btn">Send</button>
-                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
-                </div>
-            </div> 
+                <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1> 
+            </div>
+            </div>   
         </div>
     </div> 
 </div>
- 
 <!-- end chat -->
+<!-- here home2 profile page -->
 <div>
-    <!-- here home2 profile page -->
-    <!-- end home2 profile page -->
 </div>
+<!-- end home2 profile page -->
+<!-- help -->
+<section class="helpsec d-none">
+    <!-- <div *ngIf="visiblehelp"> -->
+        <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+          <div  class="innerbox">
+            <div class="col-lg-3 col-5 lineboxsmall py-0">
+                <h1 class="help1">Help</h1>
+            </div>
+            <div class="col-10 linebox">
+                <p class="help2">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+              printer took a galley of type and scrambledLorem Ipsum is simply dummy text of the printing and 
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambledLorem Ipsum is simply dummy text of 
+              the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+               ever since the 1500s, when an unknown printer took a galley of type and scrambledLorem Ipsum 
+               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+               scrambled
+            </p>
+            <p class="help text-white" style="text-align: center;margin-top: 50px;">+91758903989</p>
+            <p class="help text-white"style="text-align: center;margin-top: 50px;margin-bottom: 50px;">matrimony@gmail.com</p>
+          </div>
+       </div>
+        </div>
+    <!-- </div> -->
+</section>
+<!-- end help -->
 </div>
 </div>    
 
