@@ -78,7 +78,7 @@ height: 1000px;
 .verticalline{
   border-left: 2px solid white;
   height: 45px;
-  margin-left: 123px;
+  margin-left: 95px;
 }
 
 .btns{
@@ -349,7 +349,7 @@ font-style: normal;
 font-size: 5px;
 line-height: 7px;
   }
-.h2hide{
+
 
 .notisec .innerbox .btn{
   border-radius: 32px;
@@ -361,8 +361,8 @@ line-height: 7px;
   width: 115px;
     height: 35px;
   margin-left: 35px;
-  
 }
+
 .notisec .innerbox .btn1{
   border-radius: 32px;
     background-color: #276678;
@@ -376,7 +376,7 @@ line-height: 7px;
 }
 
 
-}
+
 .lastbtn{
   font-size: 12px;
   height:21px;
@@ -415,7 +415,7 @@ box-shadow: inset 117.833px -117.833px 117.833px rgba(160, 170, 178, 0.1), inset
 backdrop-filter: blur(235.667px);
 /* Note: backdrop-filter has minimal browser support */
 
-
+}
 
 
 
