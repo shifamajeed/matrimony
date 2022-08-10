@@ -1,8 +1,8 @@
 <div class="container-fluid mx-0 px-0">
     <div class="row mx-0 px-0">
         <div class="d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
-        <div class="col-lg-3 col-sm-12" *ngIf="sidenav">
-            <div class="row">
+        <div class="col-lg-3 col-sm-12 sidenave" *ngIf="sidenav">
+            <div class="row ">
                 <img src="assets/images/Group 638.png" class="imgback px-0"/>
                 <img src="assets/images/Group 268.png" class="imgfront p-2"/>
             
@@ -32,7 +32,58 @@
                 </div>
             </div>
         </div>
+
+
+         
+        <div class="col-lg-9 col-md-12 mx-0 px-0">
+            <nav class="navbar navbar-expand-lg navbar-light headercss nonav">
+                
+                
+                <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
+                      <a class="nav-link navbar-brand" (click)="home2()">
+                        <img src="../../assets/images/home.png" class="homeicon">
+                        <label class=navlabel >Home </label>
+                       <span class="sr-only">(current)</span> 
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link navbar-brand" (click)="searchact()" >
+                        <img src="../../assets/images/seach5.png" class="homeicon">
+                        <label class="navlabel">Search</label> 
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navbar-brand" (click)="exploreact()">
+                        <img src="../../assets/images/explore.png" class="homeicon">
+                        <label class="navlabel" >Explore</label>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navbar-brand navlabel">
+                        <img src="assets/images/chat.png" class="homeicon">
+                        <label class="navlabel">Chat </label>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navbar-brand navlabel" (click)="helpact()">
+                        <img src="assets/images/help.png" class="homeicon">
+                        <label class="navlabel">Help </label>
+                      </a>
+                    </li>
+                     </ul>
+                </div>
+              </nav>
+
+       
+
+
+        <!-- entire edit profile -->
+
 <!-- entire edit profile -->
+
         <!-- editprofile -->   
         <div *ngIf="visibleeditprofilediv"> 
         <div class="col-lg-12 col-sm-12 my-lg-0 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
@@ -750,6 +801,14 @@
           </form>
           </div>
         </div>
+
+    <!--end entire edit profile  -->
+    <!-- hide profile div -->
+<div *ngIf="hideprofilepart">
+    <div  class="col-lg-12 col-sm-10 px-0" >
+        <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
+            <div class="innerbox col-lg-10 col-sm-12 mx-lg-2 px-lg-5 py-lg-3 py-5 mx-5">
+
         <!-- Religious Preferences -->
         <div class="linebox mx-5" style=margin-top:36px;height:209px;>
           <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
@@ -803,6 +862,7 @@
     <div  class="col-lg-12 col-sm-12 px-0 mx-0">
         <div class="rightbg col-lg-12 col-12 py-3">
             <div class="innerbox col-lg-10 col-sm-10">
+
                 <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
                     <div class="lineboxhide col-lg-7 mx-lg-5 px-lg-5 col-sm-12 my-5 px-4">
                         <h2 class="h2hide col-sm-12 mx-lg-5 px-lg-5">Temporarily Hide</h2>
@@ -891,10 +951,13 @@
 </div>
 <!-- end delete profile --> 
 <!-- edit password -->
-<div *ngIf="editpwdpart" class="editpwdpart col-lg-9 col-sm-12 px-0 mx-0">
+<div *ngIf="editpwdpart" class="editpwdpart col-lg-12 col-sm-12 px-0 mx-0">
     <div class="col-lg-12 col-sm-12 px-0 mx-0">
+
+
         <div class="rightbg col-lg-12 col-sm-12 py-3">
         <div class="innerbox col-lg-10 col-sm-10">
+
             <div class="">
                 <form action="" class="form-group">
                     <div class="form-group" style="color:white;">
@@ -935,6 +998,9 @@
 </div>
 <!-- end edit password -->
 <!-- notification -->
+
+
+
 <div *ngIf="visiblenotification" class="notisec col-lg-9 col-sm-12 px-0 mx-0">
   <div class="col-lg-12 col-sm-12 px-0 mx-0">
     <div class="rightbg col-lg-12 py-lg-3 col-12">
@@ -954,6 +1020,7 @@
                   </div>
                   
               </div>
+
      
      <!-- <div class="noti" style="margin-top: 186px;
      height: 50px;">
@@ -1317,6 +1384,280 @@
 <!-- end manage photos -->
 <!-- here home2 profile page -->
 <div>
+
+    <!-- here home2 profile page -->
+
+<div *ngIf="visiblehome2" class="disnone"> 
+
+    <!-- <div  class="col-lg-12 col-sm-10 px-0" > -->
+        <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
+            <div class="innerbox1 col-lg-11 col-sm-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
+           
+                <div class="innerbox col-lg-12 col-sm-12 row mx-0 px-0" style=" height: 27%; ">
+                    
+                   <div class="col-lg-3" >
+                     <img src="../../assets/images/pic.png" alt="" class="imgpos">
+                   </div>    
+              
+              <div class="content col-lg-6  ">
+                <h4 class="h4text">Name</h4>
+                <hr>
+                <span class="verticalline"></span>
+                <span class="verticalline"></span>
+                <div style="text-align: center; color:white"><span>calicut</span>&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<span>kerala</span>&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<span>India</span>
+                </div>
+
+                
+                <!--     form   -->
+                <form class="form-inline">
+                    <div class="form-group" style="color:white;">
+                      <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                      <input type="text" class=" formtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+                    </div>
+                    <div class="form-group py-2" style="color:white; ">
+                      <label for="relegion">religion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                      <input type="text" class=" formtypes" id="relegion" placeholder="" name="relegion">
+                    </div>
+                    
+                    <div class="form-group" style="color:white;">
+                        <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" class=" formtypes" id="education" placeholder="" name="education">
+                    </div>
+                    <div class="form-group py-2" style="color:white;">
+                        <label for="relegion">Job Profession</label><label class="lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" class=" formtypes" id="job" placeholder="" name="job">
+                    </div>
+                    
+                  </form>
+              </div>
+
+          <div class="col-lg-2 " >
+            <button style="background-color: transparent; border: none;margin-left: 108%;
+            margin-top: 7%;">
+            <img src="../../assets/images/close.png" alt="" >
+            </button>
+
+            <button style="background-color: transparent; border: none;margin-top: 143%;
+            margin-left: 17%;" >
+                <img src="../../assets/images/chat 1.png" alt="">
+            </button>
+            
+           <div style="background-color:transparent ; margin-left: 84%;
+           margin-top: -38%">
+            <button  (click)="enableDisableRule()"
+            [ngClass]="{'green' : toggle, 'red': !toggle}" style="width: 52px; height: 41px; border-radius: 22px;"><i class="bi bi-heart fa-lg"></i> 
+              
+                {{status}}</button>
+           </div>
+
+          </div>
+          
+                </div>
+                
+
+            </div>
+</div>
+<!-- </div> -->
+
+</div>
+
+
+
+
+
+
+    <!-- end home2 profile page -->
+
+<!-- small screen home page -->
+<div class="smallhome " >
+
+   <!-- Image and text -->
+<nav class="navbar navbar-light  row mx-0 px-0 headercss">
+    <div class="col-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    </div>
+    <div class="col-6">
+        <a class="navbar-brand" style="color:white ;" >
+      
+            LOGO
+          </a>
+    </div>
+   <div class="col-3">
+    <button style=" background-image: url(../../assets/images/seach5.png);"class="btnsise"></button>
+    <button style=" background-image: url(../../assets/images/qn7.png);height: 25px;
+    margin-left: 7px;
+    width: 22px;"class="btnsise"></button>
+   
+   </div>
+    </nav>
+
+<div class="col-sm-12 col-12 " style="background-image:url(assets/images/abt.png);padding-bottom: 20px">
+<br>
+    <div class=" imgsrc " style="background-image:url(../../assets/images/propic.png) ;">
+      
+      <div class="row backs mx-0 px-0 " >
+    <div class="col-12">
+        <label for="">name</label>
+    </div>
+    <div class="col-4">
+        <label for="">21yrs</label>
+        <label for="">calicut</label>
+        <label for="">never married</label>
+    </div>
+    <div class="col-4">
+        <label for=""> male</label>
+        <label for="">kerala</label>
+        <label for="">higher Secondary</label>
+          
+    </div>
+    <div class="col-4">
+        <label for="">islam</label>
+        <label for="">india</label>
+        <label for="">not working</label>
+    </div>
+</div>   
+<div class="smnav row mx-0 px-0">
+ 
+    <div class="col-sm-4 col-4">  
+
+        <button style="background-color: transparent; border: none;width: 41px;margin-top: 4%;">
+    <img src="../../assets/images/clos.png" alt="" >
+    </button>
+    </div>
+
+    <div class="col-sm-4 col-4">
+        <button style="background-color: transparent; border: none;width: 41px;margin-top: 4%; ">
+            <img src="../../assets/images/msg6.png" alt="">
+        </button>
+
+    </div>
+
+    <div class="col-sm-4 col-4">
+        <button  (click)="enableDisableRule()"
+        [ngClass]="{'green' : toggle, 'red': !toggle}" style="   width: 38px;
+        height: 31px; border-radius: 22px;"><i class="bi bi-heart fa-lg"></i> 
+          
+            {{status}}</button>
+
+    </div>
+
+    
+</div>  
+    </div>
+
+
+
+
+    <div class=" imgsrc   " style="background-image:url(../../assets/images/propic.png) ;">
+      
+        <div class="row backs mx-0 px-0 " >
+      <div class="col-12">
+          <label for="">name</label>
+      </div>
+      <div class="col-4">
+          <label for="">21yrs</label>
+          <label for="">calicut</label>
+          <label for="">never married</label>
+      </div>
+      <div class="col-4">
+          <label for=""> male</label>
+          <label for="">kerala</label>
+          <label for="">higher Secondary</label>
+            
+      </div>
+      <div class="col-4">
+          <label for="">islam</label>
+          <label for="">india</label>
+          <label for="">not working</label>
+      </div>
+  </div>   
+  <div class="smnav row mx-0 px-0">
+   
+      <div class="col-sm-4 col-4">  
+  
+          <button style="background-color: transparent; border: none;width: 41px;margin-top: 4%;">
+      <img src="../../assets/images/clos.png" alt="" >
+      </button>
+      </div>
+  
+      <div class="col-sm-4 col-4">
+          <button style="background-color: transparent; border: none;width: 41px; margin-top: 4%;">
+              <img src="../../assets/images/msg6.png" alt="">
+          </button>
+  
+      </div>
+  
+      <div class="col-sm-4 col-4">
+          <button  (click)="enableDisableRule()"
+          [ngClass]="{'green' : toggle, 'red': !toggle}" style="   width: 38px;
+          height: 31px; border-radius: 22px;"><i class="bi bi-heart fa-lg"></i> 
+            
+              {{status}}</button>
+  
+      </div>
+  
+      
+  </div>  
+      </div>
+
+</div>
+   
+   
+
+<!-- footer -->
+
+
+<footer class="text-center text-white fixfoot" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+  
+     
+    
+        
+        
+  
+        <!-- Instagram -->
+        <a
+          class=" btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark">
+        <img style="margin-top: 3%" src="../../assets/images/home2.png" alt="">
+        </a>
+  
+        <!-- Linkedin -->
+        <a
+          class=" btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark">
+          <img style="margin-top: 3%"src="../../assets/images/explore2.png" alt="">
+        <!-- Github -->
+        </a>
+        <a 
+          class=" btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark">
+          <img style="margin-top: 3%"src="../../assets/images/shat2.png" alt="">
+        </a>
+     
+    
+   
+   
+  </footer>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
 </div>
 <!-- end home2 profile page -->
 <!-- help -->
@@ -1350,4 +1691,11 @@
 <!-- end help -->
 </div>
 </div>    
+
+</div>
+
+
+
+
+
 

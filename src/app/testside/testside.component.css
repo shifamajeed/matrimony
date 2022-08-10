@@ -9,6 +9,17 @@
     overflow: auto;
   }
 /*       here       */
+.green {
+  background-color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.navlabel{
+ color: white; 
+}
 
 .blurleft1{
 background-image:url("/assets/images/abt.png") ;
@@ -28,6 +39,20 @@ float:left;
   width:fill-available;
 }
 
+@media screen and (max-width: 600px) {
+  .blurleft{
+    text-align: center;
+    float: center;
+  } 
+  /* .rightbg{
+      /* display: none;  */
+  /* } */ */
+  .mng{
+    display: none;
+  }
+} 
+
+
 .innerbox{
   box-shadow: 20px 20px 50px 10px rgb(62 163 192 / 30%) inset;
         opacity: 6;  
@@ -40,6 +65,22 @@ margin-bottom: 121px;
 margin-top: 45px;
 float: left;
 }
+.innerbox1{
+  
+opacity: 6;  
+
+Offset: 117.83px, -117.83px;
+background:rgba(160, 170, 178, 0.1);
+margin-bottom: 121px;
+margin-top: 45px;
+height: 1000px;
+}
+.verticalline{
+  border-left: 2px solid white;
+  height: 45px;
+  margin-left: 123px;
+}
+
 .btns{
   height: 53px;
   width: 214px; 
@@ -146,6 +187,12 @@ text-align: center;
 color: white;
 font-family: 'Poppins'; 
 }
+
+.imgpos{
+  position: relative;
+    top: 35px;
+}
+
 hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Poppins';  }
 .formtype{
 background-color:transparent;
@@ -171,6 +218,13 @@ outline: none;
 border-bottom: 1px solid white;
 background:transparent;
 }
+.btnsise{
+ 
+  height: 20px;
+  width: 20px;
+    background-repeat: no-repeat;
+    border: none;
+}
 .h2hide{
 font-family: 'Poppins';
 font-style: normal;
@@ -185,6 +239,45 @@ font-style: normal;
 color: white;
 font-size: 16px;
 line-height: 25px;
+}
+.imgsrc{
+  width: 261px;
+    height: 377px;
+    border-radius: 6%;
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    margin-left: 13%;
+    margin-bottom: 12%;
+}
+.fixfoot{
+  background-color: #dee2e6;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+}
+
+.backs{
+  margin-top: 79%;
+  color: white;
+  font-family: poppins;
+  font-size: 95%;
+  background: rgba(96, 100, 102, 0.25);
+border: 1px solid #D3E0EA;
+box-shadow: inset 17.1667px -17.1667px 17.1667px rgba(190, 167, 167, 0.015), inset -17.1667px 17.1667px 17.1667px rgba(255, 255, 255, 0.015);
+backdrop-filter: blur(5.49333px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 15px 15px 0px 0px;
+font-weight: bold;
+}
+.smnav{
+  background: rgba(196, 196, 196, 0.5);
+box-shadow: inset 33.5333px -33.5333px 33.5333px rgba(149, 149, 149, 0.1), inset -33.5333px 33.5333px 33.5333px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(67.0667px);
+border-radius: 0px 0px 15px 15px;
+height: 36px;
 }
 .model-content{
 width:fit-content;
@@ -219,6 +312,45 @@ cursor: pointer;
     /* margin: 55px 400px; */
     border-radius: 12px;
 }
+
+
+.headercss{
+  background-color: #1687A7;
+  height: 70px;
+  font-family: 'Poppins'; 
+}
+@media screen and (max-width: 600px) {
+.sidebar{
+  text-align: center;
+  float: center;
+} 
+.boximg{
+  height: 257px;
+  border-radius: 15.497406px;
+}
+.btns{
+  height:30px;
+  width: 140px;
+  
+}
+.btn{
+  height:30px;
+
+}
+.sidebar {
+  height: auto;
+  position: relative;
+}
+div.content {padding-right:0px;padding-left:0px;}
+.loremhide{
+  font-family: 'Poppins';
+font-style: normal;
+
+font-size: 5px;
+line-height: 7px;
+  }
+.h2hide{
+
 .notisec .innerbox .btn{
   border-radius: 32px;
   font-family: 'Poppins';
@@ -243,6 +375,45 @@ cursor: pointer;
     margin-left: 32px;
 }
 
+
+}
+.lastbtn{
+  font-size: 12px;
+  height:21px;
+  /* width:94px; */
+  /* left: 25px; */
+}
+.disnone{
+  display: none;
+}
+.nonav{
+  display: none;
+}
+.sidenave{
+  display: none;
+}
+} 
+@media screen and (min-width: 600px) {
+.camera{
+  display: none;
+}
+.smallhome{
+  display: none;
+}
+}
+.main{
+  
+/* position: absolute; */
+margin-left:120px ;
+margin-top: 30px;
+width: 770px;
+height: 1137px;
+left: 337px;
+top: 50px;
+background: rgba(211, 224, 234, 0.1);
+box-shadow: inset 117.833px -117.833px 117.833px rgba(160, 170, 178, 0.1), inset -117.833px 117.833px 117.833px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(235.667px);
+/* Note: backdrop-filter has minimal browser support */
 
 
 
@@ -313,6 +484,17 @@ line-height: 15PX;
   left: 125px;
   font-size: 11px;
 }
+
+
+
+
+
+
+
+
+
+
+
 /* chatbox */
 #chat2 .form-control {
   border-color: transparent;
@@ -825,3 +1007,4 @@ align-content: center;
 }
 
     
+
