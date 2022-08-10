@@ -154,7 +154,7 @@ font-size: 13px;
     font-size: 16px;
     }
  
-    .rad{
+.rad{
             position: absolute;
             font-family: 'Poppins';
             width: 305px;
@@ -164,7 +164,7 @@ font-size: 13px;
             color: #FFFFFF;
             font-size: 13px;
            
-            }
+}
 
           .rad1{
            accent-color:#305862 ;
@@ -372,14 +372,6 @@ left: 591px;
     top: 618px;
     text-align:center;
 }
-.hello8div{
-    width: 500px;
-    border-radius: 4px;
-    border-color: brown;
-    padding: 317px;
-}
-
-/* media queris */
 @media (max-width: 600px) {
    
   }
@@ -412,7 +404,6 @@ left: 591px;
     background-image: url(/assets/images/abt.png);
     padding: 90px;
     margin: -30px 0 0 0;
-    /* margin: 0px 0 0 0; */
 }
 }
 @media (min-width: 768px)
@@ -545,10 +536,7 @@ header .menu-row .button-wrap .button {
 }
 .about {
     background-image: url(/assets/images/abt.png);
-    /* padding: 150px 40px;
-    margin: -33px 0 0 0; */
     padding: 40px;
-    /* margin: 0px 0 0 0;   */
 }
 .hrtcls{
     margin: -282px 0 0 -12%;
@@ -596,15 +584,6 @@ header .menu-row .button-wrap .button {
     
     
 }
-/* @media (min-width:700px) and (max-width:1400px){
-    .inp{
-        display:flex;
-        width:400px;
-        height:100%;
-        flex-direction:column;
-        align-items:center;
-    }
-} */
 
 .inp input,.in{
     border-radius:20px;
@@ -714,13 +693,6 @@ background: rgb(33, 204, 33);
 }
     }
 
-/* @media (max-width:1000px) */
-/* { */
-    /* .progress { */
-        /* max-width: 50px; */
-        /* margin-left: 83px; */
-    /* } */
-/* } */
 @media (max-width:1000px)
 {
     .hrtcls1 {
@@ -748,12 +720,6 @@ background: rgb(33, 204, 33);
 }
 
 
-/* @media(max-width:845px)
-{
-    .in{
-        margin-top: ;
-    }
-} */
 @media (min-width:300px) and (max-width:440px)
 {
     .img{
@@ -793,18 +759,6 @@ background: rgb(33, 204, 33);
         width:auto;
      }
     
-/* @media (min-width:300px) and (max-width:500){
-    .bxt{
-        width:auto;
-    }
-}
-
-@media (min-width:900px) and (max-width:1500){
-      .btx{
-        width: 50%;
-        background-color: red;
-      }
-} */
 
 .modal-content{
     background-color:#F6F5F5;
