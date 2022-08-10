@@ -312,14 +312,20 @@ hobbiesinfo()
 //partnerpreference
 partnerpreference()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
     this.visiblehome2=false
     this.deleteprofilepart=false
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visibleeditprofilediv=false
     this.visisblesearch=false
+    this.visiblehelp=false
     this.partner=true
 }
+
 // search button action 
 searchact()
 {

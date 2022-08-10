@@ -39,8 +39,8 @@
             
                 <div  class="rightbg col-lg-12" style="background-image:url(assets/images/abt.png);">
                         <div class="mx-lg-1 my-lg-5 my-2">
-                            <button class="btns mx-lg-4 mx-1">Edit profile</button>
-                            <button class="btns mx-lg-3">Partner Preference</button>
+                            <button class="btns mx-lg-4 mx-1" (click)="lefteditprofilebtn()">Edit profile</button>
+                            <button class="btns mx-lg-3" (click)="partnerpreference()">Partner Preference</button>
                             <button class="btns mng mx-lg-4">Manage photos</button>
                         </div>                   
                     <div class="col-lg-12 col-sm-12 my-lg-5 my-1 mx-0 px-0">
@@ -684,14 +684,125 @@
             </div>
       
           </div>  
-            </div>
+        </div>
+        
         </div>
     <!--end entire edit profile  -->
+    <!-- <div *ngIf="partner"> -->
+        <!-- basic preference -->
+
+        
+      
+        <div class="rightbg col-lg-12 col-sm-12 d-none" style="background-image:url(assets/images/abt.png);">
+          <div  class="innerbox" style="margin-bottom: 45px;">
+        <div class="btncls">
+          <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+          <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+          <button  class="btns">Manage photos</button>
+        </div> 
+        <div class="linebox mx-5">
+            <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+            <hr class="partnrhr">
+            <div class="innerdivpartner">
+            <form class="form-inline" action="/action_page.php">
+              <div class="form-group" style="color:white;">
+                <label for="relegion">Age</label><label class="partnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="maritalstatus">Marital status</label><label class="partnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="education">Height</label><label class="partnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="relegion">Weight</label><label class="partnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="education">Complexion</label><label class="partnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="education">Physical Status</label><label class="partnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+          </div>
+            </form>
+            </div>
+          </div>
+    
+        <!-- Education & Professional Preferences -->
+        <div class="linebox mx-5" style="margin-top: 36px;height: 217px">
+          <h2 class="text-white partnerh2"><b>Education & Professional Preferences</b></h2>
+          <hr class="partnrhr">
+          <div class="innerdivpartner">
+          <form class="form-inline" action="/action_page.php">
+            <div class="form-group" style="color:white;">
+              <label for="maritalstatus">Highest Education</label><label class="partnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="relegion">Job profession</label><label class="partnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+            </div>
+          </form>
+          </div>
+        </div>
+        <!-- Religious Preferences -->
+        <div class="linebox mx-5" style=margin-top:36px;height:209px;>
+          <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
+          <hr class="partnrhr">
+          <div class="innerdivpartner">
+          <form class="form-inline" action="/action_page.php">
+            <div class="form-group" style="color:white;">
+              <label for="maritalstatus">Religiousness</label><label class="partnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="relegion">Attend Islamic Service</label><label class="partnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+            </div>
+          </form>
+          </div>
+        </div>
+        <!-- Location Preferences -->
+        <div class="linebox mx-5"style=margin-top:36px;height:279px>
+          <h2 class="text-white partnerh2"><b>Location Preferences</b></h2>
+          <hr class="partnrhr">
+          <div class="innerdivpartner">
+          <form class="form-inline" action="/action_page.php">
+            <div class="form-group" style="color:white;">
+              <label for="maritalstatus">Prefer to Stay</label><label class="partnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="relegion">Present Country</label><label class="partnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="relegion">Present State</label><label class="partnerdiv13">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="relegion">City Preference</label><label class="partnerdiv14">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+            </div>
+          </form>
+          </div>
+        </div>
+        <button type="submit" class="text-white btn btn-default submitbtn svbtn">Submit & Save</button>
+      </div>
+      </div>
+      
+   
+<!-- end partner preference -->
 <!-- hide profile div -->
-<div *ngIf="hideprofilepart">
-    <div  class="col-lg-9 col-sm-10 px-0" >
-        <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
-            <div class="innerbox col-lg-12 col-sm-12 mx-lg-2 px-lg-5 py-lg-3 py-5">
+<div *ngIf="hideprofilepart"class="editpwdpart col-lg-9 col-sm-12 px-0 mx-0">
+    <div  class="col-lg-12 col-sm-12 px-0 mx-0">
+        <div class="rightbg col-lg-12 col-12 py-3">
+            <div class="innerbox col-lg-10 col-sm-10">
                 <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
                     <div class="lineboxhide col-lg-7 mx-lg-5 px-lg-5 col-sm-12 my-5 px-4">
                         <h2 class="h2hide col-sm-12 mx-lg-5 px-lg-5">Temporarily Hide</h2>
@@ -706,11 +817,7 @@
                             <button type="submit" class="submit btn text-white col-lg-12 mx-lg-5 col-sm-2 my-lg-5 my-5 mx-2"data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
                         </div>
                     </div>
-                    <div>
-                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                            Launch demo modal
-                          </button> -->
-                          <!-- Modal -->
+                        <div>
                           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content">
@@ -727,16 +834,15 @@
                               </div>
                             </div>
                           </div>
+                        </div>
                     </div>
-                    
-                </div>
             </div>
         </div>
     </div>
 </div>
 <!-- end hide profile div -->
 <!-- delete profile -->
-<div *ngIf="deleteprofilepart">
+<div *ngIf="deleteprofilepart" class="deleteprosec">
     <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
         <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
 
@@ -767,7 +873,6 @@
                     <!-- <div class="innerbox py-1"> -->
                         <div class="linebox mx-lg-2 py-2 mx-0 px-0">
                           <p class="text-white my-lg-3 mx-5">Select the source:</p>
-                          
                             <form class="my-lg-5 mx-5 d-flex">
                                 <div class="mx-lg-3 mx-sm-1 d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Through our matrimony</label></div>
                                 <div class="d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Other Matrimonial site </label></div>
@@ -788,7 +893,7 @@
 <!-- edit password -->
 <div *ngIf="editpwdpart" class="editpwdpart col-lg-9 col-sm-12 px-0 mx-0">
     <div class="col-lg-12 col-sm-12 px-0 mx-0">
-        <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
+        <div class="rightbg col-lg-12 col-sm-12 py-3">
         <div class="innerbox col-lg-10 col-sm-10">
             <div class="">
                 <form action="" class="form-group">
@@ -830,72 +935,82 @@
 </div>
 <!-- end edit password -->
 <!-- notification -->
-<div *ngIf="visiblenotification" class="col-lg-9 col-sm-12 px-0 mx-0">
-    <div class="rightbg"style="background-image:url(assets/images/abt.png);">
-       
-        <div class="main">
-            <div class="hey">
-             <h1 style="border: 10px;
-             color: white; text-align: center;">notification</h1>
-               
-             <div class="noti">
-                 
-                     <img src="../../assets/images/man.png" style="margin-top: 7px;
-                     margin-left: 104px;
-                     border-radius: 101px;">  
-                    
-                  <h1 class="lore">Lorem Ipsum</h1>
-                  <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
-                   
-                  <button class="btn" style="font-family: 'Poppins';
-                  font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+<div *ngIf="visiblenotification" class="notisec col-lg-9 col-sm-12 px-0 mx-0">
+  <div class="col-lg-12 col-sm-12 px-0 mx-0">
+    <div class="rightbg col-lg-12 py-lg-3 col-12">
+        <div class="innerbox col-lg-10 col-12">
+            <div class="">
+             <h1 style="border: 10px;color: white; text-align: center;">notification</h1>
+             <div class="noti d-flex col-11">
+                  <div class="col-lg-3 col-1 px-0 mx-0"><img src="../../assets/images/man.png" style="border-radius: 50%;"class="mx-0 notiimg1"></div>
+                  <div class="col-lg-6 col-9">
+                    <h1 class="" style="margin-bottom:0px">Lorem Ipsum</h1>
+                  <h1 style="
+                  height: 9px;font-size: small;">Lorem Ipsum has requested to view your photo</h1>
+                   <div style="margin-top:45px">
+                    <button class="btn1"> confirm</button>
+                   <button class="btn"> Delete</button>
+                   </div>
+                  </div>
+                  
+              </div>
      
-                   <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
-                   font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
-                 </div>
-     
-     <div class="noti" style="margin-top: 186px;
+     <!-- <div class="noti" style="margin-top: 186px;
      height: 50px;">
      
      <img src="../../assets/images/man.png" class="imgs">  
      <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
      
      <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
-     </div>
+     </div> -->
      
                    
-     <div class="noti" style="margin-top: 249px;
+     <!-- <div class="noti" style="margin-top: 249px;
      height: 50px;">
      <img src="../../assets/images/man.png" class="imgs">  
      <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
      <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
-     </div>
-     <div class="noti" style="margin-top: 321px;">       
+     </div> -->
+     <!-- <div class="noti d-flex" style="margin-top: 321px;">       
          <img src="../../assets/images/man.png" style="    margin-top: 7px;
          margin-left: 104px;
          border-radius: 101px;">  
-      <h1 class="lore">Lorem Ipsum</h1>
-      <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
-      <button class="btn" style="font-family: 'Poppins';
-      font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
-       <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
-       font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
-     </div>
-     <div class="noti" style= "margin-top: 514px;">  
-         <img src="../../assets/images/man.png" style="    margin-top: 7px;
-         margin-left: 104px;
-         border-radius: 101px;">  
-      <h1 class="lore">Lorem Ipsum</h1>
-      <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
-      <button class="btn" style="font-family: 'Poppins';
-      font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
-       <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
-       font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+      <div>
+        <h1 class="lore" style="margin-left:27px">Lorem Ipsum</h1>
+      <h1 style="margin-left: 28px;
+      margin-top: 44px;
+      height: 9px;
+      width: 424px;
+      font-size: small;">Lorem Ipsum has requested to view your photo</h1>
+       <div style="margin-top:40px">
+        <button class="btn1"> confirm</button>
+       <button class="btn"> Delete</button>
        </div>
-            </div>
+      </div>
+     </div> -->
+     <!-- <div class="noti d-flex" style= "margin-top: 514px;">  
+        <div><img src="../../assets/images/man.png" style="    margin-top: 7px;
+          margin-left: 104px;
+          border-radius: 101px;">  </div> 
+             <div>
+              <h1 class="lore" style="margin-left:27px">Lorem Ipsum</h1>
+            <h1 style="margin-left: 28px;
+            margin-top: 44px;
+            height: 9px;
+            width: 424px;
+            font-size: small;">Lorem Ipsum has requested to view your photo</h1>
+             <div style="margin-top:40px">
+              <button class="btn1"> confirm</button>
+             <button class="btn"> Delete</button>
              </div>
+            </div>
+            </div> -->
+             
     </div>
 </div> 
+</div>
+</div>
+</div>
 <!-- end notification -->
 <!-- chat no messages -->
 <div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
@@ -1132,6 +1247,74 @@
     </div> 
 </div>
 <!-- end chat -->
+<!-- manage photots -->
+<div class="container-fluid rightbg d-none">
+    <div class="row">
+    <div class="col-lg-9 col-sm-12 col-12"> 
+    <h1  class="head"> Add your best shots</h1>
+    <h1  class="head1"> Upload your photos to complete the profile</h1>
+    </div> 
+    </div> 
+  <!-- new -->
+  <div class="container-fluid">
+    <div class="row">    
+      <div class="col-lg-3 col-sm-6 col-md-3 col-6" >
+        <div class="indiv">
+          <div class="pic1 "></div>
+        <div class="bar1">
+            <button class="b1">add file</button>
+        </div> 
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-3 col-6">
+        <div class="indiv">
+          <div class="pic1 "></div>
+          <div class="bar1">
+            <button class="b1">add file</button>
+          </div> 
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-3 col-6" >
+        <div class="indiv">
+          <div class="pic1 "></div>
+          <div class="bar1">
+            <button class="b1">add file</button>
+          </div> 
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-3 col-6 " >
+        <div class="indiv">
+          <div class="pic1 "></div>
+          <div class="bar1">
+            <button class="b1">add file</button>
+          </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="col-lg-12 col-sm-12">
+  <button class="btn2">skip</button>
+  <h1  class="head2">Photo privacy</h1>
+  <div class="rad">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input rad1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Visible to All </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input rad1" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Only for allowed users</label>
+    </div>
+    </div>
+    <button class="btn1">Submit and save</button>
+  <div class="label1">
+    <label  class="lbl" >Photo Privacy Settings Successfully Updated</label>
+  </div>
+  </div>
+  
+  
+  
+   </div> 
+<!-- end manage photos -->
 <!-- here home2 profile page -->
 <div>
 </div>
