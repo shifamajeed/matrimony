@@ -408,4 +408,13 @@ notification()
   this.partner=false   
   this.visiblenotification=true
 }
+
+
+toggle = true;
+status = "";
+
+enableDisableRule() {
+  this.toggle = !this.toggle;
+  this.status = this.toggle ? "" : "";
+}
 }
