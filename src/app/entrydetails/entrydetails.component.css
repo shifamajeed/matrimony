@@ -578,6 +578,11 @@ header .menu-row .button-wrap .button {
     margin: -282px 0 0 -12%;
 }
 }
+@media (min-width:300px) and (max-width:500px){
+    .about{
+        height: ;
+    }
+}
 .box{
     color:white;
     border-radius:20px;
@@ -1045,4 +1050,13 @@ border: 0.742029px solid #FFFFFF;
  .office{
     display:none;
  }
+ .last .abtcont{
+    height:676px;
+
+ }
 }
+@media(min-width:300px) and (max-width:321px){
+    .inp{
+        width:100%
+    }
+} 
