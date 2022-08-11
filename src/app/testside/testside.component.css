@@ -392,12 +392,16 @@ line-height: 7px;
 .sidenave{
   display: none;
 }
+
 } 
 @media screen and (min-width: 600px) {
 .camera{
   display: none;
 }
 .smallhome{
+  display: none;
+}
+.sidenave1{
   display: none;
 }
 }
@@ -1007,4 +1011,28 @@ align-content: center;
 }
 
     
+/* ajin change password part */
+.pswtype{
+  border-radius: 8px;
+}
+@media (min-width: 992px){
+   .col-lg-6 {
+   flex: 0 0 50%;
+   max-width: 32%;
+}
+.psw{
+ margin-left:105px;
+}
+.blk{
+ margin-top: 100px;
+ 
+ margin-left: 105px;
+}
+}
 
+@media (min-width:300px) and (max-width:500px){
+
+ .innerbox{
+   height:36%;
+ }
+}

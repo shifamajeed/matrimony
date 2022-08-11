@@ -59,8 +59,8 @@ export class TestsideComponent implements OnInit{
   visiblehelp:boolean=false
   // notification
   visiblenotification:boolean=false
-
-
+ sidenav2:boolean=false
+smallhome:boolean=true
   ngOnInit(): void {
   }
 
@@ -81,7 +81,7 @@ export class TestsideComponent implements OnInit{
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
     this.sidenav = false;
-   
+ 
    } 
     this.visisblesearch=false
     this.partner=false
@@ -92,6 +92,8 @@ export class TestsideComponent implements OnInit{
     this.editinner=true
     this.visibleeditprofilediv=true
     this.visiblenotification=false
+    this.smallhome=false
+    this.sidenav2=false
   }
 
     
@@ -106,12 +108,14 @@ export class TestsideComponent implements OnInit{
     this.editpwdpart=false
     this.visibleeditprofilediv=true
     this.visiblenotification=false
+    this.smallhome=false
   }
   hideprofilebtn()
   {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
       this.sidenav=false
+
     }
     this.visiblehome2=false
     this.partner=false
@@ -120,12 +124,15 @@ export class TestsideComponent implements OnInit{
     this.editpwdpart=false
     this.hideprofilepart=true
     this.visiblenotification=false
+    this.smallhome=false
+    this.sidenav2=false
   }
   deleteprofilebtn()
   {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
       this.sidenav=false
+     
     }
     this.visisblesearch=false
     this.visiblehome2=false
@@ -135,6 +142,8 @@ export class TestsideComponent implements OnInit{
     this.deleteprofilepart=true
     this.editpwdpart=false
     this.visiblenotification=false
+    this.smallhome=false
+    this.sidenav2=false
   }
   editpwd()
   {
@@ -146,6 +155,7 @@ export class TestsideComponent implements OnInit{
     this.deleteprofilepart=false
     this.editpwdpart=true
     this.visiblenotification=false
+    this.smallhome=false
 
   }
 
@@ -161,6 +171,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehome2=true
     this.visiblenotification=false
     this.visibleeditprofilediv=false
+    this.smallhome=false
   }
   // edit profile
   personalinfo()
@@ -176,6 +187,7 @@ export class TestsideComponent implements OnInit{
     this.visiblemrgplan=false
     this.visiblehabits=false
     this.visiblehobbies=false
+    this.smallhome=false
     this.visiblepersonal=!this.visiblepersonal
   }
   physicalinfo()
@@ -190,6 +202,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
     this.visiblephysical=!this.visiblephysical
   }
   educationinfo()
@@ -204,6 +217,7 @@ export class TestsideComponent implements OnInit{
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visibleeducation=!this.visibleeducation
   }
 familyinfo(){
@@ -217,6 +231,7 @@ familyinfo(){
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblefamily=!this.visiblefamily
 }
 relegiousinfo()
@@ -231,6 +246,7 @@ relegiousinfo()
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblerelegious=!this.visiblerelegious
 }
 contactinfo()
@@ -245,6 +261,7 @@ contactinfo()
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblecontact=!this.visiblecontact
 }
 locationinfo()
@@ -259,6 +276,7 @@ locationinfo()
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblelocation=!this.visiblelocation
 }
 mrgplaninfo()
@@ -273,6 +291,7 @@ mrgplaninfo()
     this.visiblehabits=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblemrgplan=!this.visiblemrgplan
 }
 habitsinfo()
@@ -287,6 +306,7 @@ habitsinfo()
     this.visiblemrgplan=false
     this.visiblehobbies=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblehabits=!this.visiblehabits
 }
 hobbiesinfo()
@@ -301,6 +321,7 @@ hobbiesinfo()
     this.visiblehabits=false
     this.visiblehabits=false
     this.visiblepersonal=false
+    this.smallhome=false
   this.visiblehobbies=!this.visiblehobbies
 }
 // end edit profile
@@ -322,6 +343,7 @@ partnerpreference()
   this.innerWidth = window.innerWidth
     if (this.innerWidth > 319 &&  this.innerWidth < 721) {
     this.sidenav = false
+  
     }
     this.visiblehome2=false
     this.deleteprofilepart=false
@@ -331,6 +353,8 @@ partnerpreference()
     this.visisblesearch=false
     this.visiblehelp=false
     this.partner=true
+    this.smallhome=false
+    this.sidenav2=false
 }
 
 // search button action 
@@ -344,6 +368,7 @@ searchact()
   this.visiblehome2=false
   this.visisblesearch=true
   this.visiblenotification=false
+  this.smallhome=false
 }
 exploreact()
 {
@@ -360,6 +385,7 @@ exploreact()
   this.visibleboth=false
   this.visiblenotification=false
   this.visibleexplore=true
+  this.smallhome=false
 }
 // explore
 interestreceived()
@@ -367,17 +393,20 @@ interestreceived()
   this.visibleboth=false
   this.visiblesend=false
 this.visiblereceive=true
+
 }
 interestsend()
 {
   this.visiblereceive=false
   this.visibleboth=false
 this.visiblesend=true
+
 }
 bothinterest(){
   this.visiblereceive=false
   this.visiblesend=false
 this.visibleboth=true
+
 }
 // end explore
 // help
@@ -396,6 +425,7 @@ helpact()
   this.visibleboth=false
   this.visiblehelp=true
   this.visiblenotification=false
+  this.smallhome=false
 }
 // notification
 notification()
@@ -413,6 +443,7 @@ notification()
   this.visisblesearch=false
   this.partner=false   
   this.visiblenotification=true
+  this.smallhome=false
 }
 
 
@@ -420,7 +451,30 @@ toggle = true;
 status = "";
 
 enableDisableRule() {
+ 
   this.toggle = !this.toggle;
   this.status = this.toggle ? "" : "";
+  
 }
+
+
+ fnvisiblesidenav(){
+   this.sidenav = false
+  this.visisblesearch=false
+     this.partner=false
+     this.deleteprofilepart=false
+      this.hideprofilepart=false
+    this.editpwdpart=false
+      this.visiblehome2=false
+      this.editinner=false
+    this.visibleeditprofilediv=false
+      this.visiblenotification=false
+      
+      this.visibleexplore=false
+      this.visiblesend=false
+      this.visiblereceive=false
+      this.visibleboth=false
+      this.smallhome=false
+      this.sidenav2=true
+ }
 }
