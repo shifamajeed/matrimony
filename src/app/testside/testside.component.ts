@@ -336,14 +336,19 @@ partnerpreference()
 // search button action 
 searchact()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
   this.hideprofilepart=false
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
-  this.editinner=false
-  this.visiblehome2=false
-  this.visisblesearch=true
+  // this.editinner=false
+
+  this.visiblehelp=false
   this.visiblenotification=false
+  this.visisblesearch=true
 }
 exploreact()
 {

@@ -1,7 +1,7 @@
 <div class="container-fluid mx-0 px-0">
     <div class="row mx-0 px-0">
-        <div class="d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
-        <div class="col-lg-3 col-sm-12 sidenave" *ngIf="sidenav">
+        <div class="col-lg-12 col-sm-12 d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
+        <div class="col-lg-3 col-md-12 sidenave" *ngIf="sidenav">
             <div class="row ">
                 <img src="assets/images/Group 638.png" class="imgback px-0"/>
                 <img src="assets/images/Group 268.png" class="imgfront p-2"/>
@@ -33,12 +33,8 @@
             </div>
         </div>
 
-
-         
-        <div class="col-lg-9 col-md-12 mx-0 px-0">
+        <div class="col-lg-9 col-12 mx-0 px-0">
             <nav class="navbar navbar-expand-lg navbar-light headercss nonav">
-                
-                
                 <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -76,8 +72,6 @@
                      </ul>
                 </div>
               </nav>
-
-       
 
 
         <!-- entire edit profile -->
@@ -783,6 +777,8 @@
             </form>
             </div>
           </div>
+          
+          
     
         <!-- Education & Professional Preferences -->
         <div class="linebox mx-5" style="margin-top: 36px;height: 217px">
@@ -801,13 +797,11 @@
           </form>
           </div>
         </div>
+     
 
-    <!--end entire edit profile  -->
-    <!-- hide profile div -->
-<div *ngIf="hideprofilepart">
-    <div  class="col-lg-12 col-sm-10 px-0" >
-        <div class="rightbg col-lg-12 col-sm-12 py-3" style="background-image:url(assets/images/abt.png);">
-            <div class="innerbox col-lg-10 col-sm-12 mx-lg-2 px-lg-5 py-lg-3 py-5 mx-5">
+  
+  
+
 
         <!-- Religious Preferences -->
         <div class="linebox mx-5" style=margin-top:36px;height:209px;>
@@ -858,23 +852,24 @@
    
 <!-- end partner preference -->
 <!-- hide profile div -->
-<div *ngIf="hideprofilepart"class="editpwdpart col-lg-9 col-sm-12 px-0 mx-0">
-    <div  class="col-lg-12 col-sm-12 px-0 mx-0">
-        <div class="rightbg col-lg-12 col-12 py-3">
-            <div class="innerbox col-lg-10 col-sm-10">
 
-                <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
-                    <div class="lineboxhide col-lg-7 mx-lg-5 px-lg-5 col-sm-12 my-5 px-4">
-                        <h2 class="h2hide col-sm-12 mx-lg-5 px-lg-5">Temporarily Hide</h2>
+<div *ngIf="hideprofilepart"class="hidesec col-lg-12 col-12 px-0 mx-0">
+    <div  class="col-lg-12 col-12 px-0 mx-0">
+        <div class="rightbg col-lg-12 col-12 py-2 px-0 mx-0">
+            <div class="innerbox col-lg-11 mx-lg-5 col-10 px-0">
+
+                <div class="col-lg-12 col-12 px-lg-5 mx-lg-5 py-lg-5">
+                    <div class="lineboxhide col-lg-4 px-lg-0 col-6 my-5">
+                        <h2 class="h2hide mx-lg-4 px-1">Temporarily Hide</h2>
                     </div>
                 </div>
-                <div class="col-lg-12 col-sm-8 py-lg-5 px-lg-4 py-5">
-                    <h4 class="loremhide px-lg-2 my-lg-5 my-5 mx-2">
+                <div class="col-lg-12 col-8 py-lg-5 px-lg-4 py-5">
+                    <h4 class="loremhide px-lg-4 my-lg-3 my-5 mx-2">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
                     </h4>
-                    <div class="col-lg-6 mx-lg-5 px-lg-5 py-lg-5 col-sm-5 px-3 py-5">
-                        <div class="col-lg-8 px-lg-5 mx-lg-5 col-sm-10">
-                            <button type="submit" class="submit btn text-white col-lg-12 mx-lg-5 col-sm-2 my-lg-5 my-5 mx-2"data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
+                    <div class="col-lg-12 mx-lg-5 px-lg-5 py-lg-5 col-5 py-5">
+                        <div class="col-lg-12 px-lg-5 mx-lg-5 col-5">
+                          <button type="submit" class="submit btn text-white col-sm-5 my-lg-5 my-5 mx-2" data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
                         </div>
                     </div>
                         <div>
@@ -903,7 +898,7 @@
 <!-- end hide profile div -->
 <!-- delete profile -->
 <div *ngIf="deleteprofilepart" class="deleteprosec">
-    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+    <div class="rightbg col-lg-12 col-sm-12">
         <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
 
             <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
@@ -1314,6 +1309,227 @@
     </div> 
 </div>
 <!-- end chat -->
+<!--  search  -->
+<!-- header search button action -->
+<div *ngIf="visisblesearch"class="searchsec col-lg-12 col-10 px-0 mx-0">
+  <div  class="col-lg-12 col-12 px-0 mx-0">
+    <div class="rightbg col-lg-12 col-12 py-3">
+        <div class="innerbox col-lg-12 col-12">
+
+            <div class="col-lg-10 col-12 px-lg-5 mx-lg-5 py-lg-2">
+                <div class="lineboxhide col-lg-5 col-8 my-5 px-4">
+                    <h2 class=" h2hide">Search Profile</h2>
+                </div>
+            </div>
+      
+      <form class="form-inline my-lg-3 my-lg-0">
+        <!-- <label><b class="text-white searchlb">Search ID</b></label> -->
+        <input class="mr-sm-2 searchbtn" type="search" placeholder="Search id" aria-label="Search">
+      </form> 
+        <div class="linebox col-11 py-3 mx-4" style="margin-bottom: 22px;height: 1043px;">
+          <h2 class="text-white h2partner"><b>Search Preferences</b></h2>
+          <div class="innerdivpartner ">
+            <form class="form-inline" action="/action_page.php">
+              <div class="form-group" style="color:white;">
+                <label for="relegion">Age</label><label class="searchpartnerdiv1">:</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="maritalstatus">Marital status</label><label class="searchpartnerdiv2">:</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="education">Height</label><label class="searchpartnerdiv3">:</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="relegion">Weight</label><label class="searchpartnerdiv4">:</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="education">Complexion</label><label class="searchpartnerdiv5">:</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="education">Physical Status</label><label class="searchpartnerdiv6">:</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="relegion">Body type</label><label class="searchpartnerdiv7">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Highest Education</label><label class="searchpartnerdiv8">:</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Current Location</label><label class="searchpartnerdiv9">:</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="age">Financial Status</label><label class="searchpartnerdiv10">:</label>
+            <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+          </div> 
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Religiousness</label><label class="searchpartnerdiv11">:</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="education">Community</label><label class="searchpartnerdiv12">:</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+        </div><button type="submit" class="btn btn-default" style="background-color: green;">Search</button>
+         </form>
+         
+            </div>
+        </div>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      
+    </div>
+  </div>
+</div>
+</div>
+<!-- end search -->
+<!-- header explore button action -->
+<div *ngIf="visibleexplore" class="exploresec">
+  
+  <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerboxexplore" style="margin-bottom: 45px;">
+      <button type="button" class="deletebtn sbtn">Explore</button>
+      
+        <div class="lineboxsearch" style="height:1150px; ">
+              <button  class="btns"(click)="interestreceived()">Interest Received</button>
+              <button  class="btns"(click)="interestsend()">Interest Sent</button>
+              <button  class="btns" (click)="bothinterest()">Both Interested </button>
+        <div *ngIf="visiblereceive"> 
+           
+              
+              <div class="linebox2" >
+                <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+                <div><h1></h1></div>
+              </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+                </div>
+              <div class="linebox2" style="margin-top: 28px;"> 
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              </div>
+              
+          
+          
+         
+           </div> <!-- end visiblesend -->
+           <!-- visiblereceive -->
+           <div *ngIf="visiblesend"> 
+           
+              
+            <div class="linebox2" >
+              <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              <div><h1></h1></div>
+
+              
+            
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+             
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+         
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+             
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              
+            
+            </div>
+            
+        
+        
+       
+         </div>
+         <!--end visiblereceive  -->
+         <!-- visibleboth -->
+         <div *ngIf="visibleboth"> 
+           
+              
+          <div class="linebox2" >
+            <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            <div><h1></h1></div>
+
+            
+          
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+           
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+       
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+           
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            
+          
+          </div>
+          
+      
+      
+     
+       </div>
+         <!-- end visibleboth -->
+
+        </div>
+        
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      
+    </div>
+  </div>
+</div>
+<!-- end header explore button action -->
 <!-- manage photots -->
 <div class="container-fluid rightbg d-none">
     <div class="row">
@@ -1383,7 +1599,7 @@
    </div> 
 <!-- end manage photos -->
 <!-- here home2 profile page -->
-<div>
+
 
     <!-- here home2 profile page -->
 
@@ -1469,7 +1685,7 @@
     <!-- end home2 profile page -->
 
 <!-- small screen home page -->
-<div class="smallhome " >
+<div class="smallhome d-none" >
 
    <!-- Image and text -->
 <nav class="navbar navbar-light  row mx-0 px-0 headercss">
@@ -1485,7 +1701,7 @@
           </a>
     </div>
    <div class="col-3">
-    <button style=" background-image: url(../../assets/images/seach5.png);"class="btnsise"></button>
+    <button style=" background-image: url(../../assets/images/seach5.png);"class="btnsise" (click)="searchact()"></button>
     <button style=" background-image: url(../../assets/images/qn7.png);height: 25px;
     margin-left: 7px;
     width: 22px;"class="btnsise"></button>
@@ -1647,8 +1863,6 @@
    
    
   </footer>
-
-
 </div>
 
 
@@ -1656,13 +1870,12 @@
 
 
 
-</div>
 
-</div>
+
+
 <!-- end home2 profile page -->
 <!-- help -->
-<section class="helpsec d-none">
-    <!-- <div *ngIf="visiblehelp"> -->
+<section class="helpsec" *ngIf="visiblehelp">
         <div class="rightbg" style="background-image:url(assets/images/abt.png);">
           <div  class="innerbox">
             <div class="col-lg-3 col-5 lineboxsmall py-0">
@@ -1686,12 +1899,12 @@
           </div>
        </div>
         </div>
-    <!-- </div> -->
+   
 </section>
 <!-- end help -->
 </div>
 </div>    
-
+</div>
 </div>
 
 

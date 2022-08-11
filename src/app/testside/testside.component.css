@@ -349,7 +349,7 @@ font-style: normal;
 font-size: 5px;
 line-height: 7px;
   }
-.h2hide{
+
 
 .notisec .innerbox .btn{
   border-radius: 32px;
@@ -376,7 +376,7 @@ line-height: 7px;
 }
 
 
-}
+
 .lastbtn{
   font-size: 12px;
   height:21px;
@@ -415,7 +415,7 @@ box-shadow: inset 117.833px -117.833px 117.833px rgba(160, 170, 178, 0.1), inset
 backdrop-filter: blur(235.667px);
 /* Note: backdrop-filter has minimal browser support */
 
-
+}
 
 
 
@@ -444,16 +444,15 @@ font-size: 18px;
 line-height: 27px;
 color: #000000;
 }
-/* 
-.btn{
+
+.hidesec .innerbox .btn{
 margin-top: 80px;
 margin-left: 66px;
-width: 122px;
-height: 37px;
-
-background: #276678;
 border-radius: 20px;
-} */
+height: 43px;
+    background: #276678;
+    border-radius: 14px;
+}
 .imgs{
 width: 48px;
 border-radius: 35px;
@@ -769,6 +768,7 @@ border: none;
             color: #067F04;
             } 
 /* end manage your photos */
+/* notification */
 .notisec .notiimg1{
   margin-top: 7px;
                        height: 9px;
@@ -780,7 +780,60 @@ border: none;
          border-radius: 101px;
 }
 
-
+/* search */
+.h2partner{
+  margin-left:290px;
+}
+.searchsec .innerbox .h2hide{
+  line-height: 25px;
+}
+.searchsec .innerbox .btn{
+  margin-left: 164px;
+  background-color: green;
+  margin-top: 62px;
+  width: 182px;
+  border-radius: 13px;
+}
+/* hide */
+/* .hidesec .innerbox .h2hide{
+  line-height: 25px;
+} */
+/* explore */
+.exploresec .roundpic{
+  position: relative;
+        /* background-image: url(../../assets/images/pinkshall_women.jpg); */
+        width: 118px;
+  height: 110px;
+        background-repeat: no-repeat;
+        left: 22px;
+    margin-top: 15px;
+    border-radius: 50%;
+ }
+.exploresec .linebox2{
+  height: 140px;
+  width: 722px;
+  /* left: 452px; */
+  margin-top: 134px;
+  margin-left: 45px;
+  border-radius: 18px;
+  border: 1px solid white;
+  border-style: solid;
+  border-width: thin;
+ }
+ .exploresec .innerboxexplore{
+  opacity: 6;
+  height: 1489px;
+  width: 90%;
+  margin-left: 50px;
+  border-radius: 18px;
+  box-shadow: whitesmoke 0px 30px 40px -2em inset;
+  Offset: -117.83px, 117.83px;
+  background: rgba(255, 255, 255, 0.1);
+  Offset: 117.83px, -117.83px;
+  background: rgba(160, 170, 178, 0.1);
+  margin-bottom: 121px;
+  margin-top: 37px;
+ }
 @media (min-width:900px)  and (max-width:1500px){
   .modal-content{
       width: 326px; 
@@ -789,6 +842,13 @@ border: none;
     width: 90%;
    margin-left: 45PX;
 }
+.searchsec .innerbox .lineboxhide{
+  margin-left: 180px;
+}
+.hidesec .innerbox .lineboxhide{
+  margin-left: 180px;
+}
+
 }
 @media (max-width: 900px)
 {
@@ -903,7 +963,29 @@ border-width: thin;
   font-weight: 600;
   width:auto;
 }
-
+.searchsec .innerbox .searchlb{
+  margin-left: 220px;
+    margin-right: 5px;
+}
+.searchsec .innerbox .searchbtn{
+  padding-left: 21px;
+  border-radius: 13px;
+  margin-left: 213px;
+  width: 381px;
+  height: 43px;
+}
+.searchpartnerdiv1{margin-left: 195px;}
+.searchpartnerdiv2{margin-left: 135px;}
+.searchpartnerdiv3{margin-left: 180px;}
+.searchpartnerdiv4{margin-left: 178px;}
+.searchpartnerdiv5{margin-left: 148px;}
+.searchpartnerdiv6{margin-left: 127px;}
+.searchpartnerdiv7{margin-left: 164px;}
+.searchpartnerdiv8{margin-left: 111px;}
+.searchpartnerdiv9{margin-left: 121px;}
+.searchpartnerdiv10{margin-left: 128px;}
+.searchpartnerdiv11{margin-left: 141px;}
+.searchpartnerdiv12{margin-left: 156px;}
 @media (min-width:900px) and (max-width:1500px){
   .modal-title{
       width:127px;
@@ -999,6 +1081,23 @@ align-content: center;
 .notisec .noti{
   height:130px;
 }
+
+.searchsec .innerbox .lineboxhide{
+  margin-left: 50px;
+}
+.hidesec .innerbox{
+  margin-left:30px;
+}
+.hidesec .innerbox .lineboxhide{
+  margin-left: 77px;
+}
+.hidesec .innerbox .loremhide{
+  font-size:8px;
+}
+.hidesec .innerbox .h2hide{
+  font-size:12px;
+}
+
 } 
 @media (min-width: 600px)  {
 .camera{
