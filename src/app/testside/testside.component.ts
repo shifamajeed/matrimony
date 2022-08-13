@@ -62,6 +62,8 @@ export class TestsideComponent implements OnInit{
   visiblenotification:boolean=false
  sidenav2:boolean=false
 smallhome:boolean=true
+// managephotos
+mangphoto:boolean=false
   ngOnInit(): void {
   }
 
@@ -353,11 +355,32 @@ partnerpreference()
     this.visibleeditprofilediv=false
     this.visisblesearch=false
     this.visiblehelp=false
-    this.partner=true
     this.smallhome=false
     this.sidenav2=false
+    this.partner=true
 }
+// manage photos
 
+managephotos()
+{
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+  
+    }
+    this.visiblehome2=false
+    this.deleteprofilepart=false
+    this.hideprofilepart=false
+    this.editpwdpart=false
+    this.visibleeditprofilediv=false
+    this.visisblesearch=false
+    this.visiblehelp=false
+    this.smallhome=false
+    this.sidenav2=false
+    this.partner=false
+    
+  this.mangphoto=true
+}
 // search button action 
 searchact()
 {
