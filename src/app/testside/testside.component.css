@@ -170,6 +170,26 @@ border: 1px solid white;
 border-width: thin;
 align-self: center;
 }
+@media (min-width:900px) and (max-width:1500px){
+  .lineboxhide{
+    width: 198px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    border-width: thin;
+    align-self: center;
+    margin-left: 296px;
+    }
+    
+
+
+}
+
+
+
+
+
+
 .camera{
 width:55px;
 margin-left: 191px;
@@ -247,6 +267,21 @@ color:white;
 font-weight: 600;
 font-size: 22px;
 }
+@media (min-width:900px) and (max-width:1500px){
+  .h2hide{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 550;
+    color:white;
+    font-weight: 600;
+    font-size: 17px;
+    }
+
+
+}
+
+
+
 .loremhide{
 font-family: 'Poppins';
 font-style: normal;
@@ -364,33 +399,6 @@ font-size: 5px;
 line-height: 7px;
   }
 
-
-.notisec .innerbox .btn{
-  border-radius: 32px;
-  font-family: 'Poppins';
-  background-color:aliceblue;
-  font-style: normal;
-  color:#276678;
-  font-weight:bolder ;
-  width: 115px;
-    height: 35px;
-  margin-left: 35px;
-}
-
-.notisec .innerbox .btn1{
-  border-radius: 32px;
-    background-color: #276678;
-    font-family: Poppins;
-    font-style: normal;
-    color: #FFFFFF;
-    font-weight: bolder;
-    width: 115px;
-    height: 35px;
-    margin-left: 32px;
-}
-
-
-
 .lastbtn{
   font-size: 12px;
   height:21px;
@@ -447,7 +455,7 @@ top: 70px;
 background: #FFFFFF;
 border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
-margin-left: 1px;
+margin-left: 38px;
 }
 .lore{
 position: absolute;
@@ -465,9 +473,9 @@ color: #000000;
 
 .hidesec .innerbox .btn{
 margin-top: 80px;
-margin-left: 66px;
+margin-left: 110px;
 border-radius: 20px;
-height: 43px;
+
     background: #276678;
     border-radius: 14px;
 }
@@ -753,6 +761,7 @@ background-size: contain;
       .rad1{
         accent-color:#305862 ;
        }  
+     
        .btn1{
         font-family: 'Poppins';
         margin-left: 43%;
@@ -786,17 +795,7 @@ border: none;
             color: #067F04;
             } 
 /* end manage your photos */
-/* notification */
-.notisec .notiimg1{
-  margin-top: 7px;
-                       height: 9px;
-      width: 424px;
-                      
-                      border-radius: 101px;
-                      margin-top: 7px;
-         margin-left: 104px;
-         border-radius: 101px;
-}
+
 
 /* search */
 .h2partner{
@@ -852,6 +851,42 @@ border: none;
   margin-bottom: 121px;
   margin-top: 37px;
  }
+ /* notification */
+
+.notisec .notiimg1{
+  margin-top: 7px;                     
+  border-radius: 101px;
+  margin-top: 7px;
+  margin-left: 104px;
+  border-radius: 101px;
+  height: 154px;
+  width: 165px;
+}
+ .notisec .innerbox .noti .btn1{
+  border-radius: 32px;
+  background-color: #276678;
+  font-family: Poppins;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: bolder;
+  width: 115px;
+  height: 35px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+.notisec .innerbox .btn{
+  border-radius: 32px;
+  font-family: 'Poppins';
+  background-color:aliceblue;
+  font-style: normal;
+  color:#276678;
+  font-weight:bolder;
+  width: 115px;
+  height: 35px;
+  margin-left: 85px;
+  margin-top: 0px;
+}
+
 @media (min-width:900px)  and (max-width:1500px){
   .modal-content{
       width: 326px; 
@@ -1004,6 +1039,31 @@ border-width: thin;
 .searchpartnerdiv10{margin-left: 128px;}
 .searchpartnerdiv11{margin-left: 141px;}
 .searchpartnerdiv12{margin-left: 156px;}
+.hidesec .innerbox .modal-content .yesbtn{
+  width: 110px;
+    height: 30px;
+    border-radius: 13px
+}
+.hidesec .innerbox .modal-content .nobtn{
+  width: 110px;
+    height: 30px;
+    border-radius: 13px;
+    margin-left: 46px;
+}
+/* .hidesec .innerbox .modal1{
+  display: block;
+  margin-left: 30px;
+  margin-top: 60px;
+} */
+.editpwdpart .blk2{
+  position: absolute;
+  margin-left: 47px;
+  font-size: 15px;
+}
+.editpwdpart .lineboxhide{
+  
+  margin-left: 250px;
+}
 @media (min-width:900px) and (max-width:1500px){
   .modal-title{
       width:127px;
@@ -1096,10 +1156,6 @@ align-content: center;
     border-radius: 101px;
     margin-left: -15px;
 }
-.notisec .noti{
-  height:130px;
-}
-
 .searchsec .innerbox .lineboxhide{
   margin-left: 50px;
 }
@@ -1110,12 +1166,63 @@ align-content: center;
   margin-left: 77px;
 }
 .hidesec .innerbox .loremhide{
-  font-size:8px;
+  font-size:10px;
+  margin-left: 40px;
+  line-height: 12px;
 }
 .hidesec .innerbox .h2hide{
   font-size:12px;
 }
-
+.hidesec .innerbox .btn{
+  height: 32px;
+background: #276678;
+border-radius: 14px;
+}
+.hidesec .innerbox .modal-content{
+  width: 310px;
+  height: 210px;
+}
+.hidesec .innerbox .modal-content .modal-footer .yesbtn{
+  height: 29px;
+  margin-left: 0px;
+  width: 101px;
+   border-radius: 14px;
+}
+.notisec .innerbox .btn1{
+  width: 96px;
+    height: 31px;
+    margin-left: 48px;
+}
+.notisec .innerbox .btn{
+  width: 96px;
+    height: 31px;
+    margin-left: 148px;
+}
+.notisec .innerbox .h1noti1{
+  margin-left: 57px;
+  font-size: 20px;
+}
+.notisec .innerbox .h1noti{
+  line-height: 15px;
+  margin-left: 57px;
+  font-size: 10px;
+}
+.notisec .innerbox .ha{
+  left: 257px;
+    font-size: 9px;
+}
+.notisec .noti{
+  height:130px;
+  margin-left: 17px;
+}
+.notisec .innerbox .lore{
+  
+}
+.editpwdpart .lineboxhide{
+height: 33px;
+    margin-left: 89px;
+    width: 112px;
+}
 } 
 @media (min-width: 600px)  {
 .camera{
@@ -1123,29 +1230,63 @@ align-content: center;
 }
 }
 
+
     
 /* ajin change password part */
 .pswtype{
   border-radius: 8px;
 }
 @media (min-width: 992px){
-   .col-lg-6 {
+   /* .col-lg-6 {
    flex: 0 0 50%;
    max-width: 32%;
-}
+} */
 .psw{
  margin-left:105px;
 }
+
+.editpwdpart .blk{
+ margin-top: 115px;
+    margin-left: 104px;
+}
+    
 .blk{
  margin-top: 100px;
  
  margin-left: 105px;
+
+
+}   
+   
+.pswtype{
+   border-radius: 8px;
 }
+}
+@media (min-width: 992px){
+    .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 32%;
+}
+.psw{
+  margin-left:105px;
+}
+.blk{
+  margin-top: 100px;
+  
+  margin-left: 105px;
+
+
+  
+}
+
 }
 
 @media (min-width:300px) and (max-width:500px){
 
- .innerbox{
-   height:36%;
- }
+
+
+  .innerbox{
+    height:36%;
+  }
+
 }
