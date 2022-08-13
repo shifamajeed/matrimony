@@ -23,20 +23,22 @@
 
 .blurleft1{
 background-image:url("/assets/images/abt.png") ;
-height: 1500px;
+height: 1700px;
 float:left;
+background-size: 100% 100%;
 }
 .blurleft2{
   background-image:url("/assets/images/Rectangle 60.png") ;
-  height: 1500px;
+  height: 1700px;
   /* float:left; */
 }
 .rightbg{
   background-image:url("/assets/images/abt.png"); 
   float:left;
   background-repeat: no-repeat; 
-  height:fit-content; 
+  height:1881px; 
   width:fill-available;
+  background-size: 100% 100%;
 }
 
 @media screen and (max-width: 600px) {

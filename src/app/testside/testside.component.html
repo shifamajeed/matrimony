@@ -285,11 +285,8 @@
               </div>
               </div>
 
-        <!-- end edit profile  Personal Information -->
-        <!-- edit profile physical information   -->
-       
+ 
       
-      <!-- edit profile-Education & Profession -->
       <div class="col-lg-12 col-sm-12 my-2">
         <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
         <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
@@ -354,7 +351,7 @@
         </div>
         </div>
 
- <!-- Family Details -->
+ 
 
  <div class="col-lg-12 col-sm-12 my-2">
   <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
@@ -487,10 +484,6 @@
   </div>
   </div>
 
-
-        <!-- -Religious Information -->
-
-
         <div class="col-lg-12 col-sm-12 my-2">
           <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
           <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
@@ -539,11 +532,11 @@
                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Read Quran</label>
                       <label class="px-0">:</label>
                       <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option1">
                           <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                       </div>
                       <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option2">
                           <label class="form-check-label" for="inlineRadio2">No</label>
                       </div>
                   </div>
@@ -567,11 +560,11 @@
                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Quran Hafil</label>
                     <label class="px-0">:</label>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
                         <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
                         <label class="form-check-label" for="inlineRadio2">No</label>
                       </div>
                 </div>
@@ -579,11 +572,11 @@
                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Attend Relegious Activities</label>
                     <label class="px-0">:</label>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
                         <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
                         <label class="form-check-label" for="inlineRadio2">No</label>
                       </div>
                 </div>
@@ -654,11 +647,7 @@
                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Pin Code</label>
                         <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                     </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Contact Time</label>
-                      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                  </div>
-                         
+                    
                          <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
                              <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
                          </div>
@@ -668,69 +657,222 @@
               </div>
              
              </div>
-
-
+        
             </div>
             </div>
+
+            <div class="col-lg-12 col-sm-12 my-2">
+              <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+              <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+              <label for="">Location</label>
+              <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=locationinfo()>  {{location?">":"v"}}   </button>
+             
+              <div *ngIf="visiblelocation"> 
           
-        <!--  edit profile-contact details --> 
-        
-          <div *ngIf="visiblecontact" class="d-none">
-            <div class="innerbox my-2 col-lg-12 col-sm-12 px-2">
-                <div class="innerdiv">
-                <form action="/action_page.php">
-                  <div class="form-group" style="color:white;">
-                      <div class="col-lg-12 col-sm-12 d-block my-2">
-        
-                <div class="form-group" style="color:white;">
-                  <label for="name">Primary Mobile Number</label><label class="div6lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+                  <div class=" my-2 col-lg-12 col-sm-12 px-2">
+                  
+                    <div class="innerdiv">
+                       <form action="/action_page.php">
+                       <div class="col-lg-12 col-sm-12 d-block my-2">
+                          
+                       <div class="d-flex col-lg-12 col-sm-12 px-0">
+                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Country</label>
+                               <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                           </div>
+                           <div class="d-flex col-lg-12 col-sm-12 px-0">
+                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">State</label>
+                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                        </div>
+                        <div class="d-flex col-lg-12 col-sm-12 px-0">
+                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">District</label>
+                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                      </div>
+                      <div class="d-flex col-lg-12 col-sm-12 px-0">
+                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">City</label>
+                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                    </div>
+                    <div class="d-flex col-lg-12 col-sm-12 px-0">
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Place</label>
+                      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                  </div>
+                  <div class="d-flex col-lg-12 col-sm-12 px-0">
+                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Address</label>
+                    <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
                 </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Secondary Mobile Number</label><label class="div6lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+                           
+                           <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                               <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                           </div>
+                  </div>
+               </form>
+                  </div>
                 </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Preferred Mobile Number</label><label class="div6lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-                </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Contact person & Relationship</label><label class="div6lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-                </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Email Id</label><label class="div6lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-                </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Contact Time</label><label class="div6lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-                </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Post Office</label><label class="div6lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-                </div>
-                <div class="form-group" style="color:white;">
-                  <label for="name">Pin Code</label><label class="div6lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-                </div>
-                <button type="submit" class="btn btn-default submitbtn">Save</button>
+               
+               </div>
+          
+              </div>
+              </div>
+
+              <div class="col-lg-12 col-sm-12 my-2">
+                <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+                <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+                <label for="">Marriage Plan</label>
+                <button style="background-color: transparent;border: none;color: #f1f1f1;"   (click)=mrgplaninfo() >  {{mrgplan?">":"v"}} </button>
+               
+                <div *ngIf="visiblemrgplan"> 
+            
+                    <div class=" my-2 col-lg-12 col-sm-12 px-2">
+                    
+                      <div class="innerdiv">
+                         <form action="/action_page.php">
+                         <div class="col-lg-12 col-sm-12 d-block my-2">
+                            
+                         <div class="d-flex col-lg-12 col-sm-12 px-0">
+                                 <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Ready For Relocate</label>
+                                 <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                             </div>
+                             <div class="d-flex col-lg-12 col-sm-12 px-0">
+                              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marriage Plan</label>
+                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                          </div>
+                          <div class="d-flex col-lg-12 col-sm-12 px-0">
+                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Willing to do Job</label>
+                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                        </div>
+                        <div class="d-flex col-lg-12 col-sm-12 px-0">
+                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Prefer to Stay</label>
+                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                      </div>
+                      
+                             
+                             <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                                 <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                             </div>
+                    </div>
+                 </form>
+                    </div>
+                  </div>
+                 
+                 </div>
             
                 </div>
                 </div>
-              </form>
-            </div>
-            </div>
-            </div>
-      
-          </div>  
+
+                <div class="col-lg-12 col-sm-12 my-2">
+                  <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+                  <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+                  <label for="">Habits</label>
+                  <button style="background-color: transparent;border: none;color: #f1f1f1;"   (click)=habitsinfo()  >  {{habits?">":"v"}} </button>
+                 
+                  <div *ngIf="visiblehabits"> 
+              
+                      <div class=" my-2 col-lg-12 col-sm-12 px-2">
+                      
+                        <div class="innerdiv">
+                           <form action="/action_page.php">
+                           <div class="col-lg-12 col-sm-12 d-block my-2">
+                              
+                           <div class="d-flex col-lg-12 col-sm-12 px-0">
+                                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Eating</label>
+                                   <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                               </div>
+                               <div class="d-flex col-lg-12 col-sm-12 px-0">
+                                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Drinking</label>
+                                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                            </div>
+                            <div class="d-flex col-lg-12 col-sm-12 px-0">
+                              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Smoking</label>
+                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                          </div>
+                          <div class="d-flex col-lg-12 col-sm-12 px-0">
+                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Prefer to Stay</label>
+                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                        </div>
+                        
+                               
+                               <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                                   <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                               </div>
+                      </div>
+                   </form>
+                      </div>
+                    </div>
+                   
+                   </div>
+              
+                  </div>
+                  </div>
+              
+                  <div class="col-lg-12 col-sm-12 my-2">
+                    <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+                    <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+                    <label for="">Hobbies and Interest</label>
+                    <button style="background-color: transparent;border: none;color: #f1f1f1;"    (click)=hobbiesinfo()  >  {{hobby?">":"v"}} </button>
+                   
+                    <div *ngIf="visiblehobbies"> 
+                
+                        <div class=" my-2 col-lg-12 col-sm-12 px-2">
+                        
+                          <div class="innerdiv">
+                             <form action="/action_page.php">
+                             <div class="col-lg-12 col-sm-12 d-block my-2">
+                                
+                             <div class="d-flex col-lg-12 col-sm-12 px-0">
+                                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Place visited</label>
+                                     <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                                 </div>
+                                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                                  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Book</label>
+                                  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                              </div>
+                              <div class="d-flex col-lg-12 col-sm-12 px-0">
+                                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Place</label>
+                                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                            </div>
+                            <div class="d-flex col-lg-12 col-sm-12 px-0">
+                              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite sport</label>
+                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                          </div>
+                          <div class="d-flex col-lg-12 col-sm-12 px-0">
+                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Movie</label>
+                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                        </div>
+                        <div class="d-flex col-lg-12 col-sm-12 px-0">
+                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Music</label>
+                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                      </div>
+                      <div class="d-flex col-lg-12 col-sm-12 px-0">
+                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Dress sence</label>
+                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                    </div>
+                    <div class="d-flex col-lg-12 col-sm-12 px-0">
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Personality</label>
+                      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                  </div>
+                          
+                                 
+                                 <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                                     <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                                 </div>
+                        </div>
+                     </form>
+                        </div>
+                      </div>
+                     
+                     </div>
+                
+                    </div>
+                    </div>
+             
+              
+
+           
+
+        </div>  
         </div>
         
         </div>
-    <!--end entire edit profile  -->
-    <!-- <div *ngIf="partner"> -->
-        <!-- basic preference -->
-
+ 
         
       
         <div class="rightbg col-lg-12 col-sm-12 d-none" style="background-image:url(assets/images/abt.png);">

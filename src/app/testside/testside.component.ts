@@ -29,6 +29,7 @@ export class TestsideComponent implements OnInit{
   visiblepersonal:boolean=false
   physical:boolean=true
   visiblephysical:boolean=false
+  visiblelocation:boolean=false
   education:boolean=true
   visibleeducation:boolean=false
   family:boolean=true
@@ -38,7 +39,7 @@ export class TestsideComponent implements OnInit{
   contact:boolean=true
   visiblecontact:boolean=false
   location:boolean=true
-  visiblelocation:boolean=false
+ 
   mrgplan:boolean=true
   visiblemrgplan:boolean=false
   habits:boolean=true
