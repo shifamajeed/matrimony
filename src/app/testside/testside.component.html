@@ -875,12 +875,12 @@
  
         
       
-        <div class="rightbg col-lg-12 col-sm-12 d-none" style="background-image:url(assets/images/abt.png);">
+        <div class="rightbg col-lg-12 col-sm-12" *ngIf="partner" style="background-image:url(assets/images/abt.png);">
           <div  class="innerbox" style="margin-bottom: 45px;">
         <div class="btncls">
           <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
           <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
-          <button  class="btns">Manage photos</button>
+          <button  class="btns" (click)="managephotos()">Manage photos</button>
         </div> 
         <div class="linebox mx-5">
             <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
@@ -1697,7 +1697,7 @@
 </div>
 <!-- end header explore button action -->
 <!-- manage photots -->
-<div class="container-fluid rightbg d-none">
+<div class="container-fluid rightbg" *ngIf="mangphoto">
     <div class="row">
     <div class="col-lg-9 col-sm-12 col-12"> 
     <h1  class="head"> Add your best shots</h1>
