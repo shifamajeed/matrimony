@@ -89,3 +89,7 @@ export class EntrydetailsComponent implements OnInit {
 //     this.router.navigateByUrl('/editprofile');
 // }
 }
+
+// nav bar 2
+
+
