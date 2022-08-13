@@ -47,8 +47,8 @@
     /* margin: -1px; */
 }
 .pstyle{
-  Font-family: Poppins;
-  Font-size: 14px;
+  font-family: Poppins;
+  font-size: 14px;
   float: Left;
   margin-left: 47px;
     margin-top: 814px;
@@ -116,7 +116,7 @@ background:white;}
 .sidebtn6{top: 875px;}
 
 .vectorimg{width: 28px;
-  Height: 34px;
+  height: 34px;
   /* background-color: #276678; */}
 
 .div1{
