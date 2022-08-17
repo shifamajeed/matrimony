@@ -509,7 +509,5 @@ enableDisableRule() {
       this.smallhome=false
       this.sidenav2=true
  }
- managephotos(){
-  this.mangphoto=true
- }
+ 
 }
