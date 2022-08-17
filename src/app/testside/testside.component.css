@@ -49,7 +49,9 @@ background-size: 100% 100%;
   background-image:url("/assets/images/abt.png"); 
   float:left;
   background-repeat: no-repeat; 
-  
+
+  height:1881px; 
+
   width:fill-available;
   background-size: 100% 100%;
 }
@@ -194,7 +196,7 @@ align-self: center;
 }
 @media (min-width:900px) and (max-width:1500px){
   .lineboxhide{
-    width: 198px;
+    width: 208px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid white;
@@ -542,10 +544,10 @@ border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
 }
 .ha1{
-line-height: 15PX;
-  top: 24px;
+  line-height: 15PX;
+  top: 18px;
   width: 282px;
-  left: 125px;
+  left: 257px;
   font-size: 11px;
 }
 
@@ -679,7 +681,7 @@ color: #FFFFFF;
   border-width: thin;
 }
 .innerdivpartner{
-  width: 500px;
+  /* width: 500px; */
     height: fit-content;
     margin-left: 105px;
     margin-top:50px;
@@ -840,8 +842,15 @@ border: none;
 .h2partner{
   margin-left:290px;
 }
+.searchsec .linebox{
+  margin-bottom: 22px;
+    height: 1043px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .searchsec .innerbox .h2hide{
-  line-height: 25px;
+  line-height: 35px;
+    margin-left: 17px;
 }
 .searchsec .innerbox .btn{
   margin-left: 164px;
@@ -926,6 +935,16 @@ border: none;
   margin-top: 0px;
 }
 
+.deleteprosec .innerbox .btn{
+  border-radius: 13px;
+  color:#276577;
+  background-color:white;
+}
+.deleteprosec .innerbox .btn:hover{
+    color: #d3d3d3;
+    background-color:#276577;
+}
+
 @media (min-width:900px)  and (max-width:1500px){
   .modal-content{
       width: 326px; 
@@ -935,10 +954,13 @@ border: none;
    margin-left: 45PX;
 }
 .searchsec .innerbox .lineboxhide{
-  margin-left: 180px;
+  margin-left: 200px;
 }
 .hidesec .innerbox .lineboxhide{
-  margin-left: 180px;
+  margin-left: 242px;
+}
+.deleteprosec .lineboxhide{
+  margin-left: 74px;
 }
 
 }
@@ -1023,6 +1045,17 @@ font-size: 16px;
 line-height: 20px;
 color: #FFFFFF;
     }
+    .helpsec .help2{
+      margin-left: 10px;
+        margin-top: 22px;
+        margin-right: 10px; 
+      font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+color: #FFFFFF;
+      font-size: 12px;
+    line-height: 18px;
+    }
     .helpsec .innerbox .linebox{
   margin-left:30px;
   margin-top:30px;
@@ -1065,10 +1098,11 @@ border-width: thin;
 }
 .searchsec .innerbox .searchbtn{
   padding-left: 21px;
-  border-radius: 13px;
-  margin-left: 213px;
-  width: 381px;
-  height: 43px;
+    border-radius: 13px;
+    margin-left: 204px;
+    width: 381px;
+    height: 43px;
+    margin-bottom: 96px;
 }
 .searchpartnerdiv1{margin-left: 195px;}
 .searchpartnerdiv2{margin-left: 135px;}
@@ -1103,9 +1137,19 @@ border-width: thin;
   margin-left: 47px;
   font-size: 15px;
 }
+
 .editpwdpart .lineboxhide{
   
   margin-left: 250px;
+
+.helpsec .linebox{
+  margin-left: 75px;
+    border-radius: 18px;
+    border: 1px solid white;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 75px;
+
 }
 @media (min-width:900px) and (max-width:1500px){
   .modal-title{
@@ -1116,10 +1160,46 @@ border-width: thin;
   .px-5{
       padding-left: -0.75rem!important;
   }
+  .editpwdpart .sp{
+    margin-left:17px;
+  } 
   
 
 }
 @media (min-width:300px) and (max-width: 900px) {
+  .searchpartnerdiv1{margin-left: 74px;}
+.searchpartnerdiv2{margin-left: 23px;}
+.searchpartnerdiv3{margin-left: 180px;}
+.searchpartnerdiv4{margin-left: 178px;}
+.searchpartnerdiv5{margin-left: 148px;}
+.searchpartnerdiv6{margin-left: 127px;}
+.searchpartnerdiv7{margin-left: 164px;}
+.searchpartnerdiv8{margin-left: 111px;}
+.searchpartnerdiv9{margin-left: 121px;}
+.searchpartnerdiv10{margin-left: 128px;}
+.searchpartnerdiv11{margin-left: 141px;}
+.searchpartnerdiv12{margin-left: 156px;}
+  .searchsec .innerbox .btn{
+    margin-left: 83px;
+  
+    margin-top: 62px;
+;
+    width: 115px;
+  }
+  .innerdivpartner{
+    margin-left:0px;
+  }
+  .searchsec .innerbox .searchbtn{
+    margin-left: 16px;
+    width: 300px;
+    margin-bottom: 35px;
+     }
+  .searchsec .innerbox .h2partner{
+    margin-left: 60px;
+  }
+  .searchsec .form-inline .form-group{
+    display: flex;
+  }
   .blurleft{
     text-align: center;
     float: center;
@@ -1184,13 +1264,18 @@ align-content: center;
 .lastbtn{
   font-size: 12px;
   height:21px;
+  font-size: 12px;
+  height: 23px;
+  margin-left: 57px;
+  width: 142px;
+
 }
 .lbl{
   font-size: 11px;
 }
 .helpsec .innerbox .linebox{
-  margin-left: 80px;
-  margin-top: 90px;
+  margin-left: 36px;
+  margin-top: 65px;
 }
 .notisec .noti .notiimg1{
   margin-top:12px;
@@ -1220,6 +1305,9 @@ align-content: center;
   height: 32px;
 background: #276678;
 border-radius: 14px;
+
+margin-left: 45px;
+
 }
 .hidesec .innerbox .modal-content{
   width: 310px;
@@ -1232,9 +1320,16 @@ border-radius: 14px;
    border-radius: 14px;
 }
 .notisec .innerbox .btn1{
+
   width: 96px;
     height: 31px;
     margin-left: 48px;
+
+      width: 94px;
+    height: 35px;
+    margin-left: 56px;
+    margin-top: 0px;
+
 }
 .notisec .innerbox .btn{
   width: 96px;
@@ -1254,18 +1349,55 @@ border-radius: 14px;
   left: 257px;
     font-size: 9px;
 }
+
 .notisec .noti{
   height:130px;
   margin-left: 17px;
+
+.notisec .innerbox .ha1{
+  left: 127px;
+    margin-top: 8px;
+    font-size: 9px;
+
+   
+}
+.notisec .noti{
+  height:130px;
+  margin-left: 2px;
+
 }
 .notisec .innerbox .lore{
   
 }
+
 .editpwdpart .lineboxhide{
 height: 33px;
     margin-left: 89px;
     width: 112px;
 }
+.editpwdpart .innerbox .lineboxhide{
+
+    text-align: center;
+    line-height: 23px;
+    font-size: 9px;
+    height: 30px;
+    width: 171px;
+    margin-left: 83px;
+}
+.editpwdpart .innerbox .blk2{
+  margin-left:20px;
+}
+.editpwdpart .innerbox .pswtype{
+  width: 270px;
+}
+.editpwdpart .spl{
+  margin-left:60px;
+} 
+.deleteprosec .lineboxhide{
+  margin-left: 65px;
+height: 28px;
+}
+
 } 
 @media (min-width: 600px)  {
 .camera{
@@ -1277,6 +1409,8 @@ height: 33px;
     
 /* ajin change password part */
 .pswtype{
+  height: 35px;
+  width: 235px;
   border-radius: 8px;
 }
 @media (min-width: 992px){
@@ -1324,12 +1458,4 @@ height: 33px;
 
 }
 
-@media (min-width:300px) and (max-width:500px){
 
-
-
-  .innerbox{
-    height:36%;
-  }
-
-}

@@ -62,7 +62,7 @@ export class TestsideComponent implements OnInit{
   visiblenotification:boolean=false
  sidenav2:boolean=false
 smallhome:boolean=true
-// managephotos
+
 mangphoto:boolean=false
   ngOnInit(): void {
   }
@@ -508,5 +508,8 @@ enableDisableRule() {
       this.visibleboth=false
       this.smallhome=false
       this.sidenav2=true
+ }
+ managephotos(){
+  this.mangphoto=true
  }
 }
