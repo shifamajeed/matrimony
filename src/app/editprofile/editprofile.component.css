@@ -315,7 +315,7 @@ hr{height:2px;border-width:0;color:white;background-color:white;font-family:'Pop
     height: 200px;
 }
 .pstyle{
-  Font-size: 14px;
+  font-size: 14px;
   float: Left;
   margin-left: 47px;
     margin-top: 814px;
@@ -348,7 +348,7 @@ background:white;
 .sidebtn6{top: 875px;}
 
 .vectorimg{width: 28px;
-  Height: 34px;
+  height: 34px;
   /* background-color: #276678; */}
 
 .div1{
@@ -573,7 +573,7 @@ background:white;
       
       border-radius: 12px;
       width: 359px;
-height: 53px;
+height: 43px;
 margin-left: 273px;
     margin-top: 140px;
     
@@ -683,6 +683,9 @@ font-size: 24px;
 }
 /* end delete section */
 /*  reset password*/
+.passwordsec .btn{
+  margin-left:100px;
+}
 .btnn{
   margin-bottom: inherit;
 }
@@ -695,17 +698,17 @@ font-size: 24px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 }
 .pswtype{
 width: 351px;
-height: 53px;
+height: 45px;
 left: 597px;
 top: 353px;
 margin-bottom: 30px;
 background: #FFFFFF;
 box-shadow: inset 0px 0.5px 4px rgba(0, 0, 0, 0.25);
-border-radius: 16px;
+border-radius: 13px;
 }
 .svbtn{
   width: 359px;
@@ -835,12 +838,13 @@ border-width: thin;
   width: 298px;
 }
 .submitbtn2{
-  margin-left: 196px;
-  margin-top: 100px;
-  background-color: green;
-  width:192px;
-  border-radius: 21.24px;
-  background-color: green;
+  margin-bottom: 10px;
+    margin-left: 322px;
+    margin-top: 100px;
+    width: 200px;
+    border-radius: 11.24px;
+    background-color: green;
+    height: 36px;
 }
 /* home2 */
 .back{
@@ -1063,3 +1067,141 @@ border-radius: 20px;
     left: 287px;
     font-size: small;
 }
+/* chatbox */
+#chat2 .form-control {
+  border-color: transparent;
+  }
+  #chat2 .form-control:focus {
+  border-color: transparent;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  .divider:after,.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+  }
+.chatmenu{
+width: 160px;
+height: 173px;
+background: #FFFFFF;
+border: 1px solid #BAD4E8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px 20px 20px 20px;
+}
+.chatbox{
+width: 378px;
+height: 350px;
+background: #C3DDE4;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25), inset 117.833px -117.833px 117.833px rgba(160, 170, 178, 0.1), inset -117.833px 117.833px 117.833px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(235.667px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 18px;
+}
+.chatmsg{
+margin: 0px;
+padding: 0px;
+outline: none;
+height: 30px;
+border-radius: 5px;
+width: 274px;
+height: 42px;
+background: #FFFFFF;
+border: 1px solid #276678;
+border-radius: 30px;
+  }
+  .round{
+    border-radius: 50%;
+    background: white;
+  }
+  .buttonIn {
+    width: 300px;
+    position: relative;
+}
+#send{
+    position: absolute;
+    border-radius: 5px;
+    /* right: 0px; */
+    z-index: 2;
+    border: none;
+    margin-left: -74px;;
+    margin-top: 14px;
+    height: 30px;
+    cursor: pointer;
+    color: #276678;
+    background-color: transparent;
+    transform: translateX(2px);
+}
+.lineboxhide{
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  border-width: thin;
+  align-self: center;
+  }
+  .h2hide{
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 36px;
+  align-content: center;
+  }
+  .chat{
+    box-sizing: border-box;
+    position: absolute;
+    width: 714px;
+    height: 169px;
+    left: 0px;
+    top: 70px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21px;
+    }
+    .imgs{
+      width: 48px;
+      border-radius: 35px;
+      margin-top: 0px;
+      margin-left: 49px;
+      }
+      .lore{
+        position: absolute;
+        width: 120px;
+        height: 45.65px;
+        /* left: 327px; */
+        top: 19px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #000000;
+        }
+        .ha1{
+          line-height: 15PX;
+            top: 24px;
+            width: 282px;
+            left: 125px;
+            font-size: 11px;
+          }
+          /* bloch report */
+.pop{
+  width:auto;
+}
+.primary{
+  color: rgba(39, 102, 120, 1);
+  border-color: rgba(39, 102, 120, 1);
+ }
+.primary.bt:hover
+{
+  color:red ;
+  cursor: pointer;  
+}
+.modal-content{
+  background-color:#F6F5F5;
+  border-radius: 11.37px;
+}
+.chatsec .innerbox{
+  height:1500;
+}
+/* end chatbox */

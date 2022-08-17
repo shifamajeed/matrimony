@@ -1,13 +1,18 @@
 {
   "name": "matrimoni-site",
   "version": "0.0.0",
+  "engines": {
+    "node": "18.5.0",
+    "npm": "8.12.1"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start":  "node server.js",
+    
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+    "test": "ng test",
+    "heroku-postbuild": "ng build"
+     },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.5",
@@ -22,10 +27,13 @@
     "@angular/router": "^14.0.5",
     "@fortawesome/fontawesome-free": "^6.1.1",
     "bootstrap": "^5.2.0-beta1",
+    "express": "^4.18.1",
     "jquery": "^3.3.1",
+    "path": "^0.12.7",
     "primeng": "^14.0.0-rc.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "typescript": "~4.7.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -34,6 +42,7 @@
     "@angular/compiler-cli": "^14.0.5",
     "@types/bootstrap": "^5.1.12",
     "@types/jasmine": "~4.0.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

@@ -55,6 +55,8 @@ export class EditprofileComponent implements OnInit {
   visiblehelp:boolean=false
   // notification
   visiblenotification:boolean=false
+  // chat
+  visiblechat:boolean=false
   ngOnInit(): void {
   }
   // sidebar
@@ -71,6 +73,7 @@ export class EditprofileComponent implements OnInit {
     this.editpwdpart=false
     this.visiblehome2=false
     this.visiblehome2=false
+    this.visiblechat=false
     // this.editinner=true
     this.visibleeditprofilediv=true
    
@@ -103,7 +106,6 @@ export class EditprofileComponent implements OnInit {
     if (this.innerWidth > 319 &&  this.innerWidth < 721) {
     this.sidenav = false
     }
-    
     this.visisblesearch=false
     this.visiblehome2=false
     this.partner=false
@@ -111,15 +113,14 @@ export class EditprofileComponent implements OnInit {
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visiblehelp=false
+    this.visiblechat=false
     this.visibleeditprofilediv=true
   }
   hideprofilebtn()
   {
-
     this.innerWidth = window.innerWidth
     if (this.innerWidth <600) {
     this.sidenav = false
-   
    } 
     this.visiblehome2=false
     this.partner=false
@@ -127,6 +128,7 @@ export class EditprofileComponent implements OnInit {
     this.visibleeditprofilediv=false
     this.editpwdpart=false
     this.visiblehelp=false
+    this.visiblechat=false
     this.hideprofilepart=true
   }
   deleteprofilebtn()
@@ -142,6 +144,7 @@ export class EditprofileComponent implements OnInit {
     this.visibleeditprofilediv=false
     this.editpwdpart=false
     this.visiblehelp=false
+    this.visiblechat=false
     this.deleteprofilepart=true
   }
   editpwd()
@@ -159,10 +162,9 @@ export class EditprofileComponent implements OnInit {
     this.visibleexplore=false
     this.visiblehelp=false
     this.visiblenotification=false
+    this.visiblechat=false
     this.editpwdpart=true
-
   }
-
   // end side bar
   // home2
   home2()
@@ -177,12 +179,12 @@ export class EditprofileComponent implements OnInit {
     // this.editinner=false
     this.visisblesearch=false
     this.visiblehelp=false
+    this.visiblechat=false
     this.visiblehome2=true
   }
   // edit profile
   personalinfo()
   {
-
     this.personal=!this.personal
     this.visiblephysical=false
     this.visibleeducation=false
@@ -322,7 +324,6 @@ hobbiesinfo()
 }
 // end edit profile
 // reset password
-
 // function myFunction() {
 //   var x = document.getElementById("*passwordbox-id*");
 //   if (x.type === "password") {
@@ -331,7 +332,6 @@ hobbiesinfo()
 //     x.type = "password";
 //   }
 // }
-
 // end reset password
 //partnerpreference
 partnerpreference()
@@ -347,6 +347,7 @@ partnerpreference()
     this.visibleeditprofilediv=false
     this.visisblesearch=false
     this.visiblehelp=false
+    this.visiblechat=false
     this.partner=true
 }
 // search button action 
@@ -363,6 +364,7 @@ searchact()
   // this.editinner=false
   this.visiblehome2=false
   this.visiblehelp=false
+  this.visiblechat=false
   this.visisblesearch=true
 }
 exploreact()
@@ -384,6 +386,7 @@ exploreact()
   this.visibleboth=false
   this.visiblenotification=false
   this.visiblehelp=false
+  this.visiblechat=false
   this.visibleexplore=true
 }
 // explore
@@ -424,6 +427,7 @@ helpact()
   this.visiblereceive=false
   this.visibleboth=false
   this.visibleexplore=false
+  this.visiblechat=false
   this.visiblehelp=true
 }
 // notification
@@ -446,7 +450,29 @@ notification()
   this.visisblesearch=false
   this.partner=false 
   this.visiblehelp=false  
+  this.visiblechat=false
   this.visiblenotification=true
+}
+chatact(){
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    }
+  this.visibleexplore=false
+  this.visibleeditprofilediv=false
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
+  this.visiblehome2=false
+  // this.editinner=false
+  this.visiblesend=false
+  this.visiblereceive=false
+  this.visibleboth=false
+  this.visisblesearch=false
+  this.partner=false 
+  this.visiblehelp=false  
+  this.visiblenotification=false
+  this.visiblechat=true
 }
 }
 
