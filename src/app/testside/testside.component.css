@@ -23,20 +23,22 @@
 
 .blurleft1{
 background-image:url("/assets/images/abt.png") ;
-height: 1500px;
+height: 1700px;
 float:left;
+background-size: 100% 100%;
 }
 .blurleft2{
   background-image:url("/assets/images/Rectangle 60.png") ;
-  height: 1500px;
+  height: 1700px;
   /* float:left; */
 }
 .rightbg{
   background-image:url("/assets/images/abt.png"); 
   float:left;
   background-repeat: no-repeat; 
-  height:fit-content; 
+  height:1881px; 
   width:fill-available;
+  background-size: 100% 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -46,7 +48,7 @@ float:left;
   } 
   /* .rightbg{
       /* display: none;  */
-  /* } */ */
+  /* } */ 
   .mng{
     display: none;
   }
@@ -170,7 +172,7 @@ align-self: center;
 }
 @media (min-width:900px) and (max-width:1500px){
   .lineboxhide{
-    width: 198px;
+    width: 208px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid white;
@@ -237,6 +239,18 @@ border: 0px;
 outline: none;
 border-bottom: 1px solid white;
 background:transparent;
+}
+.personaldiv{
+  background: rgba(188, 204, 210, 0.1);
+box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.15), inset 44.5333px -44.5333px 44.5333px rgba(143, 155, 160, 0.1), inset -44.5333px 44.5333px 44.5333px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(89.0667px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 18px;
+font-family: poppins;
+font-weight: bolder;
+color: white;
+height: fit-content;
 }
 .btnsise{
  
@@ -385,33 +399,6 @@ font-size: 5px;
 line-height: 7px;
   }
 
-
-.notisec .innerbox .btn{
-  border-radius: 32px;
-  font-family: 'Poppins';
-  background-color:aliceblue;
-  font-style: normal;
-  color:#276678;
-  font-weight:bolder ;
-  width: 115px;
-    height: 35px;
-  margin-left: 35px;
-}
-
-.notisec .innerbox .btn1{
-  border-radius: 32px;
-    background-color: #276678;
-    font-family: Poppins;
-    font-style: normal;
-    color: #FFFFFF;
-    font-weight: bolder;
-    width: 115px;
-    height: 35px;
-    margin-left: 32px;
-}
-
-
-
 .lastbtn{
   font-size: 12px;
   height:21px;
@@ -468,7 +455,7 @@ top: 70px;
 background: #FFFFFF;
 border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
-margin-left: 1px;
+margin-left: 38px;
 }
 .lore{
 position: absolute;
@@ -486,9 +473,9 @@ color: #000000;
 
 .hidesec .innerbox .btn{
 margin-top: 80px;
-margin-left: 66px;
+margin-left: 110px;
 border-radius: 20px;
-height: 43px;
+
     background: #276678;
     border-radius: 14px;
 }
@@ -516,10 +503,10 @@ border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
 }
 .ha1{
-line-height: 15PX;
-  top: 24px;
+  line-height: 15PX;
+  top: 18px;
   width: 282px;
-  left: 125px;
+  left: 257px;
   font-size: 11px;
 }
 
@@ -653,7 +640,7 @@ color: #FFFFFF;
   border-width: thin;
 }
 .innerdivpartner{
-  width: 500px;
+  /* width: 500px; */
     height: fit-content;
     margin-left: 105px;
     margin-top:50px;
@@ -774,6 +761,7 @@ background-size: contain;
       .rad1{
         accent-color:#305862 ;
        }  
+     
        .btn1{
         font-family: 'Poppins';
         margin-left: 43%;
@@ -807,24 +795,21 @@ border: none;
             color: #067F04;
             } 
 /* end manage your photos */
-/* notification */
-.notisec .notiimg1{
-  margin-top: 7px;
-                       height: 9px;
-      width: 424px;
-                      
-                      border-radius: 101px;
-                      margin-top: 7px;
-         margin-left: 104px;
-         border-radius: 101px;
-}
+
 
 /* search */
 .h2partner{
   margin-left:290px;
 }
+.searchsec .linebox{
+  margin-bottom: 22px;
+    height: 1043px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .searchsec .innerbox .h2hide{
-  line-height: 25px;
+  line-height: 35px;
+    margin-left: 17px;
 }
 .searchsec .innerbox .btn{
   margin-left: 164px;
@@ -873,6 +858,51 @@ border: none;
   margin-bottom: 121px;
   margin-top: 37px;
  }
+ /* notification */
+
+.notisec .notiimg1{
+  margin-top: 7px;                     
+  border-radius: 101px;
+  margin-top: 7px;
+  margin-left: 104px;
+  border-radius: 101px;
+  height: 154px;
+  width: 165px;
+}
+ .notisec .innerbox .noti .btn1{
+  border-radius: 32px;
+  background-color: #276678;
+  font-family: Poppins;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: bolder;
+  width: 115px;
+  height: 35px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+.notisec .innerbox .btn{
+  border-radius: 32px;
+  font-family: 'Poppins';
+  background-color:aliceblue;
+  font-style: normal;
+  color:#276678;
+  font-weight:bolder;
+  width: 115px;
+  height: 35px;
+  margin-left: 85px;
+  margin-top: 0px;
+}
+.deleteprosec .innerbox .btn{
+  border-radius: 13px;
+  color:#276577;
+  background-color:white;
+}
+.deleteprosec .innerbox .btn:hover{
+    color: #d3d3d3;
+    background-color:#276577;
+}
+
 @media (min-width:900px)  and (max-width:1500px){
   .modal-content{
       width: 326px; 
@@ -882,10 +912,13 @@ border: none;
    margin-left: 45PX;
 }
 .searchsec .innerbox .lineboxhide{
-  margin-left: 180px;
+  margin-left: 200px;
 }
 .hidesec .innerbox .lineboxhide{
-  margin-left: 180px;
+  margin-left: 242px;
+}
+.deleteprosec .lineboxhide{
+  margin-left: 74px;
 }
 
 }
@@ -970,6 +1003,17 @@ font-size: 16px;
 line-height: 20px;
 color: #FFFFFF;
     }
+    .helpsec .help2{
+      margin-left: 10px;
+        margin-top: 22px;
+        margin-right: 10px; 
+      font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+color: #FFFFFF;
+      font-size: 12px;
+    line-height: 18px;
+    }
     .helpsec .innerbox .linebox{
   margin-left:30px;
   margin-top:30px;
@@ -1008,10 +1052,11 @@ border-width: thin;
 }
 .searchsec .innerbox .searchbtn{
   padding-left: 21px;
-  border-radius: 13px;
-  margin-left: 213px;
-  width: 381px;
-  height: 43px;
+    border-radius: 13px;
+    margin-left: 204px;
+    width: 381px;
+    height: 43px;
+    margin-bottom: 96px;
 }
 .searchpartnerdiv1{margin-left: 195px;}
 .searchpartnerdiv2{margin-left: 135px;}
@@ -1025,6 +1070,35 @@ border-width: thin;
 .searchpartnerdiv10{margin-left: 128px;}
 .searchpartnerdiv11{margin-left: 141px;}
 .searchpartnerdiv12{margin-left: 156px;}
+.hidesec .innerbox .modal-content .yesbtn{
+  width: 110px;
+    height: 30px;
+    border-radius: 13px
+}
+.hidesec .innerbox .modal-content .nobtn{
+  width: 110px;
+    height: 30px;
+    border-radius: 13px;
+    margin-left: 46px;
+}
+/* .hidesec .innerbox .modal1{
+  display: block;
+  margin-left: 30px;
+  margin-top: 60px;
+} */
+.editpwdpart .blk2{
+  position: absolute;
+  margin-left: 47px;
+  font-size: 15px;
+}
+.helpsec .linebox{
+  margin-left: 75px;
+    border-radius: 18px;
+    border: 1px solid white;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 75px;
+}
 @media (min-width:900px) and (max-width:1500px){
   .modal-title{
       width:127px;
@@ -1034,10 +1108,46 @@ border-width: thin;
   .px-5{
       padding-left: -0.75rem!important;
   }
+  .editpwdpart .sp{
+    margin-left:17px;
+  } 
   
 
 }
 @media (min-width:300px) and (max-width: 900px) {
+  .searchpartnerdiv1{margin-left: 74px;}
+.searchpartnerdiv2{margin-left: 23px;}
+.searchpartnerdiv3{margin-left: 180px;}
+.searchpartnerdiv4{margin-left: 178px;}
+.searchpartnerdiv5{margin-left: 148px;}
+.searchpartnerdiv6{margin-left: 127px;}
+.searchpartnerdiv7{margin-left: 164px;}
+.searchpartnerdiv8{margin-left: 111px;}
+.searchpartnerdiv9{margin-left: 121px;}
+.searchpartnerdiv10{margin-left: 128px;}
+.searchpartnerdiv11{margin-left: 141px;}
+.searchpartnerdiv12{margin-left: 156px;}
+  .searchsec .innerbox .btn{
+    margin-left: 83px;
+  
+    margin-top: 62px;
+;
+    width: 115px;
+  }
+  .innerdivpartner{
+    margin-left:0px;
+  }
+  .searchsec .innerbox .searchbtn{
+    margin-left: 16px;
+    width: 300px;
+    margin-bottom: 35px;
+     }
+  .searchsec .innerbox .h2partner{
+    margin-left: 60px;
+  }
+  .searchsec .form-inline .form-group{
+    display: flex;
+  }
   .blurleft{
     text-align: center;
     float: center;
@@ -1102,13 +1212,18 @@ align-content: center;
 .lastbtn{
   font-size: 12px;
   height:21px;
+  font-size: 12px;
+  height: 23px;
+  margin-left: 57px;
+  width: 142px;
+
 }
 .lbl{
   font-size: 11px;
 }
 .helpsec .innerbox .linebox{
-  margin-left: 80px;
-  margin-top: 90px;
+  margin-left: 36px;
+  margin-top: 65px;
 }
 .notisec .noti .notiimg1{
   margin-top:12px;
@@ -1117,10 +1232,6 @@ align-content: center;
     border-radius: 101px;
     margin-left: -15px;
 }
-.notisec .noti{
-  height:130px;
-}
-
 .searchsec .innerbox .lineboxhide{
   margin-left: 50px;
 }
@@ -1131,10 +1242,88 @@ align-content: center;
   margin-left: 77px;
 }
 .hidesec .innerbox .loremhide{
-  font-size:8px;
+  font-size:10px;
+  margin-left: 40px;
+  line-height: 12px;
 }
 .hidesec .innerbox .h2hide{
   font-size:12px;
+}
+.hidesec .innerbox .btn{
+  height: 32px;
+background: #276678;
+border-radius: 14px;
+margin-left: 45px;
+}
+.hidesec .innerbox .modal-content{
+  width: 310px;
+  height: 210px;
+}
+.hidesec .innerbox .modal-content .modal-footer .yesbtn{
+  height: 29px;
+  margin-left: 0px;
+  width: 101px;
+   border-radius: 14px;
+}
+.notisec .innerbox .btn1{
+      width: 94px;
+    height: 35px;
+    margin-left: 56px;
+    margin-top: 0px;
+}
+.notisec .innerbox .btn{
+  width: 96px;
+    height: 31px;
+    margin-left: 148px;
+}
+.notisec .innerbox .h1noti1{
+  margin-left: 57px;
+  font-size: 20px;
+}
+.notisec .innerbox .h1noti{
+  line-height: 15px;
+  margin-left: 57px;
+  font-size: 10px;
+}
+.notisec .innerbox .ha{
+  left: 257px;
+    font-size: 9px;
+}
+.notisec .innerbox .ha1{
+  left: 127px;
+    margin-top: 8px;
+    font-size: 9px;
+
+   
+}
+.notisec .noti{
+  height:130px;
+  margin-left: 2px;
+}
+.notisec .innerbox .lore{
+  
+}
+.editpwdpart .innerbox .lineboxhide{
+
+    text-align: center;
+    line-height: 23px;
+    font-size: 9px;
+    height: 30px;
+    width: 171px;
+    margin-left: 83px;
+}
+.editpwdpart .innerbox .blk2{
+  margin-left:20px;
+}
+.editpwdpart .innerbox .pswtype{
+  width: 270px;
+}
+.editpwdpart .spl{
+  margin-left:60px;
+} 
+.deleteprosec .lineboxhide{
+  margin-left: 65px;
+height: 28px;
 }
 
 } 
@@ -1148,16 +1337,24 @@ align-content: center;
     
 /* ajin change password part */
 .pswtype{
+  height: 35px;
+  width: 235px;
   border-radius: 8px;
 }
 @media (min-width: 992px){
-   .col-lg-6 {
+   /* .col-lg-6 {
    flex: 0 0 50%;
    max-width: 32%;
-}
+} */
 .psw{
  margin-left:105px;
 }
+
+.editpwdpart .blk{
+ margin-top: 115px;
+    margin-left: 104px;
+}
+    
 .blk{
  margin-top: 100px;
  
@@ -1168,6 +1365,7 @@ align-content: center;
    
 .pswtype{
    border-radius: 8px;
+}
 }
 @media (min-width: 992px){
     .col-lg-6 {
@@ -1182,15 +1380,10 @@ align-content: center;
   
   margin-left: 105px;
 
+
+  
 }
-}
-
-@media (min-width:300px) and (max-width:500px){
-
-
-
-  .innerbox{
-    height:36%;
-  }
 
 }
+
+
