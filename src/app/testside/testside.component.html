@@ -900,116 +900,158 @@
   </div>
 
         <!-- editprofile -->   
-  
-<div class="rightbg col-lg-12 col-12 " *ngIf="partner" style="background-image:url(assets/images/abt.png);">
 
-         
-          <div  class="innerbox" style="margin-bottom: 45px;">
-        <div class="btncls ">
-          <button  class="btns btn4"(click)="editprofilebtn()">Edit profile</button>
-          <button  class="btns mx-5"(click)="partnerpreference()">Partner Preference</button>
-          <button  class="btns mng" (click)="managephotos()">Manage photos</button>
-        </div> 
 
-        <div class="linebox mx-lg-5">
+        <div *ngIf="partner" class="searchsec col-lg-12 col-12 px-0 mx-0 partner1">
+          <div  class="col-lg-12 col-12 px-0 mx-0">
+            <div class="rightbg col-lg-12 col-12 py-3">
+                <div class="innerbox col-lg-12 col-12">
+                  <div class=" ">
+                    <button  class="btns1 btn4 "(click)="editprofilebtn()">Edit profile</button>
+                    <button  class="btns1 mx-3 "(click)="partnerpreference()">Partner Preference</button>
+                    <button  class="btns1 mng" (click)="managephotos()">Manage photos</button>
+                  </div> 
+        
+                   
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner"><b>Basic Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Age</label>
+                      <label>:</label>
+                      <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+                      <input type="text" class="col-2 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Marital status</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Height</label>
+                      <label>:</label>
+                      <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+                      <input type="text" class="col-2 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Weight</label>
+                      <label>:</label>
+                      <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+                      <input type="text" class="col-2 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Complexion</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Physical Status</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                   
+                  <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+              </form> 
+                 
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                </div>
+               
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+              
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner"><b>Education & Professional Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                   
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Highest Education</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Job profession</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                   
+                  <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+              </form> 
+                 
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                </div>
+               
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner"><b>Religious Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                   
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Religiousness</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Madrassa Education</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Attend Islamic Service</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                   
+                  <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+              </form> 
+                 
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                </div>
 
-            <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
-            <hr class="partnrhr">
-            <div class="innerdivpartner">
-            <form class="form-inline" action="/action_page.php">
-              <div class="form-group" style="color:white;">
-                <label for="relegion">Age</label><label class="partnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" class=" personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class=" personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                <label for="maritalstatus">Marital status</label><label class="partnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" class=" personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-              </div>
-              <div class="form-group" style="color:white;">
-                  <label for="education">Height</label><label class="partnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class=" personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class=" personaldivinputtypes" id="education" placeholder="" name="education" size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                  <label for="relegion">Weight</label><label class="partnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class=" personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class=" personaldivinputtypes" id="education" placeholder="" name="education" size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                <label for="education">Complexion</label><label class="partnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" class=" personaldivinputtypes" id="education" placeholder="" name="education">
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner" ><b>Location Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                   
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Prefer to Stay</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Present Country</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Present State</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">City Preference</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                   
+              </form> 
+               
             </div>
-            <div class="form-group" style="color:white;margin-bottom: 3%;">
-              <label for="education">Physical Status</label><label class="partnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="education" placeholder="" name="education">
+
           </div>
-            </form>
-            </div>
-          </div>
-
-        <!-- Education & Professional Preferences -->
-        <div class="linebox mx-5" style="margin-top: 36px;height: 217px">
-          <h2 class="text-white partnerh2"><b>Education & Professional Preferences</b></h2>
-          <hr class="partnrhr">
-          <div class="innerdivpartner">
-          <form class="form-inline" action="/action_page.php">
-            <div class="form-group" style="color:white;">
-              <label for="maritalstatus">Highest Education</label><label class="partnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Job profession</label><label class="partnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-          </form>
+          <button type="submit"class=" bigbtn" style="background-color: green;">Submit & Save</button> 
+     </div>
           </div>
         </div>
-
-
-
-        <!-- Religious Preferences -->
-        <div class="linebox mx-5" style=margin-top:36px;height:209px;>
-          <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
-          <hr class="partnrhr">
-          <div class="innerdivpartner">
-          <form class="form-inline" action="/action_page.php">
-            <div class="form-group" style="color:white;">
-              <label for="maritalstatus">Religiousness</label><label class="partnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Attend Islamic Service</label><label class="partnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-          </form>
-          </div>
         </div>
-        <!-- Location Preferences -->
-        <div class="linebox mx-5"style=margin-top:36px;height:279px>
-          <h2 class="text-white partnerh2"><b>Location Preferences</b></h2>
-          <hr class="partnrhr">
-          <div class="innerdivpartner">
-          <form class="form-inline" action="/action_page.php">
-            <div class="form-group" style="color:white;">
-              <label for="maritalstatus">Prefer to Stay</label><label class="partnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Present Country</label><label class="partnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Present State</label><label class="partnerdiv13">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">City Preference</label><label class="partnerdiv14">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class=" personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-          </form>
-          </div>
-        </div>
-        <button type="submit" class="text-white btn btn-default submitbtn svbtn btn1">Submit & Save</button>
-      </div>
-  </div>
+
    
       
    
@@ -1513,7 +1555,7 @@
         <input class="mr-sm-2 searchbtn" type="search" placeholder="Search id" aria-label="Search">
       </form> 
         <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height: 1043px;">
-          <h2 class="text-white h2partner"><b>Search Preferences</b></h2>
+          <h2 class="text-white h2partner1"><b>Search Preferences</b></h2>
           <div class="innerdivpartner">
             <form class="text-white">
             <div class="col-12 d-flex">
