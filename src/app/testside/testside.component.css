@@ -410,7 +410,7 @@ cursor: pointer;
   height: 70px;
   font-family: 'Poppins'; 
 }
-@media screen and (max-width: 600px) {
+@media (min-width: 300px) and (max-width:900px) {
 .sidebar{
   text-align: center;
   float: center;
@@ -903,7 +903,7 @@ border: none;
   height: 140px;
   width: 722px;
   /* left: 452px; */
-  margin-top: 134px;
+  margin-top: 100px;
   margin-left: 45px;
   border-radius: 18px;
   border: 1px solid white;
@@ -970,6 +970,445 @@ border: none;
     background-color:#276577;
 }
 
+
+
+
+.modal-title{
+  width: auto;
+  font-weight: 600;
+  width:auto;
+}
+.searchsec .innerbox .searchlb{
+  margin-left: 220px;
+    margin-right: 5px;
+}
+.searchsec .innerbox .searchbtn{
+  padding-left: 21px;
+    border-radius: 13px;
+    margin-left: 204px;
+    width: 381px;
+    height: 43px;
+    margin-bottom: 96px;
+}
+.searchpartnerdiv1{margin-left: 195px;}
+.searchpartnerdiv2{margin-left: 135px;}
+.searchpartnerdiv3{margin-left: 180px;}
+.searchpartnerdiv4{margin-left: 178px;}
+.searchpartnerdiv5{margin-left: 148px;}
+.searchpartnerdiv6{margin-left: 127px;}
+.searchpartnerdiv7{margin-left: 164px;}
+.searchpartnerdiv8{margin-left: 111px;}
+.searchpartnerdiv9{margin-left: 121px;}
+.searchpartnerdiv10{margin-left: 128px;}
+.searchpartnerdiv11{margin-left: 141px;}
+.searchpartnerdiv12{margin-left: 156px;}
+.hidesec .innerbox .modal-content .yesbtn{
+  width: 110px;
+    height: 30px;
+    border-radius: 13px
+}
+.hidesec .innerbox .modal-content .nobtn{
+  width: 110px;
+    height: 30px;
+    border-radius: 13px;
+    margin-left: 46px;
+}
+/* .hidesec .innerbox .modal1{
+  display: block;
+  margin-left: 30px;
+  margin-top: 60px;
+} */
+.editpwdpart .blk2{
+  position: absolute;
+  margin-left: 47px;
+  font-size: 15px;
+}
+
+.editpwdpart .lineboxhide{
+  
+  margin-left: 250px;
+}
+.helpsec .linebox{
+  margin-left: 75px;
+    border-radius: 18px;
+    border: 1px solid white;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 75px;
+
+}
+
+.bigbtn{
+  background-color: green;
+    margin-left: 30%;
+    color: white;
+    width: 35%;
+       height: 3%;
+    border: none;
+    border-radius: 9px;
+    font-weight: bolder;
+}
+@media (min-width:900px) and (max-width:1500px){
+  .modal-title{
+      width:127px;
+      font-weight: 600;
+       margin-right: -4rem!important;
+  }
+  .px-5{
+      padding-left: -0.75rem!important;
+  }
+  .editpwdpart .sp{
+    margin-left:17px;
+  } 
+
+
+.exploresec .btns{
+  margin-left: 43px;
+  margin-top: 30px;
+}
+
+
+    
+/* ajin change password part */
+.pswtype{
+  height: 35px;
+  width: 235px;
+  border-radius: 8px;
+}
+@media (min-width: 992px){
+   /* .col-lg-6 {
+   flex: 0 0 50%;
+   max-width: 32%;
+} */
+.psw{
+ margin-left:105px;
+}
+
+.editpwdpart .blk{
+ margin-top: 115px;
+    margin-left: 104px;
+}
+    
+.blk{
+ margin-top: 100px;
+ 
+ margin-left: 105px;
+
+
+}   
+   
+.pswtype{
+   border-radius: 8px;
+}
+}
+@media (min-width: 992px){
+    .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 32%;
+}
+.psw{
+  margin-left:105px;
+}
+.blk{
+  margin-top: 100px;
+
+  
+  margin-left: 105px;
+
+
+  
+}
+
+}
+@media (min-width:300px) and (max-width: 900px) {
+  .searchpartnerdiv1{margin-left: 74px;}
+.searchpartnerdiv2{margin-left: 23px;}
+.searchpartnerdiv3{margin-left: 180px;}
+.searchpartnerdiv4{margin-left: 178px;}
+.searchpartnerdiv5{margin-left: 148px;}
+.searchpartnerdiv6{margin-left: 127px;}
+.searchpartnerdiv7{margin-left: 164px;}
+.searchpartnerdiv8{margin-left: 111px;}
+.searchpartnerdiv9{margin-left: 121px;}
+.searchpartnerdiv10{margin-left: 128px;}
+.searchpartnerdiv11{margin-left: 141px;}
+.searchpartnerdiv12{margin-left: 156px;}
+  .searchsec .innerbox .btn{
+    margin-left: 83px;
+  
+    margin-top: 62px;
+;
+    width: 115px;
+  }
+  .innerdivpartner{
+    margin-left:0px;
+  }
+  .searchsec .innerbox .searchbtn{
+    margin-left: 16px;
+    width: 300px;
+    margin-bottom: 35px;
+     }
+  .searchsec .innerbox .h2partner1{
+    margin-left: 60px;
+  }
+  .searchsec .form-inline .form-group{
+    display: flex;
+  }
+  .blurleft{
+    text-align: center;
+    float: center;
+  } 
+  .rightbg{
+    height: unset;
+  }
+  .mng{
+    display: none;
+  }
+.sidebar{
+  text-align: center;
+  float: center;
+} 
+.boximg{
+  height: 257px;
+  border-radius: 15.497406px;
+}
+.exploresec .btns{
+  height: 30px;
+    width: 118px;
+    padding-left: 0px;
+}
+.exploresec .lineboxhide{
+  margin-left: 80px;
+}
+.exploresec .linebox2{
+  height: 110px;
+    margin-top: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width:342px;
+}
+.exploresec .roundpic{
+  width: 95px;
+    height: 90px;
+    background-repeat: no-repeat;
+    left: 11px;
+    margin-top: 10px;
+}
+.editmng .head{
+  margin-left:25%
+}
+.editmng .head1{
+  margin-left:13%
+}
+.btn{
+  height:30px;
+}
+.sidebar {
+  height: auto;
+  position: relative;
+}
+div.content {padding-right:0px;padding-left:0px;}
+.loremhide{
+  font-family: 'Poppins';
+font-style: normal;
+font-size: 5px;
+line-height: 7px;
+  }
+.h2hide{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 36px;
+align-content: center;
+}
+/* .lineboxhide{
+  margin: left 50px;
+} */
+.submit{
+  font-size:12px;
+  width:145px;
+}
+.congrats{
+  font-size: 8.11px;
+  line-height: 12px;
+}
+.radio{
+  height:6px; width:6px;
+}
+.radiolbl{
+  font-size:6px;
+}
+.lastbtn{
+  font-size: 12px;
+  height:21px;
+  font-size: 12px;
+  height: 23px;
+  margin-left: 57px;
+  width: 142px;
+
+}
+.lbl{
+  font-size: 11px;
+}
+.helpsec .innerbox .linebox{
+  margin-left: 36px;
+  margin-top: 65px;
+}
+.notisec .noti .notiimg1{
+  margin-top:12px;
+    height: 107px;
+    width: 91px;
+    border-radius: 101px;
+    margin-left: -15px;
+}
+.searchsec .innerbox .lineboxhide{
+  margin-left: 50px;
+}
+.hidesec .innerbox{
+  margin-left:30px;
+}
+.hidesec .innerbox .lineboxhide{
+  margin-left: 77px;
+}
+.hidesec .innerbox .loremhide{
+  font-size:10px;
+  margin-left: 40px;
+  line-height: 12px;
+}
+.hidesec .innerbox .h2hide{
+  font-size:12px;
+}
+.hidesec .innerbox .btn{
+  height: 32px;
+background: #276678;
+border-radius: 14px;
+
+margin-left: 45px;
+
+}
+.hidesec .innerbox .modal-content{
+  width: 310px;
+  height: 210px;
+}
+.hidesec .innerbox .modal-content .modal-footer .yesbtn{
+  height: 29px;
+  margin-left: 0px;
+  width: 101px;
+   border-radius: 14px;
+}
+.notisec .innerbox .noti .btn1{
+
+  width: 96px;
+    height: 31px;
+    margin-left: 48px;
+
+    width: 85px;
+    height: 31px;
+    margin-left: 52px;
+    margin-top: 3px;
+
+}
+.notisec .innerbox .noti .btn{
+  width: 96px;
+    height: 31px;
+    margin-left: 148px;
+    margin-top: -55px;
+}
+.notisec .innerbox .h1noti1{
+  margin-left: 57px;
+  font-size: 20px;
+}
+.notisec .innerbox .h1noti{
+  line-height: 15px;
+  margin-left: 65px;
+  font-size: 10px;
+}
+.notisec .innerbox .ha{
+  left: 257px;
+    font-size: 9px;
+}
+
+.notisec .noti{
+  height:130px;
+  margin-left: 17px;
+}
+.notisec .innerbox .ha1{
+  left: 127px;
+    margin-top: 13px;
+    font-size: 9px;
+
+   
+}
+.notisec .noti{
+  height:130px;
+  margin-left: 2px;
+
+}
+.notisec .innerbox .lore{
+  
+}
+
+.editpwdpart .lineboxhide{
+height: 33px;
+    margin-left: 89px;
+    width: 112px;
+}
+.editpwdpart .innerbox .lineboxhide{
+
+    text-align: center;
+    line-height: 23px;
+    font-size: 9px;
+    height: 30px;
+    width: 171px;
+    margin-left: 83px;
+}
+.editpwdpart .innerbox .blk2{
+  margin-left:20px;
+}
+.editpwdpart .innerbox .pswtype{
+  width: 270px;
+}
+.editpwdpart .spl{
+  margin-left:60px;
+} 
+.deleteprosec .lineboxhide{
+  margin-left: 65px;
+height: 28px;
+}
+.btns1{
+  height: 24px;
+    width: 105px;
+    font-size: 88%;
+    font-weight: bolder;
+}
+.h2partner{
+  font-size: 126%;
+}
+}
+
+
+@media (min-width: 600px)  {
+.camera{
+  display: none;
+}
+
+}
+@media (min-width:900px) and (max-width:1500px){
+  .modal-title{
+      width:127px;
+      font-weight: 600;
+       margin-right: -4rem!important;
+  }
+  .px-5{
+      padding-left: -0.75rem!important;
+  }
+  .editpwdpart .sp{
+    margin-left:17px;
+  } 
+  
+
+}
 @media (min-width:900px)  and (max-width:1500px){
   .modal-content{
       width: 326px; 
@@ -1093,415 +1532,9 @@ border: 1px solid white;
 border-style: solid;
 border-width: thin;
 }
- /* .innerbox{
-  width: 90%;
- margin-left: 19PX;
-} */
-/* .notisec .innerbox .notiimg1{width: 95.86px;
-  height: 144.07px;
-  margin-left: 23px;
-  top: 109.04px;}
-  .notisec .noti{
-    width: 696px;
-    height: 145px;
-  } */
+
 
   .editdiv{
     display: none;
   }
 }
-
-
-.modal-title{
-  width: auto;
-  font-weight: 600;
-  width:auto;
-}
-.searchsec .innerbox .searchlb{
-  margin-left: 220px;
-    margin-right: 5px;
-}
-.searchsec .innerbox .searchbtn{
-  padding-left: 21px;
-    border-radius: 13px;
-    margin-left: 204px;
-    width: 381px;
-    height: 43px;
-    margin-bottom: 96px;
-}
-.searchpartnerdiv1{margin-left: 195px;}
-.searchpartnerdiv2{margin-left: 135px;}
-.searchpartnerdiv3{margin-left: 180px;}
-.searchpartnerdiv4{margin-left: 178px;}
-.searchpartnerdiv5{margin-left: 148px;}
-.searchpartnerdiv6{margin-left: 127px;}
-.searchpartnerdiv7{margin-left: 164px;}
-.searchpartnerdiv8{margin-left: 111px;}
-.searchpartnerdiv9{margin-left: 121px;}
-.searchpartnerdiv10{margin-left: 128px;}
-.searchpartnerdiv11{margin-left: 141px;}
-.searchpartnerdiv12{margin-left: 156px;}
-.hidesec .innerbox .modal-content .yesbtn{
-  width: 110px;
-    height: 30px;
-    border-radius: 13px
-}
-.hidesec .innerbox .modal-content .nobtn{
-  width: 110px;
-    height: 30px;
-    border-radius: 13px;
-    margin-left: 46px;
-}
-/* .hidesec .innerbox .modal1{
-  display: block;
-  margin-left: 30px;
-  margin-top: 60px;
-} */
-.editpwdpart .blk2{
-  position: absolute;
-  margin-left: 47px;
-  font-size: 15px;
-}
-
-.editpwdpart .lineboxhide{
-  
-  margin-left: 250px;
-}
-.helpsec .linebox{
-  margin-left: 75px;
-    border-radius: 18px;
-    border: 1px solid white;
-    border-style: solid;
-    border-width: thin;
-    margin-top: 75px;
-
-}
-.bigbtn{
-  background-color: green;
-    margin-left: 30%;
-    color: white;
-    width: 35%;
-       height: 3%;
-    border: none;
-    border-radius: 9px;
-    font-weight: bolder;
-}
-@media (min-width:900px) and (max-width:1500px){
-  .modal-title{
-      width:127px;
-      font-weight: 600;
-       margin-right: -4rem!important;
-  }
-  .px-5{
-      padding-left: -0.75rem!important;
-  }
-  .editpwdpart .sp{
-    margin-left:17px;
-  } 
-  
-
-}
-@media (min-width:300px) and (max-width: 900px) {
-  .searchpartnerdiv1{margin-left: 74px;}
-.searchpartnerdiv2{margin-left: 23px;}
-.searchpartnerdiv3{margin-left: 180px;}
-.searchpartnerdiv4{margin-left: 178px;}
-.searchpartnerdiv5{margin-left: 148px;}
-.searchpartnerdiv6{margin-left: 127px;}
-.searchpartnerdiv7{margin-left: 164px;}
-.searchpartnerdiv8{margin-left: 111px;}
-.searchpartnerdiv9{margin-left: 121px;}
-.searchpartnerdiv10{margin-left: 128px;}
-.searchpartnerdiv11{margin-left: 141px;}
-.searchpartnerdiv12{margin-left: 156px;}
-  .searchsec .innerbox .btn{
-    margin-left: 83px;
-  
-    margin-top: 62px;
-;
-    width: 115px;
-  }
-  .innerdivpartner{
-    margin-left:0px;
-  }
-  .searchsec .innerbox .searchbtn{
-    margin-left: 16px;
-    width: 300px;
-    margin-bottom: 35px;
-     }
-  .searchsec .innerbox .h2partner1{
-    margin-left: 60px;
-  }
-  .searchsec .form-inline .form-group{
-    display: flex;
-  }
-  .blurleft{
-    text-align: center;
-    float: center;
-  } 
-  .rightbg{
-    height: unset;
-  }
-  .mng{
-    display: none;
-  }
-.sidebar{
-  text-align: center;
-  float: center;
-} 
-.boximg{
-  height: 257px;
-  border-radius: 15.497406px;
-}
-.btns{
-  height:30px;
-  width: 140px;
-}
-.btn{
-  height:30px;
-}
-.sidebar {
-  height: auto;
-  position: relative;
-}
-div.content {padding-right:0px;padding-left:0px;}
-.loremhide{
-  font-family: 'Poppins';
-font-style: normal;
-font-size: 5px;
-line-height: 7px;
-  }
-.h2hide{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 36px;
-align-content: center;
-}
-/* .lineboxhide{
-  margin: left 50px;
-} */
-.submit{
-  font-size:12px;
-  width:145px;
-}
-.congrats{
-  font-size: 8.11px;
-  line-height: 12px;
-}
-.radio{
-  height:6px; width:6px;
-}
-.radiolbl{
-  font-size:6px;
-}
-.lastbtn{
-  font-size: 12px;
-  height:21px;
-  font-size: 12px;
-  height: 23px;
-  margin-left: 57px;
-  width: 142px;
-
-}
-.lbl{
-  font-size: 11px;
-}
-.helpsec .innerbox .linebox{
-  margin-left: 36px;
-  margin-top: 65px;
-}
-.notisec .noti .notiimg1{
-  margin-top:12px;
-    height: 107px;
-    width: 91px;
-    border-radius: 101px;
-    margin-left: -15px;
-}
-.searchsec .innerbox .lineboxhide{
-  margin-left: 50px;
-}
-.hidesec .innerbox{
-  margin-left:30px;
-}
-.hidesec .innerbox .lineboxhide{
-  margin-left: 77px;
-}
-.hidesec .innerbox .loremhide{
-  font-size:10px;
-  margin-left: 40px;
-  line-height: 12px;
-}
-.hidesec .innerbox .h2hide{
-  font-size:12px;
-}
-.hidesec .innerbox .btn{
-  height: 32px;
-background: #276678;
-border-radius: 14px;
-
-margin-left: 45px;
-
-}
-.hidesec .innerbox .modal-content{
-  width: 310px;
-  height: 210px;
-}
-.hidesec .innerbox .modal-content .modal-footer .yesbtn{
-  height: 29px;
-  margin-left: 0px;
-  width: 101px;
-   border-radius: 14px;
-}
-.notisec .innerbox .btn1{
-
-  width: 96px;
-    height: 31px;
-    margin-left: 48px;
-
-      width: 94px;
-    height: 35px;
-    margin-left: 56px;
-    margin-top: 0px;
-
-}
-.notisec .innerbox .btn{
-  width: 96px;
-    height: 31px;
-    margin-left: 148px;
-}
-.notisec .innerbox .h1noti1{
-  margin-left: 57px;
-  font-size: 20px;
-}
-.notisec .innerbox .h1noti{
-  line-height: 15px;
-  margin-left: 57px;
-  font-size: 10px;
-}
-.notisec .innerbox .ha{
-  left: 257px;
-    font-size: 9px;
-}
-
-.notisec .noti{
-  height:130px;
-  margin-left: 17px;
-}
-.notisec .innerbox .ha1{
-  left: 127px;
-    margin-top: 8px;
-    font-size: 9px;
-
-   
-}
-.notisec .noti{
-  height:130px;
-  margin-left: 2px;
-
-}
-.notisec .innerbox .lore{
-  
-}
-
-.editpwdpart .lineboxhide{
-height: 33px;
-    margin-left: 89px;
-    width: 112px;
-}
-.editpwdpart .innerbox .lineboxhide{
-
-    text-align: center;
-    line-height: 23px;
-    font-size: 9px;
-    height: 30px;
-    width: 171px;
-    margin-left: 83px;
-}
-.editpwdpart .innerbox .blk2{
-  margin-left:20px;
-}
-.editpwdpart .innerbox .pswtype{
-  width: 270px;
-}
-.editpwdpart .spl{
-  margin-left:60px;
-} 
-.deleteprosec .lineboxhide{
-  margin-left: 65px;
-height: 28px;
-}
-.btns1{
-  height: 24px;
-    width: 105px;
-    font-size: 88%;
-    font-weight: bolder;
-}
-.h2partner{
-  font-size: 126%;
-}
-}
-
-
-@media (min-width: 600px)  {
-.camera{
-  display: none;
-}
-
-}
-
-
-    
-/* ajin change password part */
-.pswtype{
-  height: 35px;
-  width: 235px;
-  border-radius: 8px;
-}
-@media (min-width: 992px){
-   /* .col-lg-6 {
-   flex: 0 0 50%;
-   max-width: 32%;
-} */
-.psw{
- margin-left:105px;
-}
-
-.editpwdpart .blk{
- margin-top: 115px;
-    margin-left: 104px;
-}
-    
-.blk{
- margin-top: 100px;
- 
- margin-left: 105px;
-
-
-}   
-   
-.pswtype{
-   border-radius: 8px;
-}
-}
-@media (min-width: 992px){
-    .col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 32%;
-}
-.psw{
-  margin-left:105px;
-}
-.blk{
-  margin-top: 100px;
-  
-  margin-left: 105px;
-
-
-  
-}
-
-}
-
-
