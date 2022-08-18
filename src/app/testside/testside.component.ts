@@ -16,6 +16,8 @@ export class TestsideComponent implements OnInit{
    // editinner:boolean=true
   
   // sidebar
+  visiblesmallheader:boolean=true
+  visiblesmallfooter:boolean=true
   sidenav:boolean=true
   editinner:boolean=false
   visibleeditprofilediv:boolean=false
@@ -84,7 +86,8 @@ mangphoto:boolean=false
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
     this.sidenav = false;
- 
+    this.visiblesmallheader=true
+    this.visiblesmallfooter=true
    } 
     this.visisblesearch=false
     this.partner=false
@@ -111,6 +114,7 @@ mangphoto:boolean=false
     this.editpwdpart=false
     this.visibleeditprofilediv=true
     this.visiblenotification=false
+    this.sidenav2=false
     this.smallhome=false
   }
   hideprofilebtn()
@@ -118,7 +122,8 @@ mangphoto:boolean=false
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
       this.sidenav=false
-
+      this.visiblesmallheader=true
+      this.visiblesmallfooter=true
     }
     this.visiblehome2=false
     this.partner=false
@@ -135,7 +140,8 @@ mangphoto:boolean=false
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <600) {
       this.sidenav=false
-     
+      this.visiblesmallheader=true
+      this.visiblesmallfooter=true
     }
     this.visisblesearch=false
     this.visiblehome2=false
@@ -150,16 +156,22 @@ mangphoto:boolean=false
   }
   editpwd()
   {
+    this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    this.visiblesmallheader=true
+    this.visiblesmallfooter=true
+    }
     this.visisblesearch=false
     this.visiblehome2=false
     this.partner=false
     this.hideprofilepart=false
     this.visibleeditprofilediv=false
     this.deleteprofilepart=false
-    this.editpwdpart=true
     this.visiblenotification=false
     this.smallhome=false
-
+    this.sidenav2=false
+    this.editpwdpart=true
   }
 
   // end side bar
@@ -171,10 +183,10 @@ mangphoto:boolean=false
     this.deleteprofilepart=false
     this.editinner=false
     this.visisblesearch=false
-    this.visiblehome2=true
     this.visiblenotification=false
     this.visibleeditprofilediv=false
     this.smallhome=false
+    this.visiblehome2=true
   }
   // edit profile
   personalinfo()
@@ -346,7 +358,8 @@ partnerpreference()
   this.innerWidth = window.innerWidth
     if (this.innerWidth > 319 &&  this.innerWidth < 721) {
     this.sidenav = false
-  
+    this.visiblesmallheader=true
+    this.visiblesmallfooter=true
     }
     this.visiblehome2=false
     this.deleteprofilepart=false
@@ -366,7 +379,8 @@ managephotos()
   this.innerWidth = window.innerWidth
     if (this.innerWidth > 319 &&  this.innerWidth < 721) {
     this.sidenav = false
-  
+    this.visiblesmallheader=true
+    this.visiblesmallfooter=true
     }
     this.visiblehome2=false
     this.deleteprofilepart=false
@@ -387,23 +401,27 @@ searchact()
   this.innerWidth = window.innerWidth
     if (this.innerWidth > 319 &&  this.innerWidth < 721) {
     this.sidenav = false
+    this.visiblesmallheader=true
+    this.visiblesmallfooter=true
     }
   this.hideprofilepart=false
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
   // this.editinner=false
-
   this.visiblehelp=false
   this.visiblenotification=false
-
   this.smallhome=false
-
   this.visisblesearch=true
-
 }
 exploreact()
 {
+  this.innerWidth = window.innerWidth
+    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+    this.sidenav = false
+    this.visiblesmallheader=true
+    this.visiblesmallfooter=true
+    }
   this.visibleeditprofilediv=false
   this.hideprofilepart=false
   this.deleteprofilepart=false
@@ -444,6 +462,12 @@ this.visibleboth=true
 // help
 helpact()
 {
+  this.innerWidth = window.innerWidth
+  if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+  this.sidenav = false
+  this.visiblesmallheader=true
+  this.visiblesmallfooter=true
+  }
   this.visibleeditprofilediv=false
   this.hideprofilepart=false
   this.deleteprofilepart=false
@@ -462,6 +486,12 @@ helpact()
 // notification
 notification()
 {
+  this.innerWidth = window.innerWidth
+  if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+  this.sidenav = false
+  this.visiblesmallheader=true
+  this.visiblesmallfooter=true
+  }
   this.visibleexplore=false
   this.visibleeditprofilediv=false
   this.hideprofilepart=false
@@ -473,7 +503,8 @@ notification()
   this.visiblereceive=false
   this.visibleboth=false
   this.visisblesearch=false
-  this.partner=false   
+  this.partner=false  
+  this.sidenav2=false 
   this.visiblenotification=true
   this.smallhome=false
 }
@@ -507,6 +538,8 @@ enableDisableRule() {
       this.visiblereceive=false
       this.visibleboth=false
       this.smallhome=false
+      this.visiblesmallheader=false
+      this.visiblesmallfooter=false
       this.sidenav2=true
  }
  
