@@ -1,5 +1,5 @@
-<div class="container-fluid mx-0 px-0">
-    <div class="row mx-0 px-0">
+<div class="container-fluid ">
+    <div class="row ">
         <div class="col-lg-12 col-sm-12 d-lg-flex mx-lg-0 my-lg-0 px-lg-0 px-0 mx-0">
         <div class="col-lg-3 col-md-12 sidenave" *ngIf="sidenav">
             <div class="row ">
@@ -9,20 +9,20 @@
             <div class="blurleft1 col-lg-12 col-sm-12 px-0 py-0">
                 <div class="blurleft2">
                     <div class="col-lg-8 col-sm-12 px-lg-5 px-5">
-                        <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
-                        <button class="sidebtns sidebtn2 my-3" (click)="notification()"><img src="assets/images/Group 765.png" ></button>
-                        
-                        <button class="sidebtns sidebtn3 my-3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
-                        <button class="sidebtns sidebtn4 my-3" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
-                        <button class="sidebtns sidebtn5 my-3" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
-                        <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button>
+                        <button class="sidebtns sidebtn1 my-3" (click)="lefteditprofilebtn()"><img src="assets/images/edit.png" class="imgside"><label class="lblside">Edit Profile</label></button>
+                        <button class="sidebtns sidebtn2 my-3" (click)="notification()"><img src="assets/images/notification.png" class="imgside"><label class="lblside">Notification</label></button>
+                        <button class="sidebtns sidebtn3 my-3" (click)="editpwd()"><img src="assets/images/password.png"  class="imgside"><label class="lblside">Edit Password</label></button>
+                        <button class="sidebtns sidebtn4 my-3" (click)="hideprofilebtn()"><img src="assets/images/hide.png"  class="imgside"><label class="lblside">Hide Profile</label></button>
+                        <button class="sidebtns sidebtn5 my-3" (click)="deleteprofilebtn()"><img src="assets/images/delete.png"  class="imgside"><label class="lblside">Delete Profile</label></button>
+                        <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" class="imgside" style="margin-right:0px"><label class="lblside">Logout</label></button>
                         <div>
                             <div class="pstyle">Download  App For Android and IOS</div>
-                            <img src="assets/images/Mask Group.png" id="imgapp">
-                            <img src="assets/images/Mask Group (1).png" id="imgapp"><br><br>
-                            <p style="color:rgba(3, 80, 102, 1); margin-left:90px">&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
-                           <span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1); margin-left:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="assets/images/Mask Group.png" id="imgapp" style="margin-top: 30px; margin-left:30px">
+                            <img src="assets/images/Mask Group (1).png" id="imgapp"style="margin-top: 10px; margin-left:30px"><br><br>
+                            <p style="color:white; margin-left:45px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
+                           <span class="d-lg-flex">
+                                
+                                <img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1);margin-left:35px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <img src="assets/images/Group (1).png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <img src="assets/images/Group (2).png" style="background-color:rgba(3, 80, 102, 1)">
                            </span>          
@@ -40,9 +40,11 @@
                 <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
+                      <a><img src="../../assets/images/matrimony.jpg" class="logo"></a>
+                    </li>
+                    <li>
                       <a class="nav-link navbar-brand" (click)="home2()">
-                        <img src="../../assets/images/home.png" class="homeicon">
+                        <img src="../../assets/images/home.png" class="homeicon"style="margin-top:-4px">
                         <label class=navlabel >Home </label>
                        <span class="sr-only">(current)</span> 
                       </a>
@@ -55,245 +57,201 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link navbar-brand" (click)="exploreact()">
-                        <img src="../../assets/images/explore.png" class="homeicon">
+                        <img src="../../assets/images/explore.png" class="homeicon"style="margin-top:-4px">
                         <label class="navlabel" >Explore</label>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link navbar-brand navlabel">
+                      <a class="nav-link navbar-brand navlabel" (click)="chatact()"style="margin-top:-4px">
                         <img src="assets/images/chat.png" class="homeicon">
                         <label class="navlabel">Chat </label>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link navbar-brand navlabel" (click)="helpact()">
+                      <a class="nav-link navbar-brand navlabel" (click)="helpact()"style="margin-top:-4px">
                         <img src="assets/images/help.png" class="homeicon">
                         <label class="navlabel">Help </label>
                       </a>
                     </li>
                      </ul>
                 </div>
+            </nav>
+              <nav class="navbar navbar-light  row mx-0 px-0 headercss css1" *ngIf="visiblesmallheader">
+                <div class="col-3">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="fnvisiblesidenav()" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="col-6">
+                    <a class="navbar-brand" style="color:white ;" >
+                  
+                        LOGO
+                      </a>
+                </div>
+               <div class="col-3">
+                <button style=" background-image: url(../../assets/images/seach5.png);"class="btnsise" (click)="searchact()"></button>
+                <button style=" background-image: url(../../assets/images/qn7.png);height: 25px;
+                margin-left: 7px;
+                width: 22px;"class="btnsise" (click)="helpact()"></button>
+               </div>
               </nav>
+              
 
 
   
 
 <!-- entire edit profile -->
 
-        <!-- editprofile -->   
-        <div *ngIf="visibleeditprofilediv"> 
-        <div class="col-lg-12 col-sm-12 my-lg-0 my-2 mx-0" style="padding-right: 0px;padding-left: 0px;">
-            
-                <div  class="rightbg col-lg-12" style="background-image:url(assets/images/abt.png);">
-                        <div class="mx-5 my-lg-5 my-2 col-lg-10">
-                            <button class="btns mx-lg-4 mx-1" (click)="lefteditprofilebtn()">Edit profile</button>
-                            <button class="btns mx-lg-3" (click)="partnerpreference()">Partner Preference</button>
-                            <button class="btns mng mx-lg-4">Manage photos</button>
-                        </div>                   
-                    <div class="col-lg-12 col-sm-12 my-lg-5 my-1 mx-0 px-0">
-                        
-                        <div class="linebox col-lg-10 col-sm-10  px-lg-2 px-0 my-2 mx-5">
-                          
-                            <div class="d-lg-flex">
-                                <div class="col-lg-4 col-sm-12 py-lg-2 py-2 my-lg-4 mx-lg-0 px-lg-0 px-0 mx-0 my-0" >
-                                    <img class="boximg col-lg-12 mx-lg-0 mx-sm-1 px-2" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
-                                    <img class="camera col-sm-2" src="assets/images/camera.png" alt="camera">
-                                </div>
-                                <div  >
-                                    <div >
-                                        <div class="col-lg-12 px-lg-5" ><h4 class="mx-lg-5 px-lg-5 h4text">Name</h4>
-                                        <hr>
-                                      </div>
-                                        <div class="d-lg-flex" style="margin-left: 25%;color: white;">
-                                            <label for="">ID3456</label>
-                                            <div class="col-lg-3 "><span class="verticalline mx-lg-5 px-lg-5"></span></div>
-                                            <label for="">25 yrs</label>
-                                            <div class="col-lg-3 "><span class="verticalline mx-lg-5 px-lg-5"></span></div>
-                                            <label for="">156cm</label>
-                                        </div>
-                                        <div style="text-align: center; color:white">
-                                            <span class="col-lg-4">calicut</span>,<span class="col-lg-4">kerala</span>,<span class="col-lg-4">India</span>
-                                        
-                                          </div>
-                                        
-                                        <!--    form   -->
-                                             <br>
+<div *ngIf="visibleeditprofilediv"> 
+  <div class="col-lg-12 col-sm-12 my-lg-0  mx-0" style="padding-right: 0px;padding-left: 0px;">
+      
+          <div  class="rightbg col-lg-12" style="background-image:url(assets/images/abt.png);">
+                  <div class="mx-lg-5 my-lg-5 my-2 col-lg-10 widthvar">
+                      <button class="btns mx-lg-4 mx-1" (click)="lefteditprofilebtn()">Edit profile</button>
+                      <button class="btns mx-lg-3" (click)="partnerpreference()">Partner Preference</button>
+                      <button class="btns mng mx-lg-4" (click)="managephotos()">Manage photos</button>
+                  </div>                   
+              <div class="col-lg-12 col-sm-12 my-lg-5 my-1 mx-0 px-0">
+                  
+                  <div class="linebox col-lg-10 col-sm-10  px-lg-2 px-0 my-2 mx-lg-5" style="margin-left: 0;">
+                    
+                      <div class="d-lg-flex">
+                          <div class="col-lg-4 col-sm-12 py-lg-2 py-2 my-lg-4 mx-lg-0 px-lg-0 px-0 mx-0 my-0" >
+                              <img class="boximg col-lg-12 mx-lg-0 mx-sm-1 px-2" src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
+                              <img class="camera col-sm-2" src="assets/images/camera.png" alt="camera" (click)="managephotos()">
+                          </div>
+                          <div class="editdiv" >
+                              <div >
+                                  <div class="col-lg-12 px-lg-5" ><h4 class="mx-lg-5 px-lg-5 h4text">Name</h4>
+                                  <hr>
 
-                                            <div class="col-lg-12  lb text-white d-flex">
-                                                <label class="col-lg-6" for="">Marital Status</label>
-                                                <input style="background: transparent; color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
-                                               
-                                            </div>
-                                            <div class="col-lg-12  lb text-white d-flex">
-                                              <label class="col-lg-6" for="">Religion</label>
-                                              <input style="background: transparent;color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
-                                             
-                                          </div>
-                                          <div class="col-lg-12  lb text-white d-flex">
-                                            <label class="col-lg-6" for="">Education</label>
-                                            <input style="background: transparent;color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
-                                           
-                                        </div>
-                                        <div class="col-lg-12  lb text-white d-flex">
-                                          <label class="col-lg-6" for="">Job profession</label>
-                                          <input style="background: transparent;color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
+
+                                </div>
+                                  <div class="d-lg-flex" style="margin-left: 25%;color: white;">
+                                      <label for="">ID3456</label>
+                                      <div class="col-lg-3 "><span class="verticalline mx-lg-5 px-lg-5"></span></div>
+                                      <label for="">25 yrs</label>
+                                      <div class="col-lg-3 "><span class="verticalline mx-lg-5 px-lg-5"></span></div>
+                                      <label for="">156cm</label>
+                                  </div>
+                                  <div style="text-align: center; color:white">
+                                      <span class="col-lg-4">calicut</span>,<span class="col-lg-4">kerala</span>,<span class="col-lg-4">India</span>
+                                  
+                                    </div>
+                                  
+                                  <!--    form   -->
+                                       <br>
+
+                                      <div class="col-lg-12  lb text-white d-flex">
+                                          <label class="col-lg-6" for="">Marital Status</label>
+                                          <input style="background: transparent; color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
                                          
                                       </div>
-                                           
-                                        
+                                      <div class="col-lg-12  lb text-white d-flex">
+                                        <label class="col-lg-6" for="">Religion</label>
+                                        <input style="background: transparent;color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
+                                       
                                     </div>
+                                    <div class="col-lg-12  lb text-white d-flex">
+                                      <label class="col-lg-6" for="">Education</label>
+                                      <input style="background: transparent;color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
+                                     
+                                  </div>
+                                  <div class="col-lg-12  lb text-white d-flex">
+                                    <label class="col-lg-6" for="">Job profession</label>
+                                    <input style="background: transparent;color: #f1f1f1;" class="col-lg-6" type="text" class="formtypes" id="maritalstatus" placeholder="" name="maritalstatus">
+                                   
                                 </div>
-                                <div class="innerbox col-sm-12 my-0 d-md-block d-lg-none">
-                                   <div class="col-md-12">Name</div>
-                                   <div class="d-flex flex-row col-md-12">
-                                    <div>21 yrs</div>
-                                   <div  class="mx-2">Male</div>
-                                   <div class="mx-2">Islam</div>
-                                   </div>
-                                   <div class="d-flex flex-row col-md-12">
-                                    <div>calicut</div>
-                                   <div class="mx-2">Kerala</div>
-                                   <div class="mx-2">India</div>
-                                   </div>
-                                   <div class="d-flex flex-row col-md-12">
-                                    <div>Married</div>
-                                   <div class="mx-1">High/Secondary</div>
-                                   <div>Not working</div>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-       
-     
-        <div class="col-lg-12 col-sm-12 my-2">
-            <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
-            <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-            <label for="">Personal Information</label>
-            <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=personalinfo()>  {{visiblepersonal?">":"v"}}   </button>
-           
-            <div *ngIf="visiblepersonal"> 
-        
-                <div class=" my-2 col-lg-12 col-sm-12 px-2">
-                
-                  <div class="innerdiv">
-                     <form action="/action_page.php">
-                     <div class="col-lg-12 col-sm-12 d-block my-2">
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
-                             <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">age</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marital status</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">religion</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Nationality</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Language Spoken</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">About me</label>
-                             <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                             <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
-                         </div>
-                </div>
-             </form>
-                </div>
-              </div>
-             
-             </div>
-
-
-            </div>
-            </div>
-        
-            <div class="col-lg-12 col-sm-12 my-2">
-              <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
-              <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-              <label for="">Physical Information</label>
-              <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=physicalinfo()>  {{visiblephysical?">":"v"}}   </button>
-             
-              <div  *ngIf="visiblephysical"> 
-          
-                  <div class=" my-2 col-lg-12 col-sm-12 px-2">
-                  
-                    <div class="innerdiv">
-                       <form action="/action_page.php">
-                       <div class="col-lg-12 col-sm-12 d-block my-2">
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">height</label>
-                               <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">weight</label>
-                               <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Physical status</label>
-                               <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Body type</label>
-                               <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Appearence</label>
-                               <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Complexion</label>
-                               <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Blood group</label>
-                               <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
-                           </div>
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Eye colour</label>
-                            <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
-                        </div>
-                        <div class="d-flex col-lg-12 col-sm-12 px-0">
-                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Hair colour</label>
-                          <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
+                                     
+                                  
+                              </div>
+                          </div>
+                          <div class=" shadowdiv col-sm-12  d-md-block d-lg-none mx-2" style="margin-top: -125px;height: 104px;
+                              width: 94%;" >
+                             <div class="col-md-12">Name</div>
+                             <div class="d-flex flex-row ">
+                              <div>21 yrs</div>
+                             <div  class="mx-2">Male</div>
+                             <div class="mx-2">Islam</div>
+                             </div>
+                             <div class="d-flex flex-row ">
+                              <div>calicut</div>
+                             <div class="mx-2">Kerala</div>
+                             <div class="mx-2">India</div>
+                             </div>
+                             <div class="d-flex flex-row ">
+                              <div>Married</div>
+                             <div class="mx-1">High/Secondary</div>
+                             <div>Not working</div>
+                             </div>
+                          </div>
                       </div>
-                      <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                        <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
-                    </div>
-                               
                   </div>
-               </form>
-                  </div>
-                </div>
-               
-               </div>
-  
-  
               </div>
-              </div>
-
  
-      
+
+  <div class="col-lg-12 col-sm-12 my-2">
+      <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+      <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+      <label for="">Personal Information</label>
+      <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=personalinfo()>  {{visiblepersonal?">":"v"}}   </button>
+     
+      <div *ngIf="visiblepersonal"> 
+  
+          <div class=" my-2 col-lg-12 col-sm-12 ">
+          
+            <div class="innerdiv">
+               <form action="/action_page.php">
+               <div class="col-lg-12 col-sm-12 d-block my-2">
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Name</label>
+                       <label class="px-0">:</label><input type="text" class=" personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">age</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marital status</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">religion</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Nationality</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Language Spoken</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">About me</label>
+                       <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                       <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                   </div>
+          </div>
+       </form>
+          </div>
+        </div>
+       
+       </div>
+
+
+      </div>
+      </div>
+  
       <div class="col-lg-12 col-sm-12 my-2">
         <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
         <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-        <label for="">Education & Profession</label>
-        <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=educationinfo()>  {{education?">":"v"}}   </button>
+        <label for="">Physical Information</label>
+        <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=physicalinfo()>  {{visiblephysical?">":"v"}}   </button>
        
-        <div  *ngIf="visibleeducation"> 
+        <div  *ngIf="visiblephysical"> 
     
             <div class=" my-2 col-lg-12 col-sm-12 px-2">
             
@@ -301,39 +259,39 @@
                  <form action="/action_page.php">
                  <div class="col-lg-12 col-sm-12 d-block my-2">
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Highest Education</label>
-                         <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">height</label>
+                         <label class="px-0">:</label><input type="text" class=" personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Education Detail</label>
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">weight</label>
                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marital status</label>
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Physical status</label>
                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Education description</label>
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Body type</label>
                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Institution</label>
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Appearence</label>
                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Profession</label>
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Complexion</label>
                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Profession Type</label>
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Blood group</label>
                          <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
                      </div>
                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Profession Detail</label>
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Eye colour</label>
                       <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
                   </div>
                   <div class="d-flex col-lg-12 col-sm-12 px-0">
-                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Annual Income</label>
+                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Hair colour</label>
                     <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
                 </div>
                 <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
@@ -351,15 +309,15 @@
         </div>
         </div>
 
- 
 
- <div class="col-lg-12 col-sm-12 my-2">
+
+<div class="col-lg-12 col-sm-12 my-2">
   <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
   <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-  <label for="">Family Details</label>
-  <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=familyinfo()>  {{family?">":"v"}}   </button>
+  <label for="">Education & Profession</label>
+  <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=educationinfo()>  {{education?">":"v"}}   </button>
  
-  <div *ngIf="visiblefamily" > 
+  <div  *ngIf="visibleeducation"> 
 
       <div class=" my-2 col-lg-12 col-sm-12 px-2">
       
@@ -367,112 +325,45 @@
            <form action="/action_page.php">
            <div class="col-lg-12 col-sm-12 d-block my-2">
                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Type</label>
-                   <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Highest Education</label>
+                   <label class="px-0">:</label><input type="text" class=" personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
                </div>
                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Financial Status</label>
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Education Detail</label>
                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                </div>
                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                  
-                   <div class="d-flex col-lg-12 col-sm-12 px-0">
-                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father</label>
-                    <label class="px-0">:</label>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Alive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">late</label>
-                      </div>
-                </div>
-               </div>
-               <div class="d-flex col-lg-12 col-sm-12 px-0">
-                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father Name</label>
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marital status</label>
                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                </div>
                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father Occupation</label>
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Education description</label>
                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                </div>
                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father</label>
-                <label class="px-0">:</label>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Alive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">late</label>
-                  </div>
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Institution</label>
+                   <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+               </div>
+               <div class="d-flex col-lg-12 col-sm-12 px-0">
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Profession</label>
+                   <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+               </div>
+               <div class="d-flex col-lg-12 col-sm-12 px-0">
+                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Profession Type</label>
+                   <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
+               </div>
+               <div class="d-flex col-lg-12 col-sm-12 px-0">
+                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Profession Detail</label>
+                <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
             </div>
             <div class="d-flex col-lg-12 col-sm-12 px-0">
-              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mother Name</label>
-              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Annual Income</label>
+              <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
           </div>
-          <div class="d-flex col-lg-12 col-sm-12 px-0">
-            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mother Occupation</label>
-            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+          <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+            <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
         </div>
-        <div class="d-flex col-lg-12 col-sm-12 px-0">
-          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Name</label>
-          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-      </div>
-      <div class="d-flex col-lg-12 col-sm-12 px-0">
-        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">House Name</label>
-        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-    </div>
-    <div class="d-flex col-lg-12 col-sm-12 px-0">
-      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Brothers</label>
-      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-  </div>
-  <div class="d-flex col-lg-12 col-sm-12 px-0">
-    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Sisters</label>
-    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Married Brothers</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Married Sisters</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father Family Name</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mother Family Name</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Home Type</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Religious Views</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Values</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Living Situation</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-<div class="d-flex col-lg-12 col-sm-12 px-0">
-  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Description</label>
-  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-</div>
-
-               <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                   <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
-               </div>
+                   
       </div>
    </form>
       </div>
@@ -484,110 +375,400 @@
   </div>
   </div>
 
+
+
+<div class="col-lg-12 col-sm-12 my-2">
+<div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+<!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+<label for="">Family Details</label>
+<button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=familyinfo()>  {{family?">":"v"}}   </button>
+
+<div *ngIf="visiblefamily" > 
+
+<div class=" my-2 col-lg-12 col-sm-12 px-2">
+
+  <div class="innerdiv">
+     <form action="/action_page.php">
+     <div class="col-lg-12 col-sm-12 d-block my-2">
+         <div class="d-flex col-lg-12 col-sm-12 px-0">
+             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Type</label>
+             <label class="px-0">:</label><input type="text" class=" personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+         </div>
+         <div class="d-flex col-lg-12 col-sm-12 px-0">
+             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Financial Status</label>
+             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+         </div>
+         <div class="d-flex col-lg-12 col-sm-12 px-0">
+            
+             <div class="d-flex col-lg-12 col-sm-12 px-0">
+              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father</label>
+              <label class="px-0">:</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Alive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">late</label>
+                </div>
+          </div>
+         </div>
+         <div class="d-flex col-lg-12 col-sm-12 px-0">
+             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father Name</label>
+             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+         </div>
+         <div class="d-flex col-lg-12 col-sm-12 px-0">
+             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father Occupation</label>
+             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+         </div>
+         <div class="d-flex col-lg-12 col-sm-12 px-0">
+          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father</label>
+          <label class="px-0">:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Alive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">late</label>
+            </div>
+      </div>
+      <div class="d-flex col-lg-12 col-sm-12 px-0">
+        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mother Name</label>
+        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+    </div>
+    <div class="d-flex col-lg-12 col-sm-12 px-0">
+      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mother Occupation</label>
+      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+  </div>
+  <div class="d-flex col-lg-12 col-sm-12 px-0">
+    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Name</label>
+    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">House Name</label>
+  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Brothers</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Sisters</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Married Brothers</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Number of Married Sisters</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Father Family Name</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mother Family Name</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Home Type</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Religious Views</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Values</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Living Situation</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+<div class="d-flex col-lg-12 col-sm-12 px-0">
+<label for="name"class="col-lg-6 col-sm-6 px-lg-5">Family Description</label>
+<label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+</div>
+
+         <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+             <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+         </div>
+</div>
+</form>
+</div>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+  <div class="col-lg-12 col-sm-12 my-2">
+    <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+    <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+    <label for="">Religious Informations</label>
+    <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=relegiousinfo()>  {{relegious?">":"v"}}   </button>
+   
+    <div *ngIf="visiblerelegious"  > 
+  
+        <div class=" my-2 col-lg-12 col-sm-12 px-2">
+        
+          <div class="innerdiv">
+             <form action="/action_page.php">
+             <div class="col-lg-12 col-sm-12 d-block my-2">
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Relegion</label>
+                     <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+                 </div>
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">class</label>
+                     <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                 </div>
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                 
+                 </div>
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Relegiousness</label>
+                     <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                 </div>
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mahallu Name</label>
+                     <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                 </div>
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Perform Namaz</label>
+                  <label class="px-0">:</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">no</label>
+                    </div>
+              </div>
+              <div class="d-flex col-lg-12 col-sm-12 px-0">
+                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Read Quran</label>
+                <label class="px-0">:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+            </div>
+              <div class="d-flex col-lg-12 col-sm-12 px-0">
+                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Madrasa Education</label>
+                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+            </div>
+            <div class="d-flex col-lg-12 col-sm-12 px-0">
+              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Muslim by Birth</label>
+              <label class="px-0">:</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+          </div>
+          <div class="d-flex col-lg-12 col-sm-12 px-0">
+              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Quran Hafil</label>
+              <label class="px-0">:</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+          </div>
+          <div class="d-flex col-lg-12 col-sm-12 px-0">
+              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Attend Relegious Activities</label>
+              <label class="px-0">:</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+          </div>
+           
+         
+        <div class="d-flex col-lg-12 col-sm-12 px-0">
+          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Language speaks in Home</label>
+          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+      </div>
+     
+  
+                 <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                     <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                 </div>
+        </div>
+     </form>
+        </div>
+      </div>
+     
+     </div>
+  
+  
+    </div>
+    </div>
+
+    <div class="col-lg-12 col-sm-12 my-2">
+      <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+      <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+      <label for="">Contact details</label>
+      <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=contactinfo()>  {{contact?">":"v"}}   </button>
+     
+      <div *ngIf="visiblecontact"> 
+  
+          <div class=" my-2 col-lg-12 col-sm-12 px-2">
+          
+            <div class="innerdiv">
+               <form action="/action_page.php">
+               <div class="col-lg-12 col-sm-12 d-block my-2">
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Primary Mobile Number</label>
+                       <label class="px-0">:</label><input type="text" class=" personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Secondary Mobile Number</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Preferred Mobile Number</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5 contper">Contact person & Relationship</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Email Id</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                       <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Contact Time</label>
+                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                   </div>
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Post Office</label>
+                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                </div>
+                <div class="d-flex col-lg-12 col-sm-12 px-0">
+                  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Pin Code</label>
+                  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+              </div>
+              
+                   <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                       <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                   </div>
+          </div>
+       </form>
+          </div>
+        </div>
+       
+       </div>
+  
+      </div>
+      </div>
+
+      <div class="col-lg-12 col-sm-12 my-2">
+        <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
+        <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
+        <label for="">Location</label>
+        <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=locationinfo()>  {{location?">":"v"}}   </button>
+       
+        <div *ngIf="visiblelocation"> 
+    
+            <div class=" my-2 col-lg-12 col-sm-12 px-2">
+            
+              <div class="innerdiv">
+                 <form action="/action_page.php">
+                 <div class="col-lg-12 col-sm-12 d-block my-2">
+                    
+                 <div class="d-flex col-lg-12 col-sm-12 px-0">
+                         <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Country</label>
+                         <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                     </div>
+                     <div class="d-flex col-lg-12 col-sm-12 px-0">
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">State</label>
+                      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                  </div>
+                  <div class="d-flex col-lg-12 col-sm-12 px-0">
+                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">District</label>
+                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                </div>
+                <div class="d-flex col-lg-12 col-sm-12 px-0">
+                  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">City</label>
+                  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+              </div>
+              <div class="d-flex col-lg-12 col-sm-12 px-0">
+                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Place</label>
+                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+            </div>
+            <div class="d-flex col-lg-12 col-sm-12 px-0">
+              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Address</label>
+              <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
+          </div>
+                     
+                     <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
+                         <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
+                     </div>
+            </div>
+         </form>
+            </div>
+          </div>
+         
+         </div>
+    
+        </div>
+        </div>
+
         <div class="col-lg-12 col-sm-12 my-2">
           <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
           <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-          <label for="">Religious Informations</label>
-          <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=relegiousinfo()>  {{relegious?">":"v"}}   </button>
+          <label for="">Marriage Plan</label>
+          <button style="background-color: transparent;border: none;color: #f1f1f1;"   (click)=mrgplaninfo() >  {{mrgplan?">":"v"}} </button>
          
-          <div *ngIf="visiblerelegious"  > 
-        
+          <div *ngIf="visiblemrgplan"> 
+      
               <div class=" my-2 col-lg-12 col-sm-12 px-2">
               
                 <div class="innerdiv">
                    <form action="/action_page.php">
                    <div class="col-lg-12 col-sm-12 d-block my-2">
-                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                           <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Relegion</label>
-                           <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
-                       </div>
-                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                           <label for="name"class="col-lg-6 col-sm-6 px-lg-5">class</label>
+                      
+                   <div class="d-flex col-lg-12 col-sm-12 px-0">
+                           <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Ready For Relocate</label>
                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                        </div>
                        <div class="d-flex col-lg-12 col-sm-12 px-0">
-                       
-                       </div>
-                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                           <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Relegiousness</label>
-                           <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                       </div>
-                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                           <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Mahallu Name</label>
-                           <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                       </div>
-                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Perform Namaz</label>
-                        <label class="px-0">:</label>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">no</label>
-                          </div>
+                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marriage Plan</label>
+                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                     </div>
                     <div class="d-flex col-lg-12 col-sm-12 px-0">
-                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Read Quran</label>
-                      <label class="px-0">:</label>
-                      <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option1">
-                          <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option2">
-                          <label class="form-check-label" for="inlineRadio2">No</label>
-                      </div>
-                  </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Madrasa Education</label>
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Willing to do Job</label>
                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                   </div>
                   <div class="d-flex col-lg-12 col-sm-12 px-0">
-                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Muslim by Birth</label>
-                    <label class="px-0">:</label>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">No</label>
-                      </div>
+                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Prefer to Stay</label>
+                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                 </div>
-                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Quran Hafil</label>
-                    <label class="px-0">:</label>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">No</label>
-                      </div>
-                </div>
-                <div class="d-flex col-lg-12 col-sm-12 px-0">
-                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Attend Relegious Activities</label>
-                    <label class="px-0">:</label>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">No</label>
-                      </div>
-                </div>
-                 
-               
-              <div class="d-flex col-lg-12 col-sm-12 px-0">
-                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Language speaks in Home</label>
-                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-            </div>
-           
-        
+                
+                       
                        <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
                            <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
                        </div>
@@ -597,57 +778,42 @@
             </div>
            
            </div>
-        
-        
+      
           </div>
           </div>
 
           <div class="col-lg-12 col-sm-12 my-2">
             <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
             <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-            <label for="">Contact details</label>
-            <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=contactinfo()>  {{contact?">":"v"}}   </button>
+            <label for="">Habits</label>
+            <button style="background-color: transparent;border: none;color: #f1f1f1;"   (click)=habitsinfo()  >  {{habits?">":"v"}} </button>
            
-            <div *ngIf="visiblecontact"> 
+            <div *ngIf="visiblehabits"> 
         
                 <div class=" my-2 col-lg-12 col-sm-12 px-2">
                 
                   <div class="innerdiv">
                      <form action="/action_page.php">
                      <div class="col-lg-12 col-sm-12 d-block my-2">
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Primary Mobile Number</label>
-                             <label class="px-0">:</label><input type="text" class="form-control formtypes personaldivinputtypes col-sm-5 " id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Secondary Mobile Number</label>
+                        
+                     <div class="d-flex col-lg-12 col-sm-12 px-0">
+                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Eating</label>
                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                          </div>
                          <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Preferred Mobile Number</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Contact person & Relationship</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Email Id</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                             <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Contact Time</label>
-                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                         </div>
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Post Office</label>
+                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Drinking</label>
                           <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                       </div>
                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Pin Code</label>
+                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Smoking</label>
                         <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                     </div>
-                    
+                    <div class="d-flex col-lg-12 col-sm-12 px-0">
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Prefer to Stay</label>
+                      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+                  </div>
+                  
+                         
                          <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
                              <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
                          </div>
@@ -660,14 +826,14 @@
         
             </div>
             </div>
-
+        
             <div class="col-lg-12 col-sm-12 my-2">
               <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
               <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-              <label for="">Location</label>
-              <button style="background-color: transparent;border: none;color: #f1f1f1;"  (click)=locationinfo()>  {{location?">":"v"}}   </button>
+              <label for="">Hobbies and Interest</label>
+              <button style="background-color: transparent;border: none;color: #f1f1f1;"    (click)=hobbiesinfo()  >  {{hobby?">":"v"}} </button>
              
-              <div *ngIf="visiblelocation"> 
+              <div *ngIf="visiblehobbies"> 
           
                   <div class=" my-2 col-lg-12 col-sm-12 px-2">
                   
@@ -676,29 +842,38 @@
                        <div class="col-lg-12 col-sm-12 d-block my-2">
                           
                        <div class="d-flex col-lg-12 col-sm-12 px-0">
-                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Country</label>
+                               <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Place visited</label>
                                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                            </div>
                            <div class="d-flex col-lg-12 col-sm-12 px-0">
-                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">State</label>
+                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Book</label>
                             <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                         </div>
                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">District</label>
+                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Place</label>
                           <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                       </div>
                       <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">City</label>
+                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite sport</label>
                         <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                     </div>
                     <div class="d-flex col-lg-12 col-sm-12 px-0">
-                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Place</label>
+                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Movie</label>
                       <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                   </div>
                   <div class="d-flex col-lg-12 col-sm-12 px-0">
-                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Address</label>
-                    <label class="px-0">:</label><textarea class="personaldivinputtypes col-sm-5" id="aboutme" placeholder="" name="aboutme"></textarea>
+                    <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Music</label>
+                    <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
                 </div>
+                <div class="d-flex col-lg-12 col-sm-12 px-0">
+                  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Dress sence</label>
+                  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+              </div>
+              <div class="d-flex col-lg-12 col-sm-12 px-0">
+                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Personality</label>
+                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
+            </div>
+                    
                            
                            <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
                                <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
@@ -712,474 +887,293 @@
           
               </div>
               </div>
-
-              <div class="col-lg-12 col-sm-12 my-2">
-                <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
-                <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-                <label for="">Marriage Plan</label>
-                <button style="background-color: transparent;border: none;color: #f1f1f1;"   (click)=mrgplaninfo() >  {{mrgplan?">":"v"}} </button>
-               
-                <div *ngIf="visiblemrgplan"> 
-            
-                    <div class=" my-2 col-lg-12 col-sm-12 px-2">
-                    
-                      <div class="innerdiv">
-                         <form action="/action_page.php">
-                         <div class="col-lg-12 col-sm-12 d-block my-2">
-                            
-                         <div class="d-flex col-lg-12 col-sm-12 px-0">
-                                 <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Ready For Relocate</label>
-                                 <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                             </div>
-                             <div class="d-flex col-lg-12 col-sm-12 px-0">
-                              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Marriage Plan</label>
-                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                          </div>
-                          <div class="d-flex col-lg-12 col-sm-12 px-0">
-                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Willing to do Job</label>
-                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                        </div>
-                        <div class="d-flex col-lg-12 col-sm-12 px-0">
-                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Prefer to Stay</label>
-                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                      </div>
-                      
-                             
-                             <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                                 <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
-                             </div>
-                    </div>
-                 </form>
-                    </div>
-                  </div>
-                 
-                 </div>
-            
-                </div>
-                </div>
-
-                <div class="col-lg-12 col-sm-12 my-2">
-                  <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
-                  <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-                  <label for="">Habits</label>
-                  <button style="background-color: transparent;border: none;color: #f1f1f1;"   (click)=habitsinfo()  >  {{habits?">":"v"}} </button>
-                 
-                  <div *ngIf="visiblehabits"> 
-              
-                      <div class=" my-2 col-lg-12 col-sm-12 px-2">
-                      
-                        <div class="innerdiv">
-                           <form action="/action_page.php">
-                           <div class="col-lg-12 col-sm-12 d-block my-2">
-                              
-                           <div class="d-flex col-lg-12 col-sm-12 px-0">
-                                   <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Eating</label>
-                                   <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                               </div>
-                               <div class="d-flex col-lg-12 col-sm-12 px-0">
-                                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Drinking</label>
-                                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                            </div>
-                            <div class="d-flex col-lg-12 col-sm-12 px-0">
-                              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Smoking</label>
-                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                          </div>
-                          <div class="d-flex col-lg-12 col-sm-12 px-0">
-                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Prefer to Stay</label>
-                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                        </div>
-                        
-                               
-                               <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                                   <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
-                               </div>
-                      </div>
-                   </form>
-                      </div>
-                    </div>
-                   
-                   </div>
-              
-                  </div>
-                  </div>
-              
-                  <div class="col-lg-12 col-sm-12 my-2">
-                    <div type="button"  class="btn btn-block personaldiv"  style="height: fit-content;"> 
-                    <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-                    <label for="">Hobbies and Interest</label>
-                    <button style="background-color: transparent;border: none;color: #f1f1f1;"    (click)=hobbiesinfo()  >  {{hobby?">":"v"}} </button>
-                   
-                    <div *ngIf="visiblehobbies"> 
-                
-                        <div class=" my-2 col-lg-12 col-sm-12 px-2">
-                        
-                          <div class="innerdiv">
-                             <form action="/action_page.php">
-                             <div class="col-lg-12 col-sm-12 d-block my-2">
-                                
-                             <div class="d-flex col-lg-12 col-sm-12 px-0">
-                                     <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Place visited</label>
-                                     <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                                 </div>
-                                 <div class="d-flex col-lg-12 col-sm-12 px-0">
-                                  <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Book</label>
-                                  <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                              </div>
-                              <div class="d-flex col-lg-12 col-sm-12 px-0">
-                                <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Place</label>
-                                <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                            </div>
-                            <div class="d-flex col-lg-12 col-sm-12 px-0">
-                              <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite sport</label>
-                              <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                          </div>
-                          <div class="d-flex col-lg-12 col-sm-12 px-0">
-                            <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Movie</label>
-                            <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                        </div>
-                        <div class="d-flex col-lg-12 col-sm-12 px-0">
-                          <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Favourite Music</label>
-                          <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                      </div>
-                      <div class="d-flex col-lg-12 col-sm-12 px-0">
-                        <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Dress sence</label>
-                        <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                    </div>
-                    <div class="d-flex col-lg-12 col-sm-12 px-0">
-                      <label for="name"class="col-lg-6 col-sm-6 px-lg-5">Personality</label>
-                      <label class="px-0">:</label><input type="text" class="personaldivinputtypes col-sm-5" id="name" placeholder="" name="name">
-                  </div>
-                          
-                                 
-                                 <div class="d-flex col-lg-12 col-sm-12 px-lg-5 px-5 mx-lg-5 mx-sm-5 py-lg-4 py-3">
-                                     <button type="submit" class="btn btn-default submitbtn col-lg-6 col-sm-5 px-lg-5 px-5 mx-lg-5 mx-sm-5" style="background-color:green ;">Save</button>
-                                 </div>
-                        </div>
-                     </form>
-                        </div>
-                      </div>
-                     
-                     </div>
-                
-                    </div>
-                    </div>
-             
-              
-
-           
-
-        </div>  
-        </div>
+       
         
-        </div>
- 
-        
-      
-        <div class="rightbg col-lg-12 col-sm-12" *ngIf="partner" style="background-image:url(assets/images/abt.png);">
-          <div  class="innerbox" style="margin-bottom: 45px;">
-        <div class="btncls">
-          <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
-          <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
-          <button  class="btns" (click)="managephotos()">Manage photos</button>
-        </div> 
-        <div class="linebox mx-5">
-            <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
-            <hr class="partnrhr">
-            <div class="innerdivpartner">
-            <form class="form-inline" action="/action_page.php">
-              <div class="form-group" style="color:white;">
-                <label for="relegion">Age</label><label class="partnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                <label for="maritalstatus">Marital status</label><label class="partnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-              </div>
-              <div class="form-group" style="color:white;">
-                  <label for="education">Height</label><label class="partnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                  <label for="relegion">Weight</label><label class="partnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                <label for="education">Complexion</label><label class="partnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="education">Physical Status</label><label class="partnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
-          </div>
-            </form>
-            </div>
-          </div>
 
-        <!-- Education & Professional Preferences -->
-        <div class="linebox mx-5" style="margin-top: 36px;height: 217px">
-          <h2 class="text-white partnerh2"><b>Education & Professional Preferences</b></h2>
-          <hr class="partnrhr">
-          <div class="innerdivpartner">
-          <form class="form-inline" action="/action_page.php">
-            <div class="form-group" style="color:white;">
-              <label for="maritalstatus">Highest Education</label><label class="partnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+     
+
+  </div>  
+  </div>   
+  </div>
+        <!-- editprofile -->   
+        <div *ngIf="partner" class="searchsec col-lg-12 col-12 px-0 mx-0 partner1">
+          <div  class="col-lg-12 col-12 px-0 mx-0">
+            <div class="rightbg col-lg-12 col-12 py-3">
+                <div class="innerbox col-lg-12 col-10 mx-4">
+                  <div class=" ">
+                    <button  class="btns1 btn4 "(click)="editprofilebtn()">Edit profile</button>
+                    <button  class="btns1 mx-3 "(click)="partnerpreference()">Partner Preference</button>
+                    <button  class="btns1 mng" (click)="managephotos()">Manage photos</button>
+                  </div> 
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner"><b>Basic Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Age</label>
+                      <label>:</label>
+                      <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+                      <input type="text" class="col-2 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Marital status</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Height</label>
+                      <label>:</label>
+                      <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+                      <input type="text" class="col-2 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Weight</label>
+                      <label>:</label>
+                      <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+                      <input type="text" class="col-2 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Complexion</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Physical Status</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                  <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+              </form> 
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                </div>
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner"><b>Education & Professional Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Highest Education</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Job profession</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                  <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+              </form> 
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                </div>
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner"><b>Religious Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Religiousness</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Madrassa Education</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Attend Islamic Service</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                  <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                  </form>
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
+                </div>
+                <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height:fit-content;">
+                  <h2 class="text-white h2partner" ><b>Location Preferences</b></h2>
+                  <hr>
+                  <div class="innerdivpartner">
+                    <form class="text-white">                   
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Prefer to Stay</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Present Country</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">Present State</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>
+                    <div class="col-12 d-flex">
+                      <label class="col-6">City Preference</label>
+                      <label>:</label>
+                      <input type="text" class="col-5 personaldivinputtypes">
+                    </div>                  
+              </form>               
             </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Job profession</label><label class="partnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-          </form>
+          </div>
+          <button type="submit"class=" bigbtn" style="background-color: green;">Submit & Save</button> 
+     </div>
           </div>
         </div>
-
-
-
-        <!-- Religious Preferences -->
-        <div class="linebox mx-5" style=margin-top:36px;height:209px;>
-          <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
-          <hr class="partnrhr">
-          <div class="innerdivpartner">
-          <form class="form-inline" action="/action_page.php">
-            <div class="form-group" style="color:white;">
-              <label for="maritalstatus">Religiousness</label><label class="partnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Attend Islamic Service</label><label class="partnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-          </form>
-          </div>
         </div>
-        <!-- Location Preferences -->
-        <div class="linebox mx-5"style=margin-top:36px;height:279px>
-          <h2 class="text-white partnerh2"><b>Location Preferences</b></h2>
-          <hr class="partnrhr">
-          <div class="innerdivpartner">
-          <form class="form-inline" action="/action_page.php">
-            <div class="form-group" style="color:white;">
-              <label for="maritalstatus">Prefer to Stay</label><label class="partnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Present Country</label><label class="partnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">Present State</label><label class="partnerdiv13">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-            <div class="form-group" style="color:white;">
-              <label for="relegion">City Preference</label><label class="partnerdiv14">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-            </div>
-          </form>
-          </div>
-        </div>
-        <button type="submit" class="text-white btn btn-default submitbtn svbtn">Submit & Save</button>
-      </div>
-      </div>
-   
-      
-   
 <!-- end partner preference -->
 <!-- hide profile div -->
-
-
 <div *ngIf="hideprofilepart"class="hidesec col-lg-12 col-12 px-0 mx-0">
-    <div  class="col-lg-12 col-12 px-0 mx-0">
-        <div class="rightbg col-lg-12 col-12 py-2 px-0 mx-0">
-            <div class="innerbox col-lg-11 mx-lg-5 col-10 px-0">
-
-                <div class="col-lg-12 col-12 px-lg-5 mx-lg-5 py-lg-5">
-                    <div class="lineboxhide col-lg-4 px-lg-0 col-6 my-5">
-                        <h2 class="h2hide mx-lg-4 px-1">Temporarily Hide</h2>
-
-                    </div>
-                </div>
-                <div class="col-lg-12 col-11 py-lg-5 px-lg-4 mx-lg-0 mx-0 py-0">
-                    <h4 class="loremhide px-lg-4 my-lg-3 my-5">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    </h4>
-                    <div class="col-lg-12 mx-lg-5 px-lg-5 py-lg-5 col-12 py-3">
-                        <div class="col-lg-12 px-lg-5 mx-lg-5 col-6">
-                          <button type="submit" class="submit btn text-white  col-sm-4 my-lg-5 my-5" data-toggle="modal" data-target=".bd-example-modal-sm">Hide My Profile</button>
-                        </div>
-                    </div>
-                        <div>
-                          <div class="modal fade modal1 bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Are You Sure  you  Want  to Hide Your Profie</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" data-dismiss="modal" class="yesbtn" style="background-color:green;">Yes</button>
-                                  <button type="button" class="nobtn" style="background-color:red;">No</button>
-                                </div>
+  <div  class="col-lg-12 col-12 px-0 mx-0">
+      <div class="rightbg col-lg-12 col-12 py-2 px-0 mx-0">
+          <div class="innerbox col-lg-11 mx-lg-5 col-10 px-0">
+              <div class="col-lg-12 col-12 px-lg-5 mx-lg-5 py-lg-5">
+                  <div class="lineboxhide col-lg-4 px-lg-0 col-6 my-5">
+                      <h2 class="h2hide mx-lg-4 px-1">Temporarily Hide</h2>
+                  </div>
+              </div>
+              <div class="col-lg-12 col-11 py-lg-5 px-lg-4 mx-lg-0 mx-0 py-0">
+                  <h4 class="loremhide px-lg-4 my-lg-3 my-5">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                  </h4>
+                  <div class="col-lg-12 mx-lg-5 px-lg-5 py-lg-5 col-12 py-3">
+                      <div class="col-lg-12 px-lg-5 mx-lg-5 col-6">
+                        <button type="submit" class="submit btn text-white  col-sm-4 my-lg-5 my-5" data-toggle="modal" data-target=".bd-example-modal-sm">Hide My Profile</button>
+                      </div>
+                  </div>
+                      <div>
+                        <div class="modal fade modal1 bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Are You Sure  you  Want  to Hide Your Profie</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="yesbtn" style="background-color:green;">Yes</button>
+                                <button type="button" class="nobtn" style="background-color:red;">No</button>
                               </div>
                             </div>
-                          </div>
-                          <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Are You Sure  you  Want  to Hide Your Profie</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-footer">
-                                  
-                                  <button type="button" class="yesbtn btn-secondary" data-dismiss="modal" style="background-color:green;">Yes</button>
-                                  <button type="button" class="nobtn btn-primary" style="background-color:red;padding: 0.375rem 4.75rem;margin-right:0px;">No</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div> -->
+                          </div> 
                         </div>
-                    </div>
-            </div>
-        </div>
-    </div>
+                      </div>
+                  </div>
+          </div>
+      </div>
+  </div>
 </div>
 <!-- end hide profile div -->
 <!-- delete profile -->
 <div *ngIf="deleteprofilepart" class="deleteprosec">
-    <div class="rightbg col-lg-12 col-sm-12">
-        <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
-                <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
-                <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5">
-                    <div class="lineboxhide col-lg-5 col-sm-5 px-lg-4 mx-lg-5">
-                        <h2 class="h2hide col-lg-12 col-sm-12 mx-lg-0 mx-5">Delete Profile</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-sm-12 py-lg-5 px-lg-4 py-5 my-2">
-                <h4 class="loremhide px-lg-2 px-2">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                </h4>
-                <div class="col-lg-5 col-sm-12 mx-lg-5 px-lg-5 py-lg-5 py-5 d-flex px-0">
-                    <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn text-white submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Already Married</button>
-                    <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn text-white submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Marriage Fixed</button>
-                </div>
-                <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5 px-3 mx-0 my-0">
-                    <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5 mx-0">
-                        <h2 class="congrats col-lg-12 col-sm-12 mx-lg-5 px-lg-5 mx-4 px-5 my-1">Congratulations!</h2>
-                        <h2 class="congrats col-lg-12 col-sm-12 px-lg-2 my-0" style="float:center;">We are happy that you found your life partner.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-sm-12 py-2">
-                <div class="col-lg-12 col-sm-12 py-lg-2 my-lg-2 my-2 py-1 px-1 innerbox" style="height:fit-content">
-                    <!-- <div class="innerbox py-1"> -->
-                        <div class="linebox mx-lg-2 py-2 mx-0 px-0">
-                          <p class="text-white my-lg-3 mx-5">Select the source:</p>
-                            <form class="my-lg-5 mx-5 d-flex">
-                                <div class="mx-lg-3 mx-sm-1 d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Through our matrimony</label></div>
-                                <div class="d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Other Matrimonial site </label></div>
-                                <div class="mx-lg-3 mx-sm-1 d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Through Other site</label></div>
-                            </form>
-                        </div>
-                    <!-- </div> -->
-                </div>
-            </div>
-            <div class="col-lg-12 px-lg-5 py-lg-5 my-lg-5 col-sm-12 mx-sm-3 px-sm-2 py-sm-5 my-5 d-lg-flex">
-                <!-- <div class=" d-sm-none col-lg-1 py-lg-5 my-lg-5 mx-lg-3 col-sm-0"style="background-color:green">rr</div> -->
-                <div class="col-lg-11 py-lg-5 my-lg-5 mx-lg-5 px-lg-5 col-sm-8 px-sm-0 my-sm-5 py-5 mx-0"><button class="lastbtn col-lg-5 mx-lg-5 my-lg-5 col-sm-3 mx-sm-0 px-sm-0">Delete My Profile</button></div>
-            </div>
-        </div>    
-    </div>
+  <div class="rightbg col-lg-12 col-12">
+      <div class="innerbox col-lg-12 col-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
+              <div class="col-lg-12 col-12 px-lg-5 mx-lg-5 py-lg-5">
+              <div class="col-lg-12 col-12 mx-lg-5 px-lg-5">
+                  <div class="lineboxhide col-lg-5 px-lg-4 col-6 px-3">
+                      <h2 class="h2hide col-lg-12 col-12 mx-lg-0 mx-0 px-0">Delete Profile</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-12 col-sm-12 py-lg-5 px-lg-4 py-5 my-2">
+              <h4 class="loremhide px-lg-2 px-2">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+              </h4>
+              <div class="col-lg-5 col-sm-12 mx-lg-5 px-lg-5 py-lg-5 py-5 d-flex px-0">
+                  <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Already Married</button>
+                  <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Marriage Fixed</button>
+              </div>
+              <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5 px-3 mx-0 my-0">
+                  <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5 mx-0">
+                      <h2 class="congrats col-lg-12 col-sm-12 mx-lg-5 px-lg-5 mx-4 px-5 my-1">Congratulations!</h2>
+                      <h2 class="congrats col-lg-12 col-sm-12 px-lg-2 my-0" style="float:center;">We are happy that you found your life partner.</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-12 col-sm-12 py-2">
+              <div class="col-lg-12 col-sm-12 py-lg-2 my-lg-2 my-2 py-1 px-1 innerbox" style="height:fit-content">
+                  <!-- <div class="innerbox py-1"> -->
+                      <div class="linebox mx-lg-2 py-2 mx-0 px-0">
+                        <p class="text-white my-lg-3 mx-5">Select the source:</p>
+                          <form class="my-lg-5 mx-5 d-flex">
+                              <div class="mx-lg-3 mx-sm-1 d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Through our matrimony</label></div>
+                              <div class="d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Other Matrimonial site </label></div>
+                              <div class="mx-lg-3 mx-sm-1 d-flex"><input type="radio" name="radiobtn" class="radio"><label class="text-white radiolbl">Through Other site</label></div>
+                          </form>
+                      </div>
+              </div>
+          </div>
+          <div class="col-lg-12 px-lg-5 py-lg-5 my-lg-5 col-sm-12 mx-sm-3 px-sm-2 py-sm-5 my-5 d-lg-flex">
+              <div class="col-lg-11 py-lg-5 my-lg-5 mx-lg-5 px-lg-5 col-8 px-sm-0 my-sm-5 py-5 mx-0"><button class="lastbtn col-lg-5 mx-lg-5 my-lg-5 col-sm-3 mx-sm-0 px-sm-0">Delete My Profile</button></div>
+          </div>
+      </div>    
+  </div>
 </div>
 <!-- end delete profile --> 
 <!-- edit password -->
-
 <div *ngIf="editpwdpart" class="editpwdpart col-lg-12 col-12 px-0 mx-0">
-    <div class="col-lg-12 col-12 px-0 mx-0">
-     <div class="rightbg col-lg-12 col-12 py-3 mx-0 px-0">
-      <div class="col-lg-12 col-12 py-lg-5">
-        <div class="innerbox col-lg-12 col-12">
-            <div class="lineboxhide col-lg-4 col-5 my-5 px-4">   
-                <h2 class="h2hide" style="text-align: center;">Change password</h2>
-            </div>
-      
-
-            <div class="">
-                <form action="" class="form-group">
-                    <div class="form-group" style="color:white;">
-                      <div class="blk col-lg-9 d-block col-10">          
-                     
-                      <div class="blk2">
-                      <div class="d-lg-flex my-3">
-                         <div class="px-lg-3"><label fo="name">current password</label></div>
-                         <div>
-                            <input class="d-flex" type="password" class="pswtype">
-                            <i class="far fa-eye eyestyle" id="togglePassword"></i>
-                         </div>
-                      </div>
-                    
-
-                      <div class="d-lg-flex my-3">
-                                    <div class="d-flex px-3"> <label fo="name">New password    </label></div>
-                                    <div>
-                                       <input class="d-flex" type="password" class="pswtype" style="margin-left:17px">
-                                       <i class="far fa-eye eyestyle" id="togglePassword"></i>
-                                   </div>
-                      </div>
-                      <div class="d-lg-flex my-3 ">
-                            <div class="d-flex px-3"> <label fo="name">confirm password  </label></div>
-                                    <div>
-                                        <input class="d-flex " type="password" class="pswtype">
-                                              <i class="far fa-eye eyestyle" id="togglePassword"></i>
-                            </div>
-                      </div>
-
-                         
-                         <!-- <div class="d-lg-flex col-lg-12 col-sm-12 ">
-                            <div calss="col-lg-4 mx-5 px-1"></div>
-                            <div class="col-lg-4 col-sm-6 my-3"><label for="name">New Password</label></div>                         
-                                <div class="col-lg-6 col-sm-6 my-3">
-                                    <input type="password" class="pswtype">
-                                    <i class="far fa-eye eyestyle" id="togglePassword"></i>
-                                </div>
-                          </div> -->
-                          <!-- <div class="d-lg-flex col-lg-12 col-sm-12">
-                            <div class="col-lg-6 col-sm-6 my-3"><label for="name">Confirm Password</label></div>                         
-                                <div class="col-lg-6 col-sm-6 my-3">
-                                    <input type="password" class="pswtype">
-                                    <i class="far fa-eye eyestyle" id="togglePassword"></i>
-                                </div>
-                          </div> -->
-                          
-                          <div class="psw d-flex col-lg-12 col-sm-12 px-lg-5  px-5  py-lg-4 py-5 my-5">
-                              <button type="submit" class="btn col-lg-6 col-sm-5 text-white" style="background-color: #068004;border-radius: 8px;">Submit & save</button>
+  <div class="col-lg-12 col-12 px-0 mx-0">
+   <div class="rightbg col-lg-12 col-12 py-3 mx-0 px-0">
+    <div class="col-lg-12 col-12 py-lg-5">
+      <div class="innerbox col-lg-12 col-12">
+          <div class="lineboxhide col-lg-12 col-7 my-5">   
+            <h2 class="h2hide" style="line-height: 35px;">Change password</h2>
+          </div>
+          <div class="">
+              <form action="" class="form-group">
+                  <div class="form-group" style="color:white;">
+                    <div class="blk col-lg-9 d-block col-10">          
+                    <div class="blk2">
+                    <div class="d-lg-flex my-3">
+                       <div class="px-lg-3 spl"><label fo="name">current password</label></div>
+                       <div>
+                          <input class="d-flex" type="password" class="pswtype">
+                          <i class="far fa-eye eyestyle" id="togglePassword"></i>
+                       </div>
+                    </div>
+                    <div class="d-lg-flex my-3">
+                                  <div class=" px-lg-3 spl"> <label for="name">New password </label></div>
+                                  <div>
+                                     <input class="d-flex" type="password" class="pswtype sp" >
+                                     <i class="far fa-eye eyestyle2" id="togglePassword" style=""></i>
+                                 </div>
+                    </div>
+                    <div class="d-lg-flex my-3 ">
+                          <div class=" px-3 spl"> <label fo="name">confirm password  </label></div>
+                                  <div>
+                                      <input class="d-flex " type="password" class="pswtype">
+                                            <i class="far fa-eye eyestyle" id="togglePassword"></i>
                           </div>
-                         </div>
-                      </div>
-                   </div>
-                  </form>
-            </div>
-        </div>
-            <!--  -->
-        </div>
-        </div> 
-    </div>
+                    </div>
+                        <div class="psw d-flex col-lg-12 col-sm-12 px-lg-5  px-5  py-lg-4 py-5 my-5">
+                            <button type="submit" class="btn col-lg-7 col-sm-5 text-white" style="background-color: #068004;border-radius: 8px;">Submit & save</button>
+                        </div>
+                       </div>
+                    </div>
+                 </div>
+                </form>
+          </div>
+      </div>
+      </div>
+      </div> 
+  </div>
 </div>
 <!-- end edit password -->
 <!-- notification -->
-
-<div *ngIf="visiblenotification" class="notisec col-lg-12 col-sm-12 px-0 mx-0">
-  <div class="col-lg-12 col-sm-12 px-0 mx-0">
+<div *ngIf="visiblenotification" class="notisec col-lg-12 col-12 px-0 mx-0">
+  <div class="col-lg-12 col-12 px-0 mx-0">
     <div class="rightbg col-lg-12 py-lg-3 col-12">
         <div class="innerbox col-lg-10 col-12">
             <div class="">
              <h1 style="border: 10px;color: white; text-align: center;">notification</h1>
-             
-             <div class="noti d-flex col-11">
+              <div class="noti d-flex col-11">
                   <div class="col-lg-3 col-1 px-0 mx-0"><img src="../../assets/images/man.png" style="border-radius: 50%;"class="mx-0 notiimg1"></div>
                   <div class="col-lg-9 col-9">
                     <h1 class="h1noti1" style="margin-bottom:0px">Lorem Ipsum</h1>
@@ -1190,41 +1184,13 @@
                     </div>
                   </div>
               </div>
-
-     
      <div class="noti col-11" style="margin-top: 186px;
      height: 50px;">
      <img src="../../assets/images/man.png" class="imgs">  
      <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
-     <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
-     </div>
-     
-                   
-     <!-- <div class="noti" style="margin-top: 249px;
-     height: 50px;">
-     <img src="../../assets/images/man.png" class="imgs">  
-     <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
-     <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
-     </div> -->
-     <!-- <div class="noti d-flex" style="margin-top: 321px;">       
-         <img src="../../assets/images/man.png" style="    margin-top: 7px;
-         margin-left: 104px;
-         border-radius: 101px;">  
-      <div>
-        <h1 class="lore" style="margin-left:27px">Lorem Ipsum</h1>
-      <h1 style="margin-left: 28px;
-      margin-top: 44px;
-      height: 9px;
-      width: 424px;
-      font-size: small;">Lorem Ipsum has requested to view your photo</h1>
-       <div style="margin-top:40px">
-        <button class="btn1"> confirm</button>
-       <button class="btn"> Delete</button>
-       </div>
-      </div>
-     </div> -->
-    
-      <div class="noti d-flex col-11" style= "margin-top: 514px;">
+     <h1 class="lore ha ha1">Lorem Ipsum accepted to view</h1>
+     </div>   
+     <div class="noti d-flex col-11" style= "margin-top: 514px;">
         <div class="col-lg-3 col-1 px-0 mx-0"><img src="../../assets/images/man.png" style="border-radius: 50%;"class="mx-0 notiimg1"></div>
         <div class="col-lg-9 col-9">
           <h1 class="h1noti1" style="margin-bottom:0px">Lorem Ipsum</h1>
@@ -1268,29 +1234,18 @@
 </div>
 <!-- end chat no messages -->
 <!-- chat -->
-<div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
-    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
-        <div class="innerbox col-lg-11 col-sm-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
-            <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5">
-
-                <div class="col-lg-12 col-sm-12 py-lg-5 mx-5">
-                    <div class="col-lg-6 col-sm-4 mx-lg-5 px-lg-5 col-sm-5">
-                        <div class="lineboxhide">
-                        <h2 class="h2hide col-lg-12 col-sm-12 px-lg-5 mx-lg-5 px-5">chat</h2>
+<div class="col-lg-12 col-12 px-0 mx-0 chatsec" *ngIf="visiblechat">
+    <div class="rightbg col-lg-12 col-12"style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox col-lg-11 col-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
+            <div class="col-lg-12 col-12 px-lg-5 mx-lg-5">
+                <div class="col-lg-12 col-8 py-lg-5 mx-5">
+                    <div class="col-lg-6 col-10 mx-3">
+                        <div class="lineboxhide col-lg-12">
+                        <h2 class="h2hide col-lg-12 col-12  px-3"style="text-align: -webkit-center;">chat</h2>
                         </div>
                     </div>
-                </div>
-                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                ...
-              </div>
-            </div>
-          </div> -->
-
-
-                <div class="col-lg-12 col-sm-12 chat" style="margin-top: 45px;
+                  </div>
+               <div class="col-lg-12 col-sm-12 chat" style="margin-top: 45px;
                 height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
                 <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
                 <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
@@ -1301,11 +1256,7 @@
                         <div class="chatbox modal-content" style="background: #C3DDE4; border:none;">
                             <div class="modal-header">
                                 <div class="btn-group">
-                                    <!-- <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                    </button> -->
                                     <div class="round" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mx-1 bi bi-three-dots" style="color:#276678"></i></div>
-                                    
                                     <div class="chatmenu dropdown-menu">
                                       <a class="dropdown-item py-3" href="">Clear Chat</a>
                                       <a class="dropdown-item py-2" data-toggle="modal" data-target="#block">Block Profile</a>
@@ -1326,8 +1277,6 @@
                                 <button type="submit" id="send">send</button>
                             </div>
                     </div> 
-                   
-
                   </div>
 <!-- Block main-->
 <div class="row mx-0 px-0">
@@ -1415,11 +1364,7 @@
       <div class="modal-content">
         <div class="col-lg-12 col-sm-12 col-12">
         <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
-          <!-- <img src="assets/images/block.png" style="height: 25px;" class="mx-1">  -->
-          <h3 class="col-15 mx-4 block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Tell Us Reason</h3>
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button> -->
+            <h3 class="col-15 mx-4 block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Tell Us Reason</h3>
         </div>
         </div>
         <div >
@@ -1477,7 +1422,7 @@
 <!-- end chat -->
 <!--  search  -->
 <!-- header search button action -->
-<div *ngIf="visisblesearch"class="searchsec col-lg-12 col-10 px-0 mx-0">
+<div *ngIf="visisblesearch" class="searchsec col-lg-12 col-12 px-0 mx-0">
   <div  class="col-lg-12 col-12 px-0 mx-0">
     <div class="rightbg col-lg-12 col-12 py-3">
         <div class="innerbox col-lg-12 col-12">
@@ -1488,66 +1433,84 @@
                 </div>
             </div>
       
-      <form class="form-inline my-lg-3 my-lg-0">
+      <form class="form-inline  my-lg-0">
         <!-- <label><b class="text-white searchlb">Search ID</b></label> -->
         <input class="mr-sm-2 searchbtn" type="search" placeholder="Search id" aria-label="Search">
       </form> 
-        <div class="linebox col-11 py-3 mx-4" style="margin-bottom: 22px;height: 1043px;">
-          <h2 class="text-white h2partner"><b>Search Preferences</b></h2>
-          <div class="innerdivpartner ">
-            <form class="form-inline" action="/action_page.php">
-              <div class="form-group" style="color:white;">
-                <label for="relegion">Age</label><label class="searchpartnerdiv1">:</label>
-                <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                <label for="maritalstatus">Marital status</label><label class="searchpartnerdiv2">:</label>
-                <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-              </div>
-              <div class="form-group" style="color:white;">
-                  <label for="education">Height</label><label class="searchpartnerdiv3">:</label>
-                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                  <label for="relegion">Weight</label><label class="searchpartnerdiv4">:</label>
-                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
-              </div>
-              <div class="form-group" style="color:white;">
-                <label for="education">Complexion</label><label class="searchpartnerdiv5">:</label>
-                <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+        <div class="linebox col-lg-11 col-12 py-3 mx-lg-4" style="margin-bottom: 22px;height: 1043px;">
+          <h2 class="text-white h2partner1"><b>Search Preferences</b></h2>
+          <div class="innerdivpartner">
+            <form class="text-white">
+            <div class="col-12 d-flex">
+              <label class="col-6">Age</label>
+              <label>:</label>
+              <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+              <input type="text" class="col-2 personaldivinputtypes">
             </div>
-            <div class="form-group" style="color:white;">
-              <label for="education">Physical Status</label><label class="searchpartnerdiv6">:</label>
-              <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
-          </div>
-          <div class="form-group" style="color:white;">
-            <label for="relegion">Body type</label><label class="searchpartnerdiv7">:</label>
-            <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-          </div>
-          <div class="form-group" style="color:white;">
-            <label for="maritalstatus">Highest Education</label><label class="searchpartnerdiv8">:</label>
-            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-          </div>
-          <div class="form-group" style="color:white;">
-            <label for="maritalstatus">Current Location</label><label class="searchpartnerdiv9">:</label>
-            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-          </div>
-          <div class="form-group" style="color:white;">
-            <label for="age">Financial Status</label><label class="searchpartnerdiv10">:</label>
-            <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
-          </div> 
-          <div class="form-group" style="color:white;">
-            <label for="maritalstatus">Religiousness</label><label class="searchpartnerdiv11">:</label>
-            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-          </div>
-          <div class="form-group" style="color:white;">
-            <label for="education">Community</label><label class="searchpartnerdiv12">:</label>
-            <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
-        </div><button type="submit" class="btn btn-default" style="background-color: green;">Search</button>
-         </form>
+            <div class="col-12 d-flex">
+              <label class="col-6">Marital status</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Height</label>
+              <label>:</label>
+              <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+              <input type="text" class="col-2 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Weight</label>
+              <label>:</label>
+              <input type="text" class="col-2 personaldivinputtypes">&nbsp;&nbsp;to&nbsp;&nbsp;
+              <input type="text" class="col-2 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Complexion</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Physical Status</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Body type</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Highest Education</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Current Location</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Financial Status</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Religiousness</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+            <div class="col-12 d-flex">
+              <label class="col-6">Community</label>
+              <label>:</label>
+              <input type="text" class="col-5 personaldivinputtypes">
+            </div>
+          <button type="submit" class="btn btn-default" style="background-color: green;">Search</button>
+      </form> 
          
             </div>
+            <!-- <button type="submit" class="btn btn-default" style="background-color: green;">Search</button> -->
         </div>
+       
         <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
       
     </div>
@@ -1556,19 +1519,22 @@
 </div>
 <!-- end search -->
 <!-- header explore button action -->
-<div *ngIf="visibleexplore" class="exploresec">
+<div *ngIf="visibleexplore" class="exploresec col-lg-12 col-12 px-0 mx-0">
   
   <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
-    <div  class="innerboxexplore" style="margin-bottom: 45px;">
-      <button type="button" class="deletebtn sbtn">Explore</button>
+    <div  class="innerbox mx-lg-5 mx-3 my-3 px-0" style="margin-bottom: 45px;">
+      <div class="col-lg-10 col-12 px-lg-5 mx-lg-4 py-lg-5">
+          <div class="lineboxhide col-lg-4 px-lg-2 col-6 my-5">
+            <h2 class="h2hide mx-lg-5 px-1 mx-4">Explore</h2>
+          </div>
+      </div>
       
-        <div class="lineboxsearch" style="height:1150px; ">
+        <div class="linebox col-lg-11 mx-lg-4 px-0" style="height:1150px;">
               <button  class="btns"(click)="interestreceived()">Interest Received</button>
               <button  class="btns"(click)="interestsend()">Interest Sent</button>
               <button  class="btns" (click)="bothinterest()">Both Interested </button>
         <div *ngIf="visiblereceive"> 
-           
-              
+         
               <div class="linebox2" >
                 <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
                 <div><h1></h1></div>
@@ -1592,7 +1558,8 @@
           
           
          
-           </div> <!-- end visiblesend -->
+           </div> 
+           <!-- end visiblesend -->
            <!-- visiblereceive -->
            <div *ngIf="visiblesend"> 
            
@@ -1697,7 +1664,9 @@
 </div>
 <!-- end header explore button action -->
 <!-- manage photots -->
-<div class="container-fluid rightbg" *ngIf="mangphoto">
+
+<div class="container-fluid rightbg editmng" *ngIf="mangphoto">
+
     <div class="row">
     <div class="col-lg-9 col-sm-12 col-12"> 
     <h1  class="head"> Add your best shots</h1>
@@ -1764,10 +1733,7 @@
   
    </div> 
 <!-- end manage photos -->
-<!-- here home2 profile page -->
 
-
-    <!-- here home2 profile page -->
 
 <div *ngIf="visiblehome2" class="disnone"> 
 
@@ -1789,27 +1755,25 @@
                 <div style="text-align: center; color:white"><span>calicut</span>&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<span>kerala</span>&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<span>India</span>
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;
-                
                 <!--     form   -->
                 <form class="form-inline">
                     <div class="form-group" style="color:white;">
-                      <label for="maritalstatus">Marital status :</label>
+                      <label for="maritalstatus"class="prolbl">Marital status &nbsp;&nbsp;&nbsp;:</label>
                       <label for="">ktykk</label>
                     </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                     
                     <div class="form-group py-2" style="color:white; ">
-                      <label for="relegion">religion :</label>
+                      <label for="relegion" class="prolbl">religion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
                       <label for="">ghjghj</label>
                     </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <div class="form-group" style="color:white;">
-                        <label for="education">Education :</label>
+                        <label for="education"class="prolbl">Education  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;:</label>
                         <label for="">gfjgjh</label>
                     </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                   
                     <div class="form-group py-2" style="color:white;">
-                        <label for="relegion">Job Profession :</label>
+                        <label for="relegion"class="prolbl">Job Profession &nbsp;&nbsp;:</label>
                         <label for="">ghjghj</label>
                     </div>
                     
@@ -1882,8 +1846,6 @@
 </div>
 </div>
 
-
-
     <!-- end home2 profile page -->
 
 <!-- small screen home page -->
@@ -1891,28 +1853,7 @@
 <div class="smallhome " *ngIf="smallhome">
 
 
-   <!-- Image and text -->
-   
-<nav class="navbar navbar-light  row mx-0 px-0 headercss">
-    <div class="col-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="fnvisiblesidenav()" >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    </div>
-    <div class="col-6">
-        <a class="navbar-brand" style="color:white ;" >
-      
-            LOGO
-          </a>
-    </div>
-   <div class="col-3">
-    <button style=" background-image: url(../../assets/images/seach5.png);"class="btnsise" (click)="searchact()"></button>
-    <button style=" background-image: url(../../assets/images/qn7.png);height: 25px;
-    margin-left: 7px;
-    width: 22px;"class="btnsise"></button>
-   
-   </div>
-    </nav>
+ 
 
 <div class="col-sm-12 col-12 " style="background-image:url(assets/images/abt.png);padding-bottom: 20px">
 <br>
@@ -1967,11 +1908,7 @@
     
 </div>  
     </div>
-
-
-
-
-    <div class=" imgsrc   " style="background-image:url(../../assets/images/propic.png) ;">
+   <div class=" imgsrc   " style="background-image:url(../../assets/images/propic.png) ;">
       
         <div class="row backs mx-0 px-0 " >
       <div class="col-12">
@@ -2027,90 +1964,65 @@
    
    
 
-<!-- footer -->
 
-
-<footer class="text-center text-white fixfoot" style="background-color: #f1f1f1;">
-    <!-- Grid container -->
-  
-     
-    
-        
-        
-  
-        <!-- Instagram -->
-        <a
-          class=" btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark">
-        <img style="margin-top: 3%" src="../../assets/images/home2.png" alt="">
-        </a>
-  
-        <!-- Linkedin -->
-        <a
-          class=" btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark">
-          <img style="margin-top: 3%"src="../../assets/images/explore2.png" alt="">
-        <!-- Github -->
-        </a>
-        <a 
-          class=" btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark">
-          <img style="margin-top: 3%"src="../../assets/images/shat2.png" alt="">
-        </a>
-     
-    
-   
-   
-  </footer>
 </div>
-
-
-
-
-
-
-
-
-
 
 <!-- end home2 profile page -->
 <!-- help -->
 <section class="helpsec" *ngIf="visiblehelp">
-        <div class="rightbg" style="background-image:url(assets/images/abt.png);">
-          <div  class="innerbox">
-            <div class="col-lg-3 col-5 lineboxsmall py-0">
-                <h1 class="help1">Help</h1>
-            </div>
-            <div class="col-10 linebox">
-                <p class="help2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-              printer took a galley of type and scrambledLorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambledLorem Ipsum is simply dummy text of 
-              the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-               ever since the 1500s, when an unknown printer took a galley of type and scrambledLorem Ipsum 
-               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-               scrambled
-            </p>
-            <p class="help text-white" style="text-align: center;margin-top: 50px;">+91758903989</p>
-            <p class="help text-white"style="text-align: center;margin-top: 50px;margin-bottom: 50px;">matrimony@gmail.com</p>
-          </div>
-       </div>
-        </div>
-   
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox">
+      <div class="col-lg-3 col-5 lineboxsmall py-0">
+          <h1 class="help1">Help</h1>
+      </div>
+      <div class="col-10 linebox">
+          <p class="help2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambledLorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambledLorem Ipsum is simply dummy text of 
+        the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+         ever since the 1500s, when an unknown printer took a galley of type and scrambledLorem Ipsum 
+         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+         scrambled
+      </p>
+      <p class="help text-white" style="text-align: center;margin-top: 50px;">+91758903989</p>
+      <p class="help text-white"style="text-align: center;margin-top: 50px;margin-bottom: 50px;">matrimony@gmail.com</p>
+    </div>
+ </div>
+  </div>
+
 </section>
+
+
+<footer class="text-center text-white fixfoot" style="background-color: #f1f1f1;"*ngIf="visiblesmallfooter">   
+  <a
+    class=" btn-link btn-floating btn-lg text-dark m-1"
+    role="button"
+    (click)="smlhome2()"
+    data-mdb-ripple-color="dark">
+  <img style="margin-top: 3%" src="../../assets/images/home2.png" alt="">
+  </a>
+  <a
+    class=" btn-link btn-floating btn-lg text-dark m-1"
+  
+    role="button"
+    data-mdb-ripple-color="dark"(click)="exploreact()">
+    <img style="margin-top: 3%"src="../../assets/images/explore2.png" alt="">
+  </a>
+  <a 
+    class=" btn-link btn-floating btn-lg text-dark m-1"
+    (click)="chatact()"
+    role="button"
+    data-mdb-ripple-color="dark">
+    <img style="margin-top: 3%"src="../../assets/images/shat2.png" alt="">
+  </a>
+</footer> 
 </div>
 </div>
 </div>    
-
 </div>
 
 
