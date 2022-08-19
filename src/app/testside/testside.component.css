@@ -8,6 +8,28 @@
     height: 100%;
     overflow: auto;
   }
+  .imgside{
+    width: 23px;
+    height: 25px;
+    margin-right: 15px;
+  }
+  .lblside{
+    width: 105px;
+    font-size: 16px;
+    color:rgba(39, 102, 120, 1);
+
+}
+.logo{
+  width: 38px;
+    margin-right: 30px;
+    height: 27px;
+}
+.homeicon{
+  margin-right: 4px;
+}
+  .prolbl{
+    font-size: initial;
+  }
   .partner1{
     font-family: poppins;
 
@@ -17,6 +39,7 @@
 height: 21px;
 left: 135px;
 top: 1099px;
+color:rgba(39, 102, 120, 1);
   }
   .shadowdiv{
     background: rgba(49, 65, 76, 0.25);
@@ -570,11 +593,11 @@ border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
 }
 .ha1{
-  width: 282px;
+  width: 406px;
   line-height: 15PX;
-  top: 26px;
+  top: 32px;
   left: 127px;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 
