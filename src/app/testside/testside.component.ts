@@ -66,6 +66,7 @@ export class TestsideComponent implements OnInit{
 smallhome:boolean=true
 
 mangphoto:boolean=false
+visiblechat:boolean=false
   ngOnInit(): void {
   }
 
@@ -100,6 +101,7 @@ mangphoto:boolean=false
     this.visiblenotification=false
     this.smallhome=false
     this.sidenav2=false
+    this.mangphoto=false
   }
 
     
@@ -116,6 +118,7 @@ mangphoto:boolean=false
     this.visiblenotification=false
     this.sidenav2=false
     this.smallhome=false
+    this.mangphoto=false
   }
   hideprofilebtn()
   {
@@ -134,6 +137,7 @@ mangphoto:boolean=false
     this.visiblenotification=false
     this.smallhome=false
     this.sidenav2=false
+    this.mangphoto=false
   }
   deleteprofilebtn()
   {
@@ -150,6 +154,7 @@ mangphoto:boolean=false
     this.visibleeditprofilediv=false
     this.deleteprofilepart=true
     this.editpwdpart=false
+    this.mangphoto=false
     this.visiblenotification=false
     this.smallhome=false
     this.sidenav2=false
@@ -171,6 +176,7 @@ mangphoto:boolean=false
     this.visiblenotification=false
     this.smallhome=false
     this.sidenav2=false
+    this.mangphoto=false
     this.editpwdpart=true
   }
 
@@ -186,6 +192,7 @@ mangphoto:boolean=false
     this.visiblenotification=false
     this.visibleeditprofilediv=false
     this.smallhome=false
+    this.mangphoto=false
     this.visiblehome2=true
   }
   // edit profile
@@ -371,6 +378,7 @@ partnerpreference()
     this.smallhome=false
     this.sidenav2=false
     this.partner=true
+    this.mangphoto=false
 }
 // manage photos
 
@@ -413,6 +421,7 @@ searchact()
   this.visiblenotification=false
   this.smallhome=false
   this.visisblesearch=true
+  this.mangphoto=false
 }
 exploreact()
 {
@@ -435,7 +444,9 @@ exploreact()
   this.visibleboth=false
   this.visiblenotification=false
   this.visibleexplore=true
+  this.visiblechat=false
   this.smallhome=false
+  this.mangphoto=false
 }
 // explore
 interestreceived()
@@ -479,9 +490,12 @@ helpact()
   this.visiblesend=false
   this.visiblereceive=false
   this.visibleboth=false
+  this.visiblechat=false
   this.visiblehelp=true
   this.visiblenotification=false
+  this.visibleexplore=false
   this.smallhome=false
+  this.mangphoto=false
 }
 // notification
 notification()
@@ -505,6 +519,7 @@ notification()
   this.visisblesearch=false
   this.partner=false  
   this.sidenav2=false 
+  this.mangphoto=false
   this.visiblenotification=true
   this.smallhome=false
 }
@@ -522,6 +537,7 @@ enableDisableRule() {
 
 
  fnvisiblesidenav(){
+  this.mangphoto=false
    this.sidenav = false
   this.visisblesearch=false
      this.partner=false
@@ -532,7 +548,6 @@ enableDisableRule() {
       this.editinner=false
     this.visibleeditprofilediv=false
       this.visiblenotification=false
-      
       this.visibleexplore=false
       this.visiblesend=false
       this.visiblereceive=false
@@ -540,7 +555,55 @@ enableDisableRule() {
       this.smallhome=false
       this.visiblesmallheader=false
       this.visiblesmallfooter=false
+      this.visiblechat=false
+      this.visiblehelp=false
       this.sidenav2=true
+ }
+ smlhome2(){
+  this.visibleexplore=false
+  this.visibleeditprofilediv=false
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
+  this.visiblehome2=false
+  this.editinner=false
+  this.visiblesend=false
+  this.visiblereceive=false
+  this.visibleboth=false
+  this.visisblesearch=false
+  this.partner=false  
+  this.sidenav2=false 
+  this.visiblenotification=false
+  this.smallhome=false
+  this.mangphoto=false
+  this.smallhome=true
+ }
+ chatact(){
+  this.innerWidth = window.innerWidth
+  if (this.innerWidth > 319 &&  this.innerWidth < 721) {
+  this.sidenav = false
+  this.visiblesmallheader=true
+  this.visiblesmallfooter=true
+  }
+  this.smallhome=false
+  this.visibleexplore=false
+  this.visibleeditprofilediv=false
+  this.hideprofilepart=false
+  this.deleteprofilepart=false
+  this.editpwdpart=false
+  this.visiblehome2=false
+  this.editinner=false
+  this.visiblesend=false
+  this.visiblereceive=false
+  this.visibleboth=false
+  this.visisblesearch=false
+  this.partner=false  
+  this.mangphoto=false
+  this.visiblenotification=false
+  this.smallhome=false
+  this.sidenav2=false
+  this.visiblehelp=false
+  this.visiblechat=true
  }
  
 }

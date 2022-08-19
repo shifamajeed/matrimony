@@ -18,11 +18,12 @@
                         <button class="sidebtns sidebtn6 my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button>
                         <div>
                             <div class="pstyle">Download  App For Android and IOS</div>
-                            <img src="assets/images/Mask Group.png" id="imgapp">
-                            <img src="assets/images/Mask Group (1).png" id="imgapp"><br><br>
-                            <p style="color:rgba(3, 80, 102, 1); margin-left:90px">&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
-                           <span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1); margin-left:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="assets/images/Mask Group.png" id="imgapp" style="margin-top: 30px; margin-left:30px">
+                            <img src="assets/images/Mask Group (1).png" id="imgapp"style="margin-top: 10px; margin-left:30px"><br><br>
+                            <p style="color:white; margin-left:45px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
+                           <span class="d-lg-flex">
+                                
+                                <img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1);margin-left:35px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <img src="assets/images/Group (1).png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <img src="assets/images/Group (2).png" style="background-color:rgba(3, 80, 102, 1)">
                            </span>          
@@ -60,7 +61,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link navbar-brand navlabel">
+                      <a class="nav-link navbar-brand navlabel" (click)="chatact()">
                         <img src="assets/images/chat.png" class="homeicon">
                         <label class="navlabel">Chat </label>
                       </a>
@@ -905,7 +906,7 @@
         <div *ngIf="partner" class="searchsec col-lg-12 col-12 px-0 mx-0 partner1">
           <div  class="col-lg-12 col-12 px-0 mx-0">
             <div class="rightbg col-lg-12 col-12 py-3">
-                <div class="innerbox col-lg-12 col-12">
+                <div class="innerbox col-lg-12 col-10 mx-4">
                   <div class=" ">
                     <button  class="btns1 btn4 "(click)="editprofilebtn()">Edit profile</button>
                     <button  class="btns1 mx-3 "(click)="partnerpreference()">Partner Preference</button>
@@ -1189,7 +1190,7 @@
                                   <div class=" px-lg-3 spl"> <label for="name">New password </label></div>
                                   <div>
                                      <input class="d-flex" type="password" class="pswtype sp" >
-                                     <i class="far fa-eye eyestyle" id="togglePassword"></i>
+                                     <i class="far fa-eye eyestyle2" id="togglePassword" style=""></i>
                                  </div>
                     </div>
                     <div class="d-lg-flex my-3 ">
@@ -1235,14 +1236,12 @@
 <!-- notification -->
 
 <div *ngIf="visiblenotification" class="notisec col-lg-12 col-12 px-0 mx-0">
-  
   <div class="col-lg-12 col-12 px-0 mx-0">
     <div class="rightbg col-lg-12 py-lg-3 col-12">
         <div class="innerbox col-lg-10 col-12">
             <div class="">
              <h1 style="border: 10px;color: white; text-align: center;">notification</h1>
-             
-             <div class="noti d-flex col-11">
+              <div class="noti d-flex col-11">
                   <div class="col-lg-3 col-1 px-0 mx-0"><img src="../../assets/images/man.png" style="border-radius: 50%;"class="mx-0 notiimg1"></div>
                   <div class="col-lg-9 col-9">
                     <h1 class="h1noti1" style="margin-bottom:0px">Lorem Ipsum</h1>
@@ -1253,8 +1252,7 @@
                     </div>
                   </div>
               </div>
-
-     
+   
      <div class="noti col-11" style="margin-top: 186px;
      height: 50px;">
      <img src="../../assets/images/man.png" class="imgs">  
@@ -1333,15 +1331,14 @@
 </div>
 <!-- end chat no messages -->
 <!-- chat -->
-<div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
-    <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
-        <div class="innerbox col-lg-11 col-sm-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
-            <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5">
-
-                <div class="col-lg-12 col-sm-12 py-lg-5 mx-5">
-                    <div class="col-lg-6 col-sm-4 mx-lg-5 px-lg-5 col-sm-5">
-                        <div class="lineboxhide">
-                        <h2 class="h2hide col-lg-12 col-sm-12 px-lg-5 mx-lg-5 px-5">chat</h2>
+<div class="col-lg-12 col-12 px-0 mx-0 chatsec" *ngIf="visiblechat">
+    <div class="rightbg col-lg-12 col-12"style="background-image:url(assets/images/abt.png);">
+        <div class="innerbox col-lg-11 col-12 mx-lg-5 px-lg-5 py-lg-3 py-5">
+            <div class="col-lg-12 col-12 px-lg-5 mx-lg-5">
+                <div class="col-lg-12 col-8 py-lg-5 mx-5">
+                    <div class="col-lg-6 col-10 mx-3">
+                        <div class="lineboxhide col-lg-12">
+                        <h2 class="h2hide col-lg-12 col-12  px-3"style="text-align: -webkit-center;">chat</h2>
                         </div>
                     </div>
                 </div>
@@ -1639,14 +1636,14 @@
 <div *ngIf="visibleexplore" class="exploresec col-lg-12 col-12 px-0 mx-0">
   
   <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
-    <div  class="innerbox mx-lg-5 mx-3 my-3" style="margin-bottom: 45px;">
+    <div  class="innerbox mx-lg-5 mx-3 my-3 px-0" style="margin-bottom: 45px;">
       <div class="col-lg-10 col-12 px-lg-5 mx-lg-4 py-lg-5">
           <div class="lineboxhide col-lg-4 px-lg-2 col-6 my-5">
             <h2 class="h2hide mx-lg-5 px-1 mx-4">Explore</h2>
           </div>
       </div>
       
-        <div class="linebox col-lg-11 mx-lg-4" style="height:1150px;">
+        <div class="linebox col-lg-11 mx-lg-4 px-0" style="height:1150px;">
               <button  class="btns"(click)="interestreceived()">Interest Received</button>
               <button  class="btns"(click)="interestsend()">Interest Sent</button>
               <button  class="btns" (click)="bothinterest()">Both Interested </button>
@@ -2114,10 +2111,13 @@
   </div>
 
 </section>
+
+
 <footer class="text-center text-white fixfoot" style="background-color: #f1f1f1;"*ngIf="visiblesmallfooter">   
   <a
     class=" btn-link btn-floating btn-lg text-dark m-1"
     role="button"
+    (click)="smlhome2()"
     data-mdb-ripple-color="dark">
   <img style="margin-top: 3%" src="../../assets/images/home2.png" alt="">
   </a>
@@ -2130,7 +2130,7 @@
   </a>
   <a 
     class=" btn-link btn-floating btn-lg text-dark m-1"
-   
+    (click)="chatact()"
     role="button"
     data-mdb-ripple-color="dark">
     <img style="margin-top: 3%"src="../../assets/images/shat2.png" alt="">
