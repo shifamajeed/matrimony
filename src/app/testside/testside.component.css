@@ -1,3 +1,9 @@
+/* * {
+  font-family: poppins , sans-serif !important; 
+  
+} */
+
+
 .sidebar{
   /* padding-right:0px;padding-left:0px; */
     margin: 0;
@@ -108,6 +114,7 @@ background-size: 100% 100%;
     font-size: 11px;
     
   }
+
 } 
 
 
@@ -124,7 +131,7 @@ margin-top: 45px;
 float: left;
 }
 .innerbox1{
-  
+
 opacity: 6;  
 
 Offset: 117.83px, -117.83px;
@@ -491,7 +498,9 @@ line-height: 7px;
   font-size: 11px;
  
 }
-
+.innerbox{
+  height: unset;
+}
 } 
 @media screen and (min-width: 600px) {
 .camera{
@@ -503,9 +512,7 @@ line-height: 7px;
 .sidenave1{
   display: none;
 }
-.rightbg{
-  height:1881px;
-}
+
 .contper{
   font-size: 15px;
 }
@@ -734,6 +741,7 @@ color: #FFFFFF;
     height: fit-content;
     margin-left: 105px;
     margin-top:50px;
+    font-weight: bolder;
 }
 .partnerh2{
   margin-left: 30px;
@@ -762,8 +770,9 @@ color: #FFFFFF;
   font-size: 18px;
   line-height: 36px;
   color: #FFFFFF;
-  margin-left: 43%;
+  margin-left: 54%;
   font-style: poppins;
+  margin-top: 154px;
   }
   
   .head1{
@@ -772,7 +781,7 @@ color: #FFFFFF;
   height: 21px;
   color: #FFFFFF;
   font-size: 13px;
-  margin-left: 39%;
+  margin-left:48%;
   }
   .indiv{
     
@@ -836,7 +845,7 @@ background-size: contain;
     color: #FFFFFF;
     font-size: 16px;
     margin-top: 4%;
-    margin-left: 48%;
+    margin-left:44%;
     }
     .rad{
             
@@ -845,7 +854,7 @@ background-size: contain;
       height: 21px;
       color: #FFFFFF;
       font-size: 13px;
-      margin-left: 41%;
+      margin-left:35%;
      
       }
       .rad1{
@@ -868,7 +877,7 @@ border: none;
 .label1{
           width: 350px;
           height: 35px;
-          margin-left: 35%;
+          margin-left: 30%;
               margin-top: 8%;
           
           
@@ -1211,9 +1220,7 @@ border: none;
     text-align: center;
     float: center;
   } 
-  .rightbg{
-    height: unset;
-  }
+  
   .mng{
     display: none;
   }
@@ -1248,10 +1255,13 @@ border: none;
     margin-top: 10px;
 }
 .editmng .head{
-  margin-left:25%
+  margin-left:25%;
+  margin-top: 18%;
+  width: auto;
 }
 .editmng .head1{
-  margin-left:13%
+  margin-left:13%;
+  width: auto;
 }
 .btn{
   height:30px;
@@ -1444,6 +1454,13 @@ height: 28px;
 .h2partner{
   font-size: 126%;
 }
+.blurleft1{
+  height:850px
+}
+.blurleft2{
+  height: 850px
+}
+
 }
 @media (min-width: 600px)  {
 .camera{
@@ -1512,12 +1529,14 @@ header.stick .menu-row .menu-content .menu-wrap .menu-mobile-icon #toggle-icon s
 }
 .editmng .head2{
   margin-left: 95px;
+  width: auto;
 }
 .rad{
   margin-left: 2%;
+  width: auto;
 }
 .btn1{
-  margin-left: 7%;
+  margin-left: 20%;
   margin-top: 8%;
   width: 194px;
   height: 32px

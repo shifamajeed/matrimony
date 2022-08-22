@@ -1,3 +1,9 @@
+* {
+    font-family: poppins /* Replace with your custom font */, sans-serif !important; 
+    /* Add !important to overwrite all elements */
+  }
+
+
 html body{top:0;
     bottom:0;
     left:0;
