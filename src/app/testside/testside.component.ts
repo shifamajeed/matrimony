@@ -134,6 +134,7 @@ visiblechat:boolean=false
     this.visibleeditprofilediv=false
     this.editpwdpart=false
     this.hideprofilepart=true
+    this.visiblehelp=false
     this.visiblenotification=false
     this.smallhome=false
     this.sidenav2=false
@@ -517,6 +518,7 @@ notification()
   this.mangphoto=false
   this.visiblenotification=true
   this.smallhome=false
+  this.visiblechat=false
 }
 
 
@@ -553,6 +555,7 @@ enableDisableRule() {
       this.visiblechat=false
       this.visiblehelp=false
       this.sidenav2=true
+      this.visiblechat=false
  }
  smlhome2(){
   this.visibleexplore=false
@@ -572,6 +575,7 @@ enableDisableRule() {
   this.smallhome=false
   this.mangphoto=false
   this.smallhome=true
+  this.visiblechat=false
  }
  chatact(){
   this.innerWidth = window.innerWidth

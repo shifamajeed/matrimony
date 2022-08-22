@@ -22,7 +22,8 @@
   .lblside{
     width: 105px;
     font-size: 16px;
-    color:rgba(39, 102, 120, 1);
+   
+   
 
 }
 .logo{
@@ -138,8 +139,9 @@ Offset: 117.83px, -117.83px;
 background:rgba(160, 170, 178, 0.1);
 margin-bottom: 121px;
 margin-top: 45px;
-
+height: 94%;
 }
+
 .verticalline{
   border-left: 2px solid white;
   height: 45px;
@@ -219,7 +221,7 @@ background:rgba(160, 170, 178, 0.1);
 .helpsec .innerbox .lineboxsmall{
   margin-left: 333px;
     margin-top: 50px;
-    border-radius: 18px;
+    border-radius: 14px;
 border: 1px solid white;
 border-style: solid;
 border-width: thin;
@@ -499,9 +501,7 @@ line-height: 7px;
   font-size: 11px;
  
 }
-.innerbox{
-  height: unset;
-}
+
 } 
 @media screen and (min-width: 600px) {
 .camera{
@@ -549,7 +549,7 @@ position: absolute;
 width: 714px;
 height: 169px;
 /* left: -236px; */
-top: 70px;
+top: 122px;
 background: #FFFFFF;
 border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
@@ -719,8 +719,8 @@ color: #FFFFFF;
   margin-bottom: 7px;
     font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
+    font-weight: 550;
+    font-size: 24;
     line-height: 20px;
     border: 10px;
     color: white;
@@ -1010,7 +1010,31 @@ border: none;
     background-color:#276577;
 }
 
+.sidebtns:hover{
+ 
+  color: #d3d3d3;
+  background-color:#276577;
+}
+.btns:hover{
+ 
+  color: #d3d3d3;
+  background-color:#276577;
+}
+.btns{
+  color: #305862;
+}
+.btns1:hover{
+ 
+  color: #d3d3d3;
+  background-color:#276577;
+}
+.btns1{
+  color: #305862;
+}
 
+.sidebtns{
+  color: #305862;
+}
 
 
 .modal-title{
@@ -1100,18 +1124,14 @@ border: none;
 /* .innerbox{
   height:96%;
 } */
-.disnone .rightbg .innerbox{
+/* .disnone .rightbg .innerbox{
   height: 96%;
 }
-.notisec .rightbg .innerbox{
-  height: 38%;
-}
+
 .hidesec .rightbg .innerbox{
   height: 88%;
-}
-.hidesec .rightbg{
-  height: 735px;
-}
+} */
+
 .pswlbl{
   line-height: 35px;
 }
@@ -1130,7 +1150,7 @@ border: none;
   } 
 .exploresec .btns{
   margin-left: 43px;
-  margin-top: 30px;
+    margin-top: 15%
 }   
 /* ajin change password part */
 .pswtype{
@@ -1194,6 +1214,15 @@ border: none;
 @media (min-width:300px) and (max-width: 900px) {
   .chatsec .chat{
     width:340px;
+  }
+ 
+  
+
+  .rightbg{
+    height: 1541px;
+  }
+  .innerbox{
+    height: 1217px;
   }
   .chatsec .ha1{
     line-height: 12PX;
@@ -1432,9 +1461,6 @@ margin-left: 45px;
   margin-left: 2px;
 
 }
-.notisec .innerbox .lore{
-  
-}
 
 .editpwdpart .lineboxhide{
 height: 33px;
@@ -1484,7 +1510,15 @@ height: 28px;
 .blurleft2{
   height: 850px
 }
-
+/* .hidesec .rightbg{
+  height: 735px;
+} */
+/* .notisec .rightbg .innerbox{
+  height: 38%;
+} */
+.exploresec .btns{
+    margin-top: 15%
+}   
 }
 @media (min-width: 600px)  {
 .camera{

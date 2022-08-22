@@ -33,7 +33,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 
 import { Test2Component } from './test2/test2.component';
 
-
+import {Location} from '@angular/common';
 
 
 
@@ -82,6 +82,7 @@ import { Test2Component } from './test2/test2.component';
 
 
         Test2Component,
+        
 
     
     
@@ -99,7 +100,8 @@ import { Test2Component } from './test2/test2.component';
     MatIconModule,
     MatButtonModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    Location
     
 
     
