@@ -32,52 +32,46 @@
                 </div>
             </div>
         </div>
+      <div class="col-lg-9 col-12 mx-0 px-0">
 
-
-        <div class="col-lg-9 col-12 mx-0 px-0">
-
-            <nav class="navbar navbar-expand-lg navbar-light headercss nonav">
-                <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
-                      <a class="nav-link navbar-brand" (click)="home2()">
-                        <img src="../../assets/images/home.png" class="homeicon">
-                        <label class=navlabel >Home </label>
-                       <span class="sr-only">(current)</span> 
-                      </a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link navbar-brand" (click)="searchact()" >
-                        <img src="../../assets/images/seach5.png" class="homeicon">
-                        <label class="navlabel">Search</label> 
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navbar-brand" (click)="exploreact()">
-                        <img src="../../assets/images/explore.png" class="homeicon">
-                        <label class="navlabel" >Explore</label>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navbar-brand navlabel">
-                        <img src="assets/images/chat.png" class="homeicon">
-                        <label class="navlabel">Chat </label>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navbar-brand navlabel" (click)="helpact()">
-                        <img src="assets/images/help.png" class="homeicon">
-                        <label class="navlabel">Help </label>
-                      </a>
-                    </li>
-                     </ul>
-                </div>
-              </nav>
-
-
-  
-
+        <nav class="navbar navbar-expand-lg navbar-light headercss nonav">
+          <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
+                <a class="nav-link navbar-brand" (click)="home2()">
+                  <img src="../../assets/images/home.png" class="homeicon">
+                  <label class=navlabel >Home </label>
+                 <span class="sr-only">(current)</span> 
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link navbar-brand" (click)="searchact()" >
+                  <img src="../../assets/images/seach5.png" class="homeicon">
+                  <label class="navlabel">Search</label> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" (click)="exploreact()">
+                  <img src="../../assets/images/explore.png" class="homeicon">
+                  <label class="navlabel" >Explore</label>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand navlabel">
+                  <img src="assets/images/chat.png" class="homeicon">
+                  <label class="navlabel">Chat </label>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand navlabel" (click)="helpact()">
+                  <img src="assets/images/help.png" class="homeicon">
+                  <label class="navlabel">Help </label>
+                </a>
+              </li>
+               </ul>
+          </div>
+        </nav>
 <!-- entire edit profile -->
 
         <!-- editprofile -->   
@@ -798,7 +792,7 @@
                       </div>
                     </div>
                    
-                   </div>
+                    </div>
               
                   </div>
                   </div>
@@ -873,8 +867,6 @@
         
         </div>
  
-        
-      
         <div class="rightbg col-lg-12 col-sm-12" *ngIf="partner" style="background-image:url(assets/images/abt.png);">
           <div  class="innerbox" style="margin-bottom: 45px;">
         <div class="btncls">
@@ -980,13 +972,9 @@
         <button type="submit" class="text-white btn btn-default submitbtn svbtn">Submit & Save</button>
       </div>
       </div>
-   
-      
-   
+    
 <!-- end partner preference -->
 <!-- hide profile div -->
-
-
 <div *ngIf="hideprofilepart"class="hidesec col-lg-12 col-12 px-0 mx-0">
     <div  class="col-lg-12 col-12 px-0 mx-0">
         <div class="rightbg col-lg-12 col-12 py-2 px-0 mx-0">
@@ -1019,7 +1007,7 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" data-dismiss="modal" class="yesbtn" style="background-color:green;">Yes</button>
-                                  <button type="button" class="nobtn" style="background-color:red;">No</button>
+                                  <button type="button" class="nobtn" style="background-color:#D72F34;">No</button>
                                 </div>
                               </div>
                             </div>
@@ -1050,12 +1038,12 @@
 <!-- end hide profile div -->
 <!-- delete profile -->
 <div *ngIf="deleteprofilepart" class="deleteprosec">
-    <div class="rightbg col-lg-12 col-sm-12">
-        <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
-                <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
-                <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5">
-                    <div class="lineboxhide col-lg-5 col-sm-5 px-lg-4 mx-lg-5">
-                        <h2 class="h2hide col-lg-12 col-sm-12 mx-lg-0 mx-5">Delete Profile</h2>
+    <div class="rightbg col-lg-12 col-12">
+        <div class="innerbox col-lg-12 col-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
+                <div class="col-lg-12 col-12 px-lg-5 mx-lg-5 py-lg-5">
+                <div class="col-lg-12 col-12 mx-lg-5 px-lg-5">
+                    <div class="lineboxhide col-lg-5 px-lg-4 col-6 px-3">
+                        <h2 class="h2hide col-lg-12 col-12 mx-lg-0 mx-0 px-0">Delete Profile</h2>
                     </div>
                 </div>
             </div>
@@ -1064,8 +1052,8 @@
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
                 </h4>
                 <div class="col-lg-5 col-sm-12 mx-lg-5 px-lg-5 py-lg-5 py-5 d-flex px-0">
-                    <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn text-white submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Already Married</button>
-                    <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn text-white submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Marriage Fixed</button>
+                    <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Already Married</button>
+                    <button type="submit" class="col-lg-8 mx-lg-5 col-sm-4 btn submit mx-1"data-toggle="modal" data-target="#exampleModalCenter">Marriage Fixed</button>
                 </div>
                 <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5 px-3 mx-0 my-0">
                     <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5 mx-0">
@@ -1090,7 +1078,7 @@
             </div>
             <div class="col-lg-12 px-lg-5 py-lg-5 my-lg-5 col-sm-12 mx-sm-3 px-sm-2 py-sm-5 my-5 d-lg-flex">
                 <!-- <div class=" d-sm-none col-lg-1 py-lg-5 my-lg-5 mx-lg-3 col-sm-0"style="background-color:green">rr</div> -->
-                <div class="col-lg-11 py-lg-5 my-lg-5 mx-lg-5 px-lg-5 col-sm-8 px-sm-0 my-sm-5 py-5 mx-0"><button class="lastbtn col-lg-5 mx-lg-5 my-lg-5 col-sm-3 mx-sm-0 px-sm-0">Delete My Profile</button></div>
+                <div class="col-lg-11 py-lg-5 my-lg-5 mx-lg-5 px-lg-5 col-8 px-sm-0 my-sm-5 py-5 mx-0"><button class="lastbtn col-lg-5 mx-lg-5 my-lg-5 col-sm-3 mx-sm-0 px-sm-0">Delete My Profile</button></div>
             </div>
         </div>    
     </div>
@@ -1103,8 +1091,8 @@
      <div class="rightbg col-lg-12 col-12 py-3 mx-0 px-0">
       <div class="col-lg-12 col-12 py-lg-5">
         <div class="innerbox col-lg-12 col-12">
-            <div class="lineboxhide col-lg-4 col-5 my-5 px-4">   
-                <h2 class="h2hide" style="text-align: center;">Change password</h2>
+            <div class="lineboxhide col-lg-12 col-7 my-5">   
+              <h2 class="h2hide" style="line-height: 35px;">Change password</h2>
             </div>
       
 
@@ -1115,7 +1103,7 @@
                      
                       <div class="blk2">
                       <div class="d-lg-flex my-3">
-                         <div class="px-lg-3"><label fo="name">current password</label></div>
+                         <div class="px-lg-3 spl"><label fo="name">current password</label></div>
                          <div>
                             <input class="d-flex" type="password" class="pswtype">
                             <i class="far fa-eye eyestyle" id="togglePassword"></i>
@@ -1124,14 +1112,14 @@
                     
 
                       <div class="d-lg-flex my-3">
-                                    <div class="d-flex px-3"> <label fo="name">New password    </label></div>
+                                    <div class=" px-lg-3 spl"> <label for="name">New password </label></div>
                                     <div>
-                                       <input class="d-flex" type="password" class="pswtype" style="margin-left:17px">
+                                       <input class="d-flex" type="password" class="pswtype sp" >
                                        <i class="far fa-eye eyestyle" id="togglePassword"></i>
                                    </div>
                       </div>
                       <div class="d-lg-flex my-3 ">
-                            <div class="d-flex px-3"> <label fo="name">confirm password  </label></div>
+                            <div class=" px-3 spl"> <label fo="name">confirm password  </label></div>
                                     <div>
                                         <input class="d-flex " type="password" class="pswtype">
                                               <i class="far fa-eye eyestyle" id="togglePassword"></i>
@@ -1156,7 +1144,7 @@
                           </div> -->
                           
                           <div class="psw d-flex col-lg-12 col-sm-12 px-lg-5  px-5  py-lg-4 py-5 my-5">
-                              <button type="submit" class="btn col-lg-6 col-sm-5 text-white" style="background-color: #068004;border-radius: 8px;">Submit & save</button>
+                              <button type="submit" class="btn col-lg-7 col-sm-5 text-white" style="background-color: #068004;border-radius: 8px;">Submit & save</button>
                           </div>
                          </div>
                       </div>
@@ -1172,7 +1160,7 @@
 <!-- end edit password -->
 <!-- notification -->
 
-<div *ngIf="visiblenotification" class="notisec col-lg-12 col-sm-12 px-0 mx-0">
+<div *ngIf="visiblenotification" class="notisec col-lg-12 col-12 px-0 mx-0">
   <div class="col-lg-12 col-sm-12 px-0 mx-0">
     <div class="rightbg col-lg-12 py-lg-3 col-12">
         <div class="innerbox col-lg-10 col-12">
@@ -1196,7 +1184,7 @@
      height: 50px;">
      <img src="../../assets/images/man.png" class="imgs">  
      <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
-     <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+     <h1 class="lore ha ha1">Lorem Ipsum accepted to view</h1>
      </div>
      
                    
@@ -1242,7 +1230,7 @@
 </div>
 <!-- end notification -->
 <!-- chat no messages -->
-<div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
+<div  class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
     <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
         <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
             <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
@@ -1477,7 +1465,7 @@
 <!-- end chat -->
 <!--  search  -->
 <!-- header search button action -->
-<div *ngIf="visisblesearch"class="searchsec col-lg-12 col-10 px-0 mx-0">
+<div *ngIf="visisblesearch" class="searchsec col-lg-12 col-10 px-0 mx-0">
   <div  class="col-lg-12 col-12 px-0 mx-0">
     <div class="rightbg col-lg-12 col-12 py-3">
         <div class="innerbox col-lg-12 col-12">
@@ -1556,17 +1544,23 @@
 </div>
 <!-- end search -->
 <!-- header explore button action -->
+<div class="col-lg-12 col-sm-12">
 <div *ngIf="visibleexplore" class="exploresec">
   
   <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
-    <div  class="innerboxexplore" style="margin-bottom: 45px;">
-      <button type="button" class="deletebtn sbtn">Explore</button>
+    <div  class="innerboxexplore my-5" style="margin-bottom: 45px; ">
+      <!-- <button type="button" class="deletebtn sbtn">Explore</button> -->
+      <div class="lineboxhide col-lg-12 col-7 my-5 ">   
+        <h2 class="h2hide" style="line-height: 35px;text-align: -webkit-center;">Explore</h2>   
+      </div>
       
-        <div class="lineboxsearch" style="height:1150px; ">
-              <button  class="btns"(click)="interestreceived()">Interest Received</button>
-              <button  class="btns"(click)="interestsend()">Interest Sent</button>
-              <button  class="btns" (click)="bothinterest()">Both Interested </button>
-        <div *ngIf="visiblereceive"> 
+        <div class="lineboxsearch col-lg-12 col-sm-12 col-md-12">
+          <div class="col-lg-12 col-sm-12 col-md-12">
+              <button  class="btns mx-4 col-lg-4 col-sm-4 sm-d-flex"(click)="interestreceived()">Interest Received</button>
+              <button  class="btns mx-4 col-lg-4 col-sm-4 sm-d-flex"(click)="interestsend()">Interest Sent</button>
+              <button  class="btns mx-4 col-lg-4 col-sm-4 sm-d-flex"  (click)="bothinterest()">Both Interested </button>
+              </div>
+        <div *ngIf="visiblereceive">  
            
               
               <div class="linebox2" >
@@ -1695,6 +1689,7 @@
     </div>
   </div>
 </div>
+</div>
 <!-- end header explore button action -->
 <!-- manage photots -->
 <div class="container-fluid rightbg" *ngIf="mangphoto">
@@ -1764,10 +1759,7 @@
   
    </div> 
 <!-- end manage photos -->
-<!-- here home2 profile page -->
-
-
-    <!-- here home2 profile page -->
+  <!-- here home2 profile page -->
 
 <div *ngIf="visiblehome2" class="disnone"> 
 
@@ -1881,14 +1873,11 @@
 
 </div>
 </div>
-
-
-
-    <!-- end home2 profile page -->
+   <!-- end home2 profile page -->
 
 <!-- small screen home page -->
 
-<div class="smallhome " *ngIf="smallhome">
+<div class="smallhome" *ngIf="smallhome">
 
 
    <!-- Image and text -->
@@ -2038,27 +2027,26 @@
         
         
   
-        <!-- Instagram -->
+    
         <a
-          class=" btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
+          class=" btn-link btn-floating btn-lg text-dark m-1";
+         
+          role="button";
           data-mdb-ripple-color="dark">
         <img style="margin-top: 3%" src="../../assets/images/home2.png" alt="">
         </a>
   
-        <!-- Linkedin -->
         <a
           class=" btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
+          (click)="exploreact()"
           role="button"
           data-mdb-ripple-color="dark">
           <img style="margin-top: 3%"src="../../assets/images/explore2.png" alt="">
-        <!-- Github -->
         </a>
+
         <a 
           class=" btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
+          click)="chatact()"
           role="button"
           data-mdb-ripple-color="dark">
           <img style="margin-top: 3%"src="../../assets/images/shat2.png" alt="">
@@ -2069,15 +2057,6 @@
    
   </footer>
 </div>
-
-
-
-
-
-
-
-
-
 
 <!-- end home2 profile page -->
 <!-- help -->

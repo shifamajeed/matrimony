@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { HostListener } from "@angular/core";
+
 @Component({
   selector: 'app-testside',
   templateUrl: './testside.component.html',
   styleUrls: ['./testside.component.css']
 })
-export class TestsideComponent implements OnInit{
+export class TestsideComponent implements OnInit {
 
   constructor() { }
-       public innerWidth: any;
+  public innerWidth: any
   // scrHeight:any;
   //   scrWidth:any;
   
@@ -29,7 +29,6 @@ export class TestsideComponent implements OnInit{
   visiblepersonal:boolean=false
   physical:boolean=true
   visiblephysical:boolean=false
-  visiblelocation:boolean=false
   education:boolean=true
   visibleeducation:boolean=false
   family:boolean=true
@@ -39,7 +38,7 @@ export class TestsideComponent implements OnInit{
   contact:boolean=true
   visiblecontact:boolean=false
   location:boolean=true
- 
+  visiblelocation:boolean=false
   mrgplan:boolean=true
   visiblemrgplan:boolean=false
   habits:boolean=true
@@ -62,7 +61,6 @@ export class TestsideComponent implements OnInit{
   visiblenotification:boolean=false
  sidenav2:boolean=false
 smallhome:boolean=true
-// managephotos
 mangphoto:boolean=false
   ngOnInit(): void {
   }
@@ -355,32 +353,11 @@ partnerpreference()
     this.visibleeditprofilediv=false
     this.visisblesearch=false
     this.visiblehelp=false
-    this.smallhome=false
-    this.sidenav2=false
     this.partner=true
-}
-// manage photos
-
-managephotos()
-{
-  this.innerWidth = window.innerWidth
-    if (this.innerWidth > 319 &&  this.innerWidth < 721) {
-    this.sidenav = false
-  
-    }
-    this.visiblehome2=false
-    this.deleteprofilepart=false
-    this.hideprofilepart=false
-    this.editpwdpart=false
-    this.visibleeditprofilediv=false
-    this.visisblesearch=false
-    this.visiblehelp=false
     this.smallhome=false
     this.sidenav2=false
-    this.partner=false
-    
-  this.mangphoto=true
 }
+
 // search button action 
 searchact()
 {
@@ -508,5 +485,8 @@ enableDisableRule() {
       this.visibleboth=false
       this.smallhome=false
       this.sidenav2=true
+ }
+ managephotos(){
+  this.mangphoto=true
  }
 }

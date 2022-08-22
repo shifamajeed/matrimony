@@ -13,6 +13,7 @@ export class EditprofileComponent implements OnInit {
   // editinner:boolean=true
   // sidebar
   sidenav:boolean=true
+  
   // editinner:boolean=false
   visibleeditprofilediv:boolean=false
   hideprofilepart:boolean=false
@@ -57,6 +58,8 @@ export class EditprofileComponent implements OnInit {
   visiblenotification:boolean=false
   // chat
   visiblechat:boolean=false
+  smallhome:boolean=false
+  sidenav2:boolean=false
   ngOnInit(): void {
   }
   // sidebar
@@ -474,6 +477,36 @@ chatact(){
   this.visiblenotification=false
   this.visiblechat=true
 }
+toggle = true;
+status = "";
+
+enableDisableRule() {
+ 
+  this.toggle = !this.toggle;
+  this.status = this.toggle ? "" : "";
+  
+}
+
+
+ fnvisiblesidenav(){
+   this.sidenav = false
+  this.visisblesearch=false
+     this.partner=false
+     this.deleteprofilepart=false
+      this.hideprofilepart=false
+    this.editpwdpart=false
+      this.visiblehome2=false
+      // this.editinner=false
+    this.visibleeditprofilediv=false
+      this.visiblenotification=false
+      
+      this.visibleexplore=false
+      this.visiblesend=false
+      this.visiblereceive=false
+      this.visibleboth=false
+      this.smallhome=false
+      this.sidenav2=true
+ }
 }
 
 
