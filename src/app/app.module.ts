@@ -55,11 +55,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     ModalComponent,
     TestComponent,
     LeftsidenavComponent,
+
     EditprofileComponent,
     EntrydetailsComponent,
     NotificationComponent,
     TestsideComponent,
     Home2Component,
+
 
   ],
   imports: [
