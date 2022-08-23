@@ -1,24 +1,117 @@
-<div class="container-fluid" >
+<div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3" style="padding-right:0px">
-  <app-leftsidenav></app-leftsidenav>
+      <div class="col-lg-3 col-md-12" *ngIf="sidenav">
+  <div class="row">
+   
+    <img src="assets/images/Group 638.png" class="imgback  px-0"/>
+    <img src="assets/images/Group 268.png" class="imgfront p-2"/>
+
+    <div class="blurleft1 px-0 py-0">
+      <div class="blurleft2 px-0 py-0">
+      <div class="col-lg-10 col-md-10">
+<button class="sidebtns my-3" (click)="lefteditprofilebtn()"><img src="assets/images/Group 598.png"></button>
+<button class="sidebtns my-3" (click)="notification()"><img src="assets/images/Group 765.png" ></button>
+<button class="sidebtns my-3" (click)="editpwd()"><img src="assets/images/Group 596.png" ></button>
+<button class="sidebtns my-3" (click)="hideprofilebtn()"><img src="assets/images/Group 595.png" ></button>
+<button class="sidebtns my-3" (click)="deleteprofilebtn()"><img src="assets/images/Group 594.png" ></button>
+<button class="sidebtns my-3"><img src="assets/images/Vector (2).png" >&nbsp;&nbsp;&nbsp;<img src="assets/images/Log Out.png"></button> 
+       <div>
+          <div class="pstyle">Download  App For Android and IOS</div>
+          <img src="assets/images/Mask Group.png" id="imgapp">
+          <img src="assets/images/Mask Group (1).png" id="imgapp"><br><br>
+          <p style="color:rgba(3, 80, 102, 1); margin-left:90px">&nbsp;&nbsp;&nbsp;Follow Us</p><br><br>
+         <span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/images/Group.png" style="background-color:rgba(3, 80, 102, 1); margin-left:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="assets/images/Group (1).png" style="background-color:rgba(3, 80, 102, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="assets/images/Group (2).png" style="background-color:rgba(3, 80, 102, 1)">
+         </span>          
+       </div>
+       </div>
+       </div>
       </div>
-  
-    <div class=col-lg-9 style="padding-right:0px">
+
+</div>
+</div>
+<!-- end leftsidenav -->
+<!-- right side -->
+  <div class="col-lg-9 col-md-12 px-0">
+    <!-- header-->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light headercss">
+          <a class="navbar-brand" href="#"><label class="navlabel">Logo</label></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link navbar-brand" (click)="home2()">
+                  <img src="assets/images/home.png" class="homeicon">
+                  <label class=navlabel >Home </label>
+                 <span class="sr-only">(current)</span> 
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link navbar-brand" (click)="searchact()" >
+                  <label class="navlabel">Search</label> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" (click)="exploreact()">
+                  <img src="assets/images/explore.png" class="homeicon">
+                  <label class="navlabel" >Explore</label>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand navlabel" (click)="chatact()">
+                  <img src="assets/images/chat.png" class="homeicon">
+                  <label class="navlabel">Chat </label>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand navlabel" (click)="helpact()">
+                  <img src="assets/images/help.png" class="homeicon">
+                  <label class="navlabel">Help </label>
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchact()">Search</button>
+            </form>  -->
+            
+          </div>
+        </nav>
+      </div>
+    <!-- end header -->
+    <!-- part below header -->
   <div style="background-size:cover;">
-      <main role="main" >
-          <div><app-header></app-header></div>
-          <div style=" height:1359px; width:997px;background-image:url(assets/images/abt.png);float:left;">
-              <div  class="innerbox">
-  
-  
-  <!--  body  -->
+      <main role="main">
+
+          <!-- entire edit profile part-->
+
+          <div *ngIf="visibleeditprofilediv">
+            <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+              <!-- <div  class="innerbox" style="margin-bottom: 45px;"> -->
           <div class="btncls">
-              <button  class="btns" >Edit profile</button>
-              <button  class="btns">Partner Preference</button>
+              <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+              <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
               <button  class="btns">Manage photos</button>
           </div>
-
           <div class="linebox">
               <div class="imgdiv">
                   <img class="boximg"src="assets/images/ali-muhamad-vAyDuvcjXcs-unsplash.jpg">
@@ -34,120 +127,1594 @@
                 <!--     form   -->
                 <form class="form-inline" action="/action_page.php">
                     <div class="form-group" style="color:white;">
-                      <label for="maritalstatus">Marital status</label><label class="lb1">:</label>
+                      <label for="maritalstatus">Marital status</label><label class="lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                       <input type="text" class="form-control formtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
                     </div>
                     <div class="form-group" style="color:white;">
-                      <label for="relegion">reliogion</label><label class="lb2">:</label>
+                      <label for="relegion">reliogion</label><label class="lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                       <input type="text" class="form-control formtypes" id="relegion" placeholder="" name="relegion">
                     </div>
                     
                     <div class="form-group" style="color:white;">
-                        <label for="education">Education</label><label class="lb3">:</label>
+                        <label for="education">Education</label><label class="lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" class="form-control formtypes" id="education" placeholder="" name="education">
                     </div>
                     <div class="form-group" style="color:white;">
-                        <label for="relegion">Job Profession</label><label class="lb4">:</label>
+                        <label for="relegion">Job Profession</label><label class="lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" class="form-control formtypes" id="job" placeholder="" name="job">
                     </div>
                     
                   </form>
               </div>
           </div>
-<!-- edit profile personal information -->
+          
 
-<div>
-  <button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">Personal Informations
+<!-- edit profile personal information buttons -->
+
+
+  <button type="button" (click)=personalinfo() class="btn btn-block personaldiv">
      <!-- {{?"<img src="assets/images/Vector (3).png">":"^"}}  -->
-     {{visible?"hi":"helloo"}}
+     {{visiblepersonal?"Personal Informations":"Personal"}}
   </button>
 
-  <button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-    {{personal?"Physical Informations":"hi"}} 
+<!--   -->
+<div *ngIf="visiblepersonal"> 
+
+  <div id="personaldiv"><br>
+    <div class="innerbox">
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Name</label><label class="div1lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">age</label><label class="div1lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Marital status</label><label class="div1lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">reliogion</label><label class="div1lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Nationality</label><label class="div1lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Language Spoken</label><label class="div1lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">About me</label><label class="div1lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+          <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+        </div>
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- edit profile physical information   -->
+
+  <button type="button" (click)=physicalinfo() class="btn btn-block personaldiv">
+    {{physical?"Physical Informations":"Physical Informations"}} 
  </button>
 
- <button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<button type="button" id="personaldiv" (click)=personalinfo() class="btn btn-block">
-  {{personal?"Physical Informations":"hi"}} 
-</button>
-
-<div *ngIf="visible"> 
-
-<div id="personaldiv">
-  
-  <h4 class="heading">Personal Informations</h4>
-    <div class="innerdiv">
-    <form class="form-inline" action="/action_page.php">
-      <div class="form-group" style="color:white;">
-        <label for="name">Name</label><label class="div1lb1">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
-      </div><br>
-      <div class="form-group" style="color:white;">
-        <label for="age">age</label><label class="div1lb2">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
-      </div>
-      <div class="form-group" style="color:white;">
-        <label for="maritalstatus">Marital status</label><label class="div1lb3">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
-      </div>
-      <div class="form-group" style="color:white;">
-        <label for="relegion">reliogion</label><label class="div1lb4">:</label>
-        <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
-      </div>
-      
-      <div class="form-group" style="color:white;">
-          <label for="nationality">Nationality</label><label class="div1lb5">:</label>
+<div *ngIf="visiblephysical"> 
+  <div id="personaldiv"><br>
+    <div class="innerbox">
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">height</label><label class="div2lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">weight</label><label class="div2lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Physical status</label><label class="div2lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Body type</label><label class="div2lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Appearence</label><label class="div2lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Complexion</label><label class="div2lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">Blood group</label><label class="div2lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
       </div>
       <div class="form-group" style="color:white;">
-        <label for="relegion">Language Spoken</label><label class="div1lb6">:</label>
-          <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
-          <!-- <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Action</button>
-              <button class="dropdown-item" type="button">Another action</button>
-              <button class="dropdown-item" type="button">Something else here</button>
-            </div>
-          </div> -->
+        <label for="nationality">Eye colour</label><label class="div2lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+    </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">Hair colour</label><label class="div2lb9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+          <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+        </div>
+        
+          <button type="submit" class=" btn btn-default submitbtn2">Save</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education & Profession -->
+
+ <button type="button"  (click)=educationinfo() class="btn btn-block personaldiv">Education & Profession
+ {{education?"Education & Profession":"Education & Profession"}}  
+  <!-- {{education?"":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"}} -->
+</button>
+
+<div *ngIf="visibleeducation"> 
+
+  <div id="personaldiv"><br>
+    <div class="innerbox">
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Heighest Education</label><label class="div3lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">Education Detail</label><label class="div3lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Marital status</label><label class="div3lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Education description</label><label class="div3lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Institution</label><label class="div3lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Profession</label><label class="div3lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job">
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="nationality">Profession Type</label><label class="div3lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
       </div>
       <div class="form-group" style="color:white;">
-        <label for="nationality">About me</label><label class="div1lb7">:</label><br>
+        <label for="nationality">Profession Detail</label><label class="div3lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Annual Income</label><label class="div3lb9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+        
+      
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Family Details -->
+<button type="button"  (click)=familyinfo() class="btn btn-block personaldiv">
+  {{family?"Family Details":"Family Details"}} 
+</button>
+<div *ngIf="visiblefamily"> 
+
+  <div id="personaldiv"><br>
+    <div class="innerbox">
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+
+        <div class="form-group" style="color:white;">
+          <label for="name">Family Type</label><label class="div4lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br> 
+
+         <div class="form-group" style="color:white;">
+          <label for="age">Financial Status</label><label class="div4lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div> 
+
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Father  </label><label class="div4lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <!-- <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" > -->
+          <!-- radio btn start -->
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Alive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">late</label>
+          </div>
+          <!-- <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div> -->
+          <!-- radio btn end -->
+        </div>
+
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Father Name</label><label class="div4lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Father Occupation</label><label class="div4lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+
+        <div class="form-group" style="color:white;">
+          <label for="mother">Mother</label><label class="div4lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <!-- <input type="text" class="form-control personaldivinputtypes" id="job" placeholder="" name="job"> -->
+           <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div>   -->
+            <!-- radio -->
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Alive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Late</label>
+            </div>
+            <!-- <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+              <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            </div>  -->
+            <!-- end radio -->
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="Mother Name">Mother Name</label><label class="div4lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="Mother Name" placeholder="" name="Mother Name">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Mother Occupation</label><label class="div4lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Family Name</label><label class="div4lb9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">House Name</label><label class="div4lb10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Number of Brothers</label><label class="div4lb11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Number of Sisters</label><label class="div4lb12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Number of Married Brothers</label><label class="div4lb13">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Number of Married Sisters</label><label class="div4lb14">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Father Family Name</label><label class="div4lb15">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Mother Family Name</label><label class="div4lb16">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div> 
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Home Type</label><label class="div4lb17">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Family Religious Views</label><label class="div4lb18">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Family Values</label><label class="div4lb19">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Living Situation</label><label class="div4lb20">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Family Description</label><label class="div4lb21">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
       </div>
-      
-        <button type="submit" class="btn btn-default submitbtn">Submit</button>
-      
-      
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- edit profile-Religious Information -->
+
+<button type="button"  (click)=relegiousinfo() class="btn btn-block personaldiv">
+  {{relegious?"Religious Information":"Religious Information"}} 
+</button>
+
+<div *ngIf="visiblerelegious"> 
+
+  <div id="personaldiv"><br>
+    <div class="innerbox">
+    
+      <div class="innerdiv">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="color:white;">
+          <label for="name">Relegion</label><label class="div5lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+        </div><br>
+        <div class="form-group" style="color:white;">
+          <label for="age">Class</label><label class="div5lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="age" placeholder="" name="age">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="maritalstatus">Relegiousness</label><label class="div5lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Mahallu Name</label><label class="div5lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+        </div>
+        
+        <div class="form-group" style="color:white;">
+            <label for="nationality">Perform Namaz</label><label class="div5lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+        </div>
+        <div class="form-group" style="color:white;">
+          <label for="relegion">Read Quran</label><label class="div5lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">no</label>
+          </div>
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="nationality">Madrasa Education</label><label class="div5lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes" id="nationality" placeholder="" name="nationality">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="relegion">Muslim by Birth</label><label class="div5lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="relegion">Quran Hafil</label><label class="div5lb9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              </div>
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="relegion">Attend Relegious Activities</label><label class="div5lb10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                </div>
+                <!-- <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">No</label>
+            </div> -->
+            <div class="form-group" style="color:white;">
+              <label for="maritalstatus">Language speaks in Home</label><label class="div5lb11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+            </div>
+
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+        
+        
+        
+          <button type="submit" class="btn btn-default submitbtn">Save</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- edit profile-contact details -->
+
+<button type="button"  (click)=contactinfo() class="btn btn-block personaldiv">
+  {{contact?"contact details":"contact details"}} 
+</button> 
+<div *ngIf="visiblecontact">
+  <div id="personaldiv">
+    <div class="innerbox">
+  <div class="innerdiv">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="name">Primary Mobile Number</label><label class="div6lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Secondary Mobile Number</label><label class="div6lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Preferred Mobile Number</label><label class="div6lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Contact person & Relationship</label><label class="div6lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Email Id</label><label class="div6lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Contact Time</label><label class="div6lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Post Office</label><label class="div6lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Pin Code</label><label class="div6lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
+  
     </form>
   </div>
+  </div>
+  </div>
+</div>
+
+<!-- edit profile-location -->
   
+<button type="button"  (click)="locationinfo()" class="btn btn-block personaldiv">
+  {{location?"Location":"Location"}} 
+</button> 
+<div *ngIf="visiblelocation">
+  <div id="personaldiv">
+    <div class="innerbox">
+  <div class="innerdiv">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="name">Country</label><label class="div7lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">State</label><label class="div7lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">District</label><label class="div7lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">City</label><label class="div7lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Place</label><label class="div7lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="nationality">Address</label><label class="div7lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+        <textarea class="personaldivinputtypes" id="aboutme" placeholder="" name="aboutme" style="width:204px;"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
+
+  
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- edit profile-marriage plan -->
+
+<button type="button"  (click)=mrgplaninfo() class="btn btn-block personaldiv">
+  {{mrgplan?"Marriage Plan":"Marriage Plan"}} 
+</button> 
+<div *ngIf="visiblemrgplan">
+  <div id="personaldiv">
+    <div class="innerbox">
+  <div class="innerdiv">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="name">Ready For Relocate</label><label class="div8lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Marriage Plan</label><label class="div8lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Willing to do Job</label><label class="div8lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Prefer to Stay</label><label class="div8lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- edit profile-habits -->
+
+<button type="button"  (click)=habitsinfo() class="btn btn-block personaldiv">
+  {{habits?"Habits":"Habits"}} 
+</button> 
+<div *ngIf="visiblehabits">
+  <div id="personaldiv">
+    <div class="innerbox">
+  <div class="innerdiv">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="name">Eating</label><label class="div9lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Drinking</label><label class="div9lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Smoking</label><label class="div9lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- edit profile-hobbies and interest -->
+
+<button type="button"  (click)=hobbiesinfo() class="btn btn-block personaldiv" style="margin-bottom: 40px;">
+  {{hobby?"Hobbies and Interest":"Hobbies and Interest"}} 
+</button> 
+<div *ngIf="visiblehobbies">
+  <div id="personaldiv">
+    <div class="innerbox">
+  <div class="innerdiv">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="name">Place visited</label><label class="div10lb1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Book</label><label class="div10lb2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Place</label><label class="div10lb3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite sport</label><label class="div10lb4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Movie</label><label class="div10lb5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Favourite Music</label><label class="div10lb6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Dress sence</label><label class="div10lb7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="name">Personality</label><label class="div10lb8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control personaldivinputtypes" id="name" placeholder="" name="name" >
+      </div>
+      <button type="submit" class="btn btn-default submitbtn">Save</button>
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- </div> -->
+  </div>         
+</div>
+<!--here -->
+
+<!-- end edit profile div -->
+<!-- hide profile div -->
+<div *ngIf="hideprofilepart">
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+
+      <div>
+  <button  style="height: 43px;
+  width: 359px;
+  
+  border-radius: 16px;
+  color: white;
+background: transparent;
+border-color: white;
+
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+
+
+margin-left: 295px;
+    margin-top: 59px;
+  ">Temporarily Hide</button></div>
+  <div><p style="height: 164px;
+      border-radius: nullpx;
+      color:white;                   
+      width: 744px;
+      margin-left: 136px;
+      border-radius: nullpx;
+      color: white;
+      margin-top: 82px;
+      font-family: 'Poppins'; 
+      
+      
+      font-family: 'Poppins';
+font-size: 15px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of<br> type and scrambled
+  </p>
+  </div>
+  <div>
+      <button type="button" class="btn btn-secondary btn-lg" style="width: 185px;
+      margin-left: 376px;
+      Fill: Solid#276678;
+      Offset: 0px, 0.5px;
+      background:rgba(0, 0, 0, 0.25);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      background-color:#276678;
+;"
+      data-toggle="modal" data-target="#exampleModalCenter">Hide My Profile</button>
+
+      </div>
+      <div>
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Launch demo modal
+            </button> -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Are You Sure  you  Want  to Hide Your Profie </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- <div class="modal-body">
+                    ...
+                  </div> -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:green; margin-right: 6.2rem; padding: 0.375rem 4.75rem;">Yes</button>
+                    <button type="button" class="btn btn-primary" style="background-color:red;padding: 0.375rem 4.75rem;margin-right:10px">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+</div>
+</div>  
+</div>
+
+<!-- end hide profile div -->
+<!-- delete profile part -->
+<div *ngIf="deleteprofilepart">
+
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+  <!-- <div class="btncls">
+    <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+    <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+    <button  class="btns">Manage photos</button>
+  </div>  -->
+  
+  <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+    <div  class="innerbox" style="height:94%"> -->
+  <!-- <div style=" height:1359px; width:1012px;background-image:url(assets/images/abt.png);float:left;"> -->
+    <button class="deletebtn">Delete profile</button>
+    <blockquote class="cntnt1 blockquote text-white ">
+      <p class="mb-0 lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of<br> type and scrambled</p>
+    </blockquote>
+    <!-- <div class="textbelowbtn text-white"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h5></div> -->
+      <button class="mrdbtn"><span class="lab">Already Married</span></button><button class="fixedbtn"><span class="lab">Marriage Fixed</span></button>
+      <div class="contn">
+        <h3 class="text-white">CONGRATULATIONS!</h3>
+        <h4 class="text-white">We are happy that you are find your life partner.</h4>
+      </div>
+
+        <div class="inner_shadow w3-opacity-max">
+          <div class="inner_shadow2">
+          <div class="inner_shadow3">
+            <form><h6 class="text-white"style="margin: 20px 20px 19px;
+              font-size: 16px;
+              font-weight: 600;">Select the source:</h6>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;margin:8px;"><label class="text-white">Through our matrimony &nbsp;&nbsp;</label>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Other Matrimonial site &nbsp;&nbsp;</label>
+              <input type="radio" name="radiobtn" style="height:35px; width:15px; vertical-align: middle;"><label class="text-white">Through Other site</label>
+            </form>
+          </div>
+          </div>
+        </div>
+<button class="lastbtn">Delete My Profile</button>
+</div>
+</div> 
+</div>
+<!-- end delete profile part  -->
+<!-- edit password -->
+<div *ngIf="editpwdpart" class="passwordsec">
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+  <!-- <div class="btncls">
+    <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+    <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+    <button  class="btns">Manage photos</button>
+  </div>  -->
+  
+  <!-- <div class="rightbg" style="background-image:url(assets/images/abt.png); height:1442px;">
+    <div  class="innerbox" style="height:94%"> -->
+      <div class="">
+    <button class="deletebtn btnn">Change Password</button>
+    <div class="resetdiv ">
+      <label class="pswlbl text-white">Current Password&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" class="pswtype">
+      <i class="far fa-eye eyestyle" id="togglePassword"></i><br>
+      <label class="pswlbl text-white">New Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" class="pswtype"><br>
+      <label class="pswlbl text-white">Confirm Password&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" autocomplete="current-password" class="pswtype">
+      <i class="far fa-eye eyestyle" id="togglePassword"></i>
+  </div>
+    <button type="submit" class="text-white btn-default submitbtn2">Submit & Save</button>
+  </div>
+</div>
+</div>
+</div> 
+<!-- end edit password -->
+<!-- notification -->
+<div *ngIf="visiblenotification">
+  <div class="row">
+<div class="col-lg-12 col-sm-12">
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <!-- <div  class="innerbox" style="margin-bottom: 45px;"> -->
+      <div class="col-sm-8 p-5 mx-2 my-2">
+      
+
+
+      <div class="main">
+        <div class="hey">
+         <h1 style="border: 10px;
+         color: white; text-align: center;">notification</h1>
+           
+         <div class="noti">
+             
+                 <img src="../../assets/images/man.png" style="margin-top: 7px;
+                 margin-left: 104px;
+                 border-radius: 101px;">  
+                
+              <h1 class="lore">Lorem Ipsum</h1>
+              <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+               
+              <button class="btn" style="font-family: 'Poppins';
+              font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+ 
+               <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+               font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+             </div>
+ 
+ <div class="noti" style="margin-top: 186px;
+ height: 50px;">
+ 
+ <img src="../../assets/images/man.png" class="imgs">  
+ <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
+ 
+ <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+ </div>
+ 
+               
+ <div class="noti" style="margin-top: 249px;
+ height: 50px;">
+ 
+ <img src="../../assets/images/man.png" class="imgs">  
+ <h1 class="lore" style="left: 125px; top: 10px;">Lorem Ipsum</h1>
+ 
+ <h1 class="lore ha">Lorem Ipsum accepted to view</h1>
+ 
+ </div>
+ 
+ 
+ 
+ <div class="noti" style="margin-top: 321px;">
+             
+     <img src="../../assets/images/man.png" style="    margin-top: 7px;
+     margin-left: 104px;
+     border-radius: 101px;">  
+    
+  <h1 class="lore">Lorem Ipsum</h1>
+  <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+   
+  <button class="btn" style="font-family: 'Poppins';
+  font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+ 
+   <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+   font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+ </div>
+ 
+ <div class="noti" style= "margin-top: 514px;">
+             
+     <img src="../../assets/images/man.png" style="    margin-top: 7px;
+     margin-left: 104px;
+     border-radius: 101px;">  
+    
+  <h1 class="lore">Lorem Ipsum</h1>
+  <h1 class="lore" style="height: 9px;top: 54px; width: 424px;  font-size: small;;">Lorem Ipsum has requested to view your photo</h1>
+   
+  <button class="btn" style="font-family: 'Poppins';
+  font-style: normal;color: #FFFFFF;font-weight:bolder"> confirm</button>
+ 
+   <button class="btn" style="font-family: 'Poppins';background-color:aliceblue;
+   font-style: normal;color:#276678;font-weight:bolder ;margin-left: 17px;"> Delete</button>
+   </div>
+ 
+        </div>
+        </div>
+         </div>
+<!-- </div> -->
+</div>
+</div>
+</div>
+</div> 
+<!-- end notification -->
+<!-- entire side button completed  -->
+<!-- partner preference -->
+<div *ngIf="partner">
+  <!-- basic preference -->
+
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+  <div class="btncls">
+    <button  class="btns"(click)="editprofilebtn()">Edit profile</button>
+    <button  class="btns"(click)="partnerpreference()">Partner Preference</button>
+    <button  class="btns">Manage photos</button>
+  </div> 
+  
+
+
+
+  <div class="linebox">
+    <h2 class="text-white partnerh2"><b>Basic Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="relegion">Age</label><label class="partnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Marital status</label><label class="partnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+          <label for="education">Height</label><label class="partnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+      </div>
+      <div class="form-group" style="color:white;">
+          <label for="relegion">Weight</label><label class="partnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="education">Complexion</label><label class="partnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+    </div>
+    <div class="form-group" style="color:white;">
+      <label for="education">Physical Status</label><label class="partnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education">
+  </div>
+    </form>
+    </div>
+  </div>
+  <!-- Education & Professional Preferences -->
+  <div class="linebox" style="margin-top: 36px;height: 217px">
+    <h2 class="text-white partnerh2"><b>Education & Professional Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Highest Education</label><label class="partnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">Job profession</label><label class="partnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+    </form>
+    </div>
+  </div>
+  <!-- Religious Preferences -->
+  <div class="linebox" style=margin-top:36px;height:209px;>
+    <h2 class="text-white partnerh2"><b>Religious Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Religiousness</label><label class="partnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">Attend Islamic Service</label><label class="partnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+    </form>
+    </div>
+  </div>
+  <!-- Location Preferences -->
+  <div class="linebox"style=margin-top:36px;height:279px>
+    <h2 class="text-white partnerh2"><b>Location Preferences</b></h2>
+    <hr class="partnrhr">
+    <div class="innerdivpartner">
+    <form class="form-inline" action="/action_page.php">
+      <div class="form-group" style="color:white;">
+        <label for="maritalstatus">Prefer to Stay</label><label class="partnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">Present Country</label><label class="partnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">Present State</label><label class="partnerdiv13">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+      <div class="form-group" style="color:white;">
+        <label for="relegion">City Preference</label><label class="partnerdiv14">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion">
+      </div>
+    </form>
+    </div>
+  </div>
+  <button type="submit" class="text-white btn btn-default submitbtn svbtn">Submit & Save</button>
 </div>
 
 </div>
 </div>
-         
+
+<!-- end partner preference -->
 <!-- </div> -->
+<!-- innerbox div closed -->
+<!-- </div> -->
+<!-- header search button action -->
+<div *ngIf="visisblesearch">
+  <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+      <button type="button" class="deletebtn sbtn">Search Profile</button>
+      <form class="form-inline my-2 my-lg-0">
+        <label><b  class="text-white searchlb">Search ID</b></label>
+        <input class="mr-sm-2 searchbtn" type="search" placeholder="Search id " aria-label="Search">
+      </form> 
+        <div class="lineboxsearch" style="margin-bottom: 22px;height: 1043px;">
+          <h2 class="text-white h2partner"><b>Search Preferences</b></h2>
+          <div class="innerdivpartner">
+            <form class="form-inline" action="/action_page.php">
+              <div class="form-group" style="color:white;">
+                <label for="relegion">Age</label><label class="searchpartnerdiv1">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="relegion" placeholder="" name="relegion"size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="maritalstatus">Marital status</label><label class="searchpartnerdiv2">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes2" id="maritalstatus" placeholder="" name="maritalstatus" >
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="education">Height</label><label class="searchpartnerdiv3">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                  <label for="relegion">Weight</label><label class="searchpartnerdiv4">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">&nbsp;&nbsp;to&nbsp;&nbsp;<input type="text" class="form-control formtypes personaldivinputtypes" id="education" placeholder="" name="education" size="10">
+              </div>
+              <div class="form-group" style="color:white;">
+                <label for="education">Complexion</label><label class="searchpartnerdiv5">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control formtypes personaldivinputtypes2" id="education" placeholder="" name="education">
+            </div>
+            <div class="form-group" style="color:white;">
+              <label for="education">Physical Status</label><label class="searchpartnerdiv6">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="form-control formtypes personaldivinputtypes2" id="education" placeholder="" name="education">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="relegion">Body type</label><label class="searchpartnerdiv7">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes2" id="relegion" placeholder="" name="relegion">
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Highest Education</label><label class="searchpartnerdiv8">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes2" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Current Location</label><label class="searchpartnerdiv9">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="age">Financial Status</label><label class="searchpartnerdiv10">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control personaldivinputtypes2" id="age" placeholder="" name="age">
+          </div> 
+          <div class="form-group" style="color:white;">
+            <label for="maritalstatus">Religiousness</label><label class="searchpartnerdiv11">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes" id="maritalstatus" placeholder="" name="maritalstatus" >
+          </div>
+          <div class="form-group" style="color:white;">
+            <label for="education">Community</label><label class="searchpartnerdiv12">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control formtypes personaldivinputtypes2" id="education" placeholder="" name="education">
+        </div><button type="submit" class="btn-default submitbtn2" style="background-color: green;">Search</button>
+         </form>
+         
+            </div>
+        </div>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      
+    </div>
+  </div>
+</div>
+<!-- end header search button action -->
+<!-- header explore button action -->
+<div *ngIf="visibleexplore">
+  <div class="searchdiv" class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerboxexplore" style="margin-bottom: 45px;">
+      <button type="button" class="deletebtn sbtn">Explore</button>
+      
+        <div class="lineboxsearch" style="height:1150px; margin-top:93px;">
+              <button  class="btns"(click)="interestreceived()">Interest Received</button>
+              <button  class="btns"(click)="interestsend()">Interest Sent</button>
+              <button  class="btns" (click)="bothinterest()">Both Interested </button>
+        <div *ngIf="visiblereceive"> 
+           
+              
+              <div class="linebox2" >
+                <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+                <div><h1></h1></div>
+              </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+                </div>
+              <div class="linebox2" style="margin-top: 28px;"> 
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+               </div>
+              <div class="linebox2" style="margin-top: 28px;">
+                <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              </div>
+              
+          
+          
+         
+           </div> <!-- end visiblesend -->
+           <!-- visiblereceive -->
+           <div *ngIf="visiblesend"> 
+           
+              
+            <div class="linebox2" >
+              <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              <div><h1></h1></div>
+
+              
+            
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+             
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+         
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+             
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+             
+           
+            </div>
+            <div class="linebox2" style="margin-top: 28px;">
+              
+              <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+              
+            
+            </div>
+            
+        
+        
+       
+         </div>
+         <!--end visiblereceive  -->
+         <!-- visibleboth -->
+         <div *ngIf="visibleboth"> 
+           
+              
+          <div class="linebox2" >
+            <div><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            <div><h1></h1></div>
+
+            
+          
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+           
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+       
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+           
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+           
+         
+          </div>
+          <div class="linebox2" style="margin-top: 28px;">
+            
+            <div ><img src="assets/images/pinkshall_women.jpg" class="roundpic"></div>
+            
+          
+          </div>
+          
+      
+      
+     
+       </div>
+         <!-- end visibleboth -->
+
+        </div>
+        
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      
+    </div>
+  </div>
+</div>
+<!-- end header explore button action -->
+<!-- chat no messages -->
+<div class="col-lg-9 col-sm-12 px-0 mx-0 d-none">
+  <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+      <div class="innerbox col-lg-12 col-sm-12 mx-lg-1 px-lg-5 py-lg-3 py-5">
+
+          <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5 py-lg-5">
+              <div class="col-lg-12 col-sm-12 mx-lg-5 px-lg-5">
+                  <div class="col-lg-6 col-sm-4 mx-lg-5 px-lg-5 col-sm-5">
+                      <div class="lineboxhide">
+                      <h2 class="h2hide col-lg-12 col-sm-12 px-lg-5 mx-lg-5 px-5">chat</h2>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-2 mx-lg-5 px-lg-5  my-4">
+                      <img class="col-lg-8 col-sm-2 mx-lg-5 px-lg-5 py-5 mx-4 my-5" src="assets/images/Frame.png">
+                  </div>
+                  <div class="col-lg-7 col-sm-6 px-lg-5 mx-lg-3">
+                      <h3 class="col-lg-12 mx-lg-5 col-sm-4 text-white">You Currently Have No Messages</h3>
+                  </div>
+                  <div class="col-lg-7 col-sm-5 px-lg-3 mx-lg-1 my-lg-5">
+                      <button type="submit" class="col-lg-12 mx-lg-5 col-sm-4 btn text-white submit mx-1" (click)="searchact()">Find Your Partner</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>     
+</div>
+<!-- end chat no messages -->
+<div *ngIf="visiblechat" class="chatsec col-lg-12 col-sm-12 px-0 mx-0 ">
+  <div class="rightbg col-lg-12 col-sm-12"style="background-image:url(assets/images/abt.png);">
+      <div class="innerbox col-lg-11 col-sm-12 mx-lg-5 px-lg-5 py-lg-3 py-5" style="height: 1500px;">
+          <div class="col-lg-12 col-sm-12 px-lg-5 mx-lg-5">
+
+              <div class="col-lg-12 col-sm-12 py-lg-5 mx-5">
+                  <div class="col-lg-6 col-sm-4 mx-lg-5 px-lg-5 col-sm-5">
+                      <div class="lineboxhide">
+                      <h2 class="h2hide col-lg-12 col-sm-12 px-lg-5 mx-lg-5 px-5 text-white">chat</h2>
+                      </div>
+                  </div>
+              </div>
+              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+      <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div> -->
+
+
+              <div class="col-lg-12 col-sm-12 chat" style="margin-top: 45px;
+              height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
+              <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+              <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+              <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+              
+              </div>
+              <div class="modal fade bd-example-modal-sm " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                      <div class="chatbox modal-content" style="background: #C3DDE4; border:none;">
+                          <div class="modal-header">
+                              <div class="btn-group">
+                                  <!-- <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Action
+                                  </button> -->
+                                  <div class="round" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mx-1 bi bi-three-dots" style="color:#276678"></i></div>
+                                  
+                                  <div class="chatmenu dropdown-menu">
+                                    <a class="dropdown-item py-3" href="">Clear Chat</a>
+                                    <a class="dropdown-item py-2" data-toggle="modal" data-target="#block">Block Profile</a>
+                                    <a class="dropdown-item py-3" data-toggle="modal" data-target="#report">Report Profile</a>
+                                  </div>
+                              </div>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <div aria-hidden="true">&times;</div>
+                                </button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="py-1" style="height: fitcontent !important;">rrr</div>
+                              <div class="py-1" >rrr</div>
+                              <div class="py-1" >rrr</div>
+                          </div>
+                          <div class="buttonin">
+                              <input type="text" class="chatmsg my-2 mx-4 px-1"placeholder="Type message...">
+                              <button type="submit" id="send">send</button>
+                          </div>
+                  </div> 
+                 
+
+                </div>
+<!-- Block main-->
+<div class=" mx-0 px-0">
+<div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+<div class="modal fade" id="block" tabindex="10" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog btx" role="document">
+    <div class="modal-content">
+      <div class="col-lg-12 col-sm-12 col-12">
+      <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+        <img src="assets/images/block.png" style="height: 25px;" class="mx-1 "> 
+        <h3 class="block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Block NAME</h3>
+      </div>
+      </div>
+      <div>
+      <p class="mx-3"  style="color:rgba(107, 122, 126, 1);"> Please tell us why you are blocking 
+        Later.Dont worry we dont tell them</p>
+      <div class="butn col-lg-12 col-sm-12 my-2">
+        <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal"data-target="#blockdetails">Inappropriate Messages</button><br>
+        <button type="button" class=" primary btn btn-outline-primary col-12" data-toggle="modal" data-target="#blockdetails">Scam or Spam</button><br>
+        <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#blockdetails">Inappropriate Profile</button><br>
+        <button type="button" class=" primary btn btn-outline-primary col-12 my-1" data-toggle="modal" data-target="#blockdetails">I just dont want them to see me</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- block details -->
+<div class=" mx-0 px-0">
+  <div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+    <div class="modal fade" id="blockdetails" tabindex="10" role="dialog" aria-labelledby="blockdetailsTitle" aria-hidden="true">
+      <div class="modal-dialog btx" role="document">
+        <div class="modal-content">
+          <div class="col-lg-12 col-sm-12 col-12">
+          <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+            <h3 class="col-15 mx-4 block modal-title" id="blockdetailsTitle" style="color:  #276678; align-content: center;" >Tell Us More</h3>
+          </div>
+          </div>
+          <div >
+          <p class="mx-3"  style="color:rgba(107, 122, 126, 1);"> Please give us more information. Dont worry we dont tell them.</p>
+          <div class="butn col-lg-12 col-sm-12 my-2">
+            <textarea cols="35" rows="4" style="border-radius: 13px" placeholder="Tell us what happened...."></textarea>
+            <button type="button" class="text-white btn-outline-primary mx-5 col-8 my-3"style="border-radius: 13px;background-color:#276678">Block Name</button> 
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>  
+<!--report main -->
+<div class=" mx-0 px-0">
+<div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+<div class="modal fade" id="report" tabindex="10" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog btx" role="document">
+    <div class="modal-content">
+      <div class="col-lg-12 col-sm-12 col-12">
+      <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+        <img src="assets/images/report.png" style="height: 25px;" class="mx-1"> 
+        <h3 class="block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Report NAME</h3>
+      </div>
+      </div>
+      <div>
+      <p class="mx-3"  style="color:rgba(107, 122, 126, 1);">  Please tell us why you are blocking Later.Dont worry we dont tell them </p>
+      <div class="butn col-lg-12 col-sm-12 my-2">
+        <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#report2" >Inappropriate Profile</button><br>
+        <button type="button" class=" primary btn btn-outline-primary col-12" data-toggle="modal" data-target="#report2">Inappropriate Messages</button><br>
+        <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#report2">Already Married</button><br>
+        <button type="button" class=" primary btn btn-outline-primary col-12 my-1" data-toggle="modal" data-target="#report2">Misusing matrimony</button>
+        <button type="button" class=" primary btn btn-outline-primary col-12" data-toggle="modal" data-target="#report2">Wrong Contact Details</button><br>
+        <button type="button" class=" primary btn btn-outline-primary my-2 col-12" data-toggle="modal" data-target="#report2">Scam or Spam</button><br> 
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- report details -->
+<div class=" row mx-0 px-0">
+  <div class="pop col-lg-12 col-sm-12 col-md-12 mx-0">
+<div class="modal fade" id="report2" tabindex="10" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog btx" role="document">
+    <div class="modal-content">
+      <div class="col-lg-12 col-sm-12 col-12">
+      <div class="col-lg-12 col-sm-12 col-12 block mx-3 px-5 d-flex my-2">
+        <!-- <img src="assets/images/block.png" style="height: 25px;" class="mx-1">  -->
+        <h3 class="col-15 mx-4 block modal-title" id="exampleModalLongTitle" style="color:  #276678; align-content: center;" >Tell Us Reason</h3>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      </div>
+      <div >
+
+      <p class="mx-3"  style="color:rgba(107, 122, 126, 1);"> Please give us more information. Dont worry we dont tell them.</p> <br> 
+      <div class="butn col-lg-12 col-sm-12 my-2">
+        <textarea cols="35" rows="4" style="border-radius: 13px" placeholder="Tell us what happened...."></textarea> <br> <br>
+       <div class="mx-5 px-2 py-3 d-flex" style="color:#00556A ;"  >Also Block Name <label class="switch mx-2  d-flex"> <br> <br>
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+        <button type="button" class="text-white btn-outline-primary mx-5 col-8 my-1"style="border-radius: 13px;background-color:#276678">Report Name</button> 
+
+      </div>
+        
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+</div>
+              </div>
+
+              <div class="col-lg-12 col-sm-12 chat" style="margin-top: 120px;
+              height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
+              <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+              <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+              <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+              </div>
+
+              <div class="col-lg-12 col-sm-12 chat" style="margin-top: 195px;
+              height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
+              <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+              <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+              <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+              </div>
+
+              <div class="col-lg-12 col-sm-12 chat" style="margin-top: 265px;
+              height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
+              <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+              <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+              <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1>
+              </div>
+
+              <div class="col-lg-12 col-sm-12 chat" style="margin-top: 335px;
+              height: 66px;"data-toggle="modal" data-target=".bd-example-modal-sm">
+              <img src="../../assets/images/man.png" class="imgs" style="margin-top:8px; margin-left:23px">  
+              <h1 class="lore" style="left: 125px; top: 0px;">NAME</h1>
+              <h1 class="lore ha1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</h1> 
+              </div>
+          </div>   
+      </div>
+  </div> 
+</div>
+<!-- help  -->
+<div *ngIf="visiblehelp">
+  <div class="rightbg" style="background-image:url(assets/images/abt.png);">
+    <div  class="innerbox" style="margin-bottom: 45px;">
+      <button class="deletebtn btnn" style="margin-top:93px;">Help</button>
+      <div class="linebox" style="margin-bottom: 34px;height: 1090px;"><p class="help">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambledLorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambledLorem Ipsum is simply dummy text of 
+        the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+         ever since the 1500s, when an unknown printer took a galley of type and scrambledLorem Ipsum 
+         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+         scrambled
+      </p>
+      <p class="help" style="margin-left:340px;">+91758903989</p>
+      <p class="help" style="margin-left:314px;">matrimony@gmail.com</p>
+    </div>
+ </div>
+ </div>
+</div>
+<!-- end help -->
+<!-- header home button action -->
+<div *ngIf="visiblehome2" >
+  
+  <div class="rightbghome2" style="background-image:url(assets/images/abt.png);overflow: hidden;">
+      <div class="rtngl1" >
+      <div class="in-rtgl" >
+          <button class="pg"></button>
+      <div class="pic"></div>
+      <div class="des">
+          <!-- <button 
+          (click)="enableDisableRule()" 
+          [ngClass]="{'green' : toggle, 'red': !toggle}" class=" heart"  >
+          {{status}}
+      </button> -->
+      </div>
+    </div>
+
+    <div class="in-rtgl" >
+      <button class="pg"></button>
+      <div class="pic"></div>
+      <div class="des">
+      <!-- <button 
+      (click)="enableDisableRule()" 
+      [ngClass]="{'green' : toggle, 'red': !toggle}" class=" heart"  >
+      {{status}}
+  </button> -->
+    </div>
+   </div>
+
+      <div class="in-rtgl" >
+          <button class="pg"></button>
+      <div class="pic"></div>
+      <div class="des">
+          <!-- <button 
+          (click)="enableDisableRule()" 
+          [ngClass]="{'green' : toggle, 'red': !toggle}" class=" heart"  >
+          {{status}}
+      </button> -->
+      </div>
+    </div>
+      </div >
+    </div>
+
+</div>
+<!-- end header home button action -->
+<!-- rightbg closed -->
+</main>
+</div>
+<!-- end entire part below header -->
+</div>
+</div>
+</div>
               
   
+
