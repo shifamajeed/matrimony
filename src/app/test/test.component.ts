@@ -8,7 +8,7 @@ import { Component,  } from '@angular/core';
  
 })
 
-export class TestComponent implements OnInit {
+export class TestComponent {
   constructor() { }
   current = 0;
   public isActive:boolean = true;

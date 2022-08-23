@@ -102,9 +102,7 @@ export class EntrydetailsComponent implements OnInit {
     this.hello8=false
     this.hello9=true
   }
-  gotit(){
-    location.href="testside"
-  }
+ 
 
 }
 
