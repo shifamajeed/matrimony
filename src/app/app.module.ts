@@ -28,12 +28,12 @@ import { TestsideComponent } from './testside/testside.component';
 import { Home2Component } from './home2/home2.component';
 import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatStepperModule} from '@angular/material/stepper';
 
-
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { Test2Component } from './test2/test2.component';
 
-import {Location} from '@angular/common';
+
 
 
 
@@ -101,8 +101,8 @@ import {Location} from '@angular/common';
     MatButtonModule,
     FormsModule,
     MatDialogModule,
-    Location
-    
+    MatStepperModule,
+    ReactiveFormsModule
 
     
     
