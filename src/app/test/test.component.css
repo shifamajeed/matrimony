@@ -422,7 +422,9 @@ h6{
         margin-top: -35px;
     }
 }
-
+.nav1 .ngb{
+    margin-top:0px;
+}
 .btn1{
     
 background: #F6F5F5;
