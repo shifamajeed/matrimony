@@ -12,7 +12,6 @@ import { LeftsidenavComponent } from './leftsidenav/leftsidenav.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
 
 
-import { SuccessComponent } from './success/success.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import {EntrydetailsComponent} from './entrydetails/entrydetails.component';
 import { NotificationComponent } from './notification/notification.component';
@@ -37,9 +36,6 @@ const routes: Routes = [
  
   { path:'edit',component:EditprofileComponent},
 
- 
-
-  { path: 'success', component: SuccessComponent},
   { path: 'profile', component: ProfilesComponent},
   { path:'entry',component:EntrydetailsComponent},
   { path: 'noti', component: NotificationComponent},
