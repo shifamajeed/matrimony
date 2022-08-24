@@ -4,11 +4,23 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-entrydetails',
   templateUrl: './entrydetails.component.html',
-  styleUrls: ['./entrydetails.component.css']
+  styleUrls: ['./entrydetails.component.css'],
+  template: `
+       <ul>
+           <li [class]="items[selectedIndex] == item ? 'active': ''" 
+                  *ngFor="let item of items">{{ item }}</li>
+       </ul>
+    `
+ 
 })
 export class EntrydetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.selectedIndex = 0;
+    this.items = ["#","hello", "hello1","hello2","hello3","hello4","hello5","hello6","hello7"];
+   }
+   items: string[]
+   selectedIndex: number
 
   hello:Boolean=true
   hello2:Boolean=false
@@ -21,7 +33,12 @@ export class EntrydetailsComponent implements OnInit {
   hello9:boolean=false
   ngOnInit(): void {
   }
-
+  next() {
+    ++this.selectedIndex;
+ }
+ previous() {
+     --this.selectedIndex;
+ }
   fnnext(){
   this.hello=false
   this.hello2=true
@@ -85,11 +102,9 @@ export class EntrydetailsComponent implements OnInit {
     this.hello8=false
     this.hello9=true
   }
-//   function () {
-//     this.router.navigateByUrl('/editprofile');
-// }
+ 
+
 }
 
 // nav bar 2
-
 

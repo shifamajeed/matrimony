@@ -579,9 +579,9 @@ header .menu-row .button-wrap .button {
 }
 }
 @media (min-width:300px) and (max-width:500px){
-    .about{
+    /* .about{
         height: ;
-    }
+    } */
 }
 .box{
     color:white;
@@ -797,12 +797,6 @@ border: 0.742029px solid #FFFFFF;
     }
 }
 
-
-
-
-
-
-
 @media (max-width: 900px)
 {
 .progress {
@@ -842,13 +836,6 @@ border: 0.742029px solid #FFFFFF;
 }
     }
 
-/* @media (max-width:1000px) */
-/* { */
-    /* .progress { */
-        /* max-width: 50px; */
-        /* margin-left: 83px; */
-    /* } */
-/* } */
 @media (max-width:1000px)
 {
     .hrtcls1 {
@@ -875,13 +862,6 @@ border: 0.742029px solid #FFFFFF;
     }
 }
 
-
-/* @media(max-width:845px)
-{
-    .in{
-        margin-top: ;
-    }
-} */
 @media (min-width:300px) and (max-width:440px)
 {
     .img{
@@ -917,21 +897,7 @@ border: 0.742029px solid #FFFFFF;
         top: -15px;
     }
   }
-   
-  /* @media (min-width:300px) and (max-width:440px)
-  {
-    p{
-        font-size:6px;
-
-       }
-  } */
-
-  .addres{
-    /* margin-bottom: 11%;
-    margin-left: 142%;
-    width: 44%;
-    margin-top: 11%; */
-  }
+  
   @media (min-width:425px) and (max-width:549px)
 {
     .progress {
@@ -990,8 +956,21 @@ border: 0.742029px solid #FFFFFF;
         visibility: hidden;
     }
   } */
- 
+  .nav1{
+     left: 0px;
+  top: 0px;
+  height: 45px;
+    background-color: #1687A7;
+  background-attachment: fixed;
+  padding-left: 10px;
+ }
+@media(max-width:720px){
+    .nav1{
+        
+        margin-right: 0px;
+    }
 
+}
 
 
   @media (min-width:320px) and (max-width:340px){
