@@ -579,9 +579,9 @@ header .menu-row .button-wrap .button {
 }
 }
 @media (min-width:300px) and (max-width:500px){
-    .about{
+    /* .about{
         height: ;
-    }
+    } */
 }
 .box{
     color:white;
@@ -1013,7 +1013,7 @@ border: 0.742029px solid #FFFFFF;
 
     .nav2{
         visibility: hidden;
-    }
+    } 
 
 
 }
@@ -1060,3 +1060,4 @@ border: 0.742029px solid #FFFFFF;
         width:100%
     }
 } 
+
