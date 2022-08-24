@@ -1,5 +1,8 @@
 .mdb-color {
     background-color: #1687A7 !important;
+    font-family: 'Poppins';
+    
+   
 }
 .btn-floating.btn-sm {
     width: 36.15385px;
@@ -7,6 +10,8 @@
 }
 footer.page-footer a {
     color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
 }
 a.waves-effect, a.waves-light {
     display: inline-block;

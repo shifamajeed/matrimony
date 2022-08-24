@@ -1,4 +1,4 @@
-body{width:1485px;overflow-x:hidden;}
+/* body{width:1485px;overflow-x:hidden;} */
 .firstcoldiv{float:left;padding-right:0px; }
 .imgdiv{width: 300px;
   height: 250px;
@@ -47,8 +47,8 @@ body{width:1485px;overflow-x:hidden;}
     /* margin: -1px; */
 }
 .pstyle{
-  Font-family: Poppins;
-  Font-size: 14px;
+  font-family: Poppins;
+  font-size: 14px;
   float: Left;
   margin-left: 47px;
     margin-top: 814px;
@@ -116,7 +116,7 @@ background:white;}
 .sidebtn6{top: 875px;}
 
 .vectorimg{width: 28px;
-  Height: 34px;
+  height: 34px;
   /* background-color: #276678; */}
 
 .div1{
@@ -125,7 +125,7 @@ background:white;}
 .blurleft{
     background-image:url("/assets/images/Rectangle 60.png") ;
     width:fit-content;
-    height: 1432px;
+    height: 1510px;
      margin-left: -14px; 
   /* background-size: cover; */
 }

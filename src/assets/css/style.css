@@ -1,6 +1,15 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 .banner-section {
     background-image: url("../assets/images/bnr2.jpg");
@@ -10,3 +19,11 @@ body {
   background-size: cover;
     /* background: #def4e9; */
 }
+
+div{
+  
+}
+
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

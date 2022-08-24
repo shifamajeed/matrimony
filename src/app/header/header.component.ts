@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Alert } from 'bootstrap';
+
 
 
 @Component({
@@ -14,8 +16,6 @@ hello:Boolean=true
 visible:Boolean=false
 visible2:Boolean=false
 visible3:Boolean=false
-
-
 visible4:Boolean=false
 
 
@@ -30,7 +30,7 @@ visible4:Boolean=false
     this.visible4=true
   }
   
-  fnotp(){
+  fn1(){
     this.visible=false
     this.hello=false
     this.visible2=true
@@ -73,6 +73,11 @@ visible4:Boolean=false
 
   frreg(){
     
-  location.href=""
+  location.href="#"
+  
+  }
+
+  fnotp(){
+    
   }
 }

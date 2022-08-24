@@ -1,0 +1,24 @@
+.banner{
+    background-image: url("../../assets/images/bnr3.png");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 673px;
+  
+}
+
+.inputbox{
+    background: rgba(172, 181, 184, 0.01);
+box-shadow: inset 7.66417px -7.66417px 7.66417px rgba(137, 145, 147, 0.22), inset 15.3283px -15.3283px 15.3283px rgba(255, 255, 255, 0.22), inset -7.66417px 7.66417px 7.66417px rgba(255, 255, 255, 0.22), inset -15.3283px 15.3283px 15.3283px rgba(137, 145, 147, 0.22);
+backdrop-filter: blur(51.3499px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 27.5033px;
+}
+
+.formset{
+    margin-left: 269px;
+    margin-top: 152px;
+}
