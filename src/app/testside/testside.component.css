@@ -1,3 +1,9 @@
+/* * {
+  font-family: poppins , sans-serif !important; 
+  
+} */
+
+
 .sidebar{
   /* padding-right:0px;padding-left:0px; */
     margin: 0;
@@ -16,8 +22,6 @@
   .lblside{
     width: 105px;
     font-size: 16px;
-    /* color:rgba(39, 102, 120, 1); */
-    
 
 }
 .logo{
@@ -109,6 +113,7 @@ background-size: 100% 100%;
     font-size: 11px;
     
   }
+
 } 
 
 
@@ -125,15 +130,16 @@ margin-top: 45px;
 float: left;
 }
 .innerbox1{
-  
+
 opacity: 6;  
 
 Offset: 117.83px, -117.83px;
 background:rgba(160, 170, 178, 0.1);
 margin-bottom: 121px;
 margin-top: 45px;
-height: 1000px;
+height: 94%;
 }
+
 .verticalline{
   border-left: 2px solid white;
   height: 45px;
@@ -213,7 +219,7 @@ background:rgba(160, 170, 178, 0.1);
 .helpsec .innerbox .lineboxsmall{
   margin-left: 333px;
     margin-top: 50px;
-    border-radius: 18px;
+    border-radius: 14px;
 border: 1px solid white;
 border-style: solid;
 border-width: thin;
@@ -338,6 +344,7 @@ font-weight: 550;
 color:white;
 font-weight: 600;
 font-size: 22px;
+
 }
 @media (min-width:900px) and (max-width:1500px){
   .h2hide{
@@ -504,9 +511,7 @@ line-height: 7px;
 .sidenave1{
   display: none;
 }
-.rightbg{
-  height:1881px;
-}
+
 .contper{
   font-size: 15px;
 }
@@ -542,7 +547,7 @@ position: absolute;
 width: 714px;
 height: 169px;
 /* left: -236px; */
-top: 70px;
+top: 122px;
 background: #FFFFFF;
 border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
@@ -720,8 +725,8 @@ color: #FFFFFF;
   margin-bottom: 7px;
     font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
+    font-weight: 550;
+    font-size: 24;
     line-height: 20px;
     border: 10px;
     color: white;
@@ -743,6 +748,7 @@ color: #FFFFFF;
     height: fit-content;
     margin-left: 105px;
     margin-top:50px;
+    font-weight: bolder;
 }
 .partnerh2{
   margin-left: 30px;
@@ -771,8 +777,9 @@ color: #FFFFFF;
   font-size: 18px;
   line-height: 36px;
   color: #FFFFFF;
-  margin-left: 43%;
+  margin-left: 54%;
   font-style: poppins;
+  margin-top: 154px;
   }
   
   .head1{
@@ -781,7 +788,7 @@ color: #FFFFFF;
   height: 21px;
   color: #FFFFFF;
   font-size: 13px;
-  margin-left: 39%;
+  margin-left:48%;
   }
   .indiv{
     
@@ -845,7 +852,7 @@ background-size: contain;
     color: #FFFFFF;
     font-size: 16px;
     margin-top: 4%;
-    margin-left: 48%;
+    margin-left:44%;
     }
     .rad{
             
@@ -854,7 +861,7 @@ background-size: contain;
       height: 21px;
       color: #FFFFFF;
       font-size: 13px;
-      margin-left: 41%;
+      margin-left:35%;
      
       }
       .rad1{
@@ -877,7 +884,7 @@ border: none;
 .label1{
           width: 350px;
           height: 35px;
-          margin-left: 35%;
+          margin-left: 30%;
               margin-top: 8%;
           
           
@@ -941,8 +948,9 @@ border: none;
   height: 140px;
   width: 722px;
   /* left: 452px; */
-  margin-top: 100px;
+  margin-top: 95px;
   margin-left: 45px;
+  margin-bottom:2px;
   border-radius: 18px;
   border: 1px solid white;
   border-style: solid;
@@ -1026,7 +1034,31 @@ border: none;
 
 }
 
+.sidebtns:hover{
+ 
+  color: #d3d3d3;
+  background-color:#276577;
+}
+.btns:hover{
+ 
+  color: #d3d3d3;
+  background-color:#276577;
+}
+.btns{
+  color: #305862;
+}
+.btns1:hover{
+ 
+  color: #d3d3d3;
+  background-color:#276577;
+}
+.btns1{
+  color: #305862;
+}
 
+.sidebtns{
+  color: #305862;
+}
 
 
 
@@ -1082,10 +1114,12 @@ border: none;
 }
 
 
+
 .editpwdpart .lineboxhide{
   
   margin-left: 250px;
 }
+
 .helpsec .linebox{
   margin-left: 75px;
     border-radius: 18px;
@@ -1119,7 +1153,13 @@ border: none;
   color: black;
 }
 
+
+.pswlbl{
+  line-height: 35px;
+}
+
 @media (min-width:900px) and (max-width:1500px){
+  
   .modal-title{
       width:127px;
       font-weight: 600;
@@ -1136,7 +1176,7 @@ border: none;
 
 .exploresec .btns{
   margin-left: 43px;
-  margin-top: 30px;
+    margin-top: 15%
 }   
 /* ajin change password part */
 .pswtype{
@@ -1150,6 +1190,7 @@ border: none;
     margin-left: 142px;
 }
 }
+
 @media (min-width: 992px){
    /* .col-lg-6 {
    flex: 0 0 50%;
@@ -1202,6 +1243,15 @@ border: none;
   .chatsec .chat{
     width:340px;
   }
+ 
+  
+
+  .rightbg{
+    height: 1446px;
+  }
+  .innerbox{
+    height: 1217px;
+  }
   .chatsec .ha1{
     line-height: 12PX;
     top: 23px;
@@ -1246,9 +1296,7 @@ border: none;
     text-align: center;
     float: center;
   } 
-  .rightbg{
-    height: unset;
-  }
+  
   .mng{
     display: none;
   }
@@ -1283,10 +1331,13 @@ border: none;
     margin-top: 10px;
 }
 .editmng .head{
-  margin-left:25%
+  margin-left:25%;
+  margin-top: 18%;
+  width: auto;
 }
 .editmng .head1{
-  margin-left:13%
+  margin-left:13%;
+  width: auto;
 }
 .btn{
   height:30px;
@@ -1379,6 +1430,12 @@ margin-left: 45px;
 
 
 }
+.deleteprosec .h2hide{
+  font-size: 13px;
+    margin-left: 5px;
+    padding-left: 0px;
+    line-height: 26px;
+}
 .hidesec .innerbox .modal-content{
   width: 310px;
   height: 210px;
@@ -1456,9 +1513,6 @@ margin-left: 45px;
   margin-left: 2px;
 
 }
-/* .notisec .innerbox .lore{
-  
-} */
 
 .editpwdpart .innerbox .lineboxhide{
 
@@ -1482,8 +1536,6 @@ margin-left: 45px;
   margin-left: 65px;
 height: 28px;
 }
-
-
 
 .editpwdpart .lineboxhide{
 height: 33px;
@@ -1528,6 +1580,21 @@ height: 28px;
 .h2partner{
   font-size: 126%;
 }
+.blurleft1{
+  height:850px
+}
+.blurleft2{
+  height: 850px
+}
+/* .hidesec .rightbg{
+  height: 735px;
+} */
+/* .notisec .rightbg .innerbox{
+  height: 38%;
+} */
+.exploresec .btns{
+    margin-top: 15%
+}   
 }
 @media (min-width: 600px)  {
 .camera{
@@ -1535,8 +1602,9 @@ height: 28px;
 }
 
 }
-@media (min-width:900px) and (max-width:1500px){
+@media (min-width:900px)  and (max-width:1500px){
   .modal-title{
+
       width:127px;
       font-weight: 600;
        margin-right: -4rem!important;
@@ -1557,9 +1625,17 @@ height: 28px;
   width: 235px;
   border-radius: 8px;
 
+    width:127px;
+    font-weight: 600;
+     margin-right: -4rem!important;
 
 }
-@media (min-width:900px)  and (max-width:1500px){
+.px-5{
+    padding-left: -0.75rem!important;
+}
+.editpwdpart .sp{
+  margin-left:17px;
+} 
   .modal-content{
       width: 326px; 
   }
@@ -1605,12 +1681,14 @@ header.stick .menu-row .menu-content .menu-wrap .menu-mobile-icon #toggle-icon s
 }
 .editmng .head2{
   margin-left: 95px;
+  width: auto;
 }
 .rad{
   margin-left: 2%;
+  width: auto;
 }
 .btn1{
-  margin-left: 7%;
+  margin-left: 20%;
   margin-top: 8%;
   width: 194px;
   height: 32px
@@ -1689,8 +1767,6 @@ border-width: thin;
     display: none;
   }
 }
-}
-
 .sidebtns:hover{
   
   background-color:#276577;

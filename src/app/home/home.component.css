@@ -132,7 +132,8 @@ background-repeat: no-repeat; */
     margin-left: 55px;
     margin-top: 14px;
 }
-
+.carousel .carousel-indicators li {background-color: #D3E0EA;}
+.carousel .carousel-indicators li.active {background-color: #1687A7;}
 @media(max-width:720px) {
     .head1 {
         margin-left: 23px;
@@ -886,7 +887,8 @@ a {
     width: 357px;
     color: #1687A7;
     margin-left: -64px;
-    margin-top: 23px
+    margin-top: 23px;
+    margin-bottom: 50%;
 }
 
 @media(max-width:600px) {
@@ -1012,7 +1014,7 @@ a {
     margin-left: -14px;
 }
 .mx1{
-    margin-top: 18%;
+    margin-top: 70%;
     margin-left: 35%;
 }
 

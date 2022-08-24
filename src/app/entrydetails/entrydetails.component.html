@@ -2,16 +2,17 @@
     <div class="row">
       <div class="col-lg-12 col-sm -12"style="padding-right:0px;padding-left:0px;overflow: hidden;">
            <div class="nv1">
-           <app-header></app-header>
+            <app-test> </app-test> 
            </div>
            <div class="nv2">
           <app-test> </app-test>  
+
           </div>
   <section class="about">
    
   
     <!-- here -->
-    <div  *ngIf="hello">    
+    <div  *ngIf="hello" class="hello" name="hello" id="hello">    
     
    
       <div class="row">
@@ -153,7 +154,7 @@
           <!-- 1st  -->
           
   
-        <div *ngIf="hello2"> 
+        <div *ngIf="hello2"class="hello2" name="hello2" id="hello2"> 
           
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
@@ -218,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div col-lg-4 col-sm-12>
+          <div class="col-lg-4 col-sm-12">
             <div class="inp" style="margin-top: -20px;margin-left: 15px;">
               <p>Complexion</p>
   
@@ -267,7 +268,7 @@
               
        
         
-            <div *ngIf="hello3">
+            <div *ngIf="hello3"class="hello3" name="hello3" id="hello3">
              
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
@@ -356,7 +357,7 @@
       
       
             </div>
-            <div *ngIf="hello4">
+            <div *ngIf="hello4"class="hello4" name="hello4" id="hello4">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
                   aria-valuemax="100%">60%</div>
@@ -486,7 +487,7 @@
               </div>
       
             </div>
-            <div *ngIf="hello5">
+            <div *ngIf="hello5"class="hello5" name="hello5" id="hello5">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
                   aria-valuemax="100%">70%</div>
@@ -588,7 +589,7 @@
               </div>
               </div>
             </div>
-            <div *ngIf="hello6">
+            <div *ngIf="hello6"class="hello6" name="hello6" id="hello6">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
                   aria-valuemax="100%">80%</div>
@@ -633,7 +634,7 @@
                   </div>
                 </div>            
               </div>
-              <div col-lg-4 col-sm-12>
+              <div class="col-lg-4 col-sm-12">
                 <div class="inp">
       
       
@@ -674,7 +675,7 @@
       
   <!--abt container closed -->
   <!-- <div class="container-fluid abtcont1"> -->
-    <div class="col-sm-12" *ngIf="hello7">
+    <div class="col-sm-12" *ngIf="hello7" class="hello7" name="hello7" id="hello7">
     <div class="box">
         <div >
           <div class="progress" style="margin-left: 41px; width:864px">
@@ -1001,9 +1002,7 @@
             </div>
            <div class="box"> 
           
-           
- 
-            <button class=" button bt" style="width:50%">got it </button> 
+            <a class=" button bt" style="width:50% ;color:white" href="testside">got it </a> 
           
            </div>
          
@@ -1058,7 +1057,9 @@
       </div>
     </div>
   </section>
+  
   <div class="ftr">
+    
   <app-footer></app-footer>
   </div>
   </div>

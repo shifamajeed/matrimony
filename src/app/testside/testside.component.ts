@@ -135,6 +135,7 @@ visiblechat:boolean=false
     this.visibleeditprofilediv=false
     this.editpwdpart=false
     this.hideprofilepart=true
+    this.visiblehelp=false
     this.visiblenotification=false
     this.smallhome=false
     this.sidenav2=false
@@ -180,7 +181,6 @@ visiblechat:boolean=false
     this.mangphoto=false
     this.editpwdpart=true
   }
-
   // end side bar
   // home2
   home2()
@@ -199,7 +199,6 @@ visiblechat:boolean=false
   // edit profile
   personalinfo()
   {
-
     this.personal=!this.personal
     this.visiblephysical=false
     this.visibleeducation=false
@@ -349,7 +348,6 @@ hobbiesinfo()
 }
 // end edit profile
 // reset password
-
 // function myFunction() {
 //   var x = document.getElementById("*passwordbox-id*");
 //   if (x.type === "password") {
@@ -358,7 +356,6 @@ hobbiesinfo()
 //     x.type = "password";
 //   }
 // }
-
 // end reset password
 //partnerpreference
 partnerpreference()
@@ -381,7 +378,6 @@ partnerpreference()
     this.mangphoto=false
 }
 // manage photos
-
 managephotos()
 {
   this.innerWidth = window.innerWidth
@@ -400,6 +396,10 @@ managephotos()
 
     this.smallhome=false
     this.sidenav2=false
+
+    this.partner=false
+  this.mangphoto=true
+
 }
 
 // search button action 
@@ -415,11 +415,11 @@ searchact()
   this.deleteprofilepart=false
   this.editpwdpart=false
   this.visiblehome2=false
-  // this.editinner=false
   this.visiblehelp=false
   this.visiblenotification=false
   this.smallhome=false
   this.visisblesearch=true
+  this.visibleeditprofilediv=false
   this.mangphoto=false
 }
 exploreact()
@@ -442,6 +442,7 @@ exploreact()
   this.visiblesend=false
   this.visibleboth=false
   this.visiblenotification=false
+  this.visiblehelp=false
   this.visibleexplore=true
   this.visiblechat=false
   this.smallhome=false
@@ -521,6 +522,7 @@ notification()
   this.mangphoto=false
   this.visiblenotification=true
   this.smallhome=false
+  this.visiblechat=false
 }
 
 
@@ -557,6 +559,7 @@ enableDisableRule() {
       this.visiblechat=false
       this.visiblehelp=false
       this.sidenav2=true
+      this.visiblechat=false
  }
 
 
@@ -579,6 +582,7 @@ enableDisableRule() {
   this.smallhome=false
   this.mangphoto=false
   this.smallhome=true
+  this.visiblechat=false
  }
  chatact(){
   this.innerWidth = window.innerWidth
