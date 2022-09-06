@@ -457,21 +457,22 @@ border-radius: 17px;
           font-weight: bolder;
           font-size: 14px;
 }
-@media(max-width:720px){
+@media(min-width:720px) and (max-width:1025px){
     .navhead{
-    left: 121px;
+    left: 519px;
     top: 25.6px;
     font-size: 10px;
+    }
+    .btn1{
+        width: 61px;
+    height: 28px;
+    left: 665px;
+    top: 19px;
     }
 }
 
 @media(max-width:720px){
-    .btn1{
-        width: 61px;
-    height: 28px;
-    left: 254px;
-    top: 19px;
-    }
+   
 }
 
 .bu1{
