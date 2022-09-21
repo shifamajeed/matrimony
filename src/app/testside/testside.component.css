@@ -257,7 +257,7 @@ align-self: center;
     border: 1px solid white;
     border-width: thin;
     align-self: center;
-    margin-left: 296px;
+    margin-left: 267px;
     }
    
 
@@ -1115,10 +1115,10 @@ border: none;
 
 
 
-.editpwdpart .lineboxhide{
+/* .editpwdpart .lineboxhide{
   
   margin-left: 250px;
-}
+} */
 
 .helpsec .linebox{
   margin-left: 75px;
@@ -1186,8 +1186,8 @@ border: none;
   position: absolute;
 }
 .chatsec .lineboxhide{
-  width: 142px;
-    margin-left: 142px;
+  width: 188px;
+  margin-left: 120px;
 }
 }
 
@@ -1616,8 +1616,8 @@ height: 28px;
     margin-left:17px;
   } 
   
-@media (min-width:1024px) and (max-width:1440px)
-{.btns{width:152px;}}
+/* @media (min-width:1024px) and (max-width:1440px)
+{.btns{width:152px;}} */
     
 /* ajin change password part */
 .pswtype{
@@ -1625,7 +1625,7 @@ height: 28px;
   width: 235px;
   border-radius: 8px;
 
-    width:127px;
+    
     font-weight: 600;
      margin-right: -4rem!important;
 
@@ -1650,7 +1650,7 @@ height: 28px;
   margin-left: 242px;
 }
 .deleteprosec .lineboxhide{
-  margin-left: 74px;
+  margin-left: 111px;
 }
 
 }

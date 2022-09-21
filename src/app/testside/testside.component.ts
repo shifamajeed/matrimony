@@ -47,6 +47,10 @@ export class TestsideComponent implements OnInit {
   visiblehabits:boolean=false
   hobby:boolean=true
   visiblehobbies:boolean=false
+
+
+  button = false;
+
   // end edit profile
   //search button section
   visisblesearch:boolean=false
@@ -97,13 +101,16 @@ visiblechat:boolean=false
     this.hideprofilepart=false
     this.editpwdpart=false
     this.visiblehome2=false
-    this.editinner=true
-    this.visibleeditprofilediv=true
-    this.visiblenotification=false
+    this.visiblehelp=false
     this.smallhome=false
     this.sidenav2=false
     this.mangphoto=false
-  }
+    this.visiblenotification=false
+    this.visibleexplore=false
+    this.editinner=true
+    this.visibleeditprofilediv=true
+ 
+      }
 
     
   
@@ -120,6 +127,7 @@ visiblechat:boolean=false
     this.sidenav2=false
     this.smallhome=false
     this.mangphoto=false
+    this.visiblehelp=false
   }
   hideprofilebtn()
   {
@@ -194,6 +202,9 @@ visiblechat:boolean=false
     this.visibleeditprofilediv=false
     this.smallhome=false
     this.mangphoto=false
+    this.visiblechat=false
+    this.visibleexplore=false
+    this.partner=false
     this.visiblehome2=true
   }
   // edit profile
@@ -374,7 +385,7 @@ partnerpreference()
     this.visisblesearch=false
     this.visiblehelp=false
     this.partner=true
-
+    this.visiblehome2=false
     this.mangphoto=false
 }
 // manage photos
@@ -418,9 +429,11 @@ searchact()
   this.visiblehelp=false
   this.visiblenotification=false
   this.smallhome=false
-  this.visisblesearch=true
   this.visibleeditprofilediv=false
+  this.visiblechat=false
   this.mangphoto=false
+  this.partner=false
+  this.visisblesearch=true
 }
 exploreact()
 {
@@ -436,7 +449,6 @@ exploreact()
   this.editpwdpart=false
   this.visiblehome2=false
   this.editinner=false
-  this.visiblehome2=false
   this.visisblesearch=false
   this.visiblereceive=false
   this.visiblesend=false
@@ -444,6 +456,7 @@ exploreact()
   this.visiblenotification=false
   this.visiblehelp=false
   this.visibleexplore=true
+  this.partner=false
   this.visiblechat=false
   this.smallhome=false
   this.mangphoto=false
@@ -492,6 +505,7 @@ helpact()
   this.visibleboth=false
   this.visiblechat=false
   this.visiblehelp=true
+  this.partner=false
   this.visiblenotification=false
   this.visibleexplore=false
   this.smallhome=false
@@ -556,7 +570,6 @@ enableDisableRule() {
       this.smallhome=false
       this.visiblesmallheader=false
       this.visiblesmallfooter=false
-      this.visiblechat=false
       this.visiblehelp=false
       this.sidenav2=true
       this.visiblechat=false
@@ -579,10 +592,10 @@ enableDisableRule() {
   this.partner=false  
   this.sidenav2=false 
   this.visiblenotification=false
-  this.smallhome=false
   this.mangphoto=false
   this.smallhome=true
   this.visiblechat=false
+  
  }
  chatact(){
   this.innerWidth = window.innerWidth
@@ -611,6 +624,71 @@ enableDisableRule() {
   this.visiblehelp=false
   this.visiblechat=true
  }
- 
+  
+
+  
+//  send(){
+//   const input = document.getElementById('send') as HTMLInputElement | null;
+
+//   const value = input?.value;
+
+   
+//    if (this.send == null) {
+//       alert("No empty messages please!");
+//     }
+//     else {
+//       var item = document.createElement('li');
+//       item.textContent = this.send;
+//       ( "#messages" ).concat(this.item);
+//       ('#chatmsg').val('');
+//     }
+    
+   
+//    }
+
+send(){
+  // msg typed 
+const inputmsg = document.getElementById('message') as HTMLInputElement | null;   
+  // list access
+const sendmsg = document.getElementById('msglist') as HTMLInputElement | null;
+
+let values = inputmsg?.value;
+console.log(values)
+
+// Create a new <li> element programmatically
+let ppp = document.createElement("p");
+// lii.innerText="values";
+ppp.innerText=values as string;
+sendmsg?.appendChild(ppp);
+console.log(ppp)
+
+
+// msglist.document.appendChild(li);
+
+
+// let data = ["Ram", "Shyam", "Sita", "Gita"];
+  
+//       let list = document.getElementById("myList") as HTMLInputElement | null;
+  
+//       data.forEach((item) => {
+//         let li = document.createElement("li");
+//         li.innerText = item;
+//         list.appendChild(li);
+
+
+
+
+// if (input != null) {
+//   console.log(input.value); 
+// }
+
+// input?.addEventListener('input', function (event) {
+//   const target = event.target as HTMLInputElement;
+//   console.log(target.value);
+// });
+}
+
+
 
 }
+
