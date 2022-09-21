@@ -1205,3 +1205,51 @@ border-radius: 30px;
   height:1500;
 }
 /* end chatbox */
+@media screen and (max-width: 600px) {
+  .sidebar{
+    text-align: center;
+    float: center;
+  } 
+  .boximg{
+    height: 257px;
+    border-radius: 15.497406px;
+  }
+  .btns{
+    height:30px;
+    width: 140px;
+    
+  }
+  .btn{
+    height:30px;
+  
+  }
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
+  div.content {padding-right:0px;padding-left:0px;}
+  .loremhide{
+    font-family: 'Poppins';
+  font-style: normal;
+  
+  font-size: 5px;
+  line-height: 7px;
+    }
+  
+  .lastbtn{
+    font-size: 12px;
+    height:21px;
+    /* width:94px; */
+    /* left: 25px; */
+  }
+  .disnone{
+    display: none;
+  }
+  .nonav{
+    display: none;
+  }
+  .sidenave{
+    display: none;
+  }
+  
+  } 

@@ -22,8 +22,6 @@
   .lblside{
     width: 105px;
     font-size: 16px;
-   
-   
 
 }
 .logo{
@@ -259,7 +257,7 @@ align-self: center;
     border: 1px solid white;
     border-width: thin;
     align-self: center;
-    margin-left: 296px;
+    margin-left: 267px;
     }
    
 
@@ -601,11 +599,19 @@ border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 21px;
 }
 .ha1{
+
+  line-height: 15PX;
+  top: 18px;
+  width: 282px;
+  left: 257px;
+  font-size: 11px;
+
   width: 406px;
   line-height: 15PX;
   top: 32px;
   left: 127px;
   font-size: 10px;
+
 }
 
 
@@ -999,7 +1005,6 @@ border: none;
   margin-left: 85px;
   margin-top: 0px;
 }
-
 .deleteprosec .innerbox .btn{
   border-radius: 13px;
   color:#276577;
@@ -1008,6 +1013,25 @@ border: none;
 .deleteprosec .innerbox .btn:hover{
     color: #d3d3d3;
     background-color:#276577;
+}
+
+.deleteprosec .innerbox .btn{
+  border-radius: 13px;
+  color:#276577;
+  background-color:white;
+}
+
+.hidesec .innerbox .lineboxhide{
+  margin-left: 242px;
+}
+.deleteprosec .lineboxhide{
+  margin-left: 74px;
+}
+
+.deleteprosec .innerbox .btn:hover{
+    color: #d3d3d3;
+    background-color:#276577;
+
 }
 
 .sidebtns:hover{
@@ -1035,6 +1059,7 @@ border: none;
 .sidebtns{
   color: #305862;
 }
+
 
 
 .modal-title{
@@ -1089,6 +1114,12 @@ border: none;
 }
 
 
+
+/* .editpwdpart .lineboxhide{
+  
+  margin-left: 250px;
+} */
+
 .helpsec .linebox{
   margin-left: 75px;
     border-radius: 18px;
@@ -1121,20 +1152,12 @@ border: none;
   margin-top: 9px;
   color: black;
 }
-/* .innerbox{
-  height:96%;
-} */
-/* .disnone .rightbg .innerbox{
-  height: 96%;
-}
 
-.hidesec .rightbg .innerbox{
-  height: 88%;
-} */
 
 .pswlbl{
   line-height: 35px;
 }
+
 @media (min-width:900px) and (max-width:1500px){
   
   .modal-title{
@@ -1148,6 +1171,9 @@ border: none;
   .editpwdpart .sp{
     margin-left:17px;
   } 
+
+  
+
 .exploresec .btns{
   margin-left: 43px;
     margin-top: 15%
@@ -1160,8 +1186,8 @@ border: none;
   position: absolute;
 }
 .chatsec .lineboxhide{
-  width: 142px;
-    margin-left: 142px;
+  width: 188px;
+  margin-left: 120px;
 }
 }
 
@@ -1206,12 +1232,14 @@ border: none;
   
   margin-left: 105px;
 
-
   
 }
 
 }
 @media (min-width:300px) and (max-width: 900px) {
+
+  
+
   .chatsec .chat{
     width:340px;
   }
@@ -1263,6 +1291,7 @@ border: none;
   .searchsec .form-inline .form-group{
     display: flex;
   }
+
   .blurleft{
     text-align: center;
     float: center;
@@ -1396,6 +1425,10 @@ border-radius: 14px;
 
 margin-left: 45px;
 
+
+margin-left: 45px;
+
+
 }
 .deleteprosec .h2hide{
   font-size: 13px;
@@ -1413,6 +1446,14 @@ margin-left: 45px;
   width: 101px;
    border-radius: 14px;
 }
+
+.notisec .innerbox .btn1{
+      width: 94px;
+    height: 35px;
+    margin-left: 56px;
+    margin-top: 0px;
+}
+
 .notisec .innerbox .noti .btn1{
 
   width: 96px;
@@ -1423,6 +1464,7 @@ margin-left: 45px;
     height: 31px;
     margin-left: 52px;
     margin-top: 3px;
+
 
 }
 .notisec .innerbox .noti .btn{
@@ -1445,9 +1487,19 @@ margin-left: 45px;
     font-size: 9px;
 }
 
+.notisec .innerbox .ha1{
+  left: 127px;
+    margin-top: 8px;
+    font-size: 9px;
+
+   
+}
+
+
+
 .notisec .noti{
   height:130px;
-  margin-left: 17px;
+  margin-left: 2px;
 }
 .notisec .innerbox .ha1{
   left: 127px;
@@ -1460,6 +1512,29 @@ margin-left: 45px;
   height:130px;
   margin-left: 2px;
 
+}
+
+.editpwdpart .innerbox .lineboxhide{
+
+    text-align: center;
+    line-height: 23px;
+    font-size: 9px;
+    height: 30px;
+    width: 171px;
+    margin-left: 83px;
+}
+.editpwdpart .innerbox .blk2{
+  margin-left:20px;
+}
+.editpwdpart .innerbox .pswtype{
+  width: 270px;
+}
+.editpwdpart .spl{
+  margin-left:60px;
+} 
+.deleteprosec .lineboxhide{
+  margin-left: 65px;
+height: 28px;
 }
 
 .editpwdpart .lineboxhide{
@@ -1490,6 +1565,7 @@ height: 33px;
 } 
 .editpwdpart .spl{
   margin-left:60px;
+
 } 
 .deleteprosec .lineboxhide{
   margin-left: 65px;
@@ -1528,9 +1604,31 @@ height: 28px;
 }
 @media (min-width:900px)  and (max-width:1500px){
   .modal-title{
-    width:127px;
+
+      width:127px;
+      font-weight: 600;
+       margin-right: -4rem!important;
+  }
+  .px-5{
+      padding-left: -0.75rem!important;
+  }
+  .editpwdpart .sp{
+    margin-left:17px;
+  } 
+  
+/* @media (min-width:1024px) and (max-width:1440px)
+{.btns{width:152px;}} */
+    
+/* ajin change password part */
+.pswtype{
+  height: 35px;
+  width: 235px;
+  border-radius: 8px;
+
+    
     font-weight: 600;
      margin-right: -4rem!important;
+
 }
 .px-5{
     padding-left: -0.75rem!important;
@@ -1552,7 +1650,7 @@ height: 28px;
   margin-left: 242px;
 }
 .deleteprosec .lineboxhide{
-  margin-left: 74px;
+  margin-left: 111px;
 }
 
 }
@@ -1664,7 +1762,20 @@ border-width: thin;
 }
 
 
+
   .editdiv{
     display: none;
   }
 }
+.sidebtns:hover{
+  
+  background-color:#276577;
+  color: white;
+
+}
+
+.sidebtns{
+  color: #276577;
+}
+ 
+
